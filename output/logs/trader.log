@@ -1,0 +1,50 @@
+2025-04-14 15:05:30,804 - INFO - ================================================================================
+2025-04-14 15:05:30,804 - INFO - Starting automated trading system
+2025-04-14 15:05:30,804 - INFO - ================================================================================
+2025-04-14 15:05:30,805 - INFO - ================================================================================
+2025-04-14 15:05:30,806 - INFO - Starting cycle 1
+2025-04-14 15:05:30,808 - INFO - ================================================================================
+2025-04-14 15:05:30,808 - INFO - Starting price monitor...
+2025-04-14 15:05:30,809 - INFO - Running: /home/chris_s_dodd/anaconda3/bin/python /home/chris_s_dodd/source/optcom/monitor/price_monitor.py --db ../database/option_strategies.db --interval 0
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,556 - INFO - Connecting to IBKR at 127.0.0.1:7497
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,567 - INFO - sent startApi
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,567 - INFO - REQUEST startApi {}
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,567 - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,567 - INFO - ANSWER connectAck {}
+2025-04-14 15:05:31,897 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,574 - INFO - ANSWER nextValidId {'orderId': 1}
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,575 - INFO - Connected to IBKR
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,575 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,575 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,575 - ERROR - Error querying database: unable to open database file
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,576 - ERROR - No strategies to monitor. Exiting.
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,576 - INFO - Disconnecting from IBKR
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,576 - INFO - disconnecting
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,576 - INFO - ANSWER connectionClosed {}
+2025-04-14 15:05:31,898 - ERROR - PRICE_MONITOR ERROR: 2025-04-14 15:05:31,776 - INFO - Price monitoring complete
+2025-04-14 15:05:31,898 - INFO - Price monitor completed with return code: 0
+2025-04-14 15:05:31,898 - INFO - Starting vertical spread order execution...
+2025-04-14 15:05:31,898 - INFO - Running: /home/chris_s_dodd/anaconda3/bin/python /home/chris_s_dodd/source/optcom/monitor/vertical_spread_order.py --db ../database/option_strategies.db --date 2025-04-14
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR: 2025-04-14 15:05:32,471 - INFO - Processing strategies for date: 2025-04-14
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR: 2025-04-14 15:05:32,476 - INFO - Market closed orders allowed: False
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR: Traceback (most recent call last):
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:   File "/home/chris_s_dodd/source/optcom/monitor/vertical_spread_order.py", line 536, in <module>
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:     run_trading_app(
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:   File "/home/chris_s_dodd/source/optcom/monitor/vertical_spread_order.py", line 360, in run_trading_app
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:     df = get_strategies_for_date(db_path, target_date)
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:   File "/home/chris_s_dodd/source/optcom/monitor/vertical_spread_order.py", line 239, in get_strategies_for_date
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:     conn = sqlite3.connect(db_path)
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR:            ^^^^^^^^^^^^^^^^^^^^^^^^
+2025-04-14 15:05:32,551 - ERROR - VSO ERROR: sqlite3.OperationalError: unable to open database file
+2025-04-14 15:05:32,551 - INFO - Vertical spread order completed with return code: 1
+2025-04-14 15:05:32,552 - INFO - Waiting 60 seconds until next cycle...
+2025-04-14 15:05:46,904 - INFO - Keyboard interrupt received. Exiting...
+2025-04-14 15:07:57,659 - INFO - ================================================================================
+2025-04-14 15:07:57,659 - INFO - Starting automated trading system
+2025-04-14 15:07:57,659 - INFO - ================================================================================
+2025-04-14 15:07:57,659 - INFO - ================================================================================
+2025-04-14 15:07:57,659 - INFO - Starting cycle 1
+2025-04-14 15:07:57,659 - INFO - ================================================================================
+2025-04-14 15:07:57,660 - INFO - Starting price monitor...
+2025-04-14 15:07:57,660 - INFO - Running: /home/chris_s_dodd/anaconda3/bin/python /home/chris_s_dodd/source/optcom/monitor/price_monitor.py --db /home/chris_s_dodd/source/optcom/database/option_strategies.db --interval 0
+2025-04-14 15:08:13,239 - INFO - Keyboard interrupt received. Exiting...
