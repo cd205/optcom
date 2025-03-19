@@ -1,0 +1,19 @@
+id,scrape_date,strategy_type,tab_name,ticker,trigger_price,strike_price,strike_buy,strike_sell,estimated_premium,item_id,options_expiry_date,date_info,timestamp_of_trigger,strategy_status,price_when_triggered,triggered,trigger_price_value
+4,2025-03-10T08:41:08.288082,Bear Call,Mild Risk 95-97% accuracy > longer expiry,UNH,504.95,sell 540.0 - buy 550.0,550.0,540.0,79.0,1,2025-03-28,March,,,487.72,,504.95
+1,2025-03-10T08:41:01.483574,Bear Call,Mild Risk 95-97% accuracy > shorter expiry,GOOGL,182.37,sell 192.5 - buy 202.5,202.5,192.5,76.0,1,2025-03-21,March,,,172.35,,182.37
+2,2025-03-10T08:41:01.574518,Bear Call,Mild Risk 95-97% accuracy > shorter expiry,MSFT,404.89,sell 425.0 - buy 435.0,435.0,425.0,124.0,2,2025-03-21,March,,,396.89,,404.89
+5,2025-03-10T08:41:11.642884,Bear Call,Minimal Risk 97-99% accuracy > longer expiry,UNH,507.27,sell 545.0 - buy 555.0,555.0,545.0,70.0,1,2025-03-28,March,,,487.72,,507.27
+3,2025-03-10T08:41:04.952613,Bear Call,Minimal Risk 97-99% accuracy > shorter expiry,UNH,507.59,sell 535.0 - buy 545.0,545.0,535.0,93.0,1,2025-03-21,March,,,487.72,,507.59
+12,2025-03-10T08:41:28.253829,Bull Put,Mild Risk 95-97% accuracy > longer expiry,AMZN,193.36,sell 182.5 - buy 172.5,172.5,182.5,180.0,1,2025-03-28,March,,,200.7,,193.36
+13,2025-03-10T08:41:28.351534,Bull Put,Mild Risk 95-97% accuracy > longer expiry,META,589.67,sell 540.0 - buy 530.0,530.0,540.0,97.0,2,2025-03-28,March,,,614.8,,589.67
+14,2025-03-10T08:41:28.442202,Bull Put,Mild Risk 95-97% accuracy > longer expiry,NVDA,104.72,sell 95.0 - buy 85.0,85.0,95.0,158.0,3,2025-03-28,March,,,110.57,,104.72
+15,2025-03-10T08:41:28.538762,Bull Put,Mild Risk 95-97% accuracy > longer expiry,WMT,89.29,sell 86.0 - buy 80.0,80.0,86.0,70.0,4,2025-03-28,March,,,94.64,,89.29
+6,2025-03-10T08:41:20.964190,Bull Put,Mild Risk 95-97% accuracy > shorter expiry,AMZN,189.95,sell 180.0 - buy 170.0,170.0,180.0,155.0,1,2025-03-21,March,,,200.7,,189.95
+7,2025-03-10T08:41:21.059486,Bull Put,Mild Risk 95-97% accuracy > shorter expiry,NVDA,105.43,sell 95.0 - buy 85.0,85.0,95.0,132.0,2,2025-03-21,March,,,110.57,,105.43
+8,2025-03-10T08:41:21.122105,Bull Put,Mild Risk 95-97% accuracy > shorter expiry,QQQ,477.23,sell 460.0 - buy 450.0,450.0,460.0,224.0,3,2025-03-21,March,,,488.2,,477.23
+9,2025-03-10T08:41:21.213768,Bull Put,Mild Risk 95-97% accuracy > shorter expiry,WMT,89.68,sell 86.0 - buy 75.0,75.0,86.0,58.0,4,2025-03-21,March,,,94.64,,89.68
+16,2025-03-10T08:41:32.107408,Bull Put,Minimal Risk 97-99% accuracy > longer expiry,MA,530.99,sell 505.0 - buy 490.0,490.0,505.0,178.0,1,2025-03-28,March,,,546.77,,530.99
+17,2025-03-10T08:41:32.218233,Bull Put,Minimal Risk 97-99% accuracy > longer expiry,QQQ,490,sell 460.0 - buy 450.0,450.0,460.0,273.0,2,2025-03-28,March,,,488.2,1,490.0
+18,2025-03-10T08:41:32.354756,Bull Put,Minimal Risk 97-99% accuracy > longer expiry,TQQQ,62.25,sell 60.0 - buy 50.0,50.0,60.0,210.0,3,2025-03-28,March,,,66.04,,62.25
+10,2025-03-10T08:41:24.680032,Bull Put,Minimal Risk 97-99% accuracy > shorter expiry,TQQQ,60.44,sell 57.0 - buy 47.0,47.0,57.0,240.0,1,2025-03-21,March,,,66.04,,60.44
+11,2025-03-10T08:41:24.803481,Bull Put,Minimal Risk 97-99% accuracy > shorter expiry,V,336.57,sell 325.0 - buy 315.0,315.0,325.0,107.0,2,2025-03-21,March,,,345.32,,336.57
