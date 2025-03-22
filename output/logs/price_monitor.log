@@ -22331,3 +22331,179 @@
 2025-03-13 17:10:43,176 - INFO - disconnecting
 2025-03-13 17:10:43,180 - INFO - ANSWER connectionClosed {}
 2025-03-13 17:10:43,275 - INFO - Price monitoring complete
+2025-03-22 10:50:44,718 - INFO - Connecting to IBKR at 127.0.0.1:7497
+2025-03-22 10:50:45,426 - INFO - sent startApi
+2025-03-22 10:50:45,427 - INFO - REQUEST startApi {}
+2025-03-22 10:50:45,431 - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-03-22 10:50:45,432 - INFO - ANSWER connectAck {}
+2025-03-22 10:50:45,556 - INFO - ANSWER nextValidId {'orderId': 1}
+2025-03-22 10:50:45,556 - INFO - Connected to IBKR
+2025-03-22 10:50:45,557 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-03-22 10:50:45,557 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-03-22 10:50:45,634 - WARNING - No strategy data found for today (2025-03-22)
+2025-03-22 10:50:45,650 - ERROR - No strategies to monitor. Exiting.
+2025-03-22 10:50:45,650 - INFO - Disconnecting from IBKR
+2025-03-22 10:50:45,650 - INFO - disconnecting
+2025-03-22 10:50:45,650 - INFO - ANSWER connectionClosed {}
+2025-03-22 10:50:45,649 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-03-22 10:50:45,664 - INFO - Price monitoring complete
+2025-03-22 11:05:22,823 - INFO - Connecting to IBKR at 127.0.0.1:7497
+2025-03-22 11:05:22,881 - INFO - sent startApi
+2025-03-22 11:05:22,881 - INFO - REQUEST startApi {}
+2025-03-22 11:05:22,882 - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-03-22 11:05:22,882 - INFO - ANSWER connectAck {}
+2025-03-22 11:05:22,909 - INFO - ANSWER nextValidId {'orderId': 1}
+2025-03-22 11:05:22,915 - INFO - Connected to IBKR
+2025-03-22 11:05:22,916 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-03-22 11:05:22,916 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-03-22 11:05:22,974 - INFO - Loaded 11 strategy records
+2025-03-22 11:05:22,978 - WARNING - Could not convert 'None' to float
+2025-03-22 11:05:22,981 - WARNING - Could not convert 'None' to float
+2025-03-22 11:05:22,983 - WARNING - Could not convert 'None' to float
+2025-03-22 11:05:22,995 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:hfarm', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:22,996 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:hfarm
+2025-03-22 11:05:22,996 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,003 - INFO - Monitoring 6 unique tickers: UNH, MSFT, None, NKE, TQQQ, WMT
+2025-03-22 11:05:23,008 - INFO - Found 0 strategies that are already triggered
+2025-03-22 11:05:23,010 - INFO - ===== Price Check at 11:05:23 =====
+2025-03-22 11:05:23,011 - INFO - REQUEST reqMktData {'reqId': 1, 'contract': 134711042751760: 0,UNH,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:23,011 - INFO - SENDING reqMktData b'\x00\x00\x00-1\x0011\x001\x000\x00UNH\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:23,017 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:eufarmnj', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,019 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:eufarmnj
+2025-03-22 11:05:23,020 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,025 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:cashfarm', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,025 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:cashfarm
+2025-03-22 11:05:23,025 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,025 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usfuture', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,025 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:usfuture
+2025-03-22 11:05:23,025 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,025 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:jfarm', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,029 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:jfarm
+2025-03-22 11:05:23,029 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,029 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usfarm.nj', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,029 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:usfarm.nj
+2025-03-22 11:05:23,029 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,029 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usopt', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,036 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:usopt
+2025-03-22 11:05:23,037 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,037 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usfarm', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,037 - ERROR - ERROR -1 0 2104 Market data farm connection is OK:usfarm
+2025-03-22 11:05:23,037 - ERROR - Error 0 for request -1: 2104
+2025-03-22 11:05:23,037 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2106, 'errorString': 'HMDS data farm connection is OK:euhmds', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,037 - ERROR - ERROR -1 0 2106 HMDS data farm connection is OK:euhmds
+2025-03-22 11:05:23,044 - ERROR - Error 0 for request -1: 2106
+2025-03-22 11:05:23,047 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2106, 'errorString': 'HMDS data farm connection is OK:fundfarm', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,049 - ERROR - ERROR -1 0 2106 HMDS data farm connection is OK:fundfarm
+2025-03-22 11:05:23,050 - ERROR - Error 0 for request -1: 2106
+2025-03-22 11:05:23,054 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2106, 'errorString': 'HMDS data farm connection is OK:ushmds', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,056 - ERROR - ERROR -1 0 2106 HMDS data farm connection is OK:ushmds
+2025-03-22 11:05:23,056 - ERROR - Error 0 for request -1: 2106
+2025-03-22 11:05:23,056 - INFO - ANSWER error {'reqId': -1, 'errorTime': 0, 'errorCode': 2158, 'errorString': 'Sec-def data farm connection is OK:secdefil', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:23,057 - ERROR - ERROR -1 0 2158 Sec-def data farm connection is OK:secdefil
+2025-03-22 11:05:23,057 - ERROR - Error 0 for request -1: 2158
+2025-03-22 11:05:23,057 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-03-22 11:05:23,506 - INFO - ANSWER marketDataType {'reqId': 1, 'marketDataType': 1}
+2025-03-22 11:05:23,556 - INFO - ANSWER tickReqParams {'tickerId': 1, 'minTick': 0.01, 'bboExchange': 'a60001', 'snapshotPermissions': 3}
+2025-03-22 11:05:26,060 - INFO - REQUEST cancelMktData {'reqId': 1}
+2025-03-22 11:05:26,060 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x001\x00'
+2025-03-22 11:05:26,060 - INFO - Live price not available for UNH, trying close price
+2025-03-22 11:05:26,060 - INFO - REQUEST reqHistoricalData {'reqId': 2, 'contract': 134711042751760: 0,UNH,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'endDateTime': '', 'durationStr': '2 D', 'barSizeSetting': '1 day', 'whatToShow': 'TRADES', 'useRTH': 1, 'formatDate': 1, 'keepUpToDate': False, 'chartOptions': []}
+2025-03-22 11:05:26,060 - INFO - SENDING reqHistoricalData b'\x00\x00\x00>20\x002\x000\x00UNH\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x001 day\x002 D\x001\x00TRADES\x001\x000\x00\x00'
+2025-03-22 11:05:26,888 - INFO - ANSWER historicalData {'reqId': 2, 'bar': 134710995980752: Date: 20250320, Open: 505.25, High: 514.39, Low: 503.51, Close: 511.3, Volume: 2166557, WAP: 509.747, BarCount: 12805}
+2025-03-22 11:05:26,889 - INFO - ANSWER historicalData {'reqId': 2, 'bar': 134710995981264: Date: 20250321, Open: 511.68, High: 519, Low: 505.09, Close: 516.85, Volume: 3391164, WAP: 513.848, BarCount: 17989}
+2025-03-22 11:05:26,892 - INFO - ANSWER historicalDataEnd {'reqId': 2, 'start': '20250320 07:05:26 US/Eastern', 'end': '20250322 07:05:26 US/Eastern'}
+2025-03-22 11:05:26,894 - INFO - Got close price for UNH: $511.3
+2025-03-22 11:05:26,896 - INFO - Using close price for UNH: $511.3
+2025-03-22 11:05:26,896 - INFO - UNH: $511.30
+2025-03-22 11:05:26,899 - INFO - REQUEST reqMktData {'reqId': 3, 'contract': 134710995981072: 0,MSFT,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:26,904 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x003\x000\x00MSFT\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:27,174 - INFO - ANSWER marketDataType {'reqId': 3, 'marketDataType': 1}
+2025-03-22 11:05:27,223 - INFO - ANSWER tickReqParams {'tickerId': 3, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-03-22 11:05:27,248 - INFO - ANSWER tickPrice {'reqId': 3, 'tickType': 1, 'price': -1.0, 'attrib': 134710995981008: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:27,249 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 0, 'size': Decimal('170141183460469231731687303715884105727')}
+2025-03-22 11:05:27,262 - INFO - ANSWER tickPrice {'reqId': 3, 'tickType': 2, 'price': -1.0, 'attrib': 134710995979792: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:27,262 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 3, 'size': Decimal('170141183460469231731687303715884105727')}
+2025-03-22 11:05:27,372 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 5, 'size': Decimal('0')}
+2025-03-22 11:05:27,378 - INFO - ANSWER tickPrice {'reqId': 3, 'tickType': 9, 'price': 386.84, 'attrib': 134710997323856: CanAutoExecute: 0, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:27,392 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 0, 'size': Decimal('0')}
+2025-03-22 11:05:27,394 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 3, 'size': Decimal('0')}
+2025-03-22 11:05:30,394 - INFO - REQUEST cancelMktData {'reqId': 3}
+2025-03-22 11:05:30,394 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x003\x00'
+2025-03-22 11:05:30,395 - INFO - Got price for MSFT: $386.84 (type: 9)
+2025-03-22 11:05:30,396 - INFO - MSFT: $386.84
+2025-03-22 11:05:30,399 - INFO - REQUEST reqMktData {'reqId': 4, 'contract': 134710995979728: 0,None,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:30,402 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x004\x000\x00None\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:30,842 - INFO - ANSWER error {'reqId': 4, 'errorTime': 0, 'errorCode': 200, 'errorString': 'No security definition has been found for the request', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:30,842 - ERROR - ERROR 4 0 200 No security definition has been found for the request
+2025-03-22 11:05:30,842 - ERROR - Error 0 for request 4: 200
+2025-03-22 11:05:33,848 - INFO - REQUEST cancelMktData {'reqId': 4}
+2025-03-22 11:05:33,849 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x004\x00'
+2025-03-22 11:05:33,849 - INFO - Live price not available for None, trying close price
+2025-03-22 11:05:33,854 - INFO - REQUEST reqHistoricalData {'reqId': 5, 'contract': 134710995979728: 0,None,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'endDateTime': '', 'durationStr': '2 D', 'barSizeSetting': '1 day', 'whatToShow': 'TRADES', 'useRTH': 1, 'formatDate': 1, 'keepUpToDate': False, 'chartOptions': []}
+2025-03-22 11:05:33,859 - INFO - SENDING reqHistoricalData b'\x00\x00\x00?20\x005\x000\x00None\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x001 day\x002 D\x001\x00TRADES\x001\x000\x00\x00'
+2025-03-22 11:05:33,869 - INFO - ANSWER error {'reqId': 4, 'errorTime': 0, 'errorCode': 300, 'errorString': "Can't find EId with tickerId:4", 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:33,869 - ERROR - ERROR 4 0 300 Can't find EId with tickerId:4
+2025-03-22 11:05:33,869 - ERROR - Error 0 for request 4: 300
+2025-03-22 11:05:33,986 - INFO - ANSWER error {'reqId': 5, 'errorTime': 0, 'errorCode': 200, 'errorString': 'No security definition has been found for the request', 'advancedOrderRejectJson': ''}
+2025-03-22 11:05:33,986 - ERROR - ERROR 5 0 200 No security definition has been found for the request
+2025-03-22 11:05:33,989 - ERROR - Error 0 for request 5: 200
+2025-03-22 11:05:33,990 - ERROR - Error getting close price for None: 200
+2025-03-22 11:05:33,990 - WARNING - No close price available for None
+2025-03-22 11:05:33,990 - WARNING - No price data available for None
+2025-03-22 11:05:33,991 - WARNING - Could not get price for None
+2025-03-22 11:05:33,991 - INFO - REQUEST reqMktData {'reqId': 6, 'contract': 134710995979216: 0,NKE,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:33,991 - INFO - SENDING reqMktData b'\x00\x00\x00-1\x0011\x006\x000\x00NKE\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:34,198 - INFO - ANSWER marketDataType {'reqId': 6, 'marketDataType': 1}
+2025-03-22 11:05:34,237 - INFO - ANSWER tickReqParams {'tickerId': 6, 'minTick': 0.01, 'bboExchange': 'a60001', 'snapshotPermissions': 3}
+2025-03-22 11:05:36,997 - INFO - REQUEST cancelMktData {'reqId': 6}
+2025-03-22 11:05:36,997 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x006\x00'
+2025-03-22 11:05:36,997 - INFO - Live price not available for NKE, trying close price
+2025-03-22 11:05:36,998 - INFO - REQUEST reqHistoricalData {'reqId': 7, 'contract': 134710995979216: 0,NKE,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'endDateTime': '', 'durationStr': '2 D', 'barSizeSetting': '1 day', 'whatToShow': 'TRADES', 'useRTH': 1, 'formatDate': 1, 'keepUpToDate': False, 'chartOptions': []}
+2025-03-22 11:05:36,998 - INFO - SENDING reqHistoricalData b'\x00\x00\x00>20\x007\x000\x00NKE\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x001 day\x002 D\x001\x00TRADES\x001\x000\x00\x00'
+2025-03-22 11:05:40,376 - INFO - ANSWER historicalData {'reqId': 7, 'bar': 134710995981008: Date: 20250320, Open: 72.92, High: 73.65, Low: 71.52, Close: 71.86, Volume: 11240206, WAP: 72.458, BarCount: 62100}
+2025-03-22 11:05:40,377 - INFO - ANSWER historicalData {'reqId': 7, 'bar': 134710995979792: Date: 20250321, Open: 66.59, High: 68.73, Low: 65.17, Close: 67.94, Volume: 45672678, WAP: 67.063, BarCount: 186940}
+2025-03-22 11:05:40,377 - INFO - ANSWER historicalDataEnd {'reqId': 7, 'start': '20250320 07:05:36 US/Eastern', 'end': '20250322 07:05:36 US/Eastern'}
+2025-03-22 11:05:40,377 - INFO - Got close price for NKE: $71.86
+2025-03-22 11:05:40,377 - INFO - Using close price for NKE: $71.86
+2025-03-22 11:05:40,377 - INFO - NKE: $71.86
+2025-03-22 11:05:40,377 - INFO - REQUEST reqMktData {'reqId': 8, 'contract': 134710997323856: 0,TQQQ,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:40,378 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x008\x000\x00TQQQ\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:40,639 - INFO - ANSWER marketDataType {'reqId': 8, 'marketDataType': 1}
+2025-03-22 11:05:40,681 - INFO - ANSWER tickReqParams {'tickerId': 8, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-03-22 11:05:40,838 - INFO - ANSWER tickSize {'reqId': 8, 'tickType': 5, 'size': Decimal('0')}
+2025-03-22 11:05:40,851 - INFO - ANSWER tickPrice {'reqId': 8, 'tickType': 9, 'price': 61.6, 'attrib': 134710995979024: CanAutoExecute: 0, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:40,851 - INFO - ANSWER tickPrice {'reqId': 8, 'tickType': 1, 'price': -1.0, 'attrib': 134710995976912: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:40,851 - INFO - ANSWER tickSize {'reqId': 8, 'tickType': 0, 'size': Decimal('0')}
+2025-03-22 11:05:40,851 - INFO - ANSWER tickPrice {'reqId': 8, 'tickType': 2, 'price': -1.0, 'attrib': 134710995977680: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:40,851 - INFO - ANSWER tickSize {'reqId': 8, 'tickType': 3, 'size': Decimal('0')}
+2025-03-22 11:05:40,854 - INFO - ANSWER tickSize {'reqId': 8, 'tickType': 0, 'size': Decimal('0')}
+2025-03-22 11:05:40,854 - INFO - ANSWER tickSize {'reqId': 8, 'tickType': 3, 'size': Decimal('0')}
+2025-03-22 11:05:43,857 - INFO - REQUEST cancelMktData {'reqId': 8}
+2025-03-22 11:05:43,858 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x008\x00'
+2025-03-22 11:05:43,858 - INFO - Got price for TQQQ: $61.6 (type: 9)
+2025-03-22 11:05:43,859 - INFO - TQQQ: $61.60
+2025-03-22 11:05:43,859 - INFO - REQUEST reqMktData {'reqId': 9, 'contract': 134710995978256: 0,WMT,STK,,,0,,,SMART,,USD,,,False,,,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-03-22 11:05:43,862 - INFO - SENDING reqMktData b'\x00\x00\x00-1\x0011\x009\x000\x00WMT\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-03-22 11:05:44,086 - INFO - ANSWER tickReqParams {'tickerId': 9, 'minTick': 0.01, 'bboExchange': 'a60001', 'snapshotPermissions': 0}
+2025-03-22 11:05:44,086 - INFO - ANSWER marketDataType {'reqId': 9, 'marketDataType': 1}
+2025-03-22 11:05:44,147 - INFO - ANSWER tickPrice {'reqId': 9, 'tickType': 1, 'price': -1.0, 'attrib': 134710995976400: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:44,147 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 0, 'size': Decimal('0')}
+2025-03-22 11:05:44,150 - INFO - ANSWER tickPrice {'reqId': 9, 'tickType': 2, 'price': -1.0, 'attrib': 134710995976592: CanAutoExecute: 1, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:44,153 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 3, 'size': Decimal('0')}
+2025-03-22 11:05:44,156 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 0, 'size': Decimal('0')}
+2025-03-22 11:05:44,161 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 3, 'size': Decimal('0')}
+2025-03-22 11:05:44,161 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 5, 'size': Decimal('0')}
+2025-03-22 11:05:44,161 - INFO - ANSWER tickPrice {'reqId': 9, 'tickType': 9, 'price': 85.57, 'attrib': 134710995977296: CanAutoExecute: 0, PastLimit: 0, PreOpen: 0}
+2025-03-22 11:05:44,162 - INFO - ANSWER tickGeneric {'reqId': 9, 'tickType': 49, 'value': 0.0}
+2025-03-22 11:05:47,173 - INFO - REQUEST cancelMktData {'reqId': 9}
+2025-03-22 11:05:47,176 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x009\x00'
+2025-03-22 11:05:47,176 - INFO - Got price for WMT: $85.57 (type: 9)
+2025-03-22 11:05:47,179 - INFO - WMT: $85.57
+2025-03-22 11:05:47,334 - INFO - Saved monitor state to /home/chris_s_dodd/source/optcom/monitor/../output/strategy_monitor_20250322_110547.csv
+2025-03-22 11:05:47,347 - INFO - Updated latest status file at /home/chris_s_dodd/source/optcom/monitor/../output/latest_strategy_status.csv
+2025-03-22 11:05:47,357 - INFO - Waiting 60 seconds until next check...
+2025-03-22 11:06:22,123 - INFO - Monitoring stopped by user
+2025-03-22 11:06:22,123 - INFO - Disconnecting from IBKR
+2025-03-22 11:06:22,124 - INFO - disconnecting
+2025-03-22 11:06:22,124 - INFO - ANSWER connectionClosed {}
+2025-03-22 11:06:22,152 - INFO - Price monitoring complete
