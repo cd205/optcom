@@ -451,10 +451,6 @@ def parse_arguments():
     return parser.parse_args()
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    main()
-    
-=======
     # Parse command line arguments
     args = parse_arguments()
     
@@ -468,5 +464,4 @@ if __name__ == "__main__":
         output_dir=args.output
     )
 
-#python monitor/price_monitor.py --db database/option_strategies.db --interval 60
->>>>>>> 179e0738b19d0fed38d03e34bb0e4db40adf830f
+# python monitor/price_monitor.py --db database/option_strategies.db --interval 60
