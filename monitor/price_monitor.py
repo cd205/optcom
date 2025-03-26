@@ -199,6 +199,56 @@ def update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
         logger.error(f"Error updating strategy in database: {str(e)}")
         return False
 
+def update_price_check_info(db_path, strategy_id, current_price):
+    """
+    Update the last_price_when_checked and timestamp_of_price_when_last_checked columns
+    
+    Parameters:
+    db_path (str): Path to the SQLite database
+    strategy_id (int): ID of the strategy to update
+    current_price (float): Current price of the underlying
+    
+    Returns:
+    bool: True if update was successful, False otherwise
+    """
+    try:
+        # Connect to the database
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Set the current timestamp
+        current_timestamp = datetime.now().isoformat()
+        
+        # Update the record
+        cursor.execute(
+            """
+            UPDATE option_strategies 
+            SET last_price_when_checked = ?, timestamp_of_price_when_last_checked = ?
+            WHERE id = ?
+            """, 
+            (current_price, current_timestamp, strategy_id)
+        )
+        
+        # Commit changes
+        conn.commit()
+        
+        # Get number of rows affected
+        rows_affected = cursor.rowcount
+        
+        # Close connection
+        conn.close()
+        
+        if rows_affected > 0:
+            logger.debug(f"Updated price check info for strategy ID {strategy_id} in database")
+            return True
+        else:
+            logger.warning(f"No rows updated for price check info for strategy ID {strategy_id}")
+            return False
+        
+    except Exception as e:
+        logger.error(f"Error updating price check info in database: {str(e)}")
+        return False
+
 def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interval=60, max_runtime=None, output_dir=None):
     """
     Monitor prices for option strategies
@@ -313,15 +363,23 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
                     strategy_type = row['strategy_type']
                     strategy_id = row['id']
                     
-                    # Skip if this strategy is already triggered in the database
+                    if ticker not in last_prices:
+                        continue
+                        
+                    current_price = last_prices[ticker]
+                    
+                    # Update the last_price_when_checked and timestamp columns for every check
+                    update_price_check_info(db_path, strategy_id, current_price)
+                    
+                    # Skip checking trigger conditions if this strategy is already triggered
                     if strategy_id in already_triggered:
                         logger.debug(f"Skipping strategy ID {strategy_id} as it's already triggered")
                         continue
                     
-                    if ticker not in last_prices or pd.isna(row['trigger_price_value']):
+                    if pd.isna(row['trigger_price_value']):
                         continue
                         
-                    price_when_triggered = last_prices[ticker]
+                    price_when_triggered = current_price
                     trigger_price = row['trigger_price_value']
                     
                     # Record the current price in memory
@@ -406,4 +464,4 @@ if __name__ == "__main__":
         output_dir=args.output
     )
 
-#python monitor/price_monitor.py --db database/option_strategies.db --interval 60
+# python monitor/price_monitor.py --db database/option_strategies.db --interval 60
