@@ -402,16 +402,16 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
                         if update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
                             already_triggered.add(strategy_id)
                 
-                # Save current state to CSV for monitoring purposes
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                csv_path = os.path.join(output_dir, f"strategy_monitor_{timestamp}.csv")
-                strategies_df.to_csv(csv_path, index=False)
-                logger.info(f"Saved monitor state to {csv_path}")
+                # # Save current state to CSV for monitoring purposes
+                # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                # csv_path = os.path.join(output_dir, f"strategy_monitor_{timestamp}.csv")
+                # strategies_df.to_csv(csv_path, index=False)
+                # logger.info(f"Saved monitor state to {csv_path}")
                 
-                # Also save the latest snapshot with a fixed filename
-                latest_path = os.path.join(output_dir, "latest_strategy_status.csv")
-                strategies_df.to_csv(latest_path, index=False)
-                logger.info(f"Updated latest status file at {latest_path}")
+                # # Also save the latest snapshot with a fixed filename
+                # latest_path = os.path.join(output_dir, "latest_strategy_status.csv")
+                # strategies_df.to_csv(latest_path, index=False)
+                # logger.info(f"Updated latest status file at {latest_path}")
                 
                 # Wait for next check
                 logger.info(f"Waiting {check_interval} seconds until next check...")
