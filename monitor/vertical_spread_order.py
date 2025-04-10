@@ -300,8 +300,8 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         elif strategy_type == 'Bull Put':
             sell_contract = app.create_option_contract(ticker, expiry, strike_sell, "P")
             buy_contract = app.create_option_contract(ticker, expiry, strike_buy, "P")
-            combo_action = "SELL"
-            take_profit_action = "BUY"
+            combo_action = "BUY"
+            take_profit_action = "SELL"
             option_right = "P"
         else:
             logger.error(f"Unknown strategy type: {strategy_type}")
