@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# IBKR Market Order Script for Option Spreads with Take Profit
+# IBKR Market Order Script for Option Spreads - No Take Profit
 
 import sqlite3
 import pandas as pd
@@ -138,15 +138,32 @@ class IBApp(IBWrapper, IBClient):
         logger.info(f"Created combo contract for {symbol} with 2 legs")
         return contract
     
-    def create_limit_order(self, action, quantity, price, parent_id=None, transmit=True):
+    def create_limit_order(self, action, quantity, price):
+        """
+        Create a limit order with price rounded to the nearest valid increment
+        
+        Parameters:
+        action (str): "BUY" or "SELL"
+        quantity (int): Number of contracts
+        price (float): Desired price
+        
+        Returns:
+        Order: IBKR order object
+        """
+        # Round price to nearest $0.05 increment for most options
+        price_increment = 0.05
+        rounded_price = round(price / price_increment) * price_increment
+        
+        # Ensure at least 2 decimal places
+        rounded_price = round(rounded_price, 2)
+        
         order = Order()
         order.action = action
         order.orderType = "LMT"
         order.totalQuantity = quantity
-        order.lmtPrice = price
-        if parent_id is not None:
-            order.parentId = parent_id
-        order.transmit = transmit
+        order.lmtPrice = rounded_price
+        order.transmit = True
+        
         return order
     
     def get_contract_details(self, contract, req_id):
@@ -189,7 +206,7 @@ def get_strategies_for_date(db_path, date_str=None):
     SELECT * FROM option_strategies 
     WHERE date(scrape_date) = '{start_date}'
     AND timestamp_of_trigger IS NOT NULL
-    AND (strategy_status IS NULL OR strategy_status != 'order placed with take profit')
+    AND (strategy_status IS NULL OR strategy_status != 'order placed')
     """
     
     df = pd.read_sql_query(query, conn)
@@ -295,13 +312,11 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             sell_contract = app.create_option_contract(ticker, expiry, strike_sell, "C")
             buy_contract = app.create_option_contract(ticker, expiry, strike_buy, "C")
             combo_action = "SELL"
-            take_profit_action = "BUY"
             option_right = "C"
         elif strategy_type == 'Bull Put':
             sell_contract = app.create_option_contract(ticker, expiry, strike_sell, "P")
             buy_contract = app.create_option_contract(ticker, expiry, strike_buy, "P")
             combo_action = "BUY"
-            take_profit_action = "SELL"
             option_right = "P"
         else:
             logger.error(f"Unknown strategy type: {strategy_type}")
@@ -321,70 +336,19 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             update_strategy_status(db_path, row['id'], 'missing contract details', 0)
             continue
         
-        # Get market data
-        req_id_sell_price = app.next_order_id
-        app.next_order_id += 1
-        app.get_price_data(sell_contract, req_id_sell_price)
-        
-        req_id_buy_price = app.next_order_id
-        app.next_order_id += 1
-        app.get_price_data(buy_contract, req_id_buy_price)
-        
         try:
-            # Initialize prices
-            sell_price = None
-            buy_price = None
-            
-            # Try to get live prices
-            if req_id_sell_price in app.mid_prices:
-                prices = app.mid_prices[req_id_sell_price]
-                if prices.get('bid') and prices.get('ask') and prices.get('bid') > 0 and prices.get('ask') > 0:
-                    sell_price = (prices.get('bid') + prices.get('ask')) / 2
-                elif prices.get('model') and prices.get('model') > 0:
-                    sell_price = prices.get('model')
-                elif prices.get('last') and prices.get('last') > 0:
-                    sell_price = prices.get('last')
-            
-            if req_id_buy_price in app.mid_prices:
-                prices = app.mid_prices[req_id_buy_price]
-                if prices.get('bid') and prices.get('ask') and prices.get('bid') > 0 and prices.get('ask') > 0:
-                    buy_price = (prices.get('bid') + prices.get('ask')) / 2
-                elif prices.get('model') and prices.get('model') > 0:
-                    buy_price = prices.get('model')
-                elif prices.get('last') and prices.get('last') > 0:
-                    buy_price = prices.get('last')
-            
-            # If live prices aren't available, get historical prices
-            if not (sell_price and buy_price and sell_price > 0 and buy_price > 0):
-                logger.info("Live market data unavailable, using historical prices")
-                hist_sell_price, hist_buy_price = get_last_prices_from_db(
-                    db_path, ticker, strike_sell, strike_buy, option_right)
-                
-                if hist_sell_price and hist_sell_price > 0:
-                    sell_price = hist_sell_price
-                
-                if hist_buy_price and hist_buy_price > 0:
-                    buy_price = hist_buy_price
-            
-            # Final validation check
-            if not (sell_price and buy_price and sell_price > 0 and buy_price > 0):
-                logger.error("No valid price data available for one or both legs")
-                update_strategy_status(db_path, row['id'], 'no valid price data', 0)
+            # Use the estimated premium from the database
+            if estimated_premium is None or pd.isna(estimated_premium) or float(estimated_premium) <= 0:
+                logger.error(f"Invalid estimated premium: {estimated_premium}")
+                update_strategy_status(db_path, row['id'], 'invalid premium', 0)
                 continue
             
-            logger.info(f"Using prices - Sell: {sell_price}, Buy: {buy_price}")
+            # Convert the estimated premium to a limit price (divide by 100 as it's already for 100 shares)
+            limit_price = float(estimated_premium) / 100
+            limit_price = round(limit_price * 20) / 20  # Round to nearest 0.05 increment
             
-            # Calculate premium
-            premium_collected = sell_price - buy_price
-            premium_collected_dollar = premium_collected * 100
-            
-            logger.info(f"Premium collected: {premium_collected} per share, ${premium_collected_dollar:.2f} per contract")
-            logger.info(f"Estimated premium in database: ${estimated_premium:.2f} per contract")
-            
-            # Check if premium is sufficient
-            if premium_collected_dollar < estimated_premium:
-                update_strategy_status(db_path, row['id'], 'premium too low', premium_collected_dollar)
-                continue
+            logger.info(f"Using estimated premium: ${estimated_premium:.2f} per contract")
+            logger.info(f"Limit price for order: ${limit_price:.2f} per share")
             
             # Create and place orders
             sell_conId = sell_details['conId']
@@ -393,28 +357,15 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             combo_contract = app.create_combo_contract(
                 ticker, [buy_contract, sell_contract], [buy_conId, sell_conId])
             
-            # Calculate prices
-            take_profit_price = premium_collected / 2
-            entry_limit_price = premium_collected
-            
-            # Parent order (entry)
-            parent_order_id = app.next_order_id
+            # Place the entry order only
+            order_id = app.next_order_id
             app.next_order_id += 1
-            parent_order = app.create_limit_order(combo_action, 1, entry_limit_price, transmit=False)
+            order = app.create_limit_order(combo_action, 1, limit_price)
             
-            # Child order (take profit)
-            take_profit_order_id = app.next_order_id
-            app.next_order_id += 1
-            take_profit_order = app.create_limit_order(
-                take_profit_action, 1, take_profit_price, 
-                parent_id=parent_order_id, transmit=True)
+            app.placeOrder(order_id, combo_contract, order)
             
-            # Place the orders
-            app.placeOrder(parent_order_id, combo_contract, parent_order)
-            app.placeOrder(take_profit_order_id, combo_contract, take_profit_order)
-            
-            logger.info(f"Placed orders: Entry {parent_order_id}, Take profit {take_profit_order_id}")
-            update_strategy_status(db_path, row['id'], 'order placed with take profit', premium_collected_dollar)
+            logger.info(f"Placed entry order: ID {order_id}")
+            update_strategy_status(db_path, row['id'], 'order placed', estimated_premium)
             
         except Exception as e:
             logger.error(f"Error processing order: {str(e)}")
@@ -428,7 +379,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
     logger.info("Disconnected from IBKR")
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='IBKR Market Order Script for Option Spreads with Take Profit')
+    parser = argparse.ArgumentParser(description='IBKR Market Order Script for Option Spreads - No Take Profit')
     
     parser.add_argument('--db', type=str, default='../database/option_strategies.db',
                        help='Path to SQLite database')
