@@ -205,7 +205,7 @@ class IBApp(IBWrapper, IBClient):
         self.reqMktData(req_id, contract, "", False, False, [])
         
         # Wait for data to arrive
-        wait_time = A
+        wait_time = 5  # Wait up to 5 seconds for market data
         start_time = time.time()
         while time.time() - start_time < wait_time:
             # Check if we have received both bid and ask
