@@ -16956,3 +16956,660 @@
 2025-04-11 05:45:44,832 - INFO - Received termination signal. Shutting down gracefully...
 2025-04-11 05:45:45,728 - INFO - Price monitor completed successfully
 2025-04-11 05:45:45,729 - INFO - Trading system shutdown complete
+2025-04-11 07:42:09,240 - INFO - ================================================================================
+2025-04-11 07:42:09,247 - INFO - Starting automated trading system
+2025-04-11 07:42:09,249 - INFO - ================================================================================
+2025-04-11 07:42:29,880 - INFO - ================================================================================
+2025-04-11 07:42:29,881 - INFO - Starting automated trading system
+2025-04-11 07:42:29,883 - INFO - ================================================================================
+2025-04-11 07:42:29,898 - INFO - Starting cycle 1
+2025-04-11 07:42:29,900 - INFO - Starting price monitor...
+2025-04-11 07:42:29,903 - ERROR - Error running price monitor: No module named 'monitor'
+2025-04-11 07:42:29,906 - INFO - Starting order placement...
+2025-04-11 07:42:29,907 - ERROR - Error placing orders: No module named 'monitor'
+2025-04-11 07:42:29,909 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 07:44:16,272 - INFO - ================================================================================
+2025-04-11 07:44:16,274 - INFO - Starting automated trading system
+2025-04-11 07:44:16,275 - INFO - ================================================================================
+2025-04-11 07:44:17,814 - INFO - Starting cycle 1
+2025-04-11 07:44:17,816 - INFO - Starting price monitor...
+2025-04-11 07:44:17,818 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 07:44:17,818 - INFO - Starting order placement...
+2025-04-11 07:44:17,824 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 07:44:17,825 - INFO - Market closed orders allowed: True
+2025-04-11 07:44:17,829 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 07:44:17,835 - INFO - Found 1 strategies to process
+2025-04-11 07:44:17,842 - INFO - sent startApi
+2025-04-11 07:44:17,843 - INFO - REQUEST startApi {}
+2025-04-11 07:44:17,844 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x006972\x00\x00'
+2025-04-11 07:44:17,845 - INFO - ANSWER connectAck {}
+2025-04-11 07:44:17,851 - INFO - Next Valid Order ID: 1
+2025-04-11 07:44:17,893 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 07:44:17,896 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,898 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,899 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,899 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,900 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,902 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,903 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,904 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:44:17,905 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:44:17,907 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:44:17,908 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:44:17,909 - ERROR - Error -1: 0 - 2158
+2025-04-11 07:44:17,948 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 07:44:17,950 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 07:44:17,951 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 07:44:17,951 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647977184: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:44:17,952 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:44:18,136 - ERROR - Error 1: 0 - 200
+2025-04-11 07:44:20,959 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647976608: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:44:20,961 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:44:21,143 - ERROR - Error 2: 0 - 200
+2025-04-11 07:44:23,976 - ERROR - Could not get contract details for one or both legs
+2025-04-11 07:44:23,978 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 07:44:26,987 - INFO - disconnecting
+2025-04-11 07:44:26,988 - INFO - ANSWER connectionClosed {}
+2025-04-11 07:44:26,988 - INFO - Disconnected from IBKR
+2025-04-11 07:44:26,990 - INFO - Order placement completed successfully
+2025-04-11 07:44:26,990 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 07:45:27,051 - INFO - Starting cycle 2
+2025-04-11 07:45:27,052 - INFO - Starting price monitor...
+2025-04-11 07:45:27,053 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 07:45:27,054 - INFO - Starting order placement...
+2025-04-11 07:45:27,055 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 07:45:27,056 - INFO - Market closed orders allowed: True
+2025-04-11 07:45:27,058 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 07:45:27,061 - INFO - Found 1 strategies to process
+2025-04-11 07:45:27,067 - INFO - sent startApi
+2025-04-11 07:45:27,068 - INFO - REQUEST startApi {}
+2025-04-11 07:45:27,069 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x004577\x00\x00'
+2025-04-11 07:45:27,070 - INFO - ANSWER connectAck {}
+2025-04-11 07:45:27,073 - INFO - Next Valid Order ID: 1
+2025-04-11 07:45:27,114 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,115 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,116 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,117 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,118 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,119 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,120 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,120 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:45:27,121 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:45:27,122 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:45:27,124 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:45:27,126 - ERROR - Error -1: 0 - 2158
+2025-04-11 07:45:27,128 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 07:45:27,173 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 07:45:27,180 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 07:45:27,185 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 07:45:27,189 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647977520: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:45:27,189 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:45:27,377 - ERROR - Error 1: 0 - 200
+2025-04-11 07:45:30,195 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647977424: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:45:30,196 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:45:30,378 - ERROR - Error 2: 0 - 200
+2025-04-11 07:45:33,202 - ERROR - Could not get contract details for one or both legs
+2025-04-11 07:45:33,204 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 07:45:36,215 - INFO - disconnecting
+2025-04-11 07:45:36,216 - INFO - ANSWER connectionClosed {}
+2025-04-11 07:45:36,217 - INFO - Disconnected from IBKR
+2025-04-11 07:45:36,218 - INFO - Order placement completed successfully
+2025-04-11 07:45:36,219 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 07:46:36,280 - INFO - Starting cycle 3
+2025-04-11 07:46:36,281 - INFO - Starting price monitor...
+2025-04-11 07:46:36,282 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 07:46:36,282 - INFO - Starting order placement...
+2025-04-11 07:46:36,284 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 07:46:36,285 - INFO - Market closed orders allowed: True
+2025-04-11 07:46:36,289 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 07:46:36,293 - INFO - Found 1 strategies to process
+2025-04-11 07:46:36,300 - INFO - sent startApi
+2025-04-11 07:46:36,301 - INFO - REQUEST startApi {}
+2025-04-11 07:46:36,301 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009813\x00\x00'
+2025-04-11 07:46:36,303 - INFO - ANSWER connectAck {}
+2025-04-11 07:46:36,310 - INFO - Next Valid Order ID: 1
+2025-04-11 07:46:36,351 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,352 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,353 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,354 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,355 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,355 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,357 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,358 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:46:36,359 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:46:36,360 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:46:36,360 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:46:36,361 - ERROR - Error -1: 0 - 2158
+2025-04-11 07:46:36,362 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 07:46:36,405 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 07:46:36,407 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 07:46:36,408 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 07:46:36,410 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647975312: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:46:36,411 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:46:36,594 - ERROR - Error 1: 0 - 200
+2025-04-11 07:46:39,419 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647975024: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:46:39,420 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:46:39,601 - ERROR - Error 2: 0 - 200
+2025-04-11 07:46:42,429 - ERROR - Could not get contract details for one or both legs
+2025-04-11 07:46:42,431 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 07:46:45,439 - INFO - disconnecting
+2025-04-11 07:46:45,440 - INFO - ANSWER connectionClosed {}
+2025-04-11 07:46:45,441 - INFO - Disconnected from IBKR
+2025-04-11 07:46:45,442 - INFO - Order placement completed successfully
+2025-04-11 07:46:45,443 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 07:47:45,503 - INFO - Starting cycle 4
+2025-04-11 07:47:45,510 - INFO - Starting price monitor...
+2025-04-11 07:47:45,511 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 07:47:45,515 - INFO - Starting order placement...
+2025-04-11 07:47:45,516 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 07:47:45,517 - INFO - Market closed orders allowed: True
+2025-04-11 07:47:45,520 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 07:47:45,526 - INFO - Found 1 strategies to process
+2025-04-11 07:47:45,538 - INFO - sent startApi
+2025-04-11 07:47:45,539 - INFO - REQUEST startApi {}
+2025-04-11 07:47:45,540 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x005621\x00\x00'
+2025-04-11 07:47:45,541 - INFO - ANSWER connectAck {}
+2025-04-11 07:47:45,554 - INFO - Next Valid Order ID: 1
+2025-04-11 07:47:45,596 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 07:47:45,597 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,598 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,599 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,600 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,603 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,604 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,607 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,608 - ERROR - Error -1: 0 - 2104
+2025-04-11 07:47:45,609 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:47:45,610 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:47:45,611 - ERROR - Error -1: 0 - 2106
+2025-04-11 07:47:45,612 - ERROR - Error -1: 0 - 2158
+2025-04-11 07:47:45,643 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 07:47:45,644 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 07:47:45,646 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 07:47:45,647 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647979056: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:47:45,649 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:47:45,832 - ERROR - Error 1: 0 - 200
+2025-04-11 07:47:48,656 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647895792: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 07:47:48,658 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 07:47:48,838 - ERROR - Error 2: 0 - 200
+2025-04-11 07:47:51,663 - ERROR - Could not get contract details for one or both legs
+2025-04-11 07:47:51,665 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 07:47:54,673 - INFO - disconnecting
+2025-04-11 07:47:54,675 - INFO - ANSWER connectionClosed {}
+2025-04-11 07:47:54,676 - INFO - Disconnected from IBKR
+2025-04-11 07:47:54,677 - INFO - Order placement completed successfully
+2025-04-11 07:47:54,678 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 07:48:54,703 - INFO - Starting cycle 5
+2025-04-11 07:48:54,704 - INFO - Starting price monitor...
+2025-04-11 07:48:54,706 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 07:48:54,706 - INFO - Starting order placement...
+2025-04-11 07:48:54,707 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 07:48:54,708 - INFO - Market closed orders allowed: True
+2025-04-11 07:48:54,710 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 07:48:54,713 - INFO - Found 1 strategies to process
+2025-04-11 08:12:58,444 - INFO - sent startApi
+2025-04-11 08:12:58,451 - INFO - REQUEST startApi {}
+2025-04-11 08:12:58,452 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x003144\x00\x00'
+2025-04-11 08:12:58,453 - INFO - ANSWER connectAck {}
+2025-04-11 08:12:58,657 - INFO - Next Valid Order ID: 1
+2025-04-11 08:12:58,662 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 08:12:58,662 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 08:12:58,663 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 08:12:58,664 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647896128: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 08:12:58,665 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 08:12:58,678 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 08:12:58,719 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,720 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,720 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,721 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,722 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,723 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,724 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,727 - ERROR - Error -1: 0 - 2104
+2025-04-11 08:12:58,728 - ERROR - Error -1: 0 - 2106
+2025-04-11 08:12:58,730 - ERROR - Error -1: 0 - 2106
+2025-04-11 08:12:58,730 - ERROR - Error -1: 0 - 2106
+2025-04-11 08:12:58,732 - ERROR - Error -1: 0 - 2158
+2025-04-11 08:12:58,861 - ERROR - Error 1: 0 - 200
+2025-04-11 08:13:01,671 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647896272: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 08:13:01,672 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 08:13:01,856 - ERROR - Error 2: 0 - 200
+2025-04-11 08:13:04,680 - ERROR - Could not get contract details for one or both legs
+2025-04-11 08:13:04,682 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 08:13:07,692 - INFO - disconnecting
+2025-04-11 08:13:07,693 - INFO - ANSWER connectionClosed {}
+2025-04-11 08:13:07,693 - INFO - Disconnected from IBKR
+2025-04-11 08:13:07,695 - INFO - Order placement completed successfully
+2025-04-11 08:13:07,696 - INFO - Automated trading system completed
+2025-04-11 12:19:24,151 - INFO - ================================================================================
+2025-04-11 12:19:24,155 - INFO - Starting automated trading system
+2025-04-11 12:19:24,156 - INFO - ================================================================================
+2025-04-11 12:19:24,185 - INFO - Starting cycle 1
+2025-04-11 12:19:24,188 - INFO - Starting price monitor...
+2025-04-11 12:19:24,189 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:19:24,190 - INFO - Starting order placement...
+2025-04-11 12:19:24,192 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:19:24,194 - INFO - Market closed orders allowed: True
+2025-04-11 12:19:24,235 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:19:24,298 - INFO - Found 1 strategies to process
+2025-04-11 12:19:24,352 - INFO - sent startApi
+2025-04-11 12:19:24,353 - INFO - REQUEST startApi {}
+2025-04-11 12:19:24,356 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x006062\x00\x00'
+2025-04-11 12:19:24,359 - INFO - ANSWER connectAck {}
+2025-04-11 12:19:24,379 - INFO - Next Valid Order ID: 1
+2025-04-11 12:19:24,436 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:19:24,439 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,440 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,442 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,446 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,451 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,454 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,456 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,458 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:24,459 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:24,460 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:24,461 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:24,462 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:19:24,472 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:19:24,481 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:19:24,487 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:19:24,495 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647897136: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:19:24,497 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:19:24,696 - ERROR - Error 1: 0 - 200
+2025-04-11 12:19:27,515 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647897088: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:19:27,516 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:19:27,702 - ERROR - Error 2: 0 - 200
+2025-04-11 12:19:30,523 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:19:30,526 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:19:33,537 - INFO - disconnecting
+2025-04-11 12:19:33,538 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:19:33,539 - INFO - Disconnected from IBKR
+2025-04-11 12:19:33,540 - INFO - Order placement completed successfully
+2025-04-11 12:19:33,541 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:19:56,910 - INFO - ================================================================================
+2025-04-11 12:19:56,913 - INFO - Starting automated trading system
+2025-04-11 12:19:56,916 - INFO - ================================================================================
+2025-04-11 12:19:56,937 - INFO - Starting cycle 1
+2025-04-11 12:19:56,939 - INFO - Starting price monitor...
+2025-04-11 12:19:56,940 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:19:56,942 - INFO - Starting order placement...
+2025-04-11 12:19:56,943 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:19:56,943 - INFO - Market closed orders allowed: False
+2025-04-11 12:19:56,946 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:19:56,952 - INFO - Found 1 strategies to process
+2025-04-11 12:19:56,966 - INFO - sent startApi
+2025-04-11 12:19:56,971 - INFO - REQUEST startApi {}
+2025-04-11 12:19:56,972 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009758\x00\x00'
+2025-04-11 12:19:56,973 - INFO - ANSWER connectAck {}
+2025-04-11 12:19:56,979 - INFO - Next Valid Order ID: 1
+2025-04-11 12:19:57,020 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:19:57,021 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,023 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,024 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,025 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,026 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,028 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,029 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,030 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:19:57,033 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:57,035 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:57,036 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:19:57,040 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:19:57,077 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:19:57,079 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:19:57,080 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:19:57,090 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647893824: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:19:57,094 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:19:57,279 - ERROR - Error 1: 0 - 200
+2025-04-11 12:20:00,101 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647898144: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:20:00,102 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:20:00,282 - ERROR - Error 2: 0 - 200
+2025-04-11 12:20:03,112 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:20:03,114 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:20:06,122 - INFO - disconnecting
+2025-04-11 12:20:06,124 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:20:06,126 - INFO - Disconnected from IBKR
+2025-04-11 12:20:06,127 - INFO - Order placement completed successfully
+2025-04-11 12:20:06,128 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:21:06,188 - INFO - Starting cycle 2
+2025-04-11 12:21:06,190 - INFO - Starting price monitor...
+2025-04-11 12:21:06,190 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:21:06,191 - INFO - Starting order placement...
+2025-04-11 12:21:06,192 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:21:06,194 - INFO - Market closed orders allowed: False
+2025-04-11 12:21:06,195 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:21:06,200 - INFO - Found 1 strategies to process
+2025-04-11 12:21:06,205 - INFO - sent startApi
+2025-04-11 12:21:06,206 - INFO - REQUEST startApi {}
+2025-04-11 12:21:06,207 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009579\x00\x00'
+2025-04-11 12:21:06,208 - INFO - ANSWER connectAck {}
+2025-04-11 12:21:06,210 - INFO - Next Valid Order ID: 1
+2025-04-11 12:21:06,251 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,252 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,254 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:21:06,255 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,257 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,258 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,258 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,259 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,260 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:21:06,261 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:21:06,262 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:21:06,262 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:21:06,264 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:21:06,309 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:21:06,310 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:21:06,311 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:21:06,311 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647902320: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:21:06,312 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:21:06,495 - ERROR - Error 1: 0 - 200
+2025-04-11 12:21:09,323 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647896896: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:21:09,324 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:21:09,506 - ERROR - Error 2: 0 - 200
+2025-04-11 12:21:12,332 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:21:12,335 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:21:15,342 - INFO - disconnecting
+2025-04-11 12:21:15,344 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:21:15,345 - INFO - Disconnected from IBKR
+2025-04-11 12:21:15,347 - INFO - Order placement completed successfully
+2025-04-11 12:21:15,348 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:22:15,408 - INFO - Starting cycle 3
+2025-04-11 12:22:15,409 - INFO - Starting price monitor...
+2025-04-11 12:22:15,410 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:22:15,411 - INFO - Starting order placement...
+2025-04-11 12:22:15,412 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:22:15,412 - INFO - Market closed orders allowed: False
+2025-04-11 12:22:15,414 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:22:15,418 - INFO - Found 1 strategies to process
+2025-04-11 12:22:15,422 - INFO - sent startApi
+2025-04-11 12:22:15,424 - INFO - REQUEST startApi {}
+2025-04-11 12:22:15,425 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x005831\x00\x00'
+2025-04-11 12:22:15,426 - INFO - ANSWER connectAck {}
+2025-04-11 12:22:15,432 - INFO - Next Valid Order ID: 1
+2025-04-11 12:22:15,470 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,471 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,472 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,472 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,473 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,474 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,474 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:22:15,477 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,481 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:22:15,482 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:22:15,483 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:22:15,484 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:22:15,489 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:22:15,530 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:22:15,533 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:22:15,534 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:22:15,534 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647983232: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:22:15,536 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:22:15,717 - ERROR - Error 1: 0 - 200
+2025-04-11 12:22:18,541 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647980928: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:22:18,542 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:22:18,724 - ERROR - Error 2: 0 - 200
+2025-04-11 12:22:21,552 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:22:21,555 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:22:24,564 - INFO - disconnecting
+2025-04-11 12:22:24,567 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:22:24,569 - INFO - Disconnected from IBKR
+2025-04-11 12:22:24,570 - INFO - Order placement completed successfully
+2025-04-11 12:22:24,570 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:23:24,632 - INFO - Starting cycle 4
+2025-04-11 12:23:24,633 - INFO - Starting price monitor...
+2025-04-11 12:23:24,634 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:23:24,635 - INFO - Starting order placement...
+2025-04-11 12:23:24,636 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:23:24,637 - INFO - Market closed orders allowed: False
+2025-04-11 12:23:24,638 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:23:24,642 - INFO - Found 1 strategies to process
+2025-04-11 12:23:24,648 - INFO - sent startApi
+2025-04-11 12:23:24,649 - INFO - REQUEST startApi {}
+2025-04-11 12:23:24,650 - INFO - SENDING startApi b'\x00\x00\x00\n71\x002\x00236\x00\x00'
+2025-04-11 12:23:24,651 - INFO - ANSWER connectAck {}
+2025-04-11 12:23:24,657 - INFO - Next Valid Order ID: 1
+2025-04-11 12:23:24,697 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,698 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,698 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,699 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,700 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,700 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,702 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,702 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:23:24,703 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:23:24,705 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:23:24,706 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:23:24,707 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:23:24,707 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:23:24,753 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:23:24,754 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:23:24,755 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:23:24,757 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647897472: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:23:24,758 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:23:24,939 - ERROR - Error 1: 0 - 200
+2025-04-11 12:23:27,766 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647978336: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:23:27,767 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:23:27,948 - ERROR - Error 2: 0 - 200
+2025-04-11 12:23:30,773 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:23:30,775 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:23:33,782 - INFO - disconnecting
+2025-04-11 12:23:33,783 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:23:33,785 - INFO - Disconnected from IBKR
+2025-04-11 12:23:33,787 - INFO - Order placement completed successfully
+2025-04-11 12:23:33,788 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:24:33,843 - INFO - Starting cycle 5
+2025-04-11 12:24:33,843 - INFO - Starting price monitor...
+2025-04-11 12:24:33,845 - ERROR - Error running price monitor: cannot import name 'run_price_monitor' from 'monitor.price_monitor' (/home/chris_s_dodd/source/optcom/monitor/../monitor/price_monitor.py)
+2025-04-11 12:24:33,847 - INFO - Starting order placement...
+2025-04-11 12:24:33,848 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:24:33,850 - INFO - Market closed orders allowed: False
+2025-04-11 12:24:33,852 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:24:33,856 - INFO - Found 1 strategies to process
+2025-04-11 12:24:33,868 - INFO - sent startApi
+2025-04-11 12:24:33,869 - INFO - REQUEST startApi {}
+2025-04-11 12:24:33,871 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x001736\x00\x00'
+2025-04-11 12:24:33,872 - INFO - ANSWER connectAck {}
+2025-04-11 12:24:33,881 - INFO - Next Valid Order ID: 1
+2025-04-11 12:24:33,921 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:24:33,922 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,922 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,924 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,924 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,925 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,926 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,927 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,928 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:24:33,929 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:24:33,931 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:24:33,932 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:24:33,933 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:24:33,977 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:24:33,978 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:24:33,979 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:24:33,980 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647902944: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:24:33,981 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:24:34,171 - ERROR - Error 1: 0 - 200
+2025-04-11 12:24:36,994 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647903328: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:24:36,995 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:24:37,182 - ERROR - Error 2: 0 - 200
+2025-04-11 12:24:40,008 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:24:40,011 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:24:43,021 - INFO - disconnecting
+2025-04-11 12:24:43,022 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:24:43,026 - INFO - Disconnected from IBKR
+2025-04-11 12:24:43,030 - INFO - Order placement completed successfully
+2025-04-11 12:24:43,032 - INFO - Automated trading system completed
+2025-04-11 12:35:11,259 - INFO - ================================================================================
+2025-04-11 12:35:11,262 - INFO - Starting automated trading system
+2025-04-11 12:35:11,263 - INFO - ================================================================================
+2025-04-11 12:35:11,280 - INFO - Starting cycle 1
+2025-04-11 12:35:11,282 - INFO - Starting price monitor...
+2025-04-11 12:35:11,286 - ERROR - Error running price monitor: module 'price_monitor' has no attribute 'run_price_monitor'
+2025-04-11 12:35:11,288 - INFO - Starting order placement...
+2025-04-11 12:35:11,290 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:35:11,290 - INFO - Market closed orders allowed: True
+2025-04-11 12:35:11,292 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:35:11,301 - INFO - Found 1 strategies to process
+2025-04-11 12:35:11,314 - INFO - sent startApi
+2025-04-11 12:35:11,315 - INFO - REQUEST startApi {}
+2025-04-11 12:35:11,316 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x001134\x00\x00'
+2025-04-11 12:35:11,317 - INFO - ANSWER connectAck {}
+2025-04-11 12:35:11,320 - INFO - Next Valid Order ID: 1
+2025-04-11 12:35:11,361 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:35:11,362 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,363 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,364 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,364 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,365 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,365 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,366 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,366 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:35:11,367 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:35:11,368 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:35:11,371 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:35:11,371 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:35:11,419 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:35:11,420 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:35:11,421 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:35:11,421 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647985872: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:35:11,424 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:35:11,610 - ERROR - Error 1: 0 - 200
+2025-04-11 12:35:14,431 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647983472: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:35:14,432 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:35:14,616 - ERROR - Error 2: 0 - 200
+2025-04-11 12:35:17,439 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:35:17,442 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:35:20,454 - INFO - disconnecting
+2025-04-11 12:35:20,455 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:35:20,456 - INFO - Disconnected from IBKR
+2025-04-11 12:35:20,456 - INFO - Order placement completed successfully
+2025-04-11 12:35:20,458 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:36:20,519 - INFO - Starting cycle 2
+2025-04-11 12:36:20,520 - INFO - Starting price monitor...
+2025-04-11 12:36:20,521 - ERROR - Error running price monitor: module 'price_monitor' has no attribute 'run_price_monitor'
+2025-04-11 12:36:20,521 - INFO - Starting order placement...
+2025-04-11 12:36:20,523 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:36:20,523 - INFO - Market closed orders allowed: True
+2025-04-11 12:36:20,526 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:36:20,530 - INFO - Found 1 strategies to process
+2025-04-11 12:36:20,540 - INFO - sent startApi
+2025-04-11 12:36:20,540 - INFO - REQUEST startApi {}
+2025-04-11 12:36:20,542 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x002872\x00\x00'
+2025-04-11 12:36:20,543 - INFO - ANSWER connectAck {}
+2025-04-11 12:36:20,550 - INFO - Next Valid Order ID: 1
+2025-04-11 12:36:20,589 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:36:20,590 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,591 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,592 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,594 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,594 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,596 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,596 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,597 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:36:20,597 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:36:20,598 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:36:20,599 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:36:20,599 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:36:20,647 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:36:20,647 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:36:20,648 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:36:20,649 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647988608: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:36:20,651 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:36:20,832 - ERROR - Error 1: 0 - 200
+2025-04-11 12:36:23,656 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647988944: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:36:23,657 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:36:23,838 - ERROR - Error 2: 0 - 200
+2025-04-11 12:36:26,667 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:36:26,670 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:36:29,677 - INFO - disconnecting
+2025-04-11 12:36:29,678 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:36:29,679 - INFO - Disconnected from IBKR
+2025-04-11 12:36:29,680 - INFO - Order placement completed successfully
+2025-04-11 12:36:29,681 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:41:24,642 - INFO - ================================================================================
+2025-04-11 12:41:24,643 - INFO - Starting automated trading system
+2025-04-11 12:41:24,644 - INFO - ================================================================================
+2025-04-11 12:41:24,646 - INFO - Starting cycle 1
+2025-04-11 12:41:24,647 - INFO - Starting price monitor...
+2025-04-11 12:41:24,648 - ERROR - Error running price monitor: module 'price_monitor' has no attribute 'run_price_monitor'
+2025-04-11 12:41:24,648 - INFO - Starting order placement...
+2025-04-11 12:41:24,650 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:41:24,650 - INFO - Market closed orders allowed: True
+2025-04-11 12:41:24,653 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:41:24,659 - INFO - Found 1 strategies to process
+2025-04-11 12:41:24,677 - INFO - sent startApi
+2025-04-11 12:41:24,679 - INFO - REQUEST startApi {}
+2025-04-11 12:41:24,679 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x003925\x00\x00'
+2025-04-11 12:41:24,680 - INFO - ANSWER connectAck {}
+2025-04-11 12:41:24,684 - INFO - Next Valid Order ID: 1
+2025-04-11 12:41:24,725 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:41:24,726 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,728 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,728 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,729 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,730 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,732 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,733 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,733 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:41:24,734 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:41:24,735 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:41:24,736 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:41:24,737 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:41:24,784 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:41:24,786 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:41:24,787 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:41:24,788 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647981552: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:41:24,789 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:41:24,975 - ERROR - Error 1: 0 - 200
+2025-04-11 12:41:27,797 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647988752: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:41:27,798 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:41:27,982 - ERROR - Error 2: 0 - 200
+2025-04-11 12:41:30,804 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:41:30,807 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:41:33,814 - INFO - disconnecting
+2025-04-11 12:41:33,816 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:41:33,816 - INFO - Disconnected from IBKR
+2025-04-11 12:41:33,817 - INFO - Order placement completed successfully
+2025-04-11 12:41:33,819 - INFO - Waiting 60 seconds until next cycle...
+2025-04-11 12:42:33,879 - INFO - Starting cycle 2
+2025-04-11 12:42:33,880 - INFO - Starting price monitor...
+2025-04-11 12:42:33,881 - ERROR - Error running price monitor: module 'price_monitor' has no attribute 'run_price_monitor'
+2025-04-11 12:42:33,882 - INFO - Starting order placement...
+2025-04-11 12:42:33,884 - INFO - Processing strategies for date: 2025-04-11
+2025-04-11 12:42:33,885 - INFO - Market closed orders allowed: True
+2025-04-11 12:42:33,887 - INFO - Getting strategies for date: 2025-04-11
+2025-04-11 12:42:33,893 - INFO - Found 1 strategies to process
+2025-04-11 12:42:33,900 - INFO - sent startApi
+2025-04-11 12:42:33,901 - INFO - REQUEST startApi {}
+2025-04-11 12:42:33,902 - INFO - SENDING startApi b'\x00\x00\x00\x0b71\x002\x009012\x00\x00'
+2025-04-11 12:42:33,904 - INFO - ANSWER connectAck {}
+2025-04-11 12:42:33,912 - INFO - Next Valid Order ID: 1
+2025-04-11 12:42:33,952 - INFO - ANSWER managedAccounts {'accountsList': 'DU9233079'}
+2025-04-11 12:42:33,953 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,954 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,955 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,956 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,957 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,958 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,959 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,960 - ERROR - Error -1: 0 - 2104
+2025-04-11 12:42:33,960 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:42:33,962 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:42:33,962 - ERROR - Error -1: 0 - 2106
+2025-04-11 12:42:33,963 - ERROR - Error -1: 0 - 2158
+2025-04-11 12:42:34,008 - INFO - Processing Bull Put for BBY, expiry 2025-04-25
+2025-04-11 12:42:34,012 - INFO - Created option contract: BBY 20250425 690.0 P
+2025-04-11 12:42:34,016 - INFO - Created option contract: BBY 20250425 680.0 P
+2025-04-11 12:42:34,017 - INFO - REQUEST reqContractDetails {'reqId': 1, 'contract': 123416647981264: 0,BBY,OPT,20250425,,690,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:42:34,018 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x001\x000\x00BBY\x00OPT\x0020250425\x00690.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:42:34,201 - ERROR - Error 1: 0 - 200
+2025-04-11 12:42:37,025 - INFO - REQUEST reqContractDetails {'reqId': 2, 'contract': 123416647986784: 0,BBY,OPT,20250425,,680,P,100,SMART,,USD,,,False,,,,combo:}
+2025-04-11 12:42:37,028 - INFO - SENDING reqContractDetails b'\x00\x00\x0079\x008\x002\x000\x00BBY\x00OPT\x0020250425\x00680.0\x00P\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x00\x00\x00'
+2025-04-11 12:42:37,212 - ERROR - Error 2: 0 - 200
+2025-04-11 12:42:40,035 - ERROR - Could not get contract details for one or both legs
+2025-04-11 12:42:40,037 - INFO - Updated row 312 with status: missing contract details, premium: 0
+2025-04-11 12:42:43,045 - INFO - disconnecting
+2025-04-11 12:42:43,046 - INFO - ANSWER connectionClosed {}
+2025-04-11 12:42:43,047 - INFO - Disconnected from IBKR
+2025-04-11 12:42:43,048 - INFO - Order placement completed successfully
+2025-04-11 12:42:43,049 - INFO - Waiting 60 seconds until next cycle...
