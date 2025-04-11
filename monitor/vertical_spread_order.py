@@ -145,7 +145,7 @@ class IBApp(IBWrapper, IBClient):
     
     def create_limit_order(self, action, quantity, price):
         """
-        Create a limit order with price rounded to the nearest valid increment
+        Create a limit order with time in force of 1 DAY
         
         Parameters:
         action (str): "BUY" or "SELL"
@@ -155,6 +155,11 @@ class IBApp(IBWrapper, IBClient):
         Returns:
         Order: IBKR order object
         """
+        # Ensure price is negative for vertical spreads
+        # Negative price means we're collecting a credit
+        if price > 0:
+            price = -abs(price)
+        
         # Round price to nearest $0.05 increment for most options
         price_increment = 0.05
         rounded_price = round(price / price_increment) * price_increment
@@ -165,10 +170,12 @@ class IBApp(IBWrapper, IBClient):
         order = Order()
         order.action = action
         order.orderType = "LMT"
-        order.totalQuantity = quantity
+        order.totalQuantity = quantity  # Always set to 1
         order.lmtPrice = rounded_price
+        order.tif = "DAY"  # Set time in force to 1 DAY
         order.transmit = True
         
+        logger.info(f"Created {action} limit order: Quantity={quantity}, Price=${rounded_price:.2f}, TIF=DAY")
         return order
     
     def get_contract_details(self, contract, req_id):
@@ -435,7 +442,9 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             
             # Determine if we should place an order
             place_order = False
-            limit_price = float(estimated_premium) / 100
+            
+            # Ensure price is negative for credit collected
+            limit_price = -abs(float(estimated_premium) / 100)
             limit_price = round(limit_price * 20) / 20  # Round to nearest 0.05 increment
             
             if market_premium is not None:
@@ -447,7 +456,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
                     place_order = True
                     logger.info(f"Market premium (${market_premium:.2f}) is >= estimated premium (${estimated_premium:.2f})")
                     # Use market premium for limit price when it's better
-                    market_limit_price = market_premium / 100
+                    market_limit_price = -abs(market_premium / 100)  # Make sure it's negative
                     market_limit_price = round(market_limit_price * 20) / 20  # Round to nearest 0.05
                     limit_price = market_limit_price
                 else:
@@ -468,7 +477,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             
             # Place the order if conditions are met
             if place_order:
-                logger.info(f"Placing order with limit price: ${limit_price:.2f} per share")
+                logger.info(f"Placing order with limit price: ${limit_price:.2f} per share (TIF=DAY, Quantity=1)")
                 
                 # Create and place orders
                 sell_conId = sell_details['conId']
