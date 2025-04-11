@@ -38,6 +38,7 @@ class IBWrapper(EWrapper):
         self.contract_details = {}
         self.mid_prices = {}
         self.combo_ids = {}
+        self.market_status = "unknown"  # To track market status
 
     @iswrapper
     def nextValidId(self, orderId: int):
@@ -63,6 +64,10 @@ class IBWrapper(EWrapper):
     @iswrapper
     def error(self, reqId, errorCode, errorString, advancedOrderRejectJson="", connectionClosed=False):
         logger.error(f"Error {reqId}: {errorCode} - {errorString}")
+        # Check for market closed error codes
+        if errorCode in [2104, 2119]:  # Known IBKR error codes for market closed
+            self.market_status = "closed"
+            logger.warning(f"Market appears to be closed: {errorString}")
         
     @iswrapper
     def contractDetails(self, reqId, contractDetails):
@@ -177,19 +182,51 @@ class IBApp(IBWrapper, IBClient):
         return self.combo_ids.get(req_id)
 
     def get_price_data(self, contract, req_id):
-        logger.info(f"Requesting market data for {contract.symbol} {contract.strike} {contract.right} (req_id: {req_id})")
-        self.reqMktData(req_id, contract, "", False, False, [])
-        time.sleep(5)
+        """
+        Request and retrieve market data for a contract.
         
+        Parameters:
+        contract (Contract): Option contract
+        req_id (int): Request ID to track this specific request
+        
+        Returns:
+        dict: Pricing data including bid, ask, last, and model prices
+        """
+        logger.info(f"Requesting market data for {contract.symbol} {contract.strike} {contract.right} (req_id: {req_id})")
+        
+        # Clear any previous data for this req_id
         if req_id in self.mid_prices:
-            bid = self.mid_prices[req_id].get("bid")
-            ask = self.mid_prices[req_id].get("ask")
-            if bid is not None and ask is not None:
-                logger.info(f"Received market data for req_id {req_id}: Bid={bid}, Ask={ask}")
-            else:
-                logger.warning(f"Incomplete market data for req_id {req_id}: Bid={bid}, Ask={ask}")
+            del self.mid_prices[req_id]
+            
+        # Initialize with empty data
+        self.mid_prices[req_id] = {"bid": None, "ask": None, "last": None, "model": None}
+        
+        # Request market data
+        self.reqMktData(req_id, contract, "", False, False, [])
+        
+        # Wait for data to arrive
+        wait_time = A
+        start_time = time.time()
+        while time.time() - start_time < wait_time:
+            # Check if we have received both bid and ask
+            if (self.mid_prices[req_id]["bid"] is not None and 
+                self.mid_prices[req_id]["ask"] is not None):
+                # We have our data, no need to wait further
+                break
+            time.sleep(0.2)
+        
+        # Cancel the market data subscription
+        self.cancelMktData(req_id)
+        
+        # Return the price data
+        data = self.mid_prices.get(req_id, {"bid": None, "ask": None, "last": None, "model": None})
+        
+        if data["bid"] is not None and data["ask"] is not None:
+            logger.info(f"Received market data for req_id {req_id}: Bid={data['bid']}, Ask={data['ask']}")
         else:
-            logger.warning(f"No market data received for req_id {req_id}")
+            logger.warning(f"Incomplete market data for req_id {req_id}: Bid={data['bid']}, Ask={data['ask']}")
+            
+        return data
 
 def get_strategies_for_date(db_path, date_str=None):
     conn = sqlite3.connect(db_path)
@@ -262,7 +299,47 @@ def update_strategy_status(db_path, row_id, status, premium):
     conn.commit()
     conn.close()
 
-def run_trading_app(db_path='../database/option_strategies.db', target_date=None, ibkr_host='127.0.0.1', ibkr_port=7497, client_id=None):
+def calculate_spread_premium(sell_data, buy_data):
+    """
+    Calculate the current market premium for a vertical spread
+    
+    Parameters:
+    sell_data (dict): Market data for the sell leg
+    buy_data (dict): Market data for the buy leg
+    
+    Returns:
+    tuple: (premium amount, description of calculation method used)
+    """
+    premium = None
+    calc_method = "unknown"
+    
+    # Check if we have bid/ask for both legs
+    if (sell_data["bid"] is not None and sell_data["ask"] is not None and
+        buy_data["bid"] is not None and buy_data["ask"] is not None):
+        # Use midpoint prices for more accurate premium calculation
+        sell_midpoint = (sell_data["bid"] + sell_data["ask"]) / 2
+        buy_midpoint = (buy_data["bid"] + buy_data["ask"]) / 2
+        premium = (sell_midpoint - buy_midpoint) * 100  # Convert to premium per contract
+        calc_method = "midpoint"
+    # Fallback to bid/ask if midpoints can't be calculated
+    elif sell_data["bid"] is not None and buy_data["ask"] is not None:
+        # Conservative estimate: what we can sell at bid and buy at ask
+        premium = (sell_data["bid"] - buy_data["ask"]) * 100
+        calc_method = "conservative"
+    # Use last prices if available
+    elif sell_data["last"] is not None and buy_data["last"] is not None:
+        premium = (sell_data["last"] - buy_data["last"]) * 100
+        calc_method = "last"
+    # Use model prices if available
+    elif sell_data["model"] is not None and buy_data["model"] is not None:
+        premium = (sell_data["model"] - buy_data["model"]) * 100
+        calc_method = "model"
+        
+    return premium, calc_method
+
+def run_trading_app(db_path='../database/option_strategies.db', target_date=None, 
+                   ibkr_host='127.0.0.1', ibkr_port=7497, client_id=None, 
+                   allow_market_closed=False):
     if target_date is None:
         target_date = datetime.datetime.now().strftime('%Y-%m-%d')
     
@@ -270,6 +347,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         client_id = random.randint(100, 9999)
     
     logger.info(f"Processing strategies for date: {target_date}")
+    logger.info(f"Market closed orders allowed: {allow_market_closed}")
     
     # Get strategies
     df = get_strategies_for_date(db_path, target_date)
@@ -337,35 +415,82 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
             continue
         
         try:
-            # Use the estimated premium from the database
+            # Check for valid estimated premium
             if estimated_premium is None or pd.isna(estimated_premium) or float(estimated_premium) <= 0:
                 logger.error(f"Invalid estimated premium: {estimated_premium}")
                 update_strategy_status(db_path, row['id'], 'invalid premium', 0)
                 continue
             
-            # Convert the estimated premium to a limit price (divide by 100 as it's already for 100 shares)
+            # Get current market prices
+            req_id_sell_price = app.next_order_id
+            app.next_order_id += 1
+            sell_price_data = app.get_price_data(sell_contract, req_id_sell_price)
+            
+            req_id_buy_price = app.next_order_id
+            app.next_order_id += 1
+            buy_price_data = app.get_price_data(buy_contract, req_id_buy_price)
+            
+            # Calculate the actual market premium
+            market_premium, calc_method = calculate_spread_premium(sell_price_data, buy_price_data)
+            
+            # Determine if we should place an order
+            place_order = False
             limit_price = float(estimated_premium) / 100
             limit_price = round(limit_price * 20) / 20  # Round to nearest 0.05 increment
             
-            logger.info(f"Using estimated premium: ${estimated_premium:.2f} per contract")
-            logger.info(f"Limit price for order: ${limit_price:.2f} per share")
+            if market_premium is not None:
+                logger.info(f"Calculated market premium: ${market_premium:.2f} using {calc_method} method")
+                logger.info(f"Estimated premium: ${estimated_premium:.2f}")
+                
+                # Compare estimated vs market premium
+                if market_premium >= float(estimated_premium):
+                    place_order = True
+                    logger.info(f"Market premium (${market_premium:.2f}) is >= estimated premium (${estimated_premium:.2f})")
+                    # Use market premium for limit price when it's better
+                    market_limit_price = market_premium / 100
+                    market_limit_price = round(market_limit_price * 20) / 20  # Round to nearest 0.05
+                    limit_price = market_limit_price
+                else:
+                    logger.info(f"Market premium (${market_premium:.2f}) is less than estimated premium (${estimated_premium:.2f})")
+                    # Check if market is closed but we're allowed to place orders
+                    if app.market_status == "closed" and allow_market_closed:
+                        place_order = True
+                        logger.info("Market appears closed but allow_market_closed flag is set, placing order with estimated premium")
+            else:
+                logger.warning("Could not calculate market premium")
+                # If market is closed but we allow orders, use estimated premium
+                if app.market_status == "closed" and allow_market_closed:
+                    place_order = True
+                    logger.info("Market appears closed but allow_market_closed flag is set, using estimated premium")
+                else:
+                    update_strategy_status(db_path, row['id'], 'insufficient market data', 0)
+                    continue
             
-            # Create and place orders
-            sell_conId = sell_details['conId']
-            buy_conId = buy_details['conId']
-            
-            combo_contract = app.create_combo_contract(
-                ticker, [buy_contract, sell_contract], [buy_conId, sell_conId])
-            
-            # Place the entry order only
-            order_id = app.next_order_id
-            app.next_order_id += 1
-            order = app.create_limit_order(combo_action, 1, limit_price)
-            
-            app.placeOrder(order_id, combo_contract, order)
-            
-            logger.info(f"Placed entry order: ID {order_id}")
-            update_strategy_status(db_path, row['id'], 'order placed', estimated_premium)
+            # Place the order if conditions are met
+            if place_order:
+                logger.info(f"Placing order with limit price: ${limit_price:.2f} per share")
+                
+                # Create and place orders
+                sell_conId = sell_details['conId']
+                buy_conId = buy_details['conId']
+                
+                combo_contract = app.create_combo_contract(
+                    ticker, [buy_contract, sell_contract], [buy_conId, sell_conId])
+                
+                # Place the entry order
+                order_id = app.next_order_id
+                app.next_order_id += 1
+                order = app.create_limit_order(combo_action, 1, limit_price)
+                
+                app.placeOrder(order_id, combo_contract, order)
+                
+                logger.info(f"Placed entry order: ID {order_id}")
+                update_strategy_status(db_path, row['id'], 'order placed', 
+                                      market_premium if market_premium is not None else estimated_premium)
+            else:
+                logger.info("No order placed due to insufficient premium")
+                update_strategy_status(db_path, row['id'], 'premium too low', 
+                                      market_premium if market_premium is not None else 0)
             
         except Exception as e:
             logger.error(f"Error processing order: {str(e)}")
@@ -391,6 +516,8 @@ def parse_arguments():
                        help='Target date for strategies (YYYY-MM-DD format, default: today)')
     parser.add_argument('--client', type=int, default=None,
                        help='Client ID for IBKR connection (random if not specified)')
+    parser.add_argument('--allow-market-closed', action='store_true',
+                       help='Allow orders to be placed even if market is closed')
     
     return parser.parse_args()
 
@@ -402,5 +529,6 @@ if __name__ == "__main__":
         target_date=args.date,
         ibkr_host=args.host,
         ibkr_port=args.port,
-        client_id=args.client
+        client_id=args.client,
+        allow_market_closed=args.allow_market_closed
     )
