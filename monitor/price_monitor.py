@@ -50,7 +50,8 @@ def get_todays_strategies(db_path):
             WHERE scrape_date LIKE '{today}%'
             ORDER BY strategy_type, tab_name
         """
-        
+        print('hello')
+
         # Execute query and load into DataFrame
         df = pd.read_sql_query(query, conn)
         
@@ -59,7 +60,7 @@ def get_todays_strategies(db_path):
         
         # Check if we have data for today
         if len(df) == 0:
-            logger.warning(f"No strategy data found for today ({today})")
+            logger.warning(f"No0000 strategy data found for today ({today})")
             return pd.DataFrame()   # comment if bock below 
         
         # # Uncomment below to run for data that wasn;t scraped today
