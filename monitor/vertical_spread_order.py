@@ -396,7 +396,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         if strategy_type == 'Bear Call':
             sell_contract = app.create_option_contract(ticker, expiry, strike_sell, "C")
             buy_contract = app.create_option_contract(ticker, expiry, strike_buy, "C")
-            combo_action = "SELL"
+            combo_action = "BUY"
             option_right = "C"
         elif strategy_type == 'Bull Put':
             sell_contract = app.create_option_contract(ticker, expiry, strike_sell, "P")
