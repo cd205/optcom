@@ -182,7 +182,7 @@ class IBApp(IBWrapper, IBClient):
         self.combo_ids[req_id] = None
         self.reqContractDetails(req_id, contract)
         
-        wait_time = 3
+        wait_time = 8
         start_time = time.time()
         while self.combo_ids[req_id] is None and time.time() - start_time < wait_time:
             time.sleep(0.1)
@@ -212,7 +212,7 @@ class IBApp(IBWrapper, IBClient):
         self.reqMktData(req_id, contract, "", False, False, [])
         
         # Wait for data to arrive
-        wait_time = 5  # Wait up to 5 seconds for market data
+        wait_time = 8  # Wait up to 5 seconds for market data
         start_time = time.time()
         while time.time() - start_time < wait_time:
             # Check if we have received both bid and ask
