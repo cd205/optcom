@@ -1,2 +1,0 @@
-id,scrape_date,strategy_type,tab_name,ticker,trigger_price,strike_price,estimated_premium,item_id,options_expiry_date,date_info,triggered,trigger_price_value
-18,2025-03-08T06:06:54.242743,Bull Put,Minimal Risk 97-99% accuracy > longer expiry,TQQQ,62.25,sell 60.0 - buy 50.0,210,3,2025-03-28,March,,62.25
