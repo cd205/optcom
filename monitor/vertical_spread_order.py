@@ -320,25 +320,35 @@ def calculate_spread_premium(sell_data, buy_data):
     premium = None
     calc_method = "unknown"
     
-    # Check if we have bid/ask for both legs
+    # Check for -1.0 prices which indicate no market data available
+    if (sell_data["bid"] == -1.0 or sell_data["ask"] == -1.0 or 
+        buy_data["bid"] == -1.0 or buy_data["ask"] == -1.0):
+        return None, "no_market_data"
+    
+    # Check if we have valid bid/ask for both legs
     if (sell_data["bid"] is not None and sell_data["ask"] is not None and
-        buy_data["bid"] is not None and buy_data["ask"] is not None):
+        buy_data["bid"] is not None and buy_data["ask"] is not None and
+        sell_data["bid"] > 0 and sell_data["ask"] > 0 and
+        buy_data["bid"] > 0 and buy_data["ask"] > 0):
         # Use midpoint prices for more accurate premium calculation
         sell_midpoint = (sell_data["bid"] + sell_data["ask"]) / 2
         buy_midpoint = (buy_data["bid"] + buy_data["ask"]) / 2
         premium = (sell_midpoint - buy_midpoint) * 100  # Convert to premium per contract
         calc_method = "midpoint"
     # Fallback to bid/ask if midpoints can't be calculated
-    elif sell_data["bid"] is not None and buy_data["ask"] is not None:
+    elif (sell_data["bid"] is not None and buy_data["ask"] is not None and
+          sell_data["bid"] > 0 and buy_data["ask"] > 0):
         # Conservative estimate: what we can sell at bid and buy at ask
         premium = (sell_data["bid"] - buy_data["ask"]) * 100
         calc_method = "conservative"
     # Use last prices if available
-    elif sell_data["last"] is not None and buy_data["last"] is not None:
+    elif (sell_data["last"] is not None and buy_data["last"] is not None and
+          sell_data["last"] > 0 and buy_data["last"] > 0):
         premium = (sell_data["last"] - buy_data["last"]) * 100
         calc_method = "last"
     # Use model prices if available
-    elif sell_data["model"] is not None and buy_data["model"] is not None:
+    elif (sell_data["model"] is not None and buy_data["model"] is not None and
+          sell_data["model"] > 0 and buy_data["model"] > 0):
         premium = (sell_data["model"] - buy_data["model"]) * 100
         calc_method = "model"
         
@@ -467,8 +477,11 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
                         logger.info("Market appears closed but allow_market_closed flag is set, placing order with estimated premium")
             else:
                 logger.warning("Could not calculate market premium")
-                # If market is closed but we allow orders, use estimated premium
-                if app.market_status == "closed" and allow_market_closed:
+                # Check if it's due to no market data and if we're allowed to trade when market is closed
+                if calc_method == "no_market_data" and allow_market_closed:
+                    place_order = True
+                    logger.info("No market data available (prices = -1.0) but allow_market_closed flag is set, using estimated premium")
+                elif app.market_status == "closed" and allow_market_closed:
                     place_order = True
                     logger.info("Market appears closed but allow_market_closed flag is set, using estimated premium")
                 else:
