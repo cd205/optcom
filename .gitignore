@@ -1,3 +1,8 @@
 output/
 monitor/output/
 *.log
+
+# Credentials files
+credentials.txt
+legacy/credentials.txt
+scraper/credentials.txt
