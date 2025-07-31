@@ -133,13 +133,13 @@ class IBKRDataProvider:
     """
     Data provider using the IB API
     """
-    def __init__(self, host='127.0.0.1', port=7497, client_id=1):
+    def __init__(self, host='127.0.0.1', port=4002, client_id=1):
         """
         Initialize the IBKR data provider
         
         Parameters:
-        host (str): TWS/IB Gateway host (default: 127.0.0.1)
-        port (int): TWS/IB Gateway port (default: 7497 for TWS paper trading)
+        host (str): IB Gateway host (default: 127.0.0.1)
+        port (int): IB Gateway port (default: 4002 for paper trading, 4001 for live)
         client_id (int): Client ID for this connection
         """
         self.host = host
@@ -172,7 +172,7 @@ class IBKRDataProvider:
             logger.warning("Already connected to IBKR")
             return True
             
-        logger.info(f"Connecting to IBKR at {self.host}:{self.port}")
+        logger.info(f"Connecting to IB Gateway at {self.host}:{self.port}")
         
         # Connect to the API
         try:
@@ -200,7 +200,7 @@ class IBKRDataProvider:
                 elif msg_type == "error":
                     req_id, error_code, error_msg = msg_data
                     if error_code == 502:  # Connection refused
-                        logger.error("Connection refused. Is TWS/IB Gateway running?")
+                        logger.error("Connection refused. Is IB Gateway running?")
                         return False
                     elif error_code == 501:  # Already connected
                         connected = True
@@ -575,7 +575,7 @@ if __name__ == "__main__":
     )
     
     # Create data provider
-    ibkr = IBKRDataProvider(port=7497)  # Use the appropriate port for your setup
+    ibkr = IBKRDataProvider(port=4002)  # Use 4002 for IB Gateway paper trading, 4001 for live
     
     try:
         # Connect to IBKR

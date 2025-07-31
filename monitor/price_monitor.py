@@ -250,14 +250,14 @@ def update_price_check_info(db_path, strategy_id, current_price):
         logger.error(f"Error updating price check info in database: {str(e)}")
         return False
 
-def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interval=60, max_runtime=None, output_dir=None):
+def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max_runtime=None, output_dir=None):
     """
     Monitor prices for option strategies
     
     Parameters:
     db_path (str): Path to the SQLite database
-    ibkr_host (str): IBKR TWS/Gateway host
-    ibkr_port (int): IBKR TWS/Gateway port
+    ibkr_host (str): IB Gateway host
+    ibkr_port (int): IB Gateway port (4002 for paper trading, 4001 for live)
     check_interval (int): How often to check prices (in seconds)
     max_runtime (int): Maximum runtime in seconds, or None for indefinite
     output_dir (str): Directory to save output files
@@ -273,7 +273,7 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
         connection_success = ibkr.connect()
         
         if not connection_success:
-            logger.error("Failed to connect to IBKR. Exiting.")
+            logger.error("Failed to connect to IB Gateway. Exiting.")
             return
         
         # Get option strategies
@@ -439,9 +439,9 @@ def parse_arguments():
     parser.add_argument('--db', type=str, default='../database/option_strategies.db',
                         help='Path to SQLite database')
     parser.add_argument('--host', type=str, default='127.0.0.1',
-                        help='IBKR TWS/Gateway host')
-    parser.add_argument('--port', type=int, default=7497,
-                        help='IBKR TWS/Gateway port (7497 for paper, 7496 for live)')
+                        help='IB Gateway host')
+    parser.add_argument('--port', type=int, default=4002,
+                        help='IB Gateway port (4002 for paper trading, 4001 for live)')
     parser.add_argument('--interval', type=int, default=60,
                         help='Check interval in seconds')
     parser.add_argument('--runtime', type=int, default=None,
@@ -465,4 +465,4 @@ if __name__ == "__main__":
         output_dir=args.output
     )
 
-# python monitor/price_monitor.py --db database/option_strategies.db --interval 60
+# python monitor/price_monitor.py --db database/option_strategies.db --port 4002 --interval 60

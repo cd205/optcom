@@ -355,7 +355,7 @@ def calculate_spread_premium(sell_data, buy_data):
     return premium, calc_method
 
 def run_trading_app(db_path='../database/option_strategies.db', target_date=None, 
-                   ibkr_host='127.0.0.1', ibkr_port=7497, client_id=None, 
+                   ibkr_host='127.0.0.1', ibkr_port=4002, client_id=None, 
                    allow_market_closed=False):
     if target_date is None:
         target_date = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -374,7 +374,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
     
     logger.info(f"Found {len(df)} strategies to process")
     
-    # Connect to IBKR
+    # Connect to IB Gateway
     app = IBApp()
     app.connect(ibkr_host, ibkr_port, client_id)
     
@@ -387,7 +387,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         time.sleep(0.1)
     
     if not app.next_order_id:
-        logger.error("Failed to connect to IBKR or get valid order ID")
+        logger.error("Failed to connect to IB Gateway or get valid order ID")
         app.disconnect()
         return
     
@@ -523,7 +523,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
     # Cleanup
     time.sleep(3)
     app.disconnect()
-    logger.info("Disconnected from IBKR")
+    logger.info("Disconnected from IB Gateway")
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='IBKR Market Order Script for Option Spreads - No Take Profit')
@@ -531,9 +531,9 @@ def parse_arguments():
     parser.add_argument('--db', type=str, default='../database/option_strategies.db',
                        help='Path to SQLite database')
     parser.add_argument('--host', type=str, default='127.0.0.1',
-                       help='IBKR TWS/Gateway host')
-    parser.add_argument('--port', type=int, default=7497,
-                       help='IBKR TWS/Gateway port (7497 for paper, 7496 for live)')
+                       help='IB Gateway host')
+    parser.add_argument('--port', type=int, default=4002,
+                       help='IB Gateway port (4002 for paper trading, 4001 for live)')
     parser.add_argument('--date', type=str, default=None,
                        help='Target date for strategies (YYYY-MM-DD format, default: today)')
     parser.add_argument('--client', type=int, default=None,
