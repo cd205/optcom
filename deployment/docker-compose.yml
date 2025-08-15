@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  optcom-app:
+    build: .
+    container_name: optcom-app
+    environment:
+      - DB_TYPE=postgresql
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=option_strategies
+      - DB_USER=optcom-user
+      - DB_PASSWORD=${DB_PASSWORD:-your-secure-password}
+    depends_on:
+      - postgres
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    networks:
+      - optcom-network
+
+  postgres:
+    image: postgres:15
+    container_name: optcom-postgres
+    environment:
+      POSTGRES_DB: option_strategies
+      POSTGRES_USER: optcom-user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-your-secure-password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/postgresql_schema.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - optcom-network
+
+volumes:
+  postgres_data:
+
+networks:
+  optcom-network:
+    driver: bridge
