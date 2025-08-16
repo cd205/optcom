@@ -8,17 +8,59 @@ import sqlite3
 import psycopg2
 import pandas as pd
 import logging
+import sys
 from contextlib import contextmanager
 from typing import Optional, Union, Dict, Any
+
+# Add config directory to path for credentials loader
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config'))
+
+try:
+    from credentials_loader import get_credentials_loader, load_credentials_to_env
+    CREDENTIALS_AVAILABLE = True
+except ImportError:
+    CREDENTIALS_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
 class DatabaseConfig:
-    """Database configuration management"""
+    """Database configuration management with secure credentials"""
     
     def __init__(self):
         self.db_type = os.getenv('DB_TYPE', 'sqlite').lower()
         
+        # Try to load from credentials file first, then fall back to environment variables
+        if CREDENTIALS_AVAILABLE:
+            try:
+                credentials_loader = get_credentials_loader()
+                # Set environment variables from credentials if not already set
+                if not os.getenv('DB_PASSWORD'):
+                    credentials_loader.set_environment_variables(self.db_type)
+                
+                if self.db_type == 'postgresql':
+                    pg_creds = credentials_loader.get_postgresql_config()
+                    self.pg_config = {
+                        'host': pg_creds['host'],
+                        'port': int(pg_creds['port']),
+                        'database': pg_creds['database'],
+                        'user': pg_creds['user'],
+                        'password': pg_creds['password']
+                    }
+                else:
+                    sqlite_creds = credentials_loader.get_sqlite_config()
+                    self.sqlite_path = sqlite_creds['path']
+                    
+                logger.debug("Using credentials from secure credentials file")
+                
+            except Exception as e:
+                logger.warning(f"Could not load secure credentials: {e}. Falling back to environment variables.")
+                self._load_from_env()
+        else:
+            logger.warning("Credentials loader not available. Using environment variables.")
+            self._load_from_env()
+    
+    def _load_from_env(self):
+        """Load configuration from environment variables (fallback)"""
         # PostgreSQL configuration
         self.pg_config = {
             'host': os.getenv('DB_HOST', 'localhost'),

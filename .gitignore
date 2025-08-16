@@ -2,7 +2,20 @@ output/
 monitor/output/
 *.log
 
-# Credentials files
+# Credentials and Environment files
+.env
+.env.*
 credentials.txt
 legacy/credentials.txt
 scraper/credentials.txt
+config/credentials.json
+database/credentials.json
+*.key
+*.pem
+*.p12
+**/credentials/
+**/.credentials/
+
+# Database backups (may contain sensitive data)
+sqlite_backup_*.csv
+database_backup_*.sql

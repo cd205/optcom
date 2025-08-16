@@ -5,22 +5,32 @@ set -e
 
 echo "🚀 Starting migration to GCP PostgreSQL..."
 
-# Check if required environment variables are set
-if [ -z "$DB_PASSWORD" ]; then
-    echo "❌ Error: DB_PASSWORD environment variable not set"
-    exit 1
-fi
-
-if [ -z "$DB_HOST" ]; then
-    echo "❌ Error: DB_HOST environment variable not set"
-    exit 1
-fi
+# Load credentials from secure credentials file
+echo "🔐 Loading secure credentials..."
+python -c "
+import sys
+sys.path.append('config')
+from credentials_loader import load_credentials_to_env
+load_credentials_to_env('postgresql')
+print('✅ Credentials loaded from secure file')
+" || {
+    echo "❌ Could not load secure credentials"
+    echo "💡 Checking for environment variables..."
+    
+    if [ -z "$DB_PASSWORD" ]; then
+        echo "❌ Error: DB_PASSWORD environment variable not set"
+        echo "💡 Either set environment variables or ensure config/credentials.json exists"
+        exit 1
+    fi
+    
+    if [ -z "$DB_HOST" ]; then
+        echo "❌ Error: DB_HOST environment variable not set"
+        exit 1
+    fi
+}
 
 # Set database type to PostgreSQL
 export DB_TYPE=postgresql
-export DB_NAME=option_strategies
-export DB_USER=optcom-user
-export DB_PORT=5432
 
 echo "📋 Configuration:"
 echo "  Database Type: $DB_TYPE"

@@ -1,0 +1,20 @@
+# Requirements for database_manual_utility_functions.ipynb
+# Use with: pip install -r requirements-notebook.txt
+
+# Core dependencies
+pandas>=2.2.0
+numpy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Jupyter dependencies
+jupyter>=1.0.0
+ipykernel>=6.29.0
+ipython>=9.0.0
+
+# Optional but recommended
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=23.0.0
