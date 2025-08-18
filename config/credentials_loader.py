@@ -55,7 +55,7 @@ class CredentialsLoader:
             Database configuration dictionary
         """
         if db_type is None:
-            db_type = os.getenv('DB_TYPE', 'sqlite').lower()
+            db_type = os.getenv('DB_TYPE', 'postgresql').lower()
         
         if db_type not in ['postgresql', 'sqlite']:
             raise ValueError(f"Unsupported database type: {db_type}")
@@ -112,7 +112,7 @@ class CredentialsLoader:
             db_type: Database type to configure ('postgresql' or 'sqlite')
         """
         if db_type is None:
-            db_type = os.getenv('DB_TYPE', 'sqlite').lower()
+            db_type = os.getenv('DB_TYPE', 'postgresql').lower()
         
         # Set database type
         os.environ['DB_TYPE'] = db_type

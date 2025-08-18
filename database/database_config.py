@@ -27,7 +27,7 @@ class DatabaseConfig:
     """Database configuration management with secure credentials"""
     
     def __init__(self):
-        self.db_type = os.getenv('DB_TYPE', 'sqlite').lower()
+        self.db_type = os.getenv('DB_TYPE', 'postgresql').lower()
         
         # Try to load from credentials file first, then fall back to environment variables
         if CREDENTIALS_AVAILABLE:

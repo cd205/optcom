@@ -329,9 +329,8 @@ def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max
         if has_all_columns:
             query = """
                 SELECT id FROM option_strategies 
-                WHERE strategy_status IS NOT NULL 
-                OR price_when_triggered IS NOT NULL 
-                OR timestamp_of_trigger IS NOT NULL
+                WHERE strategy_status = 'triggered'
+                AND timestamp_of_trigger IS NOT NULL
             """
             results = db_conn.execute_query(query)
             already_triggered = {row[0] for row in results}
