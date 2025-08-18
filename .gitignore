@@ -16,9 +16,8 @@ database/credentials.json
 **/credentials/
 **/.credentials/
 
-# IBC Configuration files (contain credentials)
-ibc-setup/config/config-paper.ini
-ibc-setup/config/config-live.ini
+# IBC Setup directory (contains large files and credentials)
+ibc-setup/
 
 # Database backups (may contain sensitive data)
 sqlite_backup_*.csv
