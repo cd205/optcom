@@ -208,6 +208,55 @@ def update_triggered_strategy_in_db(strategy_id, price_when_triggered):
         logger.error(f"Error updating strategy in database: {str(e)}")
         return False
 
+def get_last_price_from_database(ticker):
+    """
+    Get the most recent price for a ticker from the database
+    Uses the new database configuration system
+    
+    Parameters:
+    ticker (str): Ticker symbol
+    
+    Returns:
+    float: Last known price, or None if not found
+    """
+    try:
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        # Query for the most recent price check for this ticker
+        if db_conn.config.is_postgresql():
+            query = """
+                SELECT last_price_when_checked 
+                FROM option_strategies 
+                WHERE ticker = %s 
+                AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC 
+                LIMIT 1
+            """
+        else:
+            query = """
+                SELECT last_price_when_checked 
+                FROM option_strategies 
+                WHERE ticker = ? 
+                AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC 
+                LIMIT 1
+            """
+        
+        result = db_conn.execute_query(query, (ticker,))
+        
+        if result and len(result) > 0:
+            price = result[0][0]
+            logger.info(f"Found last known price for {ticker} from database: ${price:.2f}")
+            return float(price)
+        else:
+            logger.warning(f"No last known price found in database for {ticker}")
+            return None
+            
+    except Exception as e:
+        logger.error(f"Error getting last price from database for {ticker}: {str(e)}")
+        return None
+
 def update_price_check_info(strategy_id, current_price):
     """
     Update the last_price_when_checked and timestamp_of_price_when_last_checked columns
@@ -247,7 +296,7 @@ def update_price_check_info(strategy_id, current_price):
         )
         
         if rows_affected > 0:
-            logger.debug(f"Updated price check info for strategy ID {strategy_id} in database")
+            logger.info(f"Updated price check info for strategy ID {strategy_id} in database - Price: {current_price}")
             return True
         else:
             logger.warning(f"No rows updated for price check info for strategy ID {strategy_id}")
@@ -275,13 +324,14 @@ def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max
             output_dir = os.path.join(os.path.dirname(__file__), '..', 'output')
         os.makedirs(output_dir, exist_ok=True)
         
-        # Initialize IBKR connection
+        # Initialize IBKR connection with retry logic
         ibkr = IBKRDataProvider(host=ibkr_host, port=ibkr_port)
-        connection_success = ibkr.connect()
+        connection_success = ibkr.connect(max_retries=2)  # Try twice, not three times for faster failure
         
         if not connection_success:
-            logger.error("Failed to connect to IB Gateway. Exiting.")
-            return
+            logger.warning("Failed to connect to IB Gateway after retries.")
+            logger.info("Will attempt to use last known prices from database as fallback.")
+            # Continue anyway - we can try database fallback
         
         # Get option strategies
         strategies_df = get_todays_strategies()
@@ -353,13 +403,32 @@ def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max
                 # Get latest prices for all tickers
                 for ticker in valid_tickers:
                     try:
-                        price = ibkr.get_latest_price(ticker)
+                        price = None
+                        price_source = "unknown"
+                        
+                        if connection_success:
+                            # Try to get live/current price first
+                            price = ibkr.get_latest_price(ticker)
+                            if price is not None:
+                                price_source = "live"
+                        
+                        # If no price yet and we have connection, try close price
+                        if price is None and connection_success:
+                            price = ibkr.get_last_close_price(ticker)
+                            if price is not None:
+                                price_source = "close"
+                        
+                        # Final fallback: get last known price from database
+                        if price is None:
+                            price = get_last_price_from_database(ticker)
+                            if price is not None:
+                                price_source = "database"
                         
                         if price is not None:
                             last_prices[ticker] = price
-                            logger.info(f"{ticker}: ${price:.2f}")
+                            logger.info(f"{ticker}: ${price:.2f} ({price_source} price)")
                         else:
-                            logger.warning(f"Could not get price for {ticker}")
+                            logger.warning(f"Could not get any price for {ticker} from any source")
                     except Exception as e:
                         logger.error(f"Error getting price for {ticker}: {str(e)}")
                 

@@ -178,6 +178,8 @@ class IBApp(IBWrapper, IBClient):
         order.lmtPrice = rounded_price
         order.tif = "DAY"  # Set time in force to 1 DAY
         order.transmit = True
+        order.eTradeOnly = False  # Fix for "EtradeOnly order attribute not supported" error
+        order.firmQuoteOnly = False  # Fix for "FirmQuoteOnly order attribute not supported" error
         
         logger.info(f"Created {action} limit order: Quantity={quantity}, Price=${rounded_price:.2f}, TIF=DAY")
         return order
