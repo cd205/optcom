@@ -1,0 +1,23 @@
+# IBC Configuration Template - Paper Trading
+# This file is a template. The actual config files are auto-generated from credentials.json
+# DO NOT edit this template - it's for reference only
+
+# To use:
+# 1. Add your IBKR credentials to config/credentials.json
+# 2. Run: ./update_configs.sh --generate
+# 3. Start gateway: ./start-dual-gateway.sh start
+
+# IBC Startup Settings
+FIX=no
+
+# Authentication Settings - FROM CREDENTIALS.JSON
+IbLoginId={PAPER_USERNAME_FROM_CREDENTIALS_JSON}
+IbPassword={PAPER_PASSWORD_FROM_CREDENTIALS_JSON}
+
+# Trading Mode
+TradingMode=paper
+
+# Paper Trading Warning
+AcceptNonBrokerageAccountWarning=yes
+
+# ... additional IBC settings generated automatically ...

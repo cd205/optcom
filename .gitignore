@@ -10,14 +10,18 @@ legacy/credentials.txt
 scraper/credentials.txt
 config/credentials.json
 database/credentials.json
+config/config-live.ini
+config/config-paper.ini
+config/config.ini
+
 *.key
 *.pem
 *.p12
 **/credentials/
 **/.credentials/
 
-# IBC Setup directory (contains large files and credentials)
-ibc-setup/
+# installation_files directory (contains large files and credentials)
+installation_files/
 
 # Database backups (may contain sensitive data)
 sqlite_backup_*.csv

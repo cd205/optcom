@@ -1,0 +1,23 @@
+# IBC Configuration Template - Live Trading  
+# This file is a template. The actual config files are auto-generated from credentials.json
+# DO NOT edit this template - it's for reference only
+
+# To use:
+# 1. Add your IBKR credentials to config/credentials.json
+# 2. Run: ./update_configs.sh --generate  
+# 3. Start gateway: ./start-dual-gateway.sh start
+
+# IBC Startup Settings
+FIX=no
+
+# Authentication Settings - FROM CREDENTIALS.JSON
+IbLoginId={LIVE_USERNAME_FROM_CREDENTIALS_JSON}
+IbPassword={LIVE_PASSWORD_FROM_CREDENTIALS_JSON}
+
+# Trading Mode
+TradingMode=live
+
+# Paper Trading Warning  
+AcceptNonBrokerageAccountWarning=no
+
+# ... additional IBC settings generated automatically ...
