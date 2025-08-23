@@ -25,7 +25,8 @@ CREATE TABLE IF NOT EXISTS option_strategies (
     price_when_order_placed REAL,
     premium_at_order REAL,
     premium_when_last_checked REAL,
-    timestamp_of_order TIMESTAMP
+    timestamp_of_order TIMESTAMP,
+    trade_id TEXT UNIQUE
 );
 
 -- Create indexes for performance
@@ -34,6 +35,7 @@ CREATE INDEX IF NOT EXISTS idx_ticker ON option_strategies (ticker);
 CREATE INDEX IF NOT EXISTS idx_scrape_date ON option_strategies (scrape_date);
 CREATE INDEX IF NOT EXISTS idx_strategy_status ON option_strategies (strategy_status);
 CREATE INDEX IF NOT EXISTS idx_timestamp_trigger ON option_strategies (timestamp_of_trigger);
+CREATE INDEX IF NOT EXISTS idx_trade_id ON option_strategies (trade_id);
 
 -- Add comments for documentation
 COMMENT ON TABLE option_strategies IS 'Main table storing option trading strategies data';
@@ -47,3 +49,4 @@ COMMENT ON COLUMN option_strategies.strike_price IS 'Strike prices for the optio
 COMMENT ON COLUMN option_strategies.strategy_status IS 'Current status (triggered, etc.)';
 COMMENT ON COLUMN option_strategies.timestamp_of_trigger IS 'When the strategy was triggered';
 COMMENT ON COLUMN option_strategies.price_when_triggered IS 'Stock price when strategy was triggered';
+COMMENT ON COLUMN option_strategies.trade_id IS 'Human-readable unique identifier generated from key trade parameters';
