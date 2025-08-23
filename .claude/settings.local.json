@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(export DISPLAY=:99)",
+      "Bash(\"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java\" -Djava.awt.headless=false -DjtsConfigDir=\"/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings\" -cp \"/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/launcher0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/launcher2bfa42ba.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/launcher3257f6f9.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/launcher5cbd629.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/jars/user.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1039/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar\" ibcalpha.ibc.IbcGateway \"/home/chris_s_dodd/optcom-1/ibc-setup/config/config-paper.ini\" paper)",
+      "Bash(/home/chris_s_dodd/optcom-1/ibc-setup/ibc/scripts/ibcstart.sh:*)",
+      "Bash(ldd:*)",
+      "Bash(apt list:*)",
+      "Bash(sudo apt-get install:*)",
+      "Bash(timeout:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebSearch",
+      "WebFetch(domain:www.interactivebrokers.com)",
+      "Bash(cp:*)",
+      "Bash(export DISPLAY=:98)",
+      "Bash(./start-gateway.sh:*)",
+      "Bash(python:*)",
+      "Bash(grep:*)",
+      "Bash(mv:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,9 @@
+# install4j response file for Trader Workstation 10.39 (.1e) 20250806 16:08:18
+cmdLineArgs$StringArray="/home/chris_s_dodd/Jts","ndc1.ibllc.com\:4000","language\=https\://download2.interactivebrokers.com/installers/shared/i18n/ib"
+exeName=tws
+executeLauncherAction$Boolean=false
+installerType=standalone
+jtsConfigDir=/home/chris_s_dodd/Jts
+sys.adminRights$Boolean=false
+sys.installationDir=/home/chris_s_dodd/optcom-2/ibc-setup/tws
+sys.languageId=en
