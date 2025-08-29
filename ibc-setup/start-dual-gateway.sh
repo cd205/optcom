@@ -159,38 +159,38 @@ stop_all() {
 show_status() {
     log_message "=== Gateway Status ==="
     
-    # Check paper account
-    if [[ -f "${LOG_DIR}/paper-gateway.pid" ]]; then
-        local PAPER_PID=$(cat "${LOG_DIR}/paper-gateway.pid")
-        if kill -0 ${PAPER_PID} 2>/dev/null; then
-            log_message "📊 Paper Gateway: Running (PID: ${PAPER_PID})"
-            if ss -tln 2>/dev/null | grep -q ":4002 "; then
-                log_message "   ✅ API Port 4002: Listening"
-            else
-                log_message "   ❌ API Port 4002: Not listening"
-            fi
+    # Check paper account by process pattern and port
+    local PAPER_PID=$(pgrep -f "java.*paper.*IbcGateway" | head -1)
+    if [[ -n "$PAPER_PID" ]]; then
+        log_message "📊 Paper Gateway: Running (PID: ${PAPER_PID})"
+        # Update PID file for consistency
+        echo "$PAPER_PID" > "${LOG_DIR}/paper-gateway.pid"
+        if ss -tln 2>/dev/null | grep -q ":4002 "; then
+            log_message "   ✅ API Port 4002: Listening"
         else
-            log_message "📊 Paper Gateway: Not running"
+            log_message "   ❌ API Port 4002: Not listening"
         fi
     else
-        log_message "📊 Paper Gateway: Not started"
+        log_message "📊 Paper Gateway: Not running"
+        # Clean up stale PID file
+        rm -f "${LOG_DIR}/paper-gateway.pid"
     fi
     
-    # Check live account  
-    if [[ -f "${LOG_DIR}/live-gateway.pid" ]]; then
-        local LIVE_PID=$(cat "${LOG_DIR}/live-gateway.pid")
-        if kill -0 ${LIVE_PID} 2>/dev/null; then
-            log_message "💰 Live Gateway: Running (PID: ${LIVE_PID})"
-            if ss -tln 2>/dev/null | grep -q ":4001 "; then
-                log_message "   ✅ API Port 4001: Listening"
-            else
-                log_message "   ❌ API Port 4001: Not listening"
-            fi
+    # Check live account by process pattern and port
+    local LIVE_PID=$(pgrep -f "java.*live.*IbcGateway" | head -1)
+    if [[ -n "$LIVE_PID" ]]; then
+        log_message "💰 Live Gateway: Running (PID: ${LIVE_PID})"
+        # Update PID file for consistency
+        echo "$LIVE_PID" > "${LOG_DIR}/live-gateway.pid"
+        if ss -tln 2>/dev/null | grep -q ":4001 "; then
+            log_message "   ✅ API Port 4001: Listening"
         else
-            log_message "💰 Live Gateway: Not running"
+            log_message "   ❌ API Port 4001: Not listening"
         fi
     else
-        log_message "💰 Live Gateway: Not started"
+        log_message "💰 Live Gateway: Not running"
+        # Clean up stale PID file
+        rm -f "${LOG_DIR}/live-gateway.pid"
     fi
 }
 

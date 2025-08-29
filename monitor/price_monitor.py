@@ -247,8 +247,13 @@ def get_last_price_from_database(ticker):
         
         if result and len(result) > 0:
             price = result[0][0]
-            logger.info(f"Found last known price for {ticker} from database: ${price:.2f}")
-            return float(price)
+            # Check if the price is valid (not None and not NaN)
+            if price is not None and not pd.isna(price):
+                logger.info(f"Found last known price for {ticker} from database: ${price:.2f}")
+                return float(price)
+            else:
+                logger.warning(f"Invalid price found in database for {ticker}: {price}")
+                return None
         else:
             logger.warning(f"No last known price found in database for {ticker}")
             return None
@@ -270,6 +275,11 @@ def update_price_check_info(strategy_id, current_price):
     bool: True if update was successful, False otherwise
     """
     try:
+        # Skip update if price is None or NaN
+        if current_price is None or pd.isna(current_price):
+            logger.warning(f"Skipping price update for strategy ID {strategy_id} - invalid price: {current_price}")
+            return False
+        
         # Get database connection
         db_conn = get_db_connection()
         
@@ -324,8 +334,13 @@ def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max
             output_dir = os.path.join(os.path.dirname(__file__), '..', 'output')
         os.makedirs(output_dir, exist_ok=True)
         
+        # Generate random client ID to avoid conflicts
+        import random
+        client_id = random.randint(100, 9999)
+        logger.info(f"Using client ID: {client_id}")
+        
         # Initialize IBKR connection with retry logic
-        ibkr = IBKRDataProvider(host=ibkr_host, port=ibkr_port)
+        ibkr = IBKRDataProvider(host=ibkr_host, port=ibkr_port, client_id=client_id)
         connection_success = ibkr.connect(max_retries=2)  # Try twice, not three times for faster failure
         
         if not connection_success:
@@ -442,9 +457,15 @@ def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max
                     strategy_id = row['id']
                     
                     if ticker not in last_prices:
+                        logger.debug(f"No price available for {ticker}, skipping strategy ID {strategy_id}")
                         continue
                         
                     current_price = last_prices[ticker]
+                    
+                    # Skip if price is None or NaN
+                    if current_price is None or pd.isna(current_price):
+                        logger.warning(f"Skipping strategy ID {strategy_id} for {ticker} - invalid price: {current_price}")
+                        continue
                     
                     # Update the last_price_when_checked and timestamp columns for every check
                     update_price_check_info(strategy_id, current_price)
