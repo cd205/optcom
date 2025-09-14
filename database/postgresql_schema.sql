@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS option_strategies (
     timestamp_of_price_when_last_checked REAL,
     item_id TEXT,
     options_expiry_date TEXT,
+    options_expiry_date_as_scrapped TEXT,
     date_info TEXT,
     timestamp_of_trigger TIMESTAMP,
     strategy_status TEXT,
@@ -36,6 +37,7 @@ CREATE INDEX IF NOT EXISTS idx_scrape_date ON option_strategies (scrape_date);
 CREATE INDEX IF NOT EXISTS idx_strategy_status ON option_strategies (strategy_status);
 CREATE INDEX IF NOT EXISTS idx_timestamp_trigger ON option_strategies (timestamp_of_trigger);
 CREATE INDEX IF NOT EXISTS idx_trade_id ON option_strategies (trade_id);
+CREATE INDEX IF NOT EXISTS idx_options_expiry_date_as_scrapped ON option_strategies (options_expiry_date_as_scrapped);
 
 -- Add comments for documentation
 COMMENT ON TABLE option_strategies IS 'Main table storing option trading strategies data';
@@ -50,3 +52,4 @@ COMMENT ON COLUMN option_strategies.strategy_status IS 'Current status (triggere
 COMMENT ON COLUMN option_strategies.timestamp_of_trigger IS 'When the strategy was triggered';
 COMMENT ON COLUMN option_strategies.price_when_triggered IS 'Stock price when strategy was triggered';
 COMMENT ON COLUMN option_strategies.trade_id IS 'Human-readable unique identifier generated from key trade parameters';
+COMMENT ON COLUMN option_strategies.options_expiry_date_as_scrapped IS 'Original expiry date format as scraped from source';

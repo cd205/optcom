@@ -20,6 +20,7 @@ from options_scraper import run_options_scraper
 from trading_monitor import run_trading_monitor
 from ib_gateway_utils import IBGatewayManager
 from database_utils import connect_to_database, close_database_connection, check_data_freshness
+from options_contract_validator import run_contract_validation
 
 # Simple DAG configuration
 default_args = {
@@ -101,6 +102,49 @@ step2 = PythonOperator(
     task_id='step2_run_scraper',
     python_callable=step2_run_scraper,
     execution_timeout=timedelta(minutes=30),
+    dag=dag
+)
+
+# ============================================================================
+# STEP 2.5: Validate and correct options contracts
+# ============================================================================
+def step2_5_validate_contracts(**context):
+    """Step 2.5: Validate options contracts and correct expiry dates"""
+    print("🔍 STEP 2.5: Validating options contracts...")
+
+    # Check if we should skip this step (if data already existed)
+    data_exists = context['task_instance'].xcom_pull(key='data_exists', task_ids='step1_check_data')
+    if data_exists:
+        print("⏩ Skipping contract validation - using existing data")
+        context['task_instance'].xcom_push(key='validation_stats', value={'skipped': True})
+        return "SKIPPED: Using existing data"
+
+    try:
+        # Run contract validation
+        print("Starting options contract validation...")
+        stats = run_contract_validation(port=4002)
+
+        # Store results for Step 3
+        context['task_instance'].xcom_push(key='validation_stats', value=stats)
+
+        print(f"✅ Contract validation completed:")
+        print(f"   Total records: {stats['total_records']}")
+        print(f"   Valid original: {stats['valid_original']}")
+        print(f"   Corrected dates: {stats['corrected_dates']}")
+        print(f"   Failed validation: {stats['failed_validation']}")
+
+        return f"COMPLETED: {stats['corrected_dates']} dates corrected, {stats['failed_validation']} failed"
+
+    except Exception as e:
+        print(f"⚠️ Contract validation encountered an error: {e}")
+        print("Continuing workflow - this step is non-blocking")
+        context['task_instance'].xcom_push(key='validation_stats', value={'error': str(e)})
+        return f"ERROR (non-blocking): {str(e)}"
+
+step2_5 = PythonOperator(
+    task_id='step2_5_validate_contracts',
+    python_callable=step2_5_validate_contracts,
+    execution_timeout=timedelta(minutes=10),  # 10 minutes timeout
     dag=dag
 )
 
@@ -196,7 +240,7 @@ step5 = PythonOperator(
 # ============================================================================
 # Define simple linear dependencies
 # ============================================================================
-step1 >> step2 >> step3 >> step4 >> step5
+step1 >> step2 >> step2_5 >> step3 >> step4 >> step5
 
 # ============================================================================
 # Add status checking DAG for debugging
@@ -233,7 +277,7 @@ def check_workflow_status(**context):
         print(f"Started: {latest_run.start_date}")
         
         # Check each step status
-        steps = ['step1_check_data', 'step2_run_scraper', 'step3_verify_records', 
+        steps = ['step1_check_data', 'step2_run_scraper', 'step2_5_validate_contracts', 'step3_verify_records',
                 'step4_start_gateways', 'step5_trading_monitor']
         
         current_step = "Not started"

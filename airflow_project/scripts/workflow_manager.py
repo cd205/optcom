@@ -124,7 +124,8 @@ def check_workflow_status():
             
             step_names = {
                 'step1_check_data': 'Step 1: Check Data',
-                'step2_run_scraper': 'Step 2: Run Scraper', 
+                'step2_run_scraper': 'Step 2: Run Scraper',
+                'step2_5_validate_contracts': 'Step 2.5: Validate Contracts',
                 'step3_verify_records': 'Step 3: Verify Records',
                 'step4_start_gateways': 'Step 4: Start Gateways',
                 'step5_trading_monitor': 'Step 5: Trading Monitor'
