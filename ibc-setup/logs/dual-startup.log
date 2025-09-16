@@ -17326,3 +17326,426 @@
 [2025-09-14 05:22:40] 💰 Live Gateway: Not running
 [2025-09-14 05:22:47] Stopping all Gateway instances...
 [2025-09-14 05:22:47] All Gateway instances stopped
+[2025-09-15 11:00:36] Stopping all Gateway instances...
+[2025-09-15 11:00:36] All Gateway instances stopped
+[2025-09-15 12:40:14] === Gateway Status ===
+[2025-09-15 12:40:14] 📊 Paper Gateway: Not running
+[2025-09-15 12:40:14] 💰 Live Gateway: Not running
+[2025-09-15 12:46:57] === Gateway Status ===
+[2025-09-15 12:46:57] 📊 Paper Gateway: Not running
+[2025-09-15 12:46:57] 💰 Live Gateway: Not running
+[2025-09-15 12:48:14] === Starting Both Paper and Live Accounts ===
+[2025-09-15 12:48:14] Step 1: Starting Paper Trading Account
+[2025-09-15 12:48:14] Starting paper account Gateway...
+[2025-09-15 12:48:14] Using virtual display :99 for paper account
+[2025-09-15 12:48:14] Using TWS version: 1037 for paper
+[2025-09-15 12:48:14] Starting paper Gateway on port 4002
+[2025-09-15 12:48:14] paper Gateway started with PID: 33051
+[2025-09-15 12:48:14] Waiting for paper Gateway to initialize...
+[2025-09-15 12:48:34] ❌ paper Gateway failed to start
+[2025-09-15 12:48:35] ❌ Paper account failed - continuing with live account anyway
+[2025-09-15 12:48:35] Waiting 30 seconds before starting live account...
+[2025-09-15 12:49:05] Step 2: Starting Live Trading Account
+[2025-09-15 12:49:05] Starting live account Gateway...
+[2025-09-15 12:49:05] Using TWS version: 1037 for live
+[2025-09-15 12:49:05] Starting live Gateway on port 4001
+[2025-09-15 12:49:05] live Gateway started with PID: 33616
+[2025-09-15 12:49:05] Waiting for live Gateway to initialize...
+[2025-09-15 12:49:45] === Gateway Status ===
+[2025-09-15 12:49:45] 📊 Paper Gateway: Not running
+[2025-09-15 12:49:45] 💰 Live Gateway: Not running
+[2025-09-15 13:33:36] === Gateway Status ===
+[2025-09-15 13:33:36] 📊 Paper Gateway: Not running
+[2025-09-15 13:33:36] 💰 Live Gateway: Not running
+[2025-09-15 13:41:43] === Starting Both Paper and Live Accounts ===
+[2025-09-15 13:41:43] Step 1: Starting Paper Trading Account
+[2025-09-15 13:41:43] Starting paper account Gateway...
+[2025-09-15 13:41:43] Using virtual display :99 for paper account
+[2025-09-15 13:41:43] Using TWS version: 1037 for paper
+[2025-09-15 13:41:43] Starting paper Gateway on port 4002
+[2025-09-15 13:41:43] paper Gateway started with PID: 49173
+[2025-09-15 13:41:43] Waiting for paper Gateway to initialize...
+[2025-09-15 13:42:03] paper Gateway process is running
+[2025-09-15 13:42:03] Waiting for paper API port 4002...
+[2025-09-15 13:42:16] === Gateway Status ===
+[2025-09-15 13:42:16] 📊 Paper Gateway: Not running
+[2025-09-15 13:42:16] 💰 Live Gateway: Not running
+[2025-09-15 13:55:57] === Gateway Status ===
+[2025-09-15 13:55:57] 📊 Paper Gateway: Not running
+[2025-09-15 13:55:57] 💰 Live Gateway: Not running
+[2025-09-15 13:56:03] === Starting Both Paper and Live Accounts ===
+[2025-09-15 13:56:03] Step 1: Starting Paper Trading Account
+[2025-09-15 13:56:03] Starting paper account Gateway...
+[2025-09-15 13:56:03] Using virtual display :99 for paper account
+[2025-09-15 13:56:03] Using TWS version: 1037 for paper
+[2025-09-15 13:56:03] Starting paper Gateway on port 4002
+[2025-09-15 13:56:03] paper Gateway started with PID: 54361
+[2025-09-15 13:56:03] Waiting for paper Gateway to initialize...
+[2025-09-15 13:56:23] paper Gateway process is running
+[2025-09-15 13:56:23] Waiting for paper API port 4002...
+[2025-09-15 13:56:23] ✅ paper API port 4002 is available
+[2025-09-15 13:56:23] ✅ Paper account ready on port 4002
+[2025-09-15 13:56:23] Waiting 30 seconds before starting live account...
+[2025-09-15 13:56:53] Step 2: Starting Live Trading Account
+[2025-09-15 13:56:53] Starting live account Gateway...
+[2025-09-15 13:56:53] Using TWS version: 1037 for live
+[2025-09-15 13:56:53] Starting live Gateway on port 4001
+[2025-09-15 13:56:53] live Gateway started with PID: 55140
+[2025-09-15 13:56:53] Waiting for live Gateway to initialize...
+[2025-09-15 13:57:13] live Gateway process is running
+[2025-09-15 13:57:13] Waiting for live API port 4001...
+[2025-09-15 13:57:16] ✅ live API port 4001 is available
+[2025-09-15 13:57:16] ✅ Live account ready on port 4001
+[2025-09-15 13:57:16] === Dual Gateway Startup Complete ===
+[2025-09-15 13:57:16] === Gateway Status ===
+[2025-09-15 13:57:17] 📊 Paper Gateway: Running (PID: 54422)
+[2025-09-15 13:57:17]    ✅ API Port 4002: Listening
+[2025-09-15 13:57:17] 💰 Live Gateway: Running (PID: 55197)
+[2025-09-15 13:57:17]    ✅ API Port 4001: Listening
+[2025-09-15 14:03:53] === Gateway Status ===
+[2025-09-15 14:03:53] 📊 Paper Gateway: Running (PID: 54422)
+[2025-09-15 14:03:53]    ✅ API Port 4002: Listening
+[2025-09-15 14:03:53] 💰 Live Gateway: Running (PID: 55197)
+[2025-09-15 14:03:53]    ✅ API Port 4001: Listening
+[2025-09-15 14:05:20] === Gateway Status ===
+[2025-09-15 14:05:20] 📊 Paper Gateway: Running (PID: 54422)
+[2025-09-15 14:05:20]    ✅ API Port 4002: Listening
+[2025-09-15 14:05:20] 💰 Live Gateway: Running (PID: 55197)
+[2025-09-15 14:05:20]    ✅ API Port 4001: Listening
+[2025-09-15 14:05:30] === Gateway Status ===
+[2025-09-15 14:05:30] 📊 Paper Gateway: Running (PID: 54422)
+[2025-09-15 14:05:30]    ✅ API Port 4002: Listening
+[2025-09-15 14:05:30] 💰 Live Gateway: Running (PID: 55197)
+[2025-09-15 14:05:30]    ✅ API Port 4001: Listening
+[2025-09-15 14:05:39] Stopping all Gateway instances...
+[2025-09-15 14:05:39] All Gateway instances stopped
+[2025-09-15 14:06:29] === Gateway Status ===
+[2025-09-15 14:06:29] 📊 Paper Gateway: Not running
+[2025-09-15 14:06:29] 💰 Live Gateway: Not running
+[2025-09-15 14:07:17] === Gateway Status ===
+[2025-09-15 14:07:17] 📊 Paper Gateway: Not running
+[2025-09-15 14:07:17] 💰 Live Gateway: Not running
+[2025-09-15 14:08:37] === Gateway Status ===
+[2025-09-15 14:08:37] 📊 Paper Gateway: Not running
+[2025-09-15 14:08:37] 💰 Live Gateway: Not running
+[2025-09-15 14:33:44] === Gateway Status ===
+[2025-09-15 14:33:44] 📊 Paper Gateway: Not running
+[2025-09-15 14:33:44] 💰 Live Gateway: Not running
+[2025-09-15 14:33:58] Stopping all Gateway instances...
+[2025-09-15 14:33:58] All Gateway instances stopped
+[2025-09-15 14:34:32] === Gateway Status ===
+[2025-09-15 14:34:32] 📊 Paper Gateway: Not running
+[2025-09-15 14:34:32] 💰 Live Gateway: Not running
+[2025-09-15 14:35:20] === Gateway Status ===
+[2025-09-15 14:35:20] 📊 Paper Gateway: Not running
+[2025-09-15 14:35:20] 💰 Live Gateway: Not running
+[2025-09-15 14:35:34] Stopping all Gateway instances...
+[2025-09-15 14:35:34] All Gateway instances stopped
+[2025-09-15 14:36:03] Stopping all Gateway instances...
+[2025-09-15 14:36:03] All Gateway instances stopped
+[2025-09-15 14:36:13] === Gateway Status ===
+[2025-09-15 14:36:13] 📊 Paper Gateway: Not running
+[2025-09-15 14:36:13] 💰 Live Gateway: Not running
+[2025-09-15 14:43:05] === Gateway Status ===
+[2025-09-15 14:43:05] 📊 Paper Gateway: Not running
+[2025-09-15 14:43:05] 💰 Live Gateway: Not running
+[2025-09-15 14:43:46] === Gateway Status ===
+[2025-09-15 14:43:46] 📊 Paper Gateway: Not running
+[2025-09-15 14:43:46] 💰 Live Gateway: Not running
+[2025-09-15 14:45:05] === Gateway Status ===
+[2025-09-15 14:45:05] 📊 Paper Gateway: Not running
+[2025-09-15 14:45:05] 💰 Live Gateway: Not running
+[2025-09-15 14:45:38] === Gateway Status ===
+[2025-09-15 14:45:38] 📊 Paper Gateway: Not running
+[2025-09-15 14:45:38] 💰 Live Gateway: Not running
+[2025-09-15 14:47:50] === Gateway Status ===
+[2025-09-15 14:47:50] 📊 Paper Gateway: Not running
+[2025-09-15 14:47:50] 💰 Live Gateway: Not running
+[2025-09-15 14:49:46] === Gateway Status ===
+[2025-09-15 14:49:46] 📊 Paper Gateway: Not running
+[2025-09-15 14:49:46] 💰 Live Gateway: Not running
+[2025-09-15 14:50:30] === Gateway Status ===
+[2025-09-15 14:50:30] 📊 Paper Gateway: Not running
+[2025-09-15 14:50:31] 💰 Live Gateway: Not running
+[2025-09-15 14:51:57] === Gateway Status ===
+[2025-09-15 14:51:57] 📊 Paper Gateway: Not running
+[2025-09-15 14:51:57] 💰 Live Gateway: Not running
+[2025-09-15 14:53:27] === Starting Both Paper and Live Accounts ===
+[2025-09-15 14:53:27] === Gateway Status ===
+[2025-09-15 14:53:27] Step 1: Starting Paper Trading Account
+[2025-09-15 14:53:27] Starting paper account Gateway...
+[2025-09-15 14:53:27] Using virtual display :99 for paper account
+[2025-09-15 14:53:27] Using TWS version: 1037 for paper
+[2025-09-15 14:53:27] Starting paper Gateway on port 4002
+[2025-09-15 14:53:27] 📊 Paper Gateway: Not running
+[2025-09-15 14:53:27] paper Gateway started with PID: 77338
+[2025-09-15 14:53:27] Waiting for paper Gateway to initialize...
+[2025-09-15 14:53:27] 💰 Live Gateway: Not running
+[2025-09-15 14:53:47] paper Gateway process is running
+[2025-09-15 14:53:47] Waiting for paper API port 4002...
+[2025-09-15 14:53:47] ✅ paper API port 4002 is available
+[2025-09-15 14:53:47] ✅ Paper account ready on port 4002
+[2025-09-15 14:53:47] Waiting 30 seconds before starting live account...
+[2025-09-15 14:53:57] === Gateway Status ===
+[2025-09-15 14:53:57] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 14:53:57]    ✅ API Port 4002: Listening
+[2025-09-15 14:53:57] 💰 Live Gateway: Not running
+[2025-09-15 14:54:17] Step 2: Starting Live Trading Account
+[2025-09-15 14:54:17] Starting live account Gateway...
+[2025-09-15 14:54:17] Using TWS version: 1037 for live
+[2025-09-15 14:54:17] Starting live Gateway on port 4001
+[2025-09-15 14:54:17] live Gateway started with PID: 78304
+[2025-09-15 14:54:17] Waiting for live Gateway to initialize...
+[2025-09-15 14:54:27] === Gateway Status ===
+[2025-09-15 14:54:27] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 14:54:27]    ✅ API Port 4002: Listening
+[2025-09-15 14:54:27] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 14:54:27]    ❌ API Port 4001: Not listening
+[2025-09-15 14:54:52] === Gateway Status ===
+[2025-09-15 14:54:52] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 14:54:52]    ✅ API Port 4002: Listening
+[2025-09-15 14:54:52] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 14:54:52]    ✅ API Port 4001: Listening
+[2025-09-15 15:34:39] === Gateway Status ===
+[2025-09-15 15:34:39] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:34:39]    ✅ API Port 4002: Listening
+[2025-09-15 15:34:39] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:34:39]    ✅ API Port 4001: Listening
+[2025-09-15 15:36:10] === Gateway Status ===
+[2025-09-15 15:36:10] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:36:10]    ✅ API Port 4002: Listening
+[2025-09-15 15:36:10] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:36:10]    ✅ API Port 4001: Listening
+[2025-09-15 15:36:26] === Gateway Status ===
+[2025-09-15 15:36:26] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:36:26]    ✅ API Port 4002: Listening
+[2025-09-15 15:36:26] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:36:26]    ✅ API Port 4001: Listening
+[2025-09-15 15:38:24] === Gateway Status ===
+[2025-09-15 15:38:24] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:38:24]    ✅ API Port 4002: Listening
+[2025-09-15 15:38:24] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:38:24]    ✅ API Port 4001: Listening
+[2025-09-15 15:39:38] === Gateway Status ===
+[2025-09-15 15:39:38] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:39:38]    ✅ API Port 4002: Listening
+[2025-09-15 15:39:38] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:39:38]    ✅ API Port 4001: Listening
+[2025-09-15 15:46:01] === Gateway Status ===
+[2025-09-15 15:46:01] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 15:46:01]    ✅ API Port 4002: Listening
+[2025-09-15 15:46:01] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 15:46:01]    ✅ API Port 4001: Listening
+[2025-09-15 16:01:38] === Gateway Status ===
+[2025-09-15 16:01:38] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 16:01:38]    ✅ API Port 4002: Listening
+[2025-09-15 16:01:38] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 16:01:38]    ✅ API Port 4001: Listening
+[2025-09-15 16:34:16] === Gateway Status ===
+[2025-09-15 16:34:16] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 16:34:16]    ✅ API Port 4002: Listening
+[2025-09-15 16:34:16] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 16:34:16]    ✅ API Port 4001: Listening
+[2025-09-15 16:36:12] === Gateway Status ===
+[2025-09-15 16:36:12] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 16:36:12]    ✅ API Port 4002: Listening
+[2025-09-15 16:36:12] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 16:36:12]    ✅ API Port 4001: Listening
+[2025-09-15 17:56:56] === Gateway Status ===
+[2025-09-15 17:56:56] 📊 Paper Gateway: Running (PID: 77402)
+[2025-09-15 17:56:56]    ✅ API Port 4002: Listening
+[2025-09-15 17:56:56] 💰 Live Gateway: Running (PID: 78362)
+[2025-09-15 17:56:56]    ✅ API Port 4001: Listening
+[2025-09-15 17:58:40] Stopping all Gateway instances...
+[2025-09-15 17:58:40] All Gateway instances stopped
+[2025-09-15 18:03:06] Stopping all Gateway instances...
+[2025-09-15 18:03:06] All Gateway instances stopped
+[2025-09-15 18:08:20] === Gateway Status ===
+[2025-09-15 18:08:20] 📊 Paper Gateway: Not running
+[2025-09-15 18:08:20] 💰 Live Gateway: Not running
+[2025-09-15 18:28:01] === Gateway Status ===
+[2025-09-15 18:28:01] 📊 Paper Gateway: Not running
+[2025-09-15 18:28:01] 💰 Live Gateway: Not running
+[2025-09-15 18:30:14] === Starting Both Paper and Live Accounts ===
+[2025-09-15 18:30:14] Step 1: Starting Paper Trading Account
+[2025-09-15 18:30:14] Starting paper account Gateway...
+[2025-09-15 18:30:14] Using virtual display :99 for paper account
+[2025-09-15 18:30:14] Using TWS version: 1037 for paper
+[2025-09-15 18:30:14] Starting paper Gateway on port 4002
+[2025-09-15 18:30:14] paper Gateway started with PID: 12030
+[2025-09-15 18:30:14] Waiting for paper Gateway to initialize...
+[2025-09-15 18:30:34] paper Gateway process is running
+[2025-09-15 18:30:34] Waiting for paper API port 4002...
+[2025-09-15 18:30:34] ✅ paper API port 4002 is available
+[2025-09-15 18:30:34] ✅ Paper account ready on port 4002
+[2025-09-15 18:30:34] Waiting 30 seconds before starting live account...
+[2025-09-15 18:31:04] Step 2: Starting Live Trading Account
+[2025-09-15 18:31:04] Starting live account Gateway...
+[2025-09-15 18:31:04] Using TWS version: 1037 for live
+[2025-09-15 18:31:04] Starting live Gateway on port 4001
+[2025-09-15 18:31:04] live Gateway started with PID: 12898
+[2025-09-15 18:31:04] Waiting for live Gateway to initialize...
+[2025-09-15 18:31:24] live Gateway process is running
+[2025-09-15 18:31:24] Waiting for live API port 4001...
+[2025-09-15 18:32:20] === Gateway Status ===
+[2025-09-15 18:32:20] 📊 Paper Gateway: Not running
+[2025-09-15 18:32:20] 💰 Live Gateway: Not running
+[2025-09-15 18:32:39] === Starting Both Paper and Live Accounts ===
+[2025-09-15 18:32:39] Step 1: Starting Paper Trading Account
+[2025-09-15 18:32:39] Starting paper account Gateway...
+[2025-09-15 18:32:39] Using virtual display :99 for paper account
+[2025-09-15 18:32:39] Using TWS version: 1037 for paper
+[2025-09-15 18:32:39] Starting paper Gateway on port 4002
+[2025-09-15 18:32:39] paper Gateway started with PID: 14630
+[2025-09-15 18:32:39] Waiting for paper Gateway to initialize...
+[2025-09-15 18:32:59] paper Gateway process is running
+[2025-09-15 18:32:59] Waiting for paper API port 4002...
+[2025-09-15 18:32:59] ✅ paper API port 4002 is available
+[2025-09-15 18:32:59] ✅ Paper account ready on port 4002
+[2025-09-15 18:32:59] Waiting 30 seconds before starting live account...
+[2025-09-15 18:33:29] Step 2: Starting Live Trading Account
+[2025-09-15 18:33:29] Starting live account Gateway...
+[2025-09-15 18:33:29] Using TWS version: 1037 for live
+[2025-09-15 18:33:29] Starting live Gateway on port 4001
+[2025-09-15 18:33:29] live Gateway started with PID: 16005
+[2025-09-15 18:33:29] Waiting for live Gateway to initialize...
+[2025-09-15 18:33:49] live Gateway process is running
+[2025-09-15 18:33:49] Waiting for live API port 4001...
+[2025-09-15 18:33:58] === Gateway Status ===
+[2025-09-15 18:33:58] 📊 Paper Gateway: Running (PID: 14686)
+[2025-09-15 18:33:58]    ✅ API Port 4002: Listening
+[2025-09-15 18:33:58] 💰 Live Gateway: Running (PID: 16062)
+[2025-09-15 18:33:58]    ❌ API Port 4001: Not listening
+[2025-09-15 18:36:50] ⚠️ live API port 4001 not detected
+[2025-09-15 18:36:50] ❌ Live account failed
+[2025-09-15 18:36:50] === Dual Gateway Startup Complete ===
+[2025-09-15 18:36:50] === Gateway Status ===
+[2025-09-15 18:36:50] 📊 Paper Gateway: Running (PID: 14686)
+[2025-09-15 18:36:50]    ✅ API Port 4002: Listening
+[2025-09-15 18:36:50] 💰 Live Gateway: Running (PID: 16062)
+[2025-09-15 18:36:50]    ❌ API Port 4001: Not listening
+[2025-09-15 19:20:37] === Gateway Status ===
+[2025-09-15 19:20:37] 📊 Paper Gateway: Running (PID: 14686)
+[2025-09-15 19:20:37]    ✅ API Port 4002: Listening
+[2025-09-15 19:20:37] 💰 Live Gateway: Running (PID: 16062)
+[2025-09-15 19:20:37]    ❌ API Port 4001: Not listening
+[2025-09-15 20:01:45] === Gateway Status ===
+[2025-09-15 20:01:45] 📊 Paper Gateway: Running (PID: 14686)
+[2025-09-15 20:01:45]    ✅ API Port 4002: Listening
+[2025-09-15 20:01:45] 💰 Live Gateway: Running (PID: 16062)
+[2025-09-15 20:01:45]    ❌ API Port 4001: Not listening
+[2025-09-15 20:02:19] === Gateway Status ===
+[2025-09-15 20:02:19] 📊 Paper Gateway: Running (PID: 14686)
+[2025-09-15 20:02:19]    ✅ API Port 4002: Listening
+[2025-09-15 20:02:19] 💰 Live Gateway: Running (PID: 16062)
+[2025-09-15 20:02:19]    ❌ API Port 4001: Not listening
+[2025-09-15 20:05:43] Stopping all Gateway instances...
+[2025-09-15 20:05:43] All Gateway instances stopped
+[2025-09-15 20:13:05] === Gateway Status ===
+[2025-09-15 20:13:05] 📊 Paper Gateway: Not running
+[2025-09-15 20:13:05] 💰 Live Gateway: Not running
+[2025-09-15 20:18:10] === Gateway Status ===
+[2025-09-15 20:18:10] 📊 Paper Gateway: Not running
+[2025-09-15 20:18:10] 💰 Live Gateway: Not running
+[2025-09-15 20:21:15] Stopping all Gateway instances...
+[2025-09-15 20:21:15] All Gateway instances stopped
+[2025-09-15 20:26:58] Stopping all Gateway instances...
+[2025-09-15 20:26:58] All Gateway instances stopped
+[2025-09-15 20:29:13] === Gateway Status ===
+[2025-09-15 20:29:13] 📊 Paper Gateway: Not running
+[2025-09-15 20:29:13] 💰 Live Gateway: Not running
+[2025-09-15 20:29:21] Stopping all Gateway instances...
+[2025-09-15 20:29:21] All Gateway instances stopped
+[2025-09-15 20:29:45] Stopping all Gateway instances...
+[2025-09-15 20:29:46] All Gateway instances stopped
+[2025-09-15 20:30:27] Stopping all Gateway instances...
+[2025-09-15 20:30:27] All Gateway instances stopped
+[2025-09-15 20:30:59] Stopping all Gateway instances...
+[2025-09-15 20:30:59] All Gateway instances stopped
+[2025-09-15 20:36:07] === Gateway Status ===
+[2025-09-15 20:36:07] 📊 Paper Gateway: Not running
+[2025-09-15 20:36:07] 💰 Live Gateway: Not running
+[2025-09-15 20:36:22] === Gateway Status ===
+[2025-09-15 20:36:22] 📊 Paper Gateway: Not running
+[2025-09-15 20:36:22] 💰 Live Gateway: Not running
+[2025-09-15 20:37:08] === Gateway Status ===
+[2025-09-15 20:37:08] 📊 Paper Gateway: Not running
+[2025-09-15 20:37:08] 💰 Live Gateway: Not running
+[2025-09-15 20:37:51] === Gateway Status ===
+[2025-09-15 20:37:51] 📊 Paper Gateway: Not running
+[2025-09-15 20:37:51] 💰 Live Gateway: Not running
+[2025-09-15 20:38:32] === Gateway Status ===
+[2025-09-15 20:38:32] 📊 Paper Gateway: Not running
+[2025-09-15 20:38:32] 💰 Live Gateway: Not running
+[2025-09-15 20:38:40] === Gateway Status ===
+[2025-09-15 20:38:40] 📊 Paper Gateway: Not running
+[2025-09-15 20:38:40] 💰 Live Gateway: Not running
+[2025-09-15 20:39:45] === Gateway Status ===
+[2025-09-15 20:39:45] 📊 Paper Gateway: Not running
+[2025-09-15 20:39:45] 💰 Live Gateway: Not running
+[2025-09-16 04:31:42] Stopping all Gateway instances...
+[2025-09-16 04:31:42] All Gateway instances stopped
+[2025-09-16 04:33:55] === Gateway Status ===
+[2025-09-16 04:33:55] 📊 Paper Gateway: Not running
+[2025-09-16 04:33:55] 💰 Live Gateway: Not running
+[2025-09-16 04:35:02] === Starting Both Paper and Live Accounts ===
+[2025-09-16 04:35:02] === Gateway Status ===
+[2025-09-16 04:35:02] Step 1: Starting Paper Trading Account
+[2025-09-16 04:35:02] Starting paper account Gateway...
+[2025-09-16 04:35:02] Using virtual display :99 for paper account
+[2025-09-16 04:35:02] Using TWS version: 1037 for paper
+[2025-09-16 04:35:02] Starting paper Gateway on port 4002
+[2025-09-16 04:35:02] 📊 Paper Gateway: Not running
+[2025-09-16 04:35:02] paper Gateway started with PID: 4512
+[2025-09-16 04:35:02] Waiting for paper Gateway to initialize...
+[2025-09-16 04:35:02] 💰 Live Gateway: Not running
+[2025-09-16 04:35:22] paper Gateway process is running
+[2025-09-16 04:35:22] Waiting for paper API port 4002...
+[2025-09-16 04:35:22] ✅ paper API port 4002 is available
+[2025-09-16 04:35:22] ✅ Paper account ready on port 4002
+[2025-09-16 04:35:22] Waiting 30 seconds before starting live account...
+[2025-09-16 04:35:32] === Gateway Status ===
+[2025-09-16 04:35:32] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:35:32]    ✅ API Port 4002: Listening
+[2025-09-16 04:35:32] 💰 Live Gateway: Not running
+[2025-09-16 04:35:52] Step 2: Starting Live Trading Account
+[2025-09-16 04:35:52] Starting live account Gateway...
+[2025-09-16 04:35:52] Using TWS version: 1037 for live
+[2025-09-16 04:35:52] Starting live Gateway on port 4001
+[2025-09-16 04:35:52] live Gateway started with PID: 5425
+[2025-09-16 04:35:52] Waiting for live Gateway to initialize...
+[2025-09-16 04:36:02] === Gateway Status ===
+[2025-09-16 04:36:02] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:36:02]    ✅ API Port 4002: Listening
+[2025-09-16 04:36:02] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:36:02]    ❌ API Port 4001: Not listening
+[2025-09-16 04:37:03] === Gateway Status ===
+[2025-09-16 04:37:03] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:37:03]    ✅ API Port 4002: Listening
+[2025-09-16 04:37:03] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:37:03]    ✅ API Port 4001: Listening
+[2025-09-16 04:39:35] === Gateway Status ===
+[2025-09-16 04:39:35] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:39:35]    ✅ API Port 4002: Listening
+[2025-09-16 04:39:35] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:39:35]    ✅ API Port 4001: Listening
+[2025-09-16 04:39:37] === Gateway Status ===
+[2025-09-16 04:39:37] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:39:37]    ✅ API Port 4002: Listening
+[2025-09-16 04:39:37] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:39:37]    ✅ API Port 4001: Listening
+[2025-09-16 04:42:11] === Gateway Status ===
+[2025-09-16 04:42:11] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:42:11]    ✅ API Port 4002: Listening
+[2025-09-16 04:42:11] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:42:11]    ✅ API Port 4001: Listening
+[2025-09-16 04:44:45] === Gateway Status ===
+[2025-09-16 04:44:45] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:44:45]    ✅ API Port 4002: Listening
+[2025-09-16 04:44:45] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:44:45]    ✅ API Port 4001: Listening
+[2025-09-16 04:47:19] === Gateway Status ===
+[2025-09-16 04:47:19] 📊 Paper Gateway: Running (PID: 4577)
+[2025-09-16 04:47:19]    ✅ API Port 4002: Listening
+[2025-09-16 04:47:19] 💰 Live Gateway: Running (PID: 5480)
+[2025-09-16 04:47:19]    ✅ API Port 4001: Listening

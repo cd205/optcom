@@ -149,12 +149,12 @@ class IBGatewayManager:
     def check_status(self) -> Tuple[bool, str]:
         """
         Check the status of both gateways
-        
+
         Returns:
             tuple: (success, status_output)
         """
         logger.info("Checking IB Gateway status...")
-        
+
         try:
             cmd = ['bash', self.script_path, 'status']
             result = subprocess.run(
@@ -164,41 +164,83 @@ class IBGatewayManager:
                 text=True,
                 timeout=30
             )
-            
+
             # Status command should always return 0, the output tells us the actual status
             status_output = result.stdout
             logger.info("Gateway status check completed")
             logger.info(status_output)
-            
+
             # Check if both gateways are running by looking for key indicators
             paper_running = "Paper Gateway: Running" in status_output
             live_running = "Live Gateway: Running" in status_output
-            
+
             both_running = paper_running and live_running
-            
+
             return both_running, status_output
-            
+
         except Exception as e:
             logger.error(f"❌ Error checking gateway status: {e}")
             return False, f"Error: {e}"
+
+    def check_individual_status(self) -> Tuple[bool, bool, str, bool]:
+        """
+        Check the status of gateways individually
+
+        Returns:
+            tuple: (paper_running, live_running, status_output, live_2fa_pending)
+        """
+        logger.info("Checking individual gateway status...")
+
+        try:
+            cmd = ['bash', self.script_path, 'status']
+            result = subprocess.run(
+                cmd,
+                cwd=self.ibc_setup_path,
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+
+            status_output = result.stdout
+            logger.info("Individual gateway status check completed")
+
+            # Check individual gateway status
+            paper_running = "Paper Gateway: Running" in status_output
+            live_running = "Live Gateway: Running" in status_output
+
+            # Detect 2FA pending state for live gateway
+            live_2fa_pending = (
+                "Live Gateway: Running" in status_output and
+                "API Port 4001: Not listening" in status_output
+            ) or (
+                "Second Factor Authentication" in status_output
+            )
+
+            logger.info(f"Status: Paper={paper_running}, Live={live_running}, Live2FA={live_2fa_pending}")
+
+            return paper_running, live_running, status_output, live_2fa_pending
+
+        except Exception as e:
+            logger.error(f"❌ Error checking individual gateway status: {e}")
+            return False, False, f"Error: {e}", False
     
     def restart_gateway(self, gateway_type: Optional[str] = None) -> bool:
         """
-        Restart gateway(s)
-        
+        Restart gateway(s) - improved logic to avoid unnecessary restarts
+
         Args:
             gateway_type: 'paper', 'live', or None (both)
-            
+
         Returns:
             bool: True if successful, False otherwise
         """
         if gateway_type:
-            logger.info(f"Restarting {gateway_type} gateway...")
+            logger.info(f"Restarting {gateway_type} gateway only...")
             cmd = ['bash', self.script_path, 'restart', gateway_type]
         else:
             logger.info("Restarting both gateways...")
             cmd = ['bash', self.script_path, 'restart']
-        
+
         try:
             result = subprocess.run(
                 cmd,
@@ -207,25 +249,162 @@ class IBGatewayManager:
                 text=True,
                 timeout=300
             )
-            
+
             if result.returncode == 0:
                 logger.info("✅ Gateway restart completed successfully")
                 return True
             else:
                 logger.error(f"❌ Failed to restart gateway: {result.stderr}")
                 return False
-                
+
         except Exception as e:
             logger.error(f"❌ Error restarting gateway: {e}")
+            return False
+
+    def smart_restart_gateway(self) -> bool:
+        """
+        Smart restart that only restarts gateways that actually need it
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        logger.info("Performing smart gateway restart...")
+
+        # Check individual status first
+        paper_running, live_running, status_output, live_2fa_pending = self.check_individual_status()
+
+        # If live gateway is pending 2FA, don't restart anything
+        if live_2fa_pending:
+            logger.info("🔐 Live gateway pending 2FA - not restarting, waiting for authentication")
+            return True  # Consider this successful as no action needed
+
+        restart_needed = []
+        if not paper_running:
+            restart_needed.append('paper')
+        if not live_running:
+            restart_needed.append('live')
+
+        if not restart_needed:
+            logger.info("✅ Both gateways running - no restart needed")
+            return True
+
+        # Restart only the gateways that need it
+        success = True
+        for gateway in restart_needed:
+            logger.info(f"🔄 Restarting {gateway} gateway only")
+            if not self.restart_gateway(gateway):
+                logger.error(f"❌ Failed to restart {gateway} gateway")
+                success = False
+            else:
+                # Wait for gateway to initialize
+                logger.info(f"⏳ Waiting for {gateway} gateway to initialize...")
+                time.sleep(30 if gateway == 'paper' else 60)  # Live needs more time for 2FA
+
+        return success
+
+    def monitor_2fa_with_retry(self, max_2fa_wait_minutes: int = 10, retry_interval_minutes: int = 3) -> bool:
+        """
+        Monitor 2FA authentication with automatic retry notifications
+
+        This function will:
+        1. Wait for 2FA authentication
+        2. If no response after retry_interval, trigger a new 2FA request
+        3. Repeat until max_wait_time is reached or authentication succeeds
+
+        Args:
+            max_2fa_wait_minutes: Maximum time to wait for 2FA (default 10 minutes)
+            retry_interval_minutes: How often to retry 2FA notification (default 3 minutes)
+
+        Returns:
+            bool: True if 2FA completed successfully, False if timeout
+        """
+        logger.info(f"🔐 Starting 2FA monitoring with {retry_interval_minutes}-minute retry intervals")
+        logger.info(f"⏰ Will retry for up to {max_2fa_wait_minutes} minutes")
+
+        start_time = time.time()
+        max_wait_seconds = max_2fa_wait_minutes * 60
+        retry_interval_seconds = retry_interval_minutes * 60
+
+        retry_count = 0
+
+        while (time.time() - start_time) < max_wait_seconds:
+            # Check if 2FA has been completed
+            paper_running, live_running, status, live_2fa_pending = self.check_individual_status()
+
+            if live_running and not live_2fa_pending:
+                logger.info("✅ 2FA authentication completed successfully!")
+                return True
+
+            if not live_2fa_pending:
+                # Live gateway is not running and not pending 2FA - might need restart
+                logger.info("🔄 Live gateway not in 2FA state - attempting restart to trigger new 2FA")
+                if self.restart_gateway('live'):
+                    logger.info("✅ Live gateway restarted, new 2FA notification should be sent")
+                    retry_count += 1
+                else:
+                    logger.error("❌ Failed to restart live gateway for 2FA retry")
+
+                # Wait for gateway to initialize and show 2FA prompt
+                time.sleep(30)
+            else:
+                logger.info(f"⏳ 2FA pending - waiting {retry_interval_minutes} minutes before retry #{retry_count + 1}")
+
+            # Wait for the retry interval or until max time
+            elapsed = time.time() - start_time
+            time_to_next_retry = min(retry_interval_seconds, max_wait_seconds - elapsed)
+
+            if time_to_next_retry > 0:
+                logger.info(f"⏳ Waiting {time_to_next_retry/60:.1f} minutes for 2FA response...")
+                time.sleep(time_to_next_retry)
+
+            retry_count += 1
+
+        logger.warning(f"⏰ 2FA timeout after {max_2fa_wait_minutes} minutes ({retry_count} retry attempts)")
+        return False
+
+    def start_gateways_with_2fa_retry(self) -> bool:
+        """
+        Start gateways with enhanced 2FA retry mechanism
+
+        This method combines gateway startup with automatic 2FA retry notifications
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        logger.info("🚀 Starting IB Gateways with 2FA retry support...")
+
+        # First start the gateways normally
+        if not self.start_gateways():
+            logger.error("❌ Initial gateway startup failed")
+            return False
+
+        # Check if we need 2FA monitoring
+        paper_running, live_running, status, live_2fa_pending = self.check_individual_status()
+
+        if paper_running and live_running:
+            logger.info("✅ Both gateways started successfully without 2FA issues")
+            return True
+        elif paper_running and live_2fa_pending:
+            logger.info("🔐 Paper gateway running, live gateway pending 2FA - starting enhanced monitoring...")
+
+            # Use enhanced 2FA monitoring with retry
+            if self.monitor_2fa_with_retry(max_2fa_wait_minutes=10, retry_interval_minutes=3):
+                logger.info("✅ 2FA completed successfully with retry support")
+                return True
+            else:
+                logger.warning("⚠️ 2FA monitoring timed out, but paper gateway is still running")
+                return True  # Accept partial success
+        else:
+            logger.error("❌ Gateway startup failed - neither gateway is running properly")
             return False
 
 def start_ib_gateways(**context) -> bool:
     """
     Airflow-compatible function to start IB Gateways
-    
+
     Args:
         **context: Airflow context (ignored)
-        
+
     Returns:
         bool: True if successful, False otherwise
     """
@@ -234,6 +413,25 @@ def start_ib_gateways(**context) -> bool:
         return manager.start_gateways()
     except Exception as e:
         logger.error(f"Failed to start IB Gateways: {e}")
+        return False
+
+def start_ib_gateways_with_2fa_retry(**context) -> bool:
+    """
+    Airflow-compatible function to start IB Gateways with 2FA retry support
+
+    This function will automatically retry 2FA notifications if no response is received.
+
+    Args:
+        **context: Airflow context (ignored)
+
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        manager = IBGatewayManager()
+        return manager.start_gateways_with_2fa_retry()
+    except Exception as e:
+        logger.error(f"Failed to start IB Gateways with 2FA retry: {e}")
         return False
 
 def check_ib_gateway_status(**context) -> Tuple[bool, str]:

@@ -1,239 +1,224 @@
-2025-09-12 11:04:12.098 [WP] INFO  [JTS-Main] - ------------------------------- IB GATEWAY RESTART --------------------------------
-2025-09-12 11:04:12.116 [WP] INFO  [JTS-Main] - installer version: unknown, installer type: standalone, install dir: 'null', Jts dir: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings', VM options file: 'null'
-2025-09-12 11:04:12.212 [WP] INFO  [JTS-Main] - Verifying environment [entryPoint=IBGATEWAY_STANDALONE]...
-2025-09-12 11:04:12.292 [WP] INFO  [JTS-Main] - Install4jAutoUpdateService initialized [props=LauncherProperties[updateDownloadUrl=null,skipUpdateCheck=false,nightlyEnabled=false,channelNameArg=null,channelName=latest,channelChanged=false,jtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings,apiPort=null,sessionId=null,installDir=null,exeName=null]].
-2025-09-12 11:04:12.315 [WP] INFO  [JTS-Main] - PROXY Installed custom selector
-2025-09-12 11:04:12.340 [WP] INFO  [JTS-Main] - useSsl=true,FIX endPoint=ndc1.ibllc.com:4001
-2025-09-12 11:04:12.665 [WP] INFO  [JTS-Main] - Setting custom timezone: Africa/Abidjan
-2025-09-12 11:04:12.686 [WP] INFO  [JTS-Main] - LOCALE: Property locale_to_use=null JTS Locale=en_US  country=United States  variant=
-2025-09-12 11:04:12.690 [WP] INFO  [JTS-Main] - Region: Custom
-2025-09-12 11:04:12.691 [WP] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 11:04:12.700 [WP] INFO  [JTS-Main] - Starting to download 'https://download2.interactivebrokers.com/java/classes/locales.jar' using HotBackup 'https://download2.interactivebrokers.com/java/classes/locales.jar'
-2025-09-12 11:04:14.004 [WP] INFO  [JTS-Main] - LOCALE: needToUpdate  dest=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar  sourceMod=2019-11-07 15:30:14  destMod=2025-08-22 05:05:17  sourceSize=114646  destSize=114646  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
-2025-09-12 11:04:14.005 [WP] INFO  [JTS-Main] - LOCALE: /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar already up-to-date
-2025-09-12 11:04:14.006 [WP] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 11:04:14.006 [WP] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 11:04:14.052 [WP] INFO  [JTS-Main] - DocumentBuilderFactory=jrt:/java.xml/com/sun/org/apache/xerces/internal/jaxp/DocumentBuilderFactoryImpl.class
-2025-09-12 11:04:14.217 [WP] INFO  [JTS-Main] - LOCALE: loaded 9 supported locales
-2025-09-12 11:04:14.282 [WP] INFO  [JTS-Main] - LOCALE: loaded 8 countries
-2025-09-12 11:04:14.283 [WP] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 11:04:14.301 [WP] INFO  [JTS-Main] - Locale from ini: en
-2025-09-12 11:04:14.301 [WP] INFO  [JTS-Main] - LOCALE: created classloader java.net.URLClassLoader@436390f4 with file:/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a
-2025-09-12 11:04:14.303 [WP] INFO  [JTS-Main] - Locale=en_US  country=United States  variant=
-2025-09-12 11:04:14.312 [WP] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
-2025-09-12 11:04:14.318 [WP] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
-2025-09-12 11:04:14.319 [WP] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
-2025-09-12 11:04:14.320 [WP] INFO  [JTS-Main] - LOCALE:  type: launcher intended: en_US actual:  size: 500
-2025-09-12 11:04:14.322 [WP] INFO  [JTS-Main] - settings dir: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings'
-2025-09-12 11:04:15.046 [WP] INFO  [JTS-Main] - LauncherFontUpdater: simulatehighdefscreen=false
-2025-09-12 11:04:15.058 [WP] INFO  [JTS-Main] - LauncherFontUpdater: Screen dimensions=1024x768
-2025-09-12 11:04:15.059 [WP] INFO  [JTS-Main] - LauncherFontUpdater: highres=false
-2025-09-12 11:04:15.059 [WP] INFO  [JTS-Main] - LauncherFontUpdater: FontSize=16
-2025-09-12 11:04:15.059 [WP] INFO  [JTS-Main] - initPreUI() - entry
-2025-09-12 11:04:15.093 [WP] INFO  [JTS-Main] - Build 10.37.1k, Aug 7, 2025 11:58:23 AM
-2025-09-12 11:04:15.286 [WP] INFO  [JTS-Main] - LookAndFeelChangedListener installed
-2025-09-12 11:04:15.312 [WP] INFO  [JTS-Main] - JtsLookAndFeel initialized
-2025-09-12 11:04:16.852 [WP] INFO  [JTS-Main] - Current LAF: TWS LAF
-2025-09-12 11:04:16.853 [WP] INFO  [JTS-Main] - initPreUI() - exit
-2025-09-12 11:04:16.869 [WP] INFO  [JTS-MiscUlrsRequester-5] - Connecting cdc1.ibllc.com:4000 timeout=10000...
-2025-09-12 11:04:17.059 [WP] INFO  [JTS-MiscUlrsRequester-5] - Connected to cdc1.ibllc.com:4000/8.17.22.31 remote-ip on local port 0 socket local addrs:port /10.164.0.2:49184
-2025-09-12 11:04:17.063 [WP] INFO  [JTS-MiscUlrsRequester-5] - Updating machine info [connectionAddress=/10.164.0.2]...
-2025-09-12 11:04:17.069 [WP] INFO  [JTS-MiscUlrsRequester-5] - Creating unique random...
-2025-09-12 11:04:17.071 [WP] INFO  [JTS-MiscUlrsRequester-5] - id=ee2618bb
-2025-09-12 11:04:17.071 [WP] INFO  [JTS-MiscUlrsRequester-5] - Resolving MAC address...
-2025-09-12 11:04:17.074 [WP] INFO  [JTS-MiscUlrsRequester-5] - MACNetworkInfo created <ee2618bb|42:01:0A:A4:00:02|10.164.0.2>.
-2025-09-12 11:04:17.112 [WP] INFO  [JTS-MISC URLsListenerS1-6] - Starting listener thread [sessionID=1]...
-2025-09-12 11:04:17.152 [WP] INFO  [JTS-MiscUlrsRequester-5] - Sending MiscUrls request
-2025-09-12 11:04:17.152 [WP] INFO  [JTS-AuthDispatcherS1-7] - Starting dispatcher thread [sessionID=1]...
-2025-09-12 11:04:17.155 [WP] INFO  [JTS-MiscUlrsRequester-5] - LOGIN_TIME_MONITOR	 false 11:04:17:155 since start = 0 thread delay = 0 global delay = 0 tag=null, cls=AuthDispatcher method=send
-2025-09-12 11:04:17.157 [WP] INFO  [JTS-AuthResponseMonitor-8] - Starting auth response monitor thread
-2025-09-12 11:04:17.158 [WP] INFO  [JTS-MISC URLsListenerS1-6] - Initial listener buffer size is 65536.
-2025-09-12 11:04:17.158 [WP] INFO  [JTS-MISC URLsListenerS1-6] - Listener thread [sessionID=1] is ready to process messages.
-2025-09-12 11:04:17.262 [WP] INFO  [JTS-AuthDispatcherS1-7] - Received NS_MISC_URLS
-2025-09-12 11:04:17.267 [WP] INFO  [JTS-AuthDispatcherS1-7] - IBMiscUrl.miscUrlMessage()[sslRequired=true]
-2025-09-12 11:04:17.268 [WP] INFO  [JTS-AuthDispatcherS1-7] - Misc URL: scope is blank - setting userScope to EXTERNAL
-2025-09-12 11:04:17.269 [WP] INFO  [JTS-AuthDispatcherS1-7] - Misc URL: setting userScope to EXTERNAL
-2025-09-12 11:04:17.278 [WP] INFO  [JTS-AuthDispatcherS1-7] - Disconnecting cdc1.ibllc.com:4000 [disconnectDetails=DisconnectDetails[sessionID=1,endPoint=cdc1.ibllc.com:4000,reason=DISCONNECT_BY_DESIGN,cause=null,systemMessage=null,keepSocketOpen=false]]...
-2025-09-12 11:04:17.279 [WP] INFO  [JTS-AuthDispatcherS1-7] - Socket closed.
-2025-09-12 11:04:17.279 [WP] INFO  [JTS-AuthDispatcherS1-7] - SocketTracker[name=name=MISC URLs(cdc1.ibllc.com:4000),usesCcpConMan=false,lastReadTimestamp=1757675057257,lastReadDateTime=2025-09-12T11:04:17.257,lastFixSendTime=].
-2025-09-12 11:04:17.280 [WP] INFO  [JTS-AuthDispatcherS1-7] - Interrupting dispatcher [sessionID=1]...
-2025-09-12 11:04:17.280 [WP] INFO  [JTS-AuthDispatcherS1-7] - Interrupting listener [sessionID=1,disconnectSocket=true]...
-2025-09-12 11:04:17.281 [WP] INFO  [JTS-AuthDispatcherS1-7] - Dispatcher thread terminating [sessionID=1,interrupted=true]...
-2025-09-12 11:04:17.279 [WP] INFO  [JTS-MISC URLsListenerS1-6] - Socket or stream for connection cdc1.ibllc.com:4000 was closed by another thread.
-2025-09-12 11:04:17.282 [WP] INFO  [JTS-AuthResponseMonitor-8] - Terminating auth response monitor thread
-2025-09-12 11:04:17.282 [WP] INFO  [JTS-MISC URLsListenerS1-6] - Listener thread terminating [sessionID=1] [seen=1159,totalShifted=1159,moreAvailable=0]
-2025-09-12 11:04:17.365 [WP] WARN  [JTS-DeadlockMonitor-2] - instance of control is not created yet
-2025-09-12 11:04:17.369 [WP] INFO  [JTS-DeadlockMonitor-2] - Memory:total=786,432KB free=750,209KB HeapUsage: Max=786,432KB used=35,708KB committed=153,600KB NonHeapUsage: Max=0KB used=59,046KB committed=61,632KB
-2025-09-12 11:04:18.414 [WP] INFO  [JTS-DeadlockMonitor-2] - CPU:cur=10.22% avg=10.22% 30 min avg=10.22% 10 min avg=10.22% 5 min avg=10.22% 1 min avg=10.22%
-GC:called=7 times CPU used=0.21%
+2025-09-16 04:35:04.814 [UI] INFO  [JTS-Main] - ------------------------------- IB GATEWAY RESTART --------------------------------
+2025-09-16 04:35:04.832 [UI] INFO  [JTS-Main] - installer version: unknown, installer type: standalone, install dir: 'null', Jts dir: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings', VM options file: 'null'
+2025-09-16 04:35:04.904 [UI] INFO  [JTS-Main] - Verifying environment [entryPoint=IBGATEWAY_STANDALONE]...
+2025-09-16 04:35:04.958 [UI] INFO  [JTS-Main] - Install4jAutoUpdateService initialized [props=LauncherProperties[updateDownloadUrl=null,skipUpdateCheck=false,nightlyEnabled=false,channelNameArg=null,channelName=latest,channelChanged=false,jtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings,apiPort=null,sessionId=null,installDir=null,exeName=null]].
+2025-09-16 04:35:04.970 [UI] INFO  [JTS-Main] - PROXY Installed custom selector
+2025-09-16 04:35:04.986 [UI] INFO  [JTS-Main] - useSsl=true,FIX endPoint=ndc1.ibllc.com:4001
+2025-09-16 04:35:05.265 [UI] INFO  [JTS-Main] - Setting custom timezone: Africa/Abidjan
+2025-09-16 04:35:05.285 [UI] INFO  [JTS-Main] - LOCALE: Property locale_to_use=null JTS Locale=en_US  country=United States  variant=
+2025-09-16 04:35:05.288 [UI] INFO  [JTS-Main] - Region: Custom
+2025-09-16 04:35:05.289 [UI] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
+2025-09-16 04:35:05.294 [UI] INFO  [JTS-Main] - Starting to download 'https://download2.interactivebrokers.com/java/classes/locales.jar' using HotBackup 'https://download2.interactivebrokers.com/java/classes/locales.jar'
+2025-09-16 04:35:06.183 [UI] INFO  [JTS-Main] - LOCALE: needToUpdate  dest=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar  sourceMod=2019-11-07 15:30:14  destMod=2025-08-22 05:05:17  sourceSize=114646  destSize=114646  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
+2025-09-16 04:35:06.183 [UI] INFO  [JTS-Main] - LOCALE: /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar already up-to-date
+2025-09-16 04:35:06.184 [UI] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
+2025-09-16 04:35:06.184 [UI] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
+2025-09-16 04:35:06.205 [UI] INFO  [JTS-Main] - DocumentBuilderFactory=jrt:/java.xml/com/sun/org/apache/xerces/internal/jaxp/DocumentBuilderFactoryImpl.class
+2025-09-16 04:35:06.305 [UI] INFO  [JTS-Main] - LOCALE: loaded 9 supported locales
+2025-09-16 04:35:06.355 [UI] INFO  [JTS-Main] - LOCALE: loaded 8 countries
+2025-09-16 04:35:06.355 [UI] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
+2025-09-16 04:35:06.377 [UI] INFO  [JTS-Main] - Locale from ini: en
+2025-09-16 04:35:06.378 [UI] INFO  [JTS-Main] - LOCALE: created classloader java.net.URLClassLoader@436390f4 with file:/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a
+2025-09-16 04:35:06.379 [UI] INFO  [JTS-Main] - Locale=en_US  country=United States  variant=
+2025-09-16 04:35:06.388 [UI] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
+2025-09-16 04:35:06.394 [UI] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
+2025-09-16 04:35:06.395 [UI] INFO  [JTS-Main] - prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
+2025-09-16 04:35:06.397 [UI] INFO  [JTS-Main] - LOCALE:  type: launcher intended: en_US actual:  size: 500
+2025-09-16 04:35:06.398 [UI] INFO  [JTS-Main] - settings dir: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings'
+2025-09-16 04:35:06.896 [UI] INFO  [JTS-Main] - LauncherFontUpdater: simulatehighdefscreen=false
+2025-09-16 04:35:06.906 [UI] INFO  [JTS-Main] - LauncherFontUpdater: Screen dimensions=1024x768
+2025-09-16 04:35:06.906 [UI] INFO  [JTS-Main] - LauncherFontUpdater: highres=false
+2025-09-16 04:35:06.907 [UI] INFO  [JTS-Main] - LauncherFontUpdater: FontSize=16
+2025-09-16 04:35:06.907 [UI] INFO  [JTS-Main] - initPreUI() - entry
+2025-09-16 04:35:06.936 [UI] INFO  [JTS-Main] - Build 10.37.1k, Aug 7, 2025 11:58:23 AM
+2025-09-16 04:35:07.055 [UI] INFO  [JTS-Main] - LookAndFeelChangedListener installed
+2025-09-16 04:35:07.069 [UI] INFO  [JTS-Main] - JtsLookAndFeel initialized
+2025-09-16 04:35:07.958 [UI] INFO  [JTS-Main] - Current LAF: TWS LAF
+2025-09-16 04:35:07.959 [UI] INFO  [JTS-Main] - initPreUI() - exit
+2025-09-16 04:35:07.967 [UI] INFO  [JTS-MiscUlrsRequester-5] - Connecting cdc1.ibllc.com:4000 timeout=10000...
+2025-09-16 04:35:08.074 [UI] INFO  [JTS-MiscUlrsRequester-5] - Connected to cdc1.ibllc.com:4000/8.17.22.31 remote-ip on local port 0 socket local addrs:port /10.164.0.2:43982
+2025-09-16 04:35:08.075 [UI] INFO  [JTS-MiscUlrsRequester-5] - Updating machine info [connectionAddress=/10.164.0.2]...
+2025-09-16 04:35:08.090 [UI] INFO  [JTS-MiscUlrsRequester-5] - Creating unique random...
+2025-09-16 04:35:08.091 [UI] INFO  [JTS-MiscUlrsRequester-5] - id=ee2618bb
+2025-09-16 04:35:08.091 [UI] INFO  [JTS-MiscUlrsRequester-5] - Resolving MAC address...
+2025-09-16 04:35:08.094 [UI] INFO  [JTS-MiscUlrsRequester-5] - MACNetworkInfo created <ee2618bb|42:01:0A:A4:00:02|10.164.0.2>.
+2025-09-16 04:35:08.118 [UI] INFO  [JTS-MISC URLsListenerS1-6] - Starting listener thread [sessionID=1]...
+2025-09-16 04:35:08.148 [UI] INFO  [JTS-MiscUlrsRequester-5] - Sending MiscUrls request
+2025-09-16 04:35:08.148 [UI] INFO  [JTS-AuthDispatcherS1-7] - Starting dispatcher thread [sessionID=1]...
+2025-09-16 04:35:08.152 [UI] INFO  [JTS-MiscUlrsRequester-5] - LOGIN_TIME_MONITOR	 false 04:35:08:152 since start = 0 thread delay = 0 global delay = 0 tag=null, cls=AuthDispatcher method=send
+2025-09-16 04:35:08.154 [UI] INFO  [JTS-MISC URLsListenerS1-6] - Initial listener buffer size is 65536.
+2025-09-16 04:35:08.155 [UI] INFO  [JTS-MISC URLsListenerS1-6] - Listener thread [sessionID=1] is ready to process messages.
+2025-09-16 04:35:08.155 [UI] INFO  [JTS-AuthResponseMonitor-8] - Starting auth response monitor thread
+2025-09-16 04:35:08.258 [UI] INFO  [JTS-AuthDispatcherS1-7] - Received NS_MISC_URLS
+2025-09-16 04:35:08.260 [UI] INFO  [JTS-AuthDispatcherS1-7] - IBMiscUrl.miscUrlMessage()[sslRequired=true]
+2025-09-16 04:35:08.261 [UI] INFO  [JTS-AuthDispatcherS1-7] - Misc URL: scope is blank - setting userScope to EXTERNAL
+2025-09-16 04:35:08.261 [UI] INFO  [JTS-AuthDispatcherS1-7] - Misc URL: setting userScope to EXTERNAL
+2025-09-16 04:35:08.269 [UI] INFO  [JTS-AuthDispatcherS1-7] - Disconnecting cdc1.ibllc.com:4000 [disconnectDetails=DisconnectDetails[sessionID=1,endPoint=cdc1.ibllc.com:4000,reason=DISCONNECT_BY_DESIGN,cause=null,systemMessage=null,keepSocketOpen=false]]...
+2025-09-16 04:35:08.270 [UI] INFO  [JTS-AuthDispatcherS1-7] - Socket closed.
+2025-09-16 04:35:08.270 [UI] INFO  [JTS-AuthDispatcherS1-7] - SocketTracker[name=name=MISC URLs(cdc1.ibllc.com:4000),usesCcpConMan=false,lastReadTimestamp=1757997308255,lastReadDateTime=2025-09-16T04:35:08.255,lastFixSendTime=].
+2025-09-16 04:35:08.270 [UI] INFO  [JTS-AuthDispatcherS1-7] - Interrupting dispatcher [sessionID=1]...
+2025-09-16 04:35:08.271 [UI] INFO  [JTS-MISC URLsListenerS1-6] - Socket or stream for connection cdc1.ibllc.com:4000 was closed by another thread.
+2025-09-16 04:35:08.271 [UI] INFO  [JTS-AuthDispatcherS1-7] - Interrupting listener [sessionID=1,disconnectSocket=true]...
+2025-09-16 04:35:08.272 [UI] INFO  [JTS-MISC URLsListenerS1-6] - Listener thread terminating [sessionID=1] [seen=1159,totalShifted=1159,moreAvailable=0]
+2025-09-16 04:35:08.273 [UI] INFO  [JTS-AuthDispatcherS1-7] - Dispatcher thread terminating [sessionID=1,interrupted=true]...
+2025-09-16 04:35:08.273 [UI] INFO  [JTS-AuthResponseMonitor-8] - Terminating auth response monitor thread
+2025-09-16 04:35:09.362 [UI] INFO  [AWT-EventQueue-0] - Default timezone:Africa/Abidjan
+2025-09-16 04:35:09.365 [UI] INFO  [AWT-EventQueue-0] - Starting GstatMessageMgr...
+2025-09-16 04:35:09.367 [UI] INFO  [JTS-GstatMessageMgr-11] - Sending a request to GSTAT [url=https://api.ibkr.com/v1/gstat//bulletins,data='{"p":"10371k","t":"Maintenance","tz":"Africa/Abidjan","format":"webapp","theme":"dark","fontSize":"12px","lang":"en"}']...
+2025-09-16 04:35:09.474 [UI] INFO  [AWT-EventQueue-0] - Started on 20250916-04:35:09
+2025-09-16 04:35:09.477 [UI] INFO  [AWT-EventQueue-0] - Default timezone:Africa/Abidjan name:Greenwich Mean Time dst:0
+2025-09-16 04:35:09.477 [UI] INFO  [AWT-EventQueue-0] - java version = 17.0.10.0.101
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - sun.arch.data.model = 64
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - os = Linux
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - os version = 6.14.0-1014-gcp
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - os architecture = 32
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - runtime = OpenJDK Runtime Environment
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - vendor = Azul Systems, Inc.
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - vm name = OpenJDK 64-Bit Server VM
+2025-09-16 04:35:09.478 [UI] INFO  [AWT-EventQueue-0] - username = 'chris_s_dodd'
+2025-09-16 04:35:09.596 [UI] INFO  [JTS-GstatMessageMgr-11] - Received response [errorCode=204,contentLen=-1].
+2025-09-16 04:35:09.969 [UI] WARN  [JTS-DeadlockMonitor-2] - instance of control is not created yet
+2025-09-16 04:35:09.973 [UI] INFO  [JTS-DeadlockMonitor-2] - Memory:total=786,432KB free=729,727KB HeapUsage: Max=786,432KB used=55,166KB committed=153,600KB NonHeapUsage: Max=0KB used=73,616KB committed=75,584KB
+2025-09-16 04:35:10.040 [UI] INFO  [AWT-EventQueue-0] - OvernightManager.dayInit: new values: dayOfTheWeek: 3 (Tue), YYYYMMofToday: 202509, YYYYMMDDofToday: 20250916, m_todayDate: 20250916, dueToChangeInTimezone: false
+2025-09-16 04:35:10.558 [UI] INFO  [AWT-EventQueue-0] - Stopping GstatMessageMgr...
+2025-09-16 04:35:10.560 [UI] INFO  [AWT-EventQueue-0] - Setting dir is /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/
+2025-09-16 04:35:10.561 [UI] INFO  [AWT-EventQueue-0] - PROXY Cleared HTTP proxy: no valid proxy is present (passing on :0)
+2025-09-16 04:35:10.564 [UI] INFO  [AWT-EventQueue-0] - BaseIniFile.saveGatewayFixEndPoint() [host=ndc1.ibllc.com,port=4001]...
+2025-09-16 04:35:10.564 [UI] INFO  [AWT-EventQueue-0] - SPLASH Creating screen with 5 steps
+2025-09-16 04:35:10.656 [UI] INFO  [AWT-EventQueue-0] - SplashScreen: using ads manager
+2025-09-16 04:35:10.663 [UI] INFO  [AWT-EventQueue-0] - AdImageContainer: start build ads UI
+2025-09-16 04:35:10.672 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD request https://api.ibkr.com/tws.proxy/info/next?platform=dTWS&size=1200x1000&lang=en&version=10371&build=latest
+2025-09-16 04:35:10.673 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdManager: sending request with header X-USERNAME
+2025-09-16 04:35:10.851 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD request is ok
+2025-09-16 04:35:10.858 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD receive raw response {"imagePath":"/info/image/328-0-1200x1000-en.jpg","expire":1767193200000,"id":"ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==","target_alt":"https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==","target":"http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg=="}
+2025-09-16 04:35:10.975 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdsManager: parsed json object: 
+id: ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==
+expire: 1767193200000
+imagePath: /info/image/328-0-1200x1000-en.jpg
+target: http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==
+target_alt: https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==
+
+2025-09-16 04:35:11.025 [UI] INFO  [JTS-DeadlockMonitor-2] - CPU:cur=29.74% avg=29.74% 30 min avg=29.74% 10 min avg=29.74% 5 min avg=29.74% 1 min avg=29.74%
+GC:called=8 times CPU used=0.25%
 Finalizer:cur=0.00% avg=0.00% 30 min avg=0.00% 10 min avg=0.00% 5 min avg=0.00% 1 min avg=0.00%
-Threads Count:curr live=27 curr daemon=18
-2025-09-12 11:04:18.900 [WP] INFO  [AWT-EventQueue-0] - Default timezone:Africa/Abidjan
-2025-09-12 11:04:18.903 [WP] INFO  [AWT-EventQueue-0] - Starting GstatMessageMgr...
-2025-09-12 11:04:18.907 [WP] INFO  [JTS-GstatMessageMgr-11] - Sending a request to GSTAT [url=https://api.ibkr.com/v1/gstat//bulletins,data='{"p":"10371k","t":"Maintenance","tz":"Africa/Abidjan","format":"webapp","theme":"dark","fontSize":"12px","lang":"en"}']...
-2025-09-12 11:04:19.013 [WP] INFO  [AWT-EventQueue-0] - Started on 20250912-11:04:19
-2025-09-12 11:04:19.014 [WP] INFO  [AWT-EventQueue-0] - Default timezone:Africa/Abidjan name:Greenwich Mean Time dst:0
-2025-09-12 11:04:19.014 [WP] INFO  [AWT-EventQueue-0] - java version = 17.0.10.0.101
-2025-09-12 11:04:19.014 [WP] INFO  [AWT-EventQueue-0] - sun.arch.data.model = 64
-2025-09-12 11:04:19.014 [WP] INFO  [AWT-EventQueue-0] - os = Linux
-2025-09-12 11:04:19.014 [WP] INFO  [AWT-EventQueue-0] - os version = 6.14.0-1014-gcp
-2025-09-12 11:04:19.015 [WP] INFO  [AWT-EventQueue-0] - os architecture = 32
-2025-09-12 11:04:19.015 [WP] INFO  [AWT-EventQueue-0] - runtime = OpenJDK Runtime Environment
-2025-09-12 11:04:19.015 [WP] INFO  [AWT-EventQueue-0] - vendor = Azul Systems, Inc.
-2025-09-12 11:04:19.015 [WP] INFO  [AWT-EventQueue-0] - vm name = OpenJDK 64-Bit Server VM
-2025-09-12 11:04:19.015 [WP] INFO  [AWT-EventQueue-0] - username = 'chris_s_dodd'
-2025-09-12 11:04:19.306 [WP] INFO  [JTS-GstatMessageMgr-11] - Received response [errorCode=204,contentLen=-1].
-2025-09-12 11:04:20.130 [WP] INFO  [AWT-EventQueue-0] - OvernightManager.dayInit: new values: dayOfTheWeek: 6 (Fri), YYYYMMofToday: 202509, YYYYMMDDofToday: 20250912, m_todayDate: 20250912, dueToChangeInTimezone: false
-2025-09-12 11:04:20.914 [WP] INFO  [AWT-EventQueue-0] - Stopping GstatMessageMgr...
-2025-09-12 11:04:20.917 [WP] INFO  [AWT-EventQueue-0] - Setting dir is /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/
-2025-09-12 11:04:20.918 [WP] INFO  [AWT-EventQueue-0] - PROXY Cleared HTTP proxy: no valid proxy is present (passing on :0)
-2025-09-12 11:04:20.921 [WP] INFO  [AWT-EventQueue-0] - BaseIniFile.saveGatewayFixEndPoint() [host=ndc1.ibllc.com,port=4001]...
-2025-09-12 11:04:20.922 [WP] INFO  [AWT-EventQueue-0] - SPLASH Creating screen with 5 steps
-2025-09-12 11:04:21.033 [WP] INFO  [AWT-EventQueue-0] - SplashScreen: using ads manager
-2025-09-12 11:04:21.038 [WP] INFO  [AWT-EventQueue-0] - AdImageContainer: start build ads UI
-2025-09-12 11:04:21.052 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD request https://api.ibkr.com/tws.proxy/info/next?platform=dTWS&size=1200x1000&lang=en&version=10371&build=latest
-2025-09-12 11:04:21.053 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdManager: sending request with header X-USERNAME
-2025-09-12 11:04:21.217 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD request is ok
-2025-09-12 11:04:21.222 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdManager: NEXT_AD receive raw response {"imagePath":"/info/image/328-0-1200x1000-en.jpg","expire":1767193200000,"id":"ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==","target_alt":"https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==","target":"http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw=="}
-2025-09-12 11:04:21.404 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdsManager: parsed json object: 
-id: ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==
+Threads Count:curr live=31 curr daemon=21
+2025-09-16 04:35:11.228 [UI] INFO  [AWT-EventQueue-0] - initAutoEncryptionMenu(): autoEncryption set to true
+2025-09-16 04:35:11.245 [UI] INFO  [JavaFX Application Thread] - GstatMessagePanel: setup web app is done
+2025-09-16 04:35:11.250 [UI] INFO  [AWT-EventQueue-0] - Contacting cdc1.ibllc.com:4001 as user NOT PRINTED
+2025-09-16 04:35:11.275 [UI] INFO  [AWT-EventQueue-0] - UserCredentials.sessionId() [this=1475912551,old=null,new=68c8e8ff.010c].
+2025-09-16 04:35:11.276 [UI] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection attempt time is cleared!
+2025-09-16 04:35:11.276 [UI] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection set as now:04:35:11:276
+2025-09-16 04:35:11.276 [UI] INFO  [AWT-EventQueue-0] - Prelogin delay:0
+2025-09-16 04:35:11.279 [UI] INFO  [JTS-Login-14] - Starting launcher login thread
+2025-09-16 04:35:11.280 [UI] INFO  [JTS-Login-14] - LauncherLoginThread.runLoginWithUI()[hotBackupStrategy=ON,loginAttempt=1,socketDelay=20000].
+2025-09-16 04:35:11.280 [UI] INFO  [JTS-Login-14] - SPLASH Connecting to server
+2025-09-16 04:35:11.284 [UI] INFO  [JTS-Login-14] - ### startLogin startTime=1757997311275
+2025-09-16 04:35:11.284 [UI] INFO  [JTS-Login-14] - ### loginAttempt loginAttempt=1
+2025-09-16 04:35:11.284 [UI] INFO  [JTS-Login-14] - Connecting cdc1.ibllc.com:4001 (SSL) timeout=20000...
+2025-09-16 04:35:11.284 [UI] INFO  [JTS-Login-14] - ### onSocketOpenStart socketOpenStart=1757997311284; endPoint=cdc1.ibllc.com; port=4001
+2025-09-16 04:35:11.305 [UI] INFO  [JTS-Order-Audit-16] - Starting async queue thread
+2025-09-16 04:35:11.307 [UI] INFO  [AWT-EventQueue-0] - Network monitor is activated
+2025-09-16 04:35:11.391 [UI] INFO  [AWT-EventQueue-0] - AdImageContainer: ad image is shown
+2025-09-16 04:35:11.392 [UI] INFO  [AWT-EventQueue-0] - AdsManager: request image to put in cache
+2025-09-16 04:35:11.390 [UI] INFO  [JTS-Login-14] - ### onSocketOpenEnd socketOpenEnd=1757997311390
+2025-09-16 04:35:11.392 [UI] INFO  [JTS-CachedThreadExecutor-12] - AdManager: IMAGE_SHOWN request https://api.ibkr.com/tws.proxy/info/show/ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMDc1Mg==
+2025-09-16 04:35:11.392 [UI] INFO  [JTS-Login-14] - Connected to cdc1.ibllc.com:4001 (SSL)/8.17.22.31 remote-ip on local port 0 socket local addrs:port /10.164.0.2:39904
+2025-09-16 04:35:11.393 [UI] INFO  [JTS-Login-14] - Updating machine info [connectionAddress=/10.164.0.2]...
+2025-09-16 04:35:11.394 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdManager: NEXT_AD request https://api.ibkr.com/tws.proxy/info/next?platform=dTWS&size=1200x1000&lang=en&version=10371&build=latest
+2025-09-16 04:35:11.394 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdManager: sending request with header X-USERNAME
+2025-09-16 04:35:11.395 [UI] INFO  [JTS-Login-14] - JTSAuthConnection.onConnected(): lastKnownCipherStatus=INSECURE
+2025-09-16 04:35:11.396 [UI] INFO  [JTS-Login-14] - Changing state for connection from PRELOGON to PRELOGON in B 453823519: SessionSocket:2
+2025-09-16 04:35:11.396 [UI] INFO  [JTS-Login-14] - Authenticating
+2025-09-16 04:35:11.397 [UI] INFO  [JTS-CCPListenerS2-18] - Starting listener thread [sessionID=2]...
+2025-09-16 04:35:11.398 [UI] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: deactivate
+2025-09-16 04:35:11.398 [UI] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: timeout=20000
+2025-09-16 04:35:11.401 [UI] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: activate
+2025-09-16 04:35:11.401 [UI] INFO  [JTS-Login-14] - SPLASH -0001 step 1 AuthDispatcher.connect
+2025-09-16 04:35:11.402 [UI] INFO  [JTS-AuthTimeoutMonitorThread-CCP-20] - Starting auth timeout monitor thread for CCP
+2025-09-16 04:35:11.405 [UI] INFO  [JTS-Login-14] - Sending connect request
+2025-09-16 04:35:11.407 [UI] INFO  [JTS-AuthDispatcherS2-19] - Starting dispatcher thread [sessionID=2]...
+2025-09-16 04:35:11.410 [UI] INFO  [JTS-Login-14] - AuthDispatcher.initNSMsgVersionLimits: minVersion=38, maxVersion=50
+2025-09-16 04:35:11.410 [UI] ERROR [JTS-CachedThreadExecutor-12] - AdManager: IMAGE_SHOWN service 411
+2025-09-16 04:35:11.412 [UI] INFO  [JTS-Login-14] - AuthDispatcher.NSConnectRequest: userSessionID=68c8e8ff.010c, beeDemoType=NULL
+2025-09-16 04:35:11.412 [UI] INFO  [JTS-Login-14] - ### onNsMsg loginMessageReq=1757997311412; brandNewUser=false
+2025-09-16 04:35:11.413 [UI] INFO  [JTS-Login-14] - mapProdToPaper: In NSConnectRequest: sending PAPER_CONNECT=0x2000
+2025-09-16 04:35:11.413 [UI] INFO  [JTS-Login-14] - NSConnectRequest: sending CLIENT_USE_SSL=0x80000
+2025-09-16 04:35:11.586 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdManager: NEXT_AD request is ok
+2025-09-16 04:35:11.587 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdManager: NEXT_AD receive raw response {"imagePath":"/info/image/328-0-1200x1000-en.jpg","expire":1767193200000,"id":"ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ==","target_alt":"https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ==","target":"http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ=="}
+2025-09-16 04:35:11.588 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdsManager: parsed json object: 
+id: ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ==
 expire: 1767193200000
 imagePath: /info/image/328-0-1200x1000-en.jpg
-target: http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==
-target_alt: https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==
+target: http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ==
+target_alt: https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1Nzk5NzMxMTUzMQ==
 
-2025-09-12 11:04:21.723 [WP] INFO  [AWT-EventQueue-0] - initAutoEncryptionMenu(): autoEncryption set to true
-2025-09-12 11:04:21.762 [WP] INFO  [JavaFX Application Thread] - GstatMessagePanel: setup web app is done
-2025-09-12 11:04:21.768 [WP] INFO  [AWT-EventQueue-0] - Contacting cdc1.ibllc.com:4001 as user NOT PRINTED
-2025-09-12 11:04:21.837 [WP] INFO  [AWT-EventQueue-0] - UserCredentials.sessionId() [this=1458939489,old=null,new=68c3fe35.032b].
-2025-09-12 11:04:21.837 [WP] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection attempt time is cleared!
-2025-09-12 11:04:21.837 [WP] INFO  [AWT-EventQueue-0] - CONN CALC: Last connection set as now:11:04:21:837
-2025-09-12 11:04:21.838 [WP] INFO  [AWT-EventQueue-0] - Prelogin delay:0
-2025-09-12 11:04:21.845 [WP] INFO  [JTS-Login-14] - Starting launcher login thread
-2025-09-12 11:04:21.853 [WP] INFO  [JTS-Login-14] - LauncherLoginThread.runLoginWithUI()[hotBackupStrategy=ON,loginAttempt=1,socketDelay=20000].
-2025-09-12 11:04:21.857 [WP] INFO  [JTS-Login-14] - SPLASH Connecting to server
-2025-09-12 11:04:21.863 [WP] INFO  [JTS-Login-14] - ### startLogin startTime=1757675061836
-2025-09-12 11:04:21.867 [WP] INFO  [JTS-Login-14] - ### loginAttempt loginAttempt=1
-2025-09-12 11:04:21.868 [WP] INFO  [JTS-Login-14] - Connecting cdc1.ibllc.com:4001 (SSL) timeout=20000...
-2025-09-12 11:04:21.870 [WP] INFO  [JTS-Login-14] - ### onSocketOpenStart socketOpenStart=1757675061868; endPoint=cdc1.ibllc.com; port=4001
-2025-09-12 11:04:21.913 [WP] INFO  [JTS-Order-Audit-16] - Starting async queue thread
-2025-09-12 11:04:21.914 [WP] INFO  [AWT-EventQueue-0] - Network monitor is activated
-2025-09-12 11:04:22.001 [WP] INFO  [JTS-Login-14] - ### onSocketOpenEnd socketOpenEnd=1757675062001
-2025-09-12 11:04:22.002 [WP] INFO  [JTS-Login-14] - Connected to cdc1.ibllc.com:4001 (SSL)/8.17.22.31 remote-ip on local port 0 socket local addrs:port /10.164.0.2:48056
-2025-09-12 11:04:22.003 [WP] INFO  [JTS-Login-14] - Updating machine info [connectionAddress=/10.164.0.2]...
-2025-09-12 11:04:22.004 [WP] INFO  [JTS-Login-14] - JTSAuthConnection.onConnected(): lastKnownCipherStatus=INSECURE
-2025-09-12 11:04:22.005 [WP] INFO  [JTS-Login-14] - Changing state for connection from PRELOGON to PRELOGON in B 453823519: SessionSocket:2
-2025-09-12 11:04:22.006 [WP] INFO  [JTS-Login-14] - Authenticating
-2025-09-12 11:04:22.007 [WP] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: deactivate
-2025-09-12 11:04:22.008 [WP] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: timeout=20000
-2025-09-12 11:04:22.007 [WP] INFO  [JTS-CCPListenerS2-17] - Starting listener thread [sessionID=2]...
-2025-09-12 11:04:22.011 [WP] INFO  [JTS-AuthTimeoutMonitorThread-CCP-19] - Starting auth timeout monitor thread for CCP
-2025-09-12 11:04:22.011 [WP] INFO  [JTS-Login-14] - AuthTimeoutMonitor-CCP: activate
-2025-09-12 11:04:22.013 [WP] INFO  [JTS-Login-14] - SPLASH -0001 step 1 AuthDispatcher.connect
-2025-09-12 11:04:22.014 [WP] INFO  [AWT-EventQueue-0] - AdImageContainer: ad image is shown
-2025-09-12 11:04:22.014 [WP] INFO  [AWT-EventQueue-0] - AdsManager: request image to put in cache
-2025-09-12 11:04:22.014 [WP] INFO  [JTS-CachedThreadExecutor-12] - AdManager: IMAGE_SHOWN request https://api.ibkr.com/tws.proxy/info/show/ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MTEzMw==
-2025-09-12 11:04:22.015 [WP] INFO  [JTS-Login-14] - Sending connect request
-2025-09-12 11:04:22.018 [WP] INFO  [JTS-AuthDispatcherS2-18] - Starting dispatcher thread [sessionID=2]...
-2025-09-12 11:04:22.019 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdManager: NEXT_AD request https://api.ibkr.com/tws.proxy/info/next?platform=dTWS&size=1200x1000&lang=en&version=10371&build=latest
-2025-09-12 11:04:22.020 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdManager: sending request with header X-USERNAME
-2025-09-12 11:04:22.020 [WP] INFO  [JTS-Login-14] - AuthDispatcher.initNSMsgVersionLimits: minVersion=38, maxVersion=50
-2025-09-12 11:04:22.025 [WP] INFO  [JTS-Login-14] - AuthDispatcher.NSConnectRequest: userSessionID=68c3fe35.032b, beeDemoType=NULL
-2025-09-12 11:04:22.026 [WP] INFO  [JTS-Login-14] - ### onNsMsg loginMessageReq=1757675062026; brandNewUser=false
-2025-09-12 11:04:22.026 [WP] INFO  [JTS-Login-14] - mapProdToPaper: In NSConnectRequest: sending PAPER_CONNECT=0x2000
-2025-09-12 11:04:22.027 [WP] INFO  [JTS-Login-14] - NSConnectRequest: sending CLIENT_USE_SSL=0x80000
-2025-09-12 11:04:22.038 [WP] ERROR [JTS-CachedThreadExecutor-12] - AdManager: IMAGE_SHOWN service 411
-2025-09-12 11:04:22.251 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdManager: NEXT_AD request is ok
-2025-09-12 11:04:22.252 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdManager: NEXT_AD receive raw response {"imagePath":"/info/image/328-0-1200x1000-en.jpg","expire":1767193200000,"id":"ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw==","target_alt":"https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw==","target":"http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw=="}
-2025-09-12 11:04:22.253 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdsManager: parsed json object: 
-id: ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw==
-expire: 1767193200000
-imagePath: /info/image/328-0-1200x1000-en.jpg
-target: http://www.interactivebrokers.com/en/trading/ibkr-desktop.php?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw==
-target_alt: https://www.interactivebrokers.com?adid=ZGtnZm1vNTIzLWRUV1MtMzI4LTAtMTc1NzY3NTA2MjE3Mw==
-
-2025-09-12 11:04:22.253 [WP] INFO  [JTS-CachedThreadExecutor-21] - AdsManager: try to save image  in/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb//328-0-1200x1000-en.jpg
-2025-09-12 11:04:22.254 [WP] ERROR [JTS-CachedThreadExecutor-21] - Unable create ad locator: No such file or directory
-2025-09-12 11:04:22.255 [WP] WARN  [JTS-CachedThreadExecutor-21] - Unable store ad locator: /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb/ad.locator (No such file or directory)
-2025-09-12 11:04:22.409 [WP] INFO  [JTS-CCPListenerS2-17] - Initial listener buffer size is 65536.
-2025-09-12 11:04:22.409 [WP] INFO  [JTS-Login-14] - SPLASH Authenticating
-2025-09-12 11:04:22.410 [WP] INFO  [JTS-CCPListenerS2-17] - Listener thread [sessionID=2] is ready to process messages.
-2025-09-12 11:04:22.411 [WP] INFO  [JTS-Login-14] - Terminating launcher login thread
-2025-09-12 11:04:22.513 [WP] INFO  [JTS-AuthDispatcherS2-18] - SPLASH 0501 step 2 AuthDispatcher.processDataItr
-2025-09-12 11:04:22.517 [WP] INFO  [JTS-AuthDispatcherS2-18] - set nsMsgVersion: context=AuthStart; version=50
-2025-09-12 11:04:22.518 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received NS_AUTH_START: 1
-2025-09-12 11:04:22.523 [WP] INFO  [JTS-AuthDispatcherS2-18] - pwd time to expiry ms: 2344701338000 days: 27138
-2025-09-12 11:04:22.524 [WP] INFO  [JTS-AuthDispatcherS2-18] - Long pwd allowed: true
-2025-09-12 11:04:22.525 [WP] INFO  [JTS-AuthDispatcherS2-18] -  NS_AUTH_START version=50 pwd=1 soft=0 token(s)=[token=0] initialTokenType=PWD authenticationType=MARKET_DATA_CONNECTION identityHashcode=1718681983
-2025-09-12 11:04:22.529 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onStartAuthentication
-2025-09-12 11:04:22.530 [WP] INFO  [JTS-AuthDispatcherS2-18] - Starting password Authentication
-2025-09-12 11:04:22.534 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onXyzAuthQuery
-2025-09-12 11:04:22.534 [WP] INFO  [JTS-AuthDispatcherS2-18] - sendXYZMessage: 777
-2025-09-12 11:04:22.535 [WP] INFO  [JTS-AuthDispatcherS2-18] - UserCredentials.setFrom() [this=1458939489,other=1458939489,old=68c3fe35.032b,new=68c3fe35.032b].
-2025-09-12 11:04:22.639 [WP] INFO  [JTS-AuthDispatcherS2-18] - Receiver: 777
-2025-09-12 11:04:22.639 [WP] ERROR [JTS-AuthDispatcherS2-18] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
-2025-09-12 11:04:22.639 [WP] INFO  [JTS-AuthDispatcherS2-18] - processXYZMessage: 777, protocol version: 50
-2025-09-12 11:04:22.639 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received AUTH_PARAMS
-2025-09-12 11:04:22.640 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onXyzAuthParams
-2025-09-12 11:04:22.640 [WP] INFO  [JTS-AuthDispatcherS2-18] - sendXYZMessage: 777
-2025-09-12 11:04:22.745 [WP] INFO  [JTS-AuthDispatcherS2-18] - SPLASH 0232 step 2 AuthDispatcher.processDataItr
-2025-09-12 11:04:22.746 [WP] INFO  [JTS-AuthDispatcherS2-18] - Receiver: 777
-2025-09-12 11:04:22.746 [WP] ERROR [JTS-AuthDispatcherS2-18] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
-2025-09-12 11:04:22.746 [WP] INFO  [JTS-AuthDispatcherS2-18] - processXYZMessage: 777, protocol version: 50
-2025-09-12 11:04:22.747 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received SERVER_PARAMS
-2025-09-12 11:04:22.761 [WP] INFO  [JTS-AuthDispatcherS2-18] - Session Token received in AuthenticationMessageXYZ=7db9aXXXXX.., messageId=SERVER_KEY (4)
-2025-09-12 11:04:22.763 [WP] INFO  [JTS-AuthDispatcherS2-18] - sendXYZMessage: 777
-2025-09-12 11:04:22.868 [WP] INFO  [JTS-AuthDispatcherS2-18] - Receiver: 777
-2025-09-12 11:04:22.868 [WP] ERROR [JTS-AuthDispatcherS2-18] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
-2025-09-12 11:04:22.869 [WP] INFO  [JTS-AuthDispatcherS2-18] - processXYZMessage: 777, protocol version: 50
-2025-09-12 11:04:22.869 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received AUTH_RESULT
-2025-09-12 11:04:22.869 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onXyzAuthServerProof
-2025-09-12 11:04:22.869 [WP] INFO  [JTS-AuthDispatcherS2-18] - Passed pwd authentication.
-2025-09-12 11:04:22.869 [WP] INFO  [JTS-AuthDispatcherS2-18] - Authentication completed.
-2025-09-12 11:04:22.870 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onAuthenticationCompleted tokenProtocol=0; authenticated=true
-2025-09-12 11:04:22.870 [WP] INFO  [JTS-AuthDispatcherS2-18] - setting session token in AuthenticationHandler: authenticationType=MARKET_DATA_CONNECTION hashCode=1718681983 new=XYZSessionToken[type=SOFT,token=7db9aXXXXX..] old=null ctciOld=null
-2025-09-12 11:04:22.870 [WP] INFO  [JTS-AuthDispatcherS2-18] - ccp session token non-CTCI is set as XYZSessionToken[type=SOFT,token=7db9aXXXXX..] 
-2025-09-12 11:04:22.871 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received NS_CONNECT_RESPONSE
-2025-09-12 11:04:22.871 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received CCP connect features: [TST, ONELOGON].
-2025-09-12 11:04:22.877 [WP] INFO  [JTS-AuthDispatcherS2-18] - Log encryption support is enabled [authType=MARKET_DATA_CONNECTION,logKeyId=aaa,logKey=***,logUploadKey=dbkwvogsti].
-2025-09-12 11:04:22.878 [WP] INFO  [JTS-AuthDispatcherS2-18] - CCP sent paperUser NOT PRINTED for prodUser NOT PRINTED
-2025-09-12 11:04:22.878 [WP] INFO  [JTS-AuthDispatcherS2-18] - UserCredentials.setFrom() [this=1458939489,other=1458939489,old=68c3fe35.032b,new=68c3fe35.032b].
-2025-09-12 11:04:22.881 [WP] INFO  [JTS-AuthDispatcherS2-18] - AuthDispatcher.newCommPort()[userDirname=fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb,restart=,authToken=null,ccpToken=XYZSessionToken[type=SOFT,token=7db9aXXXXX..]].
-2025-09-12 11:04:22.882 [WP] INFO  [JTS-AuthDispatcherS2-18] - Daily auto-restart is not enabled.
-2025-09-12 11:04:22.884 [WP] INFO  [JTS-AuthDispatcherS2-18] - Sending NSNewcommPort [tokenMask=2,tokens=XYZSessionToken[type=SOFT,token=7db9aXXXXX..]],shortTokenHashes=4264e347]...
-2025-09-12 11:04:22.990 [WP] INFO  [JTS-AuthDispatcherS2-18] - SPLASH 0245 step 2 AuthDispatcher.processDataItr
-2025-09-12 11:04:22.991 [WP] INFO  [JTS-AuthDispatcherS2-18] - Received NS_FIX_START
-2025-09-12 11:04:22.991 [WP] INFO  [JTS-AuthDispatcherS2-18] - ### onNsFixStart
-2025-09-12 11:04:22.993 [WP] INFO  [JTS-PostAuthenticateS2-25] - Interrupting dispatcher [sessionID=2]...
-2025-09-12 11:04:22.996 [WP] INFO  [JTS-AuthDispatcherS2-18] - Dispatcher thread terminating [sessionID=2,interrupted=true]...
-2025-09-12 11:04:22.998 [WP] INFO  [JTS-PostAuthenticateS2-25] - AuthTimeoutMonitor-CCP: deactivate
-2025-09-12 11:04:22.998 [WP] INFO  [JTS-AuthTimeoutMonitorThread-CCP-19] - Terminating auth timeout monitor thread for CCP
-2025-09-12 11:04:22.998 [WP] INFO  [JTS-PostAuthenticateS2-25] - Authentication complete
-2025-09-12 11:04:22.998 [WP] INFO  [JTS-PostAuthenticateS2-25] - Creating a FixLogonHandlerFactory instance...
-2025-09-12 11:04:23.001 [WP] INFO  [JTS-PostAuthenticateS2-25] - Instance created.
-2025-09-12 11:04:23.014 [WP] INFO  [AWT-EventQueue-0] - initPreUI() - entry
-2025-09-12 11:04:23.016 [WP] INFO  [AWT-EventQueue-0] - jtsLookAndFeel uninitialized
-2025-09-12 11:04:23.016 [WP] INFO  [AWT-EventQueue-0] - JtsLookAndFeel initialized
-2025-09-12 11:04:23.022 [WP] INFO  [AWT-EventQueue-0] - Current LAF: TWS LAF
-2025-09-12 11:04:23.023 [WP] INFO  [AWT-EventQueue-0] - initPreUI() - exit
-2025-09-12 11:04:23.024 [WP] INFO  [JTS-PostAuthenticateS2-25] - JDOMFactory Class =interface org.jdom.JDOMFactory
-2025-09-12 11:04:23.043 [WP] INFO  [JTS-PostAuthenticateS2-25] - hsqldb jdbc =class org.hsqldb.jdbcDriver 2.4
-2025-09-12 11:04:23.059 [WP] INFO  [JTS-PostAuthenticateS2-25] - Changing state for connection from PRELOGON to PRELOGON in B 453823519: SessionSocket:2
-2025-09-12 11:04:23.061 [WP] INFO  [JTS-PostAuthenticateS2-25] - createOrRenameToNewStyleUserDirectory: no action: use existing newDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/gaogbhhnlceecbplknlofkhgodapmgplgmlambim
-2025-09-12 11:04:23.064 [WP] INFO  [JTS-PostAuthenticateS2-25] - performLogSwitch() [force=false]
-2025-09-12 11:04:23.088 [WP] INFO  [JTS-PostAuthenticateS2-25] - Switching to a new encrypted log...
-2025-09-12 21:01:22.513 [RL] INFO  [JTS-Main] - ------------------------------- IB GATEWAY RESTART --------------------------------
-2025-09-12 21:01:22.520 [RL] INFO  [JTS-Main] - installer version: unknown, installer type: standalone, install dir: 'null', Jts dir: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings', VM options file: 'null'
-2025-09-12 21:01:22.546 [RL] INFO  [JTS-Main] - Verifying environment [entryPoint=IBGATEWAY_STANDALONE]...
-2025-09-12 21:01:22.601 [RL] INFO  [JTS-Main] - Install4jAutoUpdateService initialized [props=LauncherProperties[updateDownloadUrl=null,skipUpdateCheck=false,nightlyEnabled=false,channelNameArg=null,channelName=latest,channelChanged=false,jtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings,apiPort=null,sessionId=null,installDir=null,exeName=null]].
-2025-09-12 21:01:22.611 [RL] INFO  [JTS-Main] - PROXY Installed custom selector
-2025-09-12 21:01:22.619 [RL] INFO  [JTS-Main] - useSsl=true,FIX endPoint=ndc1.ibllc.com:4001
-2025-09-12 21:01:22.896 [RL] INFO  [JTS-Main] - Setting custom timezone: Africa/Abidjan
-2025-09-12 21:01:22.915 [RL] INFO  [JTS-Main] - LOCALE: Property locale_to_use=null JTS Locale=en_US  country=United States  variant=
-2025-09-12 21:01:22.918 [RL] INFO  [JTS-Main] - Region: Custom
-2025-09-12 21:01:22.919 [RL] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 21:01:22.923 [RL] INFO  [JTS-Main] - Starting to download 'https://download2.interactivebrokers.com/java/classes/locales.jar' using HotBackup 'https://download2.interactivebrokers.com/java/classes/locales.jar'
-2025-09-12 21:01:23.512 [RL] INFO  [JTS-Main] - LOCALE: needToUpdate  dest=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar  sourceMod=2019-11-07 15:30:14  destMod=2025-08-22 05:05:17  sourceSize=114646  destSize=114646  conditions=[NEWER_REMOTE, LOCAL_IN_FUTURE, SIZE_DIFFERS]  download=false
-2025-09-12 21:01:23.513 [RL] INFO  [JTS-Main] - LOCALE: /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars/locales.jar already up-to-date
-2025-09-12 21:01:23.514 [RL] WARN  [JTS-Main] - The locales jar directory resolved to '/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/jars' ('installDir' system property is not set).
-2025-09-12 21:01:23.51
+2025-09-16 04:35:11.588 [UI] INFO  [JTS-CachedThreadExecutor-17] - AdsManager: try to save image  in/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb//328-0-1200x1000-en.jpg
+2025-09-16 04:35:11.589 [UI] ERROR [JTS-CachedThreadExecutor-17] - Unable create ad locator: No such file or directory
+2025-09-16 04:35:11.589 [UI] WARN  [JTS-CachedThreadExecutor-17] - Unable store ad locator: /home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb/ad.locator (No such file or directory)
+2025-09-16 04:35:11.759 [UI] INFO  [JTS-Login-14] - SPLASH Authenticating
+2025-09-16 04:35:11.759 [UI] INFO  [JTS-CCPListenerS2-18] - Initial listener buffer size is 65536.
+2025-09-16 04:35:11.760 [UI] INFO  [JTS-CCPListenerS2-18] - Listener thread [sessionID=2] is ready to process messages.
+2025-09-16 04:35:11.760 [UI] INFO  [JTS-Login-14] - Terminating launcher login thread
+2025-09-16 04:35:11.863 [UI] INFO  [JTS-AuthDispatcherS2-19] - SPLASH 0461 step 2 AuthDispatcher.processDataItr
+2025-09-16 04:35:11.863 [UI] INFO  [JTS-AuthDispatcherS2-19] - set nsMsgVersion: context=AuthStart; version=50
+2025-09-16 04:35:11.864 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received NS_AUTH_START: 1
+2025-09-16 04:35:11.867 [UI] INFO  [JTS-AuthDispatcherS2-19] - pwd time to expiry ms: 2344379089000 days: 27135
+2025-09-16 04:35:11.867 [UI] INFO  [JTS-AuthDispatcherS2-19] - Long pwd allowed: true
+2025-09-16 04:35:11.868 [UI] INFO  [JTS-AuthDispatcherS2-19] -  NS_AUTH_START version=50 pwd=1 soft=0 token(s)=[token=0] initialTokenType=PWD authenticationType=MARKET_DATA_CONNECTION identityHashcode=578092518
+2025-09-16 04:35:11.870 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onStartAuthentication
+2025-09-16 04:35:11.870 [UI] INFO  [JTS-AuthDispatcherS2-19] - Starting password Authentication
+2025-09-16 04:35:11.870 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onXyzAuthQuery
+2025-09-16 04:35:11.870 [UI] INFO  [JTS-AuthDispatcherS2-19] - sendXYZMessage: 777
+2025-09-16 04:35:11.871 [UI] INFO  [JTS-AuthDispatcherS2-19] - UserCredentials.setFrom() [this=1475912551,other=1475912551,old=68c8e8ff.010c,new=68c8e8ff.010c].
+2025-09-16 04:35:11.974 [UI] INFO  [JTS-AuthDispatcherS2-19] - Receiver: 777
+2025-09-16 04:35:11.974 [UI] ERROR [JTS-AuthDispatcherS2-19] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
+2025-09-16 04:35:11.974 [UI] INFO  [JTS-AuthDispatcherS2-19] - processXYZMessage: 777, protocol version: 50
+2025-09-16 04:35:11.975 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received AUTH_PARAMS
+2025-09-16 04:35:11.975 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onXyzAuthParams
+2025-09-16 04:35:11.976 [UI] INFO  [JTS-AuthDispatcherS2-19] - sendXYZMessage: 777
+2025-09-16 04:35:12.079 [UI] INFO  [JTS-AuthDispatcherS2-19] - SPLASH 0217 step 2 AuthDispatcher.processDataItr
+2025-09-16 04:35:12.079 [UI] INFO  [JTS-AuthDispatcherS2-19] - Receiver: 777
+2025-09-16 04:35:12.080 [UI] ERROR [JTS-AuthDispatcherS2-19] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
+2025-09-16 04:35:12.080 [UI] INFO  [JTS-AuthDispatcherS2-19] - processXYZMessage: 777, protocol version: 50
+2025-09-16 04:35:12.080 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received SERVER_PARAMS
+2025-09-16 04:35:12.085 [UI] INFO  [JTS-AuthDispatcherS2-19] - Session Token received in AuthenticationMessageXYZ=2bf6cXXXXX.., messageId=SERVER_KEY (4)
+2025-09-16 04:35:12.086 [UI] INFO  [JTS-AuthDispatcherS2-19] - sendXYZMessage: 777
+2025-09-16 04:35:12.189 [UI] INFO  [JTS-AuthDispatcherS2-19] - Receiver: 777
+2025-09-16 04:35:12.189 [UI] ERROR [JTS-AuthDispatcherS2-19] - ERROR: Received twslaunch.jauthentication.M with userName NOT PRINTED in it - this is not expected
+2025-09-16 04:35:12.190 [UI] INFO  [JTS-AuthDispatcherS2-19] - processXYZMessage: 777, protocol version: 50
+2025-09-16 04:35:12.190 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received AUTH_RESULT
+2025-09-16 04:35:12.190 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onXyzAuthServerProof
+2025-09-16 04:35:12.190 [UI] INFO  [JTS-AuthDispatcherS2-19] - Passed pwd authentication.
+2025-09-16 04:35:12.190 [UI] INFO  [JTS-AuthDispatcherS2-19] - Authentication completed.
+2025-09-16 04:35:12.191 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onAuthenticationCompleted tokenProtocol=0; authenticated=true
+2025-09-16 04:35:12.191 [UI] INFO  [JTS-AuthDispatcherS2-19] - setting session token in AuthenticationHandler: authenticationType=MARKET_DATA_CONNECTION hashCode=578092518 new=XYZSessionToken[type=SOFT,token=2bf6cXXXXX..] old=null ctciOld=null
+2025-09-16 04:35:12.192 [UI] INFO  [JTS-AuthDispatcherS2-19] - ccp session token non-CTCI is set as XYZSessionToken[type=SOFT,token=2bf6cXXXXX..] 
+2025-09-16 04:35:12.192 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received NS_CONNECT_RESPONSE
+2025-09-16 04:35:12.192 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received CCP connect features: [TST, ONELOGON].
+2025-09-16 04:35:12.197 [UI] INFO  [JTS-AuthDispatcherS2-19] - Log encryption support is enabled [authType=MARKET_DATA_CONNECTION,logKeyId=aaa,logKey=***,logUploadKey=dbkwvogsti].
+2025-09-16 04:35:12.197 [UI] INFO  [JTS-AuthDispatcherS2-19] - CCP sent paperUser NOT PRINTED for prodUser NOT PRINTED
+2025-09-16 04:35:12.198 [UI] INFO  [JTS-AuthDispatcherS2-19] - UserCredentials.setFrom() [this=1475912551,other=1475912551,old=68c8e8ff.010c,new=68c8e8ff.010c].
+2025-09-16 04:35:12.201 [UI] INFO  [JTS-AuthDispatcherS2-19] - AuthDispatcher.newCommPort()[userDirname=fbnhdpkgodmcijdhnmebkikninekjeoddhapbcdb,restart=,authToken=null,ccpToken=XYZSessionToken[type=SOFT,token=2bf6cXXXXX..]].
+2025-09-16 04:35:12.201 [UI] INFO  [JTS-AuthDispatcherS2-19] - Daily auto-restart is not enabled.
+2025-09-16 04:35:12.203 [UI] INFO  [JTS-AuthDispatcherS2-19] - Sending NSNewcommPort [tokenMask=2,tokens=XYZSessionToken[type=SOFT,token=2bf6cXXXXX..]],shortTokenHashes=958eb2c0]...
+2025-09-16 04:35:12.306 [UI] INFO  [JTS-AuthDispatcherS2-19] - SPLASH 0227 step 2 AuthDispatcher.processDataItr
+2025-09-16 04:35:12.306 [UI] INFO  [JTS-AuthDispatcherS2-19] - Received NS_FIX_START
+2025-09-16 04:35:12.306 [UI] INFO  [JTS-AuthDispatcherS2-19] - ### onNsFixStart
+2025-09-16 04:35:12.308 [UI] INFO  [JTS-PostAuthenticateS2-25] - Interrupting dispatcher [sessionID=2]...
+2025-09-16 04:35:12.309 [UI] INFO  [JTS-AuthDispatcherS2-19] - Dispatcher thread terminating [sessionID=2,interrupted=true]...
+2025-09-16 04:35:12.310 [UI] INFO  [JTS-PostAuthenticateS2-25] - AuthTimeoutMonitor-CCP: deactivate
+2025-09-16 04:35:12.310 [UI] INFO  [JTS-PostAuthenticateS2-25] - Authentication complete
+2025-09-16 04:35:12.310 [UI] INFO  [JTS-AuthTimeoutMonitorThread-CCP-20] - Terminating auth timeout monitor thread for CCP
+2025-09-16 04:35:12.310 [UI] INFO  [JTS-PostAuthenticateS2-25] - Creating a FixLogonHandlerFactory instance...
+2025-09-16 04:35:12.312 [UI] INFO  [JTS-PostAuthenticateS2-25] - Instance created.
+2025-09-16 04:35:12.321 [UI] INFO  [AWT-EventQueue-0] - initPreUI() - entry
+2025-09-16 04:35:12.322 [UI] INFO  [AWT-EventQueue-0] - jtsLookAndFeel uninitialized
+2025-09-16 04:35:12.323 [UI] INFO  [AWT-EventQueue-0] - JtsLookAndFeel initialized
+2025-09-16 04:35:12.327 [UI] INFO  [AWT-EventQueue-0] - Current LAF: TWS LAF
+2025-09-16 04:35:12.328 [UI] INFO  [AWT-EventQueue-0] - initPreUI() - exit
+2025-09-16 04:35:12.328 [UI] INFO  [JTS-PostAuthenticateS2-25] - JDOMFactory Class =interface org.jdom.JDOMFactory
+2025-09-16 04:35:12.343 [UI] INFO  [JTS-PostAuthenticateS2-25] - hsqldb jdbc =class org.hsqldb.jdbcDriver 2.4
+2025-09-16 04:35:12.353 [UI] INFO  [JTS-PostAuthenticateS2-25] - Changing state for connection from PRELOGON to PRELOGON in B 453823519: SessionSocket:2
+2025-09-16 04:35:12.355 [UI] INFO  [JTS-PostAuthenticateS2-25] - createOrRenameToNewStyleUserDirectory: no action: use existing newDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/paper-settings/gaogbhhnlceecbplknlofkhgodapmgplgmlambim
+2025-09-16 04:35:12.358 [UI] INFO  [JTS-PostAuthenticateS2-25] - performLogSwitch() [force=false]
+2025-09-16 04:35:12.380 [UI] INFO  [JTS-PostAuthenticateS2-25] - Switching to a new encrypted log...

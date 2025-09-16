@@ -13948,3 +13948,1076 @@ java.class.version = 61.0
 2025-09-12 11:05:08:269 IBC: Got main window from future
 2025-09-12 11:05:08:269 IBC: Invoking config dialog menu
 2025-09-12 11:05:08:291 IBC: detected frame entitled: Loading...; event=Focused
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-15 at 12:49:05
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+
+=========================== An error has occurred =============================
+
+
+
+Error: IBC configuration file: /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini  does not exist
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-15 at 13:56:53
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+=================================
+Generating the classpath
+Classpath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+
+Generating the JAVA VM options
+Java VM Options=-Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=Y2vNSXph
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+
+Determining the location of java executable
+Location of java executable=/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin
+
+Renaming IB's TWS or Gateway start script to prevent restart without IBC
+
+Starting Gateway with this command:
+"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java" --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-exports=java.base/sun.util=ALL-UNNAMED --add-exports=java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.event=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.table=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.events=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.locator=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmediaimpl=ALL-UNNAMED --add-exports=javafx.web/com.sun.javafx.webkit=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -cp "/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar" -Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=Y2vNSXph ibcalpha.ibc.IbcGateway "/home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini"  live
+
+IBC Settings:
+    AcceptBidAskLastSizeDisplayUpdateNotification=defer
+    AcceptIncomingConnectionAction=accept
+    AcceptNonBrokerageAccountWarning=no
+    AllowBlindTrading=no
+    AutoLogoffTime=
+    AutoRestartTime=
+    BindAddress=
+    BypassBondWarning=
+    BypassCalledBondWarning=
+    BypassNegativeYieldToWorstConfirmation=
+    BypassNoOverfillProtectionPrecaution=
+    BypassOrderPrecautions=
+    BypassPriceBasedVolatilityRiskWarning=
+    BypassRedirectOrderWarning=
+    BypassSameActionPairTradeWarning=
+    BypassUSStocksMarketDataInSharesWarning=
+    ClosedownAt=
+    ColdRestartTime=07:05
+    CommandPrompt=
+    CommandServerPort=0
+    ConfirmCryptoCurrencyOrders=manual
+    ConfirmOrderIdReset=ignore/ignore
+    ControlFrom=
+    DismissNSEComplianceNotice=yes
+    DismissPasswordExpiryWarning=no
+    ExistingSessionDetectedAction=primary
+    ExitAfterSecondFactorAuthenticationTimeout=no
+    FIX=no
+    IbLoginId=***
+    IbPassword=***
+    IncludeStackTraceForExceptions=no
+    LogStructureScope=known
+    LogStructureWhen=never
+    LoginDialogDisplayTimeout=60
+    MinimizeMainWindow=no
+    OverrideTwsApiPort=
+    OverrideTwsMasterClientID=
+    ReadOnlyApi=no
+    ReadOnlyLogin=no
+    ReloginAfterSecondFactorAuthenticationTimeout=no
+    ResetOrderIdsAtStart=no
+    SaveTwsSettingsAt=
+    SecondFactorAuthenticationExitInterval=60
+    SecondFactorAuthenticationTimeout=180
+    SecondFactorDevice=
+    SendMarketDataInLotsForUSstocks=
+    StoreSettingsOnServer=no
+    SuppressInfoMessages=yes
+    TradingMode=live
+    TrustedTwsApiClientIPs=
+End IBC Settings
+
+2025-09-15 13:56:54:432 IBC: version: 3.23.0
+System Properties
+------------------------------------------------------------
+java.specification.version = 17
+sun.jnu.encoding = UTF-8
+channel = latest
+java.class.path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+java.vm.vendor = Azul Systems, Inc.
+ibcsessionid = Y2vNSXph
+sun.arch.data.model = 64
+java.vendor.url = http://www.azul.com/
+user.timezone = Etc/UTC
+java.vm.specification.version = 17
+os.name = Linux
+sun.java.launcher = SUN_STANDARD
+sun.boot.library.path = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/lib
+sun.java.command = ibcalpha.ibc.IbcGateway /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini live
+jdk.debug = release
+sun.cpu.endian = little
+user.home = /home/chris_s_dodd
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2024-04-16
+java.home = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64
+jtsConfigDir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+file.separator = /
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.vm.specification.vendor = Oracle Corporation
+twslaunch.autoupdate.serviceImpl = com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+java.specification.name = Java Platform API Specification
+install4jType = standalone
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+exe4j.isInstall4j = true
+java.runtime.version = 17.0.10.0.101+3-LTS
+user.name = chris_s_dodd
+path.separator = :
+os.version = 6.14.0-1014-gcp
+java.runtime.name = OpenJDK Runtime Environment
+file.encoding = UTF-8
+java.vm.name = OpenJDK 64-Bit Server VM
+java.vendor.version = Zulu17.49+16-SA
+java.vendor.url.bug = http://www.azul.com/support/
+java.io.tmpdir = /tmp
+java.version = 17.0.10.0.101
+user.dir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+native.encoding = UTF-8
+java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.vm.info = mixed mode
+java.vendor = Azul Systems, Inc.
+java.vm.version = 17.0.10.0.101+3-LTS
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 61.0
+------------------------------------------------------------
+2025-09-15 13:56:54:442 IBC: using default settings provider: ini file is /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+2025-09-15 13:56:54:442 IBC: using default login manager: will get username and password from settings; FIX username and password (if required) from settings
+2025-09-15 13:56:54:443 IBC: using default main window manager
+2025-09-15 13:56:54:443 IBC: using default trading mode manager: constructor parameter args: tradingMode=live
+2025-09-15 13:56:54:447 IBC: using default config dialog manager
+2025-09-15 13:56:54:458 IBC: CommandServer is not started because the port is not configured
+2025-09-15 13:56:54:520 IBC: Gateway will be cold restarted at 2025/09/21 07:05
+2025-09-15 13:56:54:647 IBC: TWS Settings directory is: /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+2025-09-15 13:56:54:647 IBC: Starting session: will exit if login dialog is not displayed within 60 seconds
+2025-09-15 13:56:54:655 IBC: Ensuring /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 13:56:54:655 IBC: Found setting: [Logon]/s3store=true
+2025-09-15 13:56:54:656 IBC: Found setting: [Logon]/Locale=en
+2025-09-15 13:56:54:656 IBC: Found setting: [Logon]/displayedproxymsg=1
+2025-09-15 13:56:54:656 IBC: Found setting: [Logon]/UseSSL=true
+2025-09-15 13:56:54:656 IBC: Found setting: [IBGateway]/ApiOnly=true
+2025-09-15 13:56:54:656 IBC: Found setting: [IBGateway]/TrustedIPs=127.0.0.1
+2025-09-15 13:56:54:656 IBC: Confirmed /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 13:56:54:656 IBC: Starting Gateway
+2025-09-15 13:56:57:561 IBC: Getting config dialog
+2025-09-15 13:56:57:561 IBC: Creating config dialog future
+2025-09-15 13:56:57:562 IBC: Getting main window
+2025-09-15 13:56:57:563 IBC: Creating main window future
+2025-09-15 13:56:59:378 IBC: detected frame entitled: IBKR Gateway; event=Opened
+2025-09-15 13:56:59:383 IBC: Login dialog WINDOW_OPENED: LoginState is LOGGED_OUT
+2025-09-15 13:56:59:387 IBC: Setting Trading mode = live
+2025-09-15 13:56:59:557 IBC: Setting user name
+2025-09-15 13:56:59:558 IBC: Setting password
+2025-09-15 13:56:59:559 IBC: Login attempt: 1
+2025-09-15 13:56:59:564 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-15 13:56:59:573 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-15 13:56:59:634 IBC: Click button: Log In
+2025-09-15 13:57:00:486 IBC: detected frame entitled: IBKR Gateway; event=Lost focus
+2025-09-15 13:57:00:486 IBC: detected frame entitled: IBKR Gateway; event=Deactivated
+2025-09-15 13:57:00:488 IBC: detected frame entitled: Loading...; event=Opened
+2025-09-15 13:57:00:488 IBC: Found Gateway main window
+2025-09-15 13:57:00:488 IBC: detected frame entitled: Loading...; event=Activated
+2025-09-15 13:57:00:489 IBC: Got main window from future
+2025-09-15 13:57:00:489 IBC: Invoking config dialog menu
+2025-09-15 13:57:00:498 IBC: detected frame entitled: Loading...; event=Focused
+2025-09-15 13:57:00:996 IBC: detected frame entitled: Authenticating...; event=Opened
+2025-09-15 13:57:01:006 IBC: detected frame entitled: Loading...; event=Lost focus
+2025-09-15 13:57:01:007 IBC: detected frame entitled: Loading...; event=Deactivated
+2025-09-15 13:57:01:007 IBC: detected frame entitled: Authenticating...; event=Activated
+2025-09-15 13:57:01:009 IBC: detected frame entitled: Authenticating...; event=Focused
+2025-09-15 13:57:01:715 IBC: detected dialog entitled: Second Factor Authentication; event=Opened
+2025-09-15 13:57:01:716 IBC: Second Factor Authentication initiated
+2025-09-15 13:57:01:716 IBC: detected frame entitled: Authenticating...; event=Lost focus
+2025-09-15 13:57:01:716 IBC: detected frame entitled: Authenticating...; event=Deactivated
+2025-09-15 13:57:01:716 IBC: detected dialog entitled: Second Factor Authentication; event=Activated
+2025-09-15 13:57:01:721 IBC: detected dialog entitled: Second Factor Authentication; event=Focused
+2025-09-15 13:57:13:175 IBC: detected dialog entitled: Second Factor Authentication; event=Lost focus
+2025-09-15 13:57:13:177 IBC: detected dialog entitled: Second Factor Authentication; event=Deactivated
+2025-09-15 13:57:13:178 IBC: detected dialog entitled: Second Factor Authentication; event=Closed
+2025-09-15 13:57:13:182 IBC: Duration since login: 13 seconds
+LogModuleConfigurator-Init: Log4j Ver2.x found on classpath
+LogModuleConfigurator-Init: LogModuleConfigurator initialized with Log4j Veri.x
+2025-09-15 13:57:18:307 IBC: detected dialog entitled: Trader Workstation Configuration; event=Opened
+2025-09-15 13:57:18:308 IBC: Got config dialog from future
+2025-09-15 13:57:18:311 IBC: detected dialog entitled: Trader Workstation Configuration; event=Activated
+2025-09-15 13:57:18:313 IBC: detected dialog entitled: Trader Workstation Configuration; event=Focused
+2025-09-15 13:57:18:315 IBC: detected frame entitled: Starting application...; event=Closed
+2025-09-15 13:57:18:316 IBC: Login has completed
+2025-09-15 13:57:18:374 IBC: Setting ReadOnlyApi
+2025-09-15 13:57:18:664 IBC: Read-Only API checkbox is already set to: false
+2025-09-15 13:57:18:733 IBC: Configuration tasks completed
+2025-09-15 13:57:18:734 IBC: Click button: OK
+2025-09-15 13:57:18:825 IBC: detected dialog entitled: Trader Workstation Configuration; event=Lost focus
+2025-09-15 13:57:18:826 IBC: detected dialog entitled: Trader Workstation Configuration; event=Deactivated
+2025-09-15 13:57:18:826 IBC: detected dialog entitled: Trader Workstation Configuration; event=Closed
+2025-09-15 13:57:19:367 IBC: detected dialog entitled: Pending Tasks; event=Closed
+IBC returned exit status 143
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+Gateway finished
+
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-15 at 14:54:17
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+=================================
+Generating the classpath
+Classpath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+
+Generating the JAVA VM options
+Java VM Options=-Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=kKzg0dMj
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+
+Determining the location of java executable
+Location of java executable=/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin
+
+Renaming IB's TWS or Gateway start script to prevent restart without IBC
+
+Starting Gateway with this command:
+"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java" --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-exports=java.base/sun.util=ALL-UNNAMED --add-exports=java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.event=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.table=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.events=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.locator=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmediaimpl=ALL-UNNAMED --add-exports=javafx.web/com.sun.javafx.webkit=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -cp "/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar" -Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=kKzg0dMj ibcalpha.ibc.IbcGateway "/home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini"  live
+
+IBC Settings:
+    AcceptBidAskLastSizeDisplayUpdateNotification=defer
+    AcceptIncomingConnectionAction=accept
+    AcceptNonBrokerageAccountWarning=no
+    AllowBlindTrading=no
+    AutoLogoffTime=
+    AutoRestartTime=
+    BindAddress=
+    BypassBondWarning=
+    BypassCalledBondWarning=
+    BypassNegativeYieldToWorstConfirmation=
+    BypassNoOverfillProtectionPrecaution=
+    BypassOrderPrecautions=
+    BypassPriceBasedVolatilityRiskWarning=
+    BypassRedirectOrderWarning=
+    BypassSameActionPairTradeWarning=
+    BypassUSStocksMarketDataInSharesWarning=
+    ClosedownAt=
+    ColdRestartTime=07:05
+    CommandPrompt=
+    CommandServerPort=0
+    ConfirmCryptoCurrencyOrders=manual
+    ConfirmOrderIdReset=ignore/ignore
+    ControlFrom=
+    DismissNSEComplianceNotice=yes
+    DismissPasswordExpiryWarning=no
+    ExistingSessionDetectedAction=primary
+    ExitAfterSecondFactorAuthenticationTimeout=no
+    FIX=no
+    IbLoginId=***
+    IbPassword=***
+    IncludeStackTraceForExceptions=no
+    LogStructureScope=known
+    LogStructureWhen=never
+    LoginDialogDisplayTimeout=60
+    MinimizeMainWindow=no
+    OverrideTwsApiPort=
+    OverrideTwsMasterClientID=
+    ReadOnlyApi=no
+    ReadOnlyLogin=no
+    ReloginAfterSecondFactorAuthenticationTimeout=no
+    ResetOrderIdsAtStart=no
+    SaveTwsSettingsAt=
+    SecondFactorAuthenticationExitInterval=60
+    SecondFactorAuthenticationTimeout=180
+    SecondFactorDevice=
+    SendMarketDataInLotsForUSstocks=
+    StoreSettingsOnServer=no
+    SuppressInfoMessages=yes
+    TradingMode=live
+    TrustedTwsApiClientIPs=
+End IBC Settings
+
+2025-09-15 14:54:18:063 IBC: version: 3.23.0
+System Properties
+------------------------------------------------------------
+java.specification.version = 17
+sun.jnu.encoding = UTF-8
+channel = latest
+java.class.path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+java.vm.vendor = Azul Systems, Inc.
+ibcsessionid = kKzg0dMj
+sun.arch.data.model = 64
+java.vendor.url = http://www.azul.com/
+user.timezone = Etc/UTC
+java.vm.specification.version = 17
+os.name = Linux
+sun.java.launcher = SUN_STANDARD
+sun.boot.library.path = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/lib
+sun.java.command = ibcalpha.ibc.IbcGateway /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini live
+jdk.debug = release
+sun.cpu.endian = little
+user.home = /home/chris_s_dodd
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2024-04-16
+java.home = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64
+jtsConfigDir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+file.separator = /
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.vm.specification.vendor = Oracle Corporation
+twslaunch.autoupdate.serviceImpl = com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+java.specification.name = Java Platform API Specification
+install4jType = standalone
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+exe4j.isInstall4j = true
+java.runtime.version = 17.0.10.0.101+3-LTS
+user.name = chris_s_dodd
+path.separator = :
+os.version = 6.14.0-1014-gcp
+java.runtime.name = OpenJDK Runtime Environment
+file.encoding = UTF-8
+java.vm.name = OpenJDK 64-Bit Server VM
+java.vendor.version = Zulu17.49+16-SA
+java.vendor.url.bug = http://www.azul.com/support/
+java.io.tmpdir = /tmp
+java.version = 17.0.10.0.101
+user.dir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+native.encoding = UTF-8
+java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.vm.info = mixed mode
+java.vendor = Azul Systems, Inc.
+java.vm.version = 17.0.10.0.101+3-LTS
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 61.0
+------------------------------------------------------------
+2025-09-15 14:54:18:069 IBC: using default settings provider: ini file is /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+2025-09-15 14:54:18:069 IBC: using default login manager: will get username and password from settings; FIX username and password (if required) from settings
+2025-09-15 14:54:18:069 IBC: using default main window manager
+2025-09-15 14:54:18:069 IBC: using default trading mode manager: constructor parameter args: tradingMode=live
+2025-09-15 14:54:18:074 IBC: using default config dialog manager
+2025-09-15 14:54:18:083 IBC: CommandServer is not started because the port is not configured
+2025-09-15 14:54:18:167 IBC: Gateway will be cold restarted at 2025/09/21 07:05
+2025-09-15 14:54:18:361 IBC: TWS Settings directory is: /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+2025-09-15 14:54:18:361 IBC: Starting session: will exit if login dialog is not displayed within 60 seconds
+2025-09-15 14:54:18:372 IBC: Ensuring /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 14:54:18:372 IBC: Found setting: [Logon]/s3store=true
+2025-09-15 14:54:18:373 IBC: Found setting: [Logon]/Locale=en
+2025-09-15 14:54:18:374 IBC: Found setting: [Logon]/displayedproxymsg=1
+2025-09-15 14:54:18:374 IBC: Found setting: [Logon]/UseSSL=true
+2025-09-15 14:54:18:374 IBC: Found setting: [IBGateway]/ApiOnly=true
+2025-09-15 14:54:18:374 IBC: Found setting: [IBGateway]/TrustedIPs=127.0.0.1
+2025-09-15 14:54:18:374 IBC: Confirmed /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 14:54:18:375 IBC: Starting Gateway
+2025-09-15 14:54:21:770 IBC: Getting config dialog
+2025-09-15 14:54:21:771 IBC: Creating config dialog future
+2025-09-15 14:54:21:772 IBC: Getting main window
+2025-09-15 14:54:21:775 IBC: Creating main window future
+2025-09-15 14:54:23:855 IBC: detected frame entitled: IBKR Gateway; event=Opened
+2025-09-15 14:54:23:857 IBC: Login dialog WINDOW_OPENED: LoginState is LOGGED_OUT
+2025-09-15 14:54:23:858 IBC: Setting Trading mode = live
+2025-09-15 14:54:24:022 IBC: Setting user name
+2025-09-15 14:54:24:024 IBC: Setting password
+2025-09-15 14:54:24:025 IBC: Login attempt: 1
+2025-09-15 14:54:24:027 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-15 14:54:24:033 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-15 14:54:24:146 IBC: Click button: Log In
+2025-09-15 14:54:25:005 IBC: detected frame entitled: IBKR Gateway; event=Lost focus
+2025-09-15 14:54:25:005 IBC: detected frame entitled: IBKR Gateway; event=Deactivated
+2025-09-15 14:54:25:007 IBC: detected frame entitled: Loading...; event=Opened
+2025-09-15 14:54:25:008 IBC: Found Gateway main window
+2025-09-15 14:54:25:008 IBC: detected frame entitled: Loading...; event=Activated
+2025-09-15 14:54:25:009 IBC: Got main window from future
+2025-09-15 14:54:25:009 IBC: Invoking config dialog menu
+2025-09-15 14:54:25:026 IBC: detected frame entitled: Loading...; event=Focused
+2025-09-15 14:54:25:486 IBC: detected frame entitled: Authenticating...; event=Opened
+2025-09-15 14:54:25:525 IBC: detected frame entitled: Loading...; event=Lost focus
+2025-09-15 14:54:25:525 IBC: detected frame entitled: Loading...; event=Deactivated
+2025-09-15 14:54:25:526 IBC: detected frame entitled: Authenticating...; event=Activated
+2025-09-15 14:54:25:527 IBC: detected frame entitled: Authenticating...; event=Focused
+2025-09-15 14:54:26:196 IBC: detected dialog entitled: Second Factor Authentication; event=Opened
+2025-09-15 14:54:26:197 IBC: Second Factor Authentication initiated
+2025-09-15 14:54:26:197 IBC: detected frame entitled: Authenticating...; event=Lost focus
+2025-09-15 14:54:26:198 IBC: detected frame entitled: Authenticating...; event=Deactivated
+2025-09-15 14:54:26:198 IBC: detected dialog entitled: Second Factor Authentication; event=Activated
+2025-09-15 14:54:26:201 IBC: detected dialog entitled: Second Factor Authentication; event=Focused
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-15 at 18:31:04
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+=================================
+Generating the classpath
+Classpath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+
+Generating the JAVA VM options
+Java VM Options=-Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=yorG0jgB
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+
+Determining the location of java executable
+Location of java executable=/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin
+
+Renaming IB's TWS or Gateway start script to prevent restart without IBC
+
+Starting Gateway with this command:
+"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java" --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-exports=java.base/sun.util=ALL-UNNAMED --add-exports=java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.event=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.table=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.events=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.locator=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmediaimpl=ALL-UNNAMED --add-exports=javafx.web/com.sun.javafx.webkit=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -cp "/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar" -Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=yorG0jgB ibcalpha.ibc.IbcGateway "/home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini"  live
+
+IBC Settings:
+    AcceptBidAskLastSizeDisplayUpdateNotification=defer
+    AcceptIncomingConnectionAction=accept
+    AcceptNonBrokerageAccountWarning=no
+    AllowBlindTrading=no
+    AutoLogoffTime=
+    AutoRestartTime=
+    BindAddress=
+    BypassBondWarning=
+    BypassCalledBondWarning=
+    BypassNegativeYieldToWorstConfirmation=
+    BypassNoOverfillProtectionPrecaution=
+    BypassOrderPrecautions=
+    BypassPriceBasedVolatilityRiskWarning=
+    BypassRedirectOrderWarning=
+    BypassSameActionPairTradeWarning=
+    BypassUSStocksMarketDataInSharesWarning=
+    ClosedownAt=
+    ColdRestartTime=07:05
+    CommandPrompt=
+    CommandServerPort=0
+    ConfirmCryptoCurrencyOrders=manual
+    ConfirmOrderIdReset=ignore/ignore
+    ControlFrom=
+    DismissNSEComplianceNotice=yes
+    DismissPasswordExpiryWarning=no
+    ExistingSessionDetectedAction=primary
+    ExitAfterSecondFactorAuthenticationTimeout=no
+    FIX=no
+    IbLoginId=***
+    IbPassword=***
+    IncludeStackTraceForExceptions=no
+    LogStructureScope=known
+    LogStructureWhen=never
+    LoginDialogDisplayTimeout=60
+    MinimizeMainWindow=no
+    OverrideTwsApiPort=
+    OverrideTwsMasterClientID=
+    ReadOnlyApi=no
+    ReadOnlyLogin=no
+    ReloginAfterSecondFactorAuthenticationTimeout=no
+    ResetOrderIdsAtStart=no
+    SaveTwsSettingsAt=
+    SecondFactorAuthenticationExitInterval=60
+    SecondFactorAuthenticationTimeout=180
+    SecondFactorDevice=
+    SendMarketDataInLotsForUSstocks=
+    StoreSettingsOnServer=no
+    SuppressInfoMessages=yes
+    TradingMode=live
+    TrustedTwsApiClientIPs=
+End IBC Settings
+
+2025-09-15 18:31:05:213 IBC: version: 3.23.0
+System Properties
+------------------------------------------------------------
+java.specification.version = 17
+sun.jnu.encoding = UTF-8
+channel = latest
+java.class.path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+java.vm.vendor = Azul Systems, Inc.
+ibcsessionid = yorG0jgB
+sun.arch.data.model = 64
+java.vendor.url = http://www.azul.com/
+user.timezone = Etc/UTC
+java.vm.specification.version = 17
+os.name = Linux
+sun.java.launcher = SUN_STANDARD
+sun.boot.library.path = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/lib
+sun.java.command = ibcalpha.ibc.IbcGateway /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini live
+jdk.debug = release
+sun.cpu.endian = little
+user.home = /home/chris_s_dodd
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2024-04-16
+java.home = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64
+jtsConfigDir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+file.separator = /
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.vm.specification.vendor = Oracle Corporation
+twslaunch.autoupdate.serviceImpl = com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+java.specification.name = Java Platform API Specification
+install4jType = standalone
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+exe4j.isInstall4j = true
+java.runtime.version = 17.0.10.0.101+3-LTS
+user.name = chris_s_dodd
+path.separator = :
+os.version = 6.14.0-1014-gcp
+java.runtime.name = OpenJDK Runtime Environment
+file.encoding = UTF-8
+java.vm.name = OpenJDK 64-Bit Server VM
+java.vendor.version = Zulu17.49+16-SA
+java.vendor.url.bug = http://www.azul.com/support/
+java.io.tmpdir = /tmp
+java.version = 17.0.10.0.101
+user.dir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+native.encoding = UTF-8
+java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.vm.info = mixed mode
+java.vendor = Azul Systems, Inc.
+java.vm.version = 17.0.10.0.101+3-LTS
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 61.0
+------------------------------------------------------------
+2025-09-15 18:31:05:219 IBC: using default settings provider: ini file is /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+2025-09-15 18:31:05:219 IBC: using default login manager: will get username and password from settings; FIX username and password (if required) from settings
+2025-09-15 18:31:05:219 IBC: using default main window manager
+2025-09-15 18:31:05:219 IBC: using default trading mode manager: constructor parameter args: tradingMode=live
+2025-09-15 18:31:05:221 IBC: using default config dialog manager
+2025-09-15 18:31:05:227 IBC: CommandServer is not started because the port is not configured
+2025-09-15 18:31:05:294 IBC: Gateway will be cold restarted at 2025/09/21 07:05
+2025-09-15 18:31:05:426 IBC: TWS Settings directory is: /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+2025-09-15 18:31:05:426 IBC: Starting session: will exit if login dialog is not displayed within 60 seconds
+2025-09-15 18:31:05:433 IBC: Ensuring /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 18:31:05:433 IBC: Found setting: [Logon]/s3store=true
+2025-09-15 18:31:05:433 IBC: Found setting: [Logon]/Locale=en
+2025-09-15 18:31:05:433 IBC: Found setting: [Logon]/displayedproxymsg=1
+2025-09-15 18:31:05:433 IBC: Found setting: [Logon]/UseSSL=true
+2025-09-15 18:31:05:434 IBC: Found setting: [IBGateway]/ApiOnly=true
+2025-09-15 18:31:05:434 IBC: Found setting: [IBGateway]/TrustedIPs=127.0.0.1
+2025-09-15 18:31:05:434 IBC: Confirmed /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 18:31:05:434 IBC: Starting Gateway
+2025-09-15 18:31:09:491 IBC: Getting config dialog
+2025-09-15 18:31:09:491 IBC: Creating config dialog future
+2025-09-15 18:31:09:495 IBC: Getting main window
+2025-09-15 18:31:09:496 IBC: Creating main window future
+2025-09-15 18:31:12:763 IBC: detected frame entitled: IBKR Gateway; event=Opened
+2025-09-15 18:31:12:767 IBC: Login dialog WINDOW_OPENED: LoginState is LOGGED_OUT
+2025-09-15 18:31:12:772 IBC: Setting Trading mode = live
+2025-09-15 18:31:12:966 IBC: Setting user name
+2025-09-15 18:31:12:970 IBC: Setting password
+2025-09-15 18:31:12:972 IBC: Login attempt: 1
+2025-09-15 18:31:12:997 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-15 18:31:13:003 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-15 18:31:13:120 IBC: Click button: Log In
+2025-09-15 18:31:14:517 IBC: detected frame entitled: IBKR Gateway; event=Lost focus
+2025-09-15 18:31:14:518 IBC: detected frame entitled: IBKR Gateway; event=Deactivated
+2025-09-15 18:31:14:528 IBC: detected frame entitled: Loading...; event=Opened
+2025-09-15 18:31:14:529 IBC: Found Gateway main window
+2025-09-15 18:31:14:529 IBC: detected frame entitled: Loading...; event=Activated
+2025-09-15 18:31:14:531 IBC: Got main window from future
+2025-09-15 18:31:14:531 IBC: Invoking config dialog menu
+2025-09-15 18:31:14:567 IBC: detected frame entitled: Loading...; event=Focused
+2025-09-15 18:31:15:021 IBC: detected frame entitled: Authenticating...; event=Opened
+2025-09-15 18:31:15:036 IBC: detected frame entitled: Loading...; event=Lost focus
+2025-09-15 18:31:15:036 IBC: detected frame entitled: Loading...; event=Deactivated
+2025-09-15 18:31:15:037 IBC: detected frame entitled: Authenticating...; event=Activated
+2025-09-15 18:31:15:039 IBC: detected frame entitled: Authenticating...; event=Focused
+2025-09-15 18:31:15:744 IBC: detected dialog entitled: Second Factor Authentication; event=Opened
+2025-09-15 18:31:15:744 IBC: Second Factor Authentication initiated
+2025-09-15 18:31:15:745 IBC: detected frame entitled: Authenticating...; event=Lost focus
+2025-09-15 18:31:15:745 IBC: detected frame entitled: Authenticating...; event=Deactivated
+2025-09-15 18:31:15:746 IBC: detected dialog entitled: Second Factor Authentication; event=Activated
+2025-09-15 18:31:15:751 IBC: detected dialog entitled: Second Factor Authentication; event=Focused
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-15 at 18:33:29
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+=================================
+Generating the classpath
+Classpath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+
+Generating the JAVA VM options
+Java VM Options=-Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=J1YBhsxD
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+
+Determining the location of java executable
+Location of java executable=/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin
+
+Renaming IB's TWS or Gateway start script to prevent restart without IBC
+
+Starting Gateway with this command:
+"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java" --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-exports=java.base/sun.util=ALL-UNNAMED --add-exports=java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.event=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.table=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.events=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.locator=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmediaimpl=ALL-UNNAMED --add-exports=javafx.web/com.sun.javafx.webkit=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -cp "/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar" -Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=J1YBhsxD ibcalpha.ibc.IbcGateway "/home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini"  live
+
+IBC Settings:
+    AcceptBidAskLastSizeDisplayUpdateNotification=defer
+    AcceptIncomingConnectionAction=accept
+    AcceptNonBrokerageAccountWarning=no
+    AllowBlindTrading=no
+    AutoLogoffTime=
+    AutoRestartTime=
+    BindAddress=
+    BypassBondWarning=
+    BypassCalledBondWarning=
+    BypassNegativeYieldToWorstConfirmation=
+    BypassNoOverfillProtectionPrecaution=
+    BypassOrderPrecautions=
+    BypassPriceBasedVolatilityRiskWarning=
+    BypassRedirectOrderWarning=
+    BypassSameActionPairTradeWarning=
+    BypassUSStocksMarketDataInSharesWarning=
+    ClosedownAt=
+    ColdRestartTime=07:05
+    CommandPrompt=
+    CommandServerPort=0
+    ConfirmCryptoCurrencyOrders=manual
+    ConfirmOrderIdReset=ignore/ignore
+    ControlFrom=
+    DismissNSEComplianceNotice=yes
+    DismissPasswordExpiryWarning=no
+    ExistingSessionDetectedAction=primary
+    ExitAfterSecondFactorAuthenticationTimeout=no
+    FIX=no
+    IbLoginId=***
+    IbPassword=***
+    IncludeStackTraceForExceptions=no
+    LogStructureScope=known
+    LogStructureWhen=never
+    LoginDialogDisplayTimeout=60
+    MinimizeMainWindow=no
+    OverrideTwsApiPort=
+    OverrideTwsMasterClientID=
+    ReadOnlyApi=no
+    ReadOnlyLogin=no
+    ReloginAfterSecondFactorAuthenticationTimeout=no
+    ResetOrderIdsAtStart=no
+    SaveTwsSettingsAt=
+    SecondFactorAuthenticationExitInterval=60
+    SecondFactorAuthenticationTimeout=180
+    SecondFactorDevice=
+    SendMarketDataInLotsForUSstocks=
+    StoreSettingsOnServer=no
+    SuppressInfoMessages=yes
+    TradingMode=live
+    TrustedTwsApiClientIPs=
+End IBC Settings
+
+2025-09-15 18:33:30:138 IBC: version: 3.23.0
+System Properties
+------------------------------------------------------------
+java.specification.version = 17
+sun.jnu.encoding = UTF-8
+channel = latest
+java.class.path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+java.vm.vendor = Azul Systems, Inc.
+ibcsessionid = J1YBhsxD
+sun.arch.data.model = 64
+java.vendor.url = http://www.azul.com/
+user.timezone = Etc/UTC
+java.vm.specification.version = 17
+os.name = Linux
+sun.java.launcher = SUN_STANDARD
+sun.boot.library.path = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/lib
+sun.java.command = ibcalpha.ibc.IbcGateway /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini live
+jdk.debug = release
+sun.cpu.endian = little
+user.home = /home/chris_s_dodd
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2024-04-16
+java.home = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64
+jtsConfigDir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+file.separator = /
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.vm.specification.vendor = Oracle Corporation
+twslaunch.autoupdate.serviceImpl = com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+java.specification.name = Java Platform API Specification
+install4jType = standalone
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+exe4j.isInstall4j = true
+java.runtime.version = 17.0.10.0.101+3-LTS
+user.name = chris_s_dodd
+path.separator = :
+os.version = 6.14.0-1014-gcp
+java.runtime.name = OpenJDK Runtime Environment
+file.encoding = UTF-8
+java.vm.name = OpenJDK 64-Bit Server VM
+java.vendor.version = Zulu17.49+16-SA
+java.vendor.url.bug = http://www.azul.com/support/
+java.io.tmpdir = /tmp
+java.version = 17.0.10.0.101
+user.dir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+native.encoding = UTF-8
+java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.vm.info = mixed mode
+java.vendor = Azul Systems, Inc.
+java.vm.version = 17.0.10.0.101+3-LTS
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 61.0
+------------------------------------------------------------
+2025-09-15 18:33:30:143 IBC: using default settings provider: ini file is /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+2025-09-15 18:33:30:143 IBC: using default login manager: will get username and password from settings; FIX username and password (if required) from settings
+2025-09-15 18:33:30:143 IBC: using default main window manager
+2025-09-15 18:33:30:143 IBC: using default trading mode manager: constructor parameter args: tradingMode=live
+2025-09-15 18:33:30:145 IBC: using default config dialog manager
+2025-09-15 18:33:30:151 IBC: CommandServer is not started because the port is not configured
+2025-09-15 18:33:30:213 IBC: Gateway will be cold restarted at 2025/09/21 07:05
+2025-09-15 18:33:30:340 IBC: TWS Settings directory is: /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+2025-09-15 18:33:30:341 IBC: Starting session: will exit if login dialog is not displayed within 60 seconds
+2025-09-15 18:33:30:349 IBC: Ensuring /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 18:33:30:350 IBC: Found setting: [Logon]/s3store=true
+2025-09-15 18:33:30:350 IBC: Found setting: [Logon]/Locale=en
+2025-09-15 18:33:30:351 IBC: Found setting: [Logon]/displayedproxymsg=1
+2025-09-15 18:33:30:351 IBC: Found setting: [Logon]/UseSSL=true
+2025-09-15 18:33:30:351 IBC: Found setting: [IBGateway]/ApiOnly=true
+2025-09-15 18:33:30:351 IBC: Found setting: [IBGateway]/TrustedIPs=127.0.0.1
+2025-09-15 18:33:30:351 IBC: Confirmed /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-15 18:33:30:351 IBC: Starting Gateway
+2025-09-15 18:33:33:048 IBC: Getting config dialog
+2025-09-15 18:33:33:048 IBC: Creating config dialog future
+2025-09-15 18:33:33:050 IBC: Getting main window
+2025-09-15 18:33:33:050 IBC: Creating main window future
+2025-09-15 18:33:35:061 IBC: detected frame entitled: IBKR Gateway; event=Opened
+2025-09-15 18:33:35:063 IBC: Login dialog WINDOW_OPENED: LoginState is LOGGED_OUT
+2025-09-15 18:33:35:064 IBC: Setting Trading mode = live
+2025-09-15 18:33:35:277 IBC: Setting user name
+2025-09-15 18:33:35:280 IBC: Setting password
+2025-09-15 18:33:35:281 IBC: Login attempt: 1
+2025-09-15 18:33:35:282 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-15 18:33:35:299 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-15 18:33:35:385 IBC: Click button: Log In
+2025-09-15 18:33:36:482 IBC: detected frame entitled: IBKR Gateway; event=Lost focus
+2025-09-15 18:33:36:485 IBC: detected frame entitled: IBKR Gateway; event=Deactivated
+2025-09-15 18:33:36:486 IBC: detected frame entitled: Loading...; event=Activated
+2025-09-15 18:33:36:503 IBC: detected frame entitled: Loading...; event=Focused
+2025-09-15 18:33:36:506 IBC: detected frame entitled: Loading...; event=Opened
+2025-09-15 18:33:36:508 IBC: Found Gateway main window
+2025-09-15 18:33:36:511 IBC: Got main window from future
+2025-09-15 18:33:36:511 IBC: Invoking config dialog menu
+2025-09-15 18:33:36:984 IBC: detected frame entitled: Authenticating...; event=Opened
+2025-09-15 18:33:37:023 IBC: detected frame entitled: Loading...; event=Lost focus
+2025-09-15 18:33:37:023 IBC: detected frame entitled: Loading...; event=Deactivated
+2025-09-15 18:33:37:023 IBC: detected frame entitled: Authenticating...; event=Activated
+2025-09-15 18:33:37:026 IBC: detected frame entitled: Authenticating...; event=Focused
+2025-09-15 18:33:37:731 IBC: detected dialog entitled: Second Factor Authentication; event=Opened
+2025-09-15 18:33:37:732 IBC: Second Factor Authentication initiated
+2025-09-15 18:33:37:732 IBC: detected frame entitled: Authenticating...; event=Lost focus
+2025-09-15 18:33:37:732 IBC: detected frame entitled: Authenticating...; event=Deactivated
+2025-09-15 18:33:37:732 IBC: detected dialog entitled: Second Factor Authentication; event=Activated
+2025-09-15 18:33:37:738 IBC: detected dialog entitled: Second Factor Authentication; event=Focused
+2025-09-15 18:36:41:648 IBC: detected dialog entitled: Second Factor Authentication; event=Lost focus
+2025-09-15 18:36:41:648 IBC: detected dialog entitled: Second Factor Authentication; event=Deactivated
+2025-09-15 18:36:41:649 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-15 18:36:41:652 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-15 18:36:41:653 IBC: detected dialog entitled: Second Factor Authentication; event=Closed
+2025-09-15 18:36:41:654 IBC: Duration since login: 186 seconds
+2025-09-15 18:36:41:654 IBC: Re-login after second factor authentication timeout not required
+Parsing arguments
+
+================================================================================
+
+Starting IBC version  on 2025-09-16 at 04:35:52
+
+Operating system: Linux opt-trade-vm4.europe-west4-a.c.crafty-water-453519-d7.internal 6.14.0-1014-gcp #15~24.04.1-Ubuntu SMP Fri Jul 25 23:26:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+Arguments:
+
+TWS version = 1037
+Program = Gateway
+Entry point = ibcalpha.ibc.IbcGateway
+--tws-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws
+--tws-settings-path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+--ibc-path = /home/chris_s_dodd/optcom-1/ibc-setup/ibc
+--ibc-ini = /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+--mode = live
+--java-path = 
+--user =
+--pw =
+--fix-user =
+--fix-pw =
+
+=================================
+Generating the classpath
+Classpath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+
+Generating the JAVA VM options
+Java VM Options=-Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=I2Jf3ss6
+Finding autorestart file
+autorestart file not found: full authentication will be required
+
+
+Determining the location of java executable
+Location of java executable=/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin
+
+Renaming IB's TWS or Gateway start script to prevent restart without IBC
+
+Starting Gateway with this command:
+"/home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/bin/java" --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-exports=java.base/sun.util=ALL-UNNAMED --add-exports=java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.event=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.table=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/sun.awt.X11=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.application=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.events=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmedia.locator=ALL-UNNAMED --add-exports=javafx.media/com.sun.media.jfxmediaimpl=ALL-UNNAMED --add-exports=javafx.web/com.sun.javafx.webkit=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -cp "/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar" -Xmx768m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:ParallelGCThreads=20 -XX:ConcGCThreads=5 -XX:InitiatingHeapOccupancyPercent=70 -Dtwslaunch.autoupdate.serviceImpl=com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService -Dchannel=latest -Dexe4j.isInstall4j=true -Dinstall4jType=standalone -DjtsConfigDir=/home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings -Dibcsessionid=I2Jf3ss6 ibcalpha.ibc.IbcGateway "/home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini"  live
+
+IBC Settings:
+    AcceptBidAskLastSizeDisplayUpdateNotification=defer
+    AcceptIncomingConnectionAction=accept
+    AcceptNonBrokerageAccountWarning=no
+    AllowBlindTrading=no
+    AutoLogoffTime=
+    AutoRestartTime=
+    BindAddress=
+    BypassBondWarning=
+    BypassCalledBondWarning=
+    BypassNegativeYieldToWorstConfirmation=
+    BypassNoOverfillProtectionPrecaution=
+    BypassOrderPrecautions=
+    BypassPriceBasedVolatilityRiskWarning=
+    BypassRedirectOrderWarning=
+    BypassSameActionPairTradeWarning=
+    BypassUSStocksMarketDataInSharesWarning=
+    ClosedownAt=
+    ColdRestartTime=07:05
+    CommandPrompt=
+    CommandServerPort=0
+    ConfirmCryptoCurrencyOrders=manual
+    ConfirmOrderIdReset=ignore/ignore
+    ControlFrom=
+    DismissNSEComplianceNotice=yes
+    DismissPasswordExpiryWarning=no
+    ExistingSessionDetectedAction=primary
+    ExitAfterSecondFactorAuthenticationTimeout=no
+    FIX=no
+    IbLoginId=***
+    IbPassword=***
+    IncludeStackTraceForExceptions=no
+    LogStructureScope=known
+    LogStructureWhen=never
+    LoginDialogDisplayTimeout=60
+    MinimizeMainWindow=no
+    OverrideTwsApiPort=
+    OverrideTwsMasterClientID=
+    ReadOnlyApi=no
+    ReadOnlyLogin=no
+    ReloginAfterSecondFactorAuthenticationTimeout=yes
+    ResetOrderIdsAtStart=no
+    SaveTwsSettingsAt=
+    SecondFactorAuthenticationExitInterval=120
+    SecondFactorAuthenticationTimeout=300
+    SecondFactorDevice=
+    SendMarketDataInLotsForUSstocks=
+    StoreSettingsOnServer=no
+    SuppressInfoMessages=yes
+    TradingMode=live
+    TrustedTwsApiClientIPs=
+End IBC Settings
+
+2025-09-16 04:35:52:729 IBC: version: 3.23.0
+System Properties
+------------------------------------------------------------
+java.specification.version = 17
+sun.jnu.encoding = UTF-8
+channel = latest
+java.class.path = /home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/batik-all-1.16.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/commons-io-2.11.0.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/core-3.5.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/fop-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-annotations-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-core-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jackson-databind-2.12.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jts4launch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/jxbrowser-swing-7.41.3.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/locales.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-api-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/log4j-core-2.17.1.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/protobuf-java-3.25.6.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/total-2024.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-1037.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/twslaunch-install4j-1.12.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/jars/xmlgraphics-commons-2.8.jar:/home/chris_s_dodd/optcom-1/ibc-setup/tws/1037/.install4j/i4jruntime.jar:/home/chris_s_dodd/optcom-1/ibc-setup/ibc/IBC.jar
+java.vm.vendor = Azul Systems, Inc.
+ibcsessionid = I2Jf3ss6
+sun.arch.data.model = 64
+java.vendor.url = http://www.azul.com/
+user.timezone = Etc/UTC
+java.vm.specification.version = 17
+os.name = Linux
+sun.java.launcher = SUN_STANDARD
+sun.boot.library.path = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64/lib
+sun.java.command = ibcalpha.ibc.IbcGateway /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini live
+jdk.debug = release
+sun.cpu.endian = little
+user.home = /home/chris_s_dodd
+user.language = en
+java.specification.vendor = Oracle Corporation
+java.version.date = 2024-04-16
+java.home = /home/chris_s_dodd/.local/share/i4j_jres/Oda-jK0QgTEmVssfllLP/17.0.10.0.101-zulu_64
+jtsConfigDir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+file.separator = /
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.vm.specification.vendor = Oracle Corporation
+twslaunch.autoupdate.serviceImpl = com.ib.tws.twslaunch.install4j.Install4jAutoUpdateService
+java.specification.name = Java Platform API Specification
+install4jType = standalone
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+exe4j.isInstall4j = true
+java.runtime.version = 17.0.10.0.101+3-LTS
+user.name = chris_s_dodd
+path.separator = :
+os.version = 6.14.0-1014-gcp
+java.runtime.name = OpenJDK Runtime Environment
+file.encoding = UTF-8
+java.vm.name = OpenJDK 64-Bit Server VM
+java.vendor.version = Zulu17.49+16-SA
+java.vendor.url.bug = http://www.azul.com/support/
+java.io.tmpdir = /tmp
+java.version = 17.0.10.0.101
+user.dir = /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+native.encoding = UTF-8
+java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.vm.info = mixed mode
+java.vendor = Azul Systems, Inc.
+java.vm.version = 17.0.10.0.101+3-LTS
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 61.0
+------------------------------------------------------------
+2025-09-16 04:35:52:734 IBC: using default settings provider: ini file is /home/chris_s_dodd/optcom-1/ibc-setup/config/config-live.ini
+2025-09-16 04:35:52:734 IBC: using default login manager: will get username and password from settings; FIX username and password (if required) from settings
+2025-09-16 04:35:52:735 IBC: using default main window manager
+2025-09-16 04:35:52:735 IBC: using default trading mode manager: constructor parameter args: tradingMode=live
+2025-09-16 04:35:52:736 IBC: using default config dialog manager
+2025-09-16 04:35:52:742 IBC: CommandServer is not started because the port is not configured
+2025-09-16 04:35:52:800 IBC: Gateway will be cold restarted at 2025/09/21 07:05
+2025-09-16 04:35:52:931 IBC: TWS Settings directory is: /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings
+2025-09-16 04:35:52:931 IBC: Starting session: will exit if login dialog is not displayed within 60 seconds
+2025-09-16 04:35:52:938 IBC: Ensuring /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-16 04:35:52:938 IBC: Found setting: [Logon]/s3store=true
+2025-09-16 04:35:52:938 IBC: Found setting: [Logon]/Locale=en
+2025-09-16 04:35:52:938 IBC: Found setting: [Logon]/displayedproxymsg=1
+2025-09-16 04:35:52:938 IBC: Found setting: [Logon]/UseSSL=true
+2025-09-16 04:35:52:938 IBC: Found setting: [IBGateway]/ApiOnly=true
+2025-09-16 04:35:52:938 IBC: Found setting: [IBGateway]/TrustedIPs=127.0.0.1
+2025-09-16 04:35:52:939 IBC: Confirmed /home/chris_s_dodd/optcom-1/ibc-setup/tws/live-settings/jts.ini contains required minimal lines
+2025-09-16 04:35:52:939 IBC: Starting Gateway
+2025-09-16 04:35:56:204 IBC: Getting config dialog
+2025-09-16 04:35:56:204 IBC: Creating config dialog future
+2025-09-16 04:35:56:208 IBC: Getting main window
+2025-09-16 04:35:56:208 IBC: Creating main window future
+2025-09-16 04:35:58:504 IBC: detected frame entitled: IBKR Gateway; event=Activated
+2025-09-16 04:35:58:519 IBC: detected frame entitled: IBKR Gateway; event=Focused
+2025-09-16 04:35:58:520 IBC: detected frame entitled: IBKR Gateway; event=Opened
+2025-09-16 04:35:58:521 IBC: Login dialog WINDOW_OPENED: LoginState is LOGGED_OUT
+2025-09-16 04:35:58:525 IBC: Setting Trading mode = live
+2025-09-16 04:35:58:734 IBC: Setting user name
+2025-09-16 04:35:58:735 IBC: Setting password
+2025-09-16 04:35:58:736 IBC: Login attempt: 1
+2025-09-16 04:35:58:810 IBC: Click button: Log In
+2025-09-16 04:35:59:612 IBC: detected frame entitled: IBKR Gateway; event=Lost focus
+2025-09-16 04:35:59:612 IBC: detected frame entitled: IBKR Gateway; event=Deactivated
+2025-09-16 04:35:59:613 IBC: detected frame entitled: Loading...; event=Opened
+2025-09-16 04:35:59:614 IBC: Found Gateway main window
+2025-09-16 04:35:59:615 IBC: detected frame entitled: Loading...; event=Activated
+2025-09-16 04:35:59:615 IBC: Got main window from future
+2025-09-16 04:35:59:616 IBC: Invoking config dialog menu
+2025-09-16 04:35:59:625 IBC: detected frame entitled: Loading...; event=Focused
+2025-09-16 04:36:00:094 IBC: detected frame entitled: Authenticating...; event=Opened
+2025-09-16 04:36:00:135 IBC: detected frame entitled: Loading...; event=Lost focus
+2025-09-16 04:36:00:135 IBC: detected frame entitled: Loading...; event=Deactivated
+2025-09-16 04:36:00:136 IBC: detected frame entitled: Authenticating...; event=Activated
+2025-09-16 04:36:00:138 IBC: detected frame entitled: Authenticating...; event=Focused
+2025-09-16 04:36:00:794 IBC: detected dialog entitled: Second Factor Authentication; event=Opened
+2025-09-16 04:36:00:795 IBC: Second Factor Authentication initiated
+2025-09-16 04:36:00:795 IBC: detected frame entitled: Authenticating...; event=Lost focus
+2025-09-16 04:36:00:796 IBC: detected frame entitled: Authenticating...; event=Deactivated
+2025-09-16 04:36:00:796 IBC: detected dialog entitled: Second Factor Authentication; event=Activated
+2025-09-16 04:36:00:799 IBC: detected dialog entitled: Second Factor Authentication; event=Focused

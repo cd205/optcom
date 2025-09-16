@@ -230,12 +230,25 @@ def start_workflow():
     result = subprocess.run(['ps', 'aux'], capture_output=True, text=True)
     if 'airflow' not in result.stdout:
         print("Starting Airflow...")
-        subprocess.Popen(['airflow', 'standalone'], 
-                        stdout=subprocess.PIPE, 
+        subprocess.Popen(['airflow', 'standalone'],
+                        stdout=subprocess.PIPE,
                         stderr=subprocess.PIPE)
-        print("⏳ Waiting for Airflow to start...")
-        time.sleep(10)
-    
+        print("⏳ Waiting for Airflow to start and discover DAGs...")
+        time.sleep(30)  # Give more time for DAG discovery
+
+        # Wait for DAG to be available
+        print("⏳ Waiting for DAG to be discovered...")
+        for i in range(12):  # Up to 2 minutes
+            result = subprocess.run([
+                'airflow', 'dags', 'list'
+            ], capture_output=True, text=True)
+            if 'simple_trading_workflow' in result.stdout:
+                print("✅ DAG discovered!")
+                break
+            time.sleep(10)
+        else:
+            print("⚠️ DAG not discovered yet, attempting trigger anyway...")
+
     # Trigger the workflow
     print("Triggering workflow...")
     result = subprocess.run([

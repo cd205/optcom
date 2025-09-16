@@ -271,39 +271,43 @@ def run_trading_monitor(cycles: int = 1, port: int = 4002,
         
         cycle_start = time.time()
         
-        # Step 0: Check gateway health
+        # Step 0: Check gateway health with improved logic
         logger.info("Step 0: Checking gateway health...")
         try:
             manager = IBGatewayManager()
-            gateway_ok, status = manager.check_status()
-            
-            if not gateway_ok:
-                logger.warning("⚠️ Gateways not running properly, attempting restart...")
-                logger.info("Gateway status:")
-                logger.info(status)
-                
-                # Attempt to restart gateways
-                restart_success = manager.restart_gateway()
+
+            # Use individual status check for better diagnostics
+            paper_running, live_running, status, live_2fa_pending = manager.check_individual_status()
+
+            logger.info(f"Gateway Status: Paper={paper_running}, Live={live_running}, Live2FA={live_2fa_pending}")
+
+            # Be more tolerant of 2FA pending states
+            if paper_running and (live_running or live_2fa_pending):
+                logger.info("✅ Gateways in acceptable state for trading")
+                if live_2fa_pending:
+                    logger.info("🔐 Live gateway pending 2FA - trading will use paper account")
+            elif not paper_running and not live_running:
+                logger.warning("⚠️ Both gateways down - attempting smart restart...")
+
+                # Use smart restart instead of aggressive restart
+                restart_success = manager.smart_restart_gateway()
                 
                 if restart_success:
-                    logger.info("✅ Gateway restart initiated, waiting 60 seconds for startup...")
-                    time.sleep(60)  # Wait for gateways to initialize
-                    
+                    logger.info("✅ Smart restart completed, waiting for initialization...")
+                    time.sleep(90)  # Wait for gateways to initialize
+
                     # Re-check status after restart
-                    gateway_ok, status = manager.check_status()
-                    if gateway_ok:
-                        logger.info("✅ Gateways confirmed running after restart")
+                    paper_running, live_running, status, live_2fa_pending = manager.check_individual_status()
+                    if paper_running or live_running:
+                        logger.info("✅ At least one gateway confirmed running after restart")
                     else:
-                        logger.error("❌ Gateways still not running after restart")
-                        logger.info("Current status:")
-                        logger.info(status)
-                        logger.warning("⏩ Skipping this cycle and will retry next cycle")
-                        continue
+                        logger.warning("⚠️ Gateways still not fully ready - continuing with monitoring...")
                 else:
-                    logger.error("❌ Gateway restart failed, skipping this cycle")
-                    continue
+                    logger.warning("⚠️ Smart restart had issues - continuing anyway...")
+            elif paper_running:
+                logger.info("✅ Paper gateway running - sufficient for most trading operations")
             else:
-                logger.info("✅ Gateways confirmed healthy")
+                logger.info("ℹ️ Only live gateway running - check if paper gateway needed")
                 
         except Exception as e:
             logger.error(f"❌ Error checking gateway health: {e}")
