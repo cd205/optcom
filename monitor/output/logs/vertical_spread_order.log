@@ -1,20 +1,1375 @@
-2025-09-16 04:39:37,135 - INFO - Processing strategies for date: 2025-09-16
-2025-09-16 04:39:37,135 - INFO - Market closed orders allowed: True
-2025-09-16 04:39:37,175 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
-2025-09-16 04:39:37,180 - INFO - Getting strategies for date: 2025-09-16
-2025-09-16 04:39:37,361 - INFO - No strategies found for 2025-09-16
-2025-09-16 04:42:10,684 - INFO - Processing strategies for date: 2025-09-16
-2025-09-16 04:42:10,684 - INFO - Market closed orders allowed: True
-2025-09-16 04:42:10,746 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
-2025-09-16 04:42:10,749 - INFO - Getting strategies for date: 2025-09-16
-2025-09-16 04:42:10,926 - INFO - No strategies found for 2025-09-16
-2025-09-16 04:44:45,025 - INFO - Processing strategies for date: 2025-09-16
-2025-09-16 04:44:45,026 - INFO - Market closed orders allowed: True
-2025-09-16 04:44:45,057 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
-2025-09-16 04:44:45,059 - INFO - Getting strategies for date: 2025-09-16
-2025-09-16 04:44:45,248 - INFO - No strategies found for 2025-09-16
-2025-09-16 04:47:18,986 - INFO - Processing strategies for date: 2025-09-16
-2025-09-16 04:47:18,987 - INFO - Market closed orders allowed: True
-2025-09-16 04:47:19,018 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
-2025-09-16 04:47:19,021 - INFO - Getting strategies for date: 2025-09-16
-2025-09-16 04:47:19,202 - INFO - No strategies found for 2025-09-16
+2025-09-29 11:07:31,322 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:07:31,323 - INFO - Market closed orders allowed: True
+2025-09-29 11:07:31,350 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:07:31,356 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:07:31,530 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:09:40,800 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:09:40,800 - INFO - Market closed orders allowed: True
+2025-09-29 11:09:40,829 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:09:40,831 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:09:40,995 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:11:50,284 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:11:50,284 - INFO - Market closed orders allowed: True
+2025-09-29 11:11:50,315 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:11:50,318 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:11:50,505 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:13:59,968 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:13:59,968 - INFO - Market closed orders allowed: True
+2025-09-29 11:13:59,999 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:14:00,002 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:14:00,188 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:16:09,774 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:16:09,774 - INFO - Market closed orders allowed: True
+2025-09-29 11:16:09,801 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:16:09,804 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:16:09,979 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:18:19,196 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:18:19,196 - INFO - Market closed orders allowed: True
+2025-09-29 11:18:19,226 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:18:19,230 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:18:19,416 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:20:28,600 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:20:28,600 - INFO - Market closed orders allowed: True
+2025-09-29 11:20:28,631 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:20:28,635 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:20:28,828 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:22:38,149 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:22:38,150 - INFO - Market closed orders allowed: True
+2025-09-29 11:22:38,179 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:22:38,182 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:22:38,360 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:24:47,491 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:24:47,491 - INFO - Market closed orders allowed: True
+2025-09-29 11:24:47,521 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:24:47,523 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:24:47,700 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:26:56,957 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:26:56,958 - INFO - Market closed orders allowed: True
+2025-09-29 11:26:56,986 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:26:56,988 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:26:57,182 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:29:06,474 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:29:06,474 - INFO - Market closed orders allowed: True
+2025-09-29 11:29:06,506 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:29:06,509 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:29:06,681 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:31:16,179 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:31:16,179 - INFO - Market closed orders allowed: True
+2025-09-29 11:31:16,212 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:31:16,215 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:31:16,408 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:33:25,678 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:33:25,678 - INFO - Market closed orders allowed: True
+2025-09-29 11:33:25,705 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:33:25,708 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:33:25,880 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:35:34,894 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:35:34,894 - INFO - Market closed orders allowed: True
+2025-09-29 11:35:34,922 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:35:34,924 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:35:35,111 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:37:44,477 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:37:44,477 - INFO - Market closed orders allowed: True
+2025-09-29 11:37:44,507 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:37:44,510 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:37:44,711 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:39:54,079 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:39:54,079 - INFO - Market closed orders allowed: True
+2025-09-29 11:39:54,111 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:39:54,114 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:39:54,303 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:42:03,652 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:42:03,652 - INFO - Market closed orders allowed: True
+2025-09-29 11:42:03,680 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:42:03,682 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:42:03,854 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:44:13,314 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:44:13,314 - INFO - Market closed orders allowed: True
+2025-09-29 11:44:13,345 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:44:13,348 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:44:13,558 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:46:23,221 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:46:23,222 - INFO - Market closed orders allowed: True
+2025-09-29 11:46:23,254 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:46:23,256 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:46:23,445 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:48:32,946 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:48:32,946 - INFO - Market closed orders allowed: True
+2025-09-29 11:48:32,976 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:48:32,978 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:48:33,158 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:50:42,494 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:50:42,494 - INFO - Market closed orders allowed: True
+2025-09-29 11:50:42,523 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:50:42,525 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:50:42,704 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:52:52,233 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:52:52,234 - INFO - Market closed orders allowed: True
+2025-09-29 11:52:52,263 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:52:52,265 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:52:52,445 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:55:01,918 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:55:01,918 - INFO - Market closed orders allowed: True
+2025-09-29 11:55:01,950 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:55:01,954 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:55:02,163 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:57:11,767 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:57:11,767 - INFO - Market closed orders allowed: True
+2025-09-29 11:57:11,797 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:57:11,800 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:57:11,995 - INFO - No strategies found for 2025-09-29
+2025-09-29 11:59:21,247 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 11:59:21,248 - INFO - Market closed orders allowed: True
+2025-09-29 11:59:21,277 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 11:59:21,280 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 11:59:21,453 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:01:30,583 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:01:30,583 - INFO - Market closed orders allowed: True
+2025-09-29 12:01:30,612 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:01:30,615 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:01:30,788 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:03:40,154 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:03:40,154 - INFO - Market closed orders allowed: True
+2025-09-29 12:03:40,205 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:03:40,209 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:03:40,443 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:05:49,804 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:05:49,804 - INFO - Market closed orders allowed: True
+2025-09-29 12:05:49,833 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:05:49,836 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:05:50,024 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:07:59,344 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:07:59,344 - INFO - Market closed orders allowed: True
+2025-09-29 12:07:59,376 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:07:59,379 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:07:59,559 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:10:09,111 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:10:09,111 - INFO - Market closed orders allowed: True
+2025-09-29 12:10:09,141 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:10:09,144 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:10:09,316 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:12:18,470 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:12:18,470 - INFO - Market closed orders allowed: True
+2025-09-29 12:12:18,504 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:12:18,506 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:12:18,687 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:14:28,157 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:14:28,157 - INFO - Market closed orders allowed: True
+2025-09-29 12:14:28,187 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:14:28,190 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:14:28,375 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:16:37,606 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:16:37,606 - INFO - Market closed orders allowed: True
+2025-09-29 12:16:37,638 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:16:37,641 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:16:37,833 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:18:47,229 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:18:47,229 - INFO - Market closed orders allowed: True
+2025-09-29 12:18:47,259 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:18:47,262 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:18:47,439 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:20:57,031 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:20:57,031 - INFO - Market closed orders allowed: True
+2025-09-29 12:20:57,065 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:20:57,069 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:20:57,310 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:23:07,168 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:23:07,168 - INFO - Market closed orders allowed: True
+2025-09-29 12:23:07,199 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:23:07,201 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:23:07,395 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:25:16,814 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:25:16,815 - INFO - Market closed orders allowed: True
+2025-09-29 12:25:16,843 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:25:16,846 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:25:17,025 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:27:26,278 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:27:26,278 - INFO - Market closed orders allowed: True
+2025-09-29 12:27:26,306 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:27:26,309 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:27:26,483 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:29:35,737 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:29:35,737 - INFO - Market closed orders allowed: True
+2025-09-29 12:29:35,765 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:29:35,768 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:29:35,941 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:31:45,217 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:31:45,217 - INFO - Market closed orders allowed: True
+2025-09-29 12:31:45,248 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:31:45,251 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:31:45,433 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:33:54,699 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:33:54,699 - INFO - Market closed orders allowed: True
+2025-09-29 12:33:54,728 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:33:54,730 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:33:54,901 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:36:03,992 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:36:03,992 - INFO - Market closed orders allowed: True
+2025-09-29 12:36:04,022 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:36:04,025 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:36:04,197 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:38:13,632 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:38:13,632 - INFO - Market closed orders allowed: True
+2025-09-29 12:38:13,662 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:38:13,665 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:38:13,865 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:40:23,137 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:40:23,138 - INFO - Market closed orders allowed: True
+2025-09-29 12:40:23,170 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:40:23,174 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:40:23,369 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:42:32,465 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:42:32,466 - INFO - Market closed orders allowed: True
+2025-09-29 12:42:32,531 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:42:32,534 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:42:32,738 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:44:41,956 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:44:41,956 - INFO - Market closed orders allowed: True
+2025-09-29 12:44:42,026 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:44:42,028 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:44:42,206 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:46:51,435 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:46:51,436 - INFO - Market closed orders allowed: True
+2025-09-29 12:46:51,467 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:46:51,470 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:46:51,664 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:49:00,974 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:49:00,974 - INFO - Market closed orders allowed: True
+2025-09-29 12:49:01,004 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:49:01,007 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:49:01,211 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:51:10,428 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:51:10,428 - INFO - Market closed orders allowed: True
+2025-09-29 12:51:10,460 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:51:10,463 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:51:10,647 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:53:19,895 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:53:19,896 - INFO - Market closed orders allowed: True
+2025-09-29 12:53:19,927 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:53:19,930 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:53:20,136 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:55:29,390 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:55:29,390 - INFO - Market closed orders allowed: True
+2025-09-29 12:55:29,423 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:55:29,425 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:55:29,607 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:57:39,186 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:57:39,186 - INFO - Market closed orders allowed: True
+2025-09-29 12:57:39,216 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:57:39,219 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:57:39,398 - INFO - No strategies found for 2025-09-29
+2025-09-29 12:59:48,647 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 12:59:48,647 - INFO - Market closed orders allowed: True
+2025-09-29 12:59:48,676 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 12:59:48,679 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 12:59:48,865 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:01:58,085 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:01:58,085 - INFO - Market closed orders allowed: True
+2025-09-29 13:01:58,119 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:01:58,122 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:01:58,338 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:04:07,680 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:04:07,681 - INFO - Market closed orders allowed: True
+2025-09-29 13:04:07,715 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:04:07,720 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:04:07,943 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:06:17,356 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:06:17,356 - INFO - Market closed orders allowed: True
+2025-09-29 13:06:17,387 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:06:17,390 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:06:17,586 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:08:27,105 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:08:27,105 - INFO - Market closed orders allowed: True
+2025-09-29 13:08:27,137 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:08:27,141 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:08:27,337 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:10:36,631 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:10:36,631 - INFO - Market closed orders allowed: True
+2025-09-29 13:10:36,663 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:10:36,667 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:10:36,932 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:12:46,540 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:12:46,541 - INFO - Market closed orders allowed: True
+2025-09-29 13:12:46,570 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:12:46,573 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:12:46,753 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:14:56,013 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:14:56,013 - INFO - Market closed orders allowed: True
+2025-09-29 13:14:56,044 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:14:56,046 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:14:56,242 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:17:05,490 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:17:05,490 - INFO - Market closed orders allowed: True
+2025-09-29 13:17:05,520 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:17:05,523 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:17:05,718 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:19:14,983 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:19:14,983 - INFO - Market closed orders allowed: True
+2025-09-29 13:19:15,013 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:19:15,016 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:19:15,200 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:21:24,572 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:21:24,572 - INFO - Market closed orders allowed: True
+2025-09-29 13:21:24,603 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:21:24,606 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:21:24,791 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:23:34,281 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:23:34,281 - INFO - Market closed orders allowed: True
+2025-09-29 13:23:34,311 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:23:34,314 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:23:34,492 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:25:43,747 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:25:43,748 - INFO - Market closed orders allowed: True
+2025-09-29 13:25:43,779 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:25:43,783 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:25:44,037 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:27:53,491 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:27:53,491 - INFO - Market closed orders allowed: True
+2025-09-29 13:27:53,523 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:27:53,527 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:27:53,736 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:30:03,259 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:30:03,259 - INFO - Market closed orders allowed: True
+2025-09-29 13:30:03,292 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:30:03,295 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:30:03,574 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:32:13,245 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:32:13,246 - INFO - Market closed orders allowed: True
+2025-09-29 13:32:13,278 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:32:13,281 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:32:13,484 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:34:22,843 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:34:22,843 - INFO - Market closed orders allowed: True
+2025-09-29 13:34:22,877 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:34:22,879 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:34:23,067 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:36:32,205 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:36:32,205 - INFO - Market closed orders allowed: True
+2025-09-29 13:36:32,237 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:36:32,239 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:36:32,461 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:38:41,590 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:38:41,590 - INFO - Market closed orders allowed: True
+2025-09-29 13:38:41,617 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:38:41,619 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:38:41,788 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:40:51,121 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:40:51,121 - INFO - Market closed orders allowed: True
+2025-09-29 13:40:51,150 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:40:51,153 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:40:51,333 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:43:00,495 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:43:00,495 - INFO - Market closed orders allowed: True
+2025-09-29 13:43:00,523 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:43:00,526 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:43:00,704 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:45:10,091 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:45:10,091 - INFO - Market closed orders allowed: True
+2025-09-29 13:45:10,123 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:45:10,127 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:45:10,366 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:47:19,936 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:47:19,936 - INFO - Market closed orders allowed: True
+2025-09-29 13:47:19,964 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:47:19,966 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:47:20,148 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:49:29,499 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:49:29,499 - INFO - Market closed orders allowed: True
+2025-09-29 13:49:29,553 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:49:29,556 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:49:29,729 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:51:39,099 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:51:39,099 - INFO - Market closed orders allowed: True
+2025-09-29 13:51:39,133 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:51:39,135 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:51:39,318 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:53:48,537 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:53:48,537 - INFO - Market closed orders allowed: True
+2025-09-29 13:53:48,569 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:53:48,572 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:53:48,749 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:55:58,135 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:55:58,135 - INFO - Market closed orders allowed: True
+2025-09-29 13:55:58,169 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:55:58,172 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:55:58,375 - INFO - No strategies found for 2025-09-29
+2025-09-29 13:58:07,672 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 13:58:07,672 - INFO - Market closed orders allowed: True
+2025-09-29 13:58:07,700 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 13:58:07,703 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 13:58:07,897 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:00:17,294 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:00:17,294 - INFO - Market closed orders allowed: True
+2025-09-29 14:00:17,324 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:00:17,327 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:00:17,525 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:02:27,055 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:02:27,056 - INFO - Market closed orders allowed: True
+2025-09-29 14:02:27,091 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:02:27,098 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:02:27,383 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:04:36,578 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:04:36,579 - INFO - Market closed orders allowed: True
+2025-09-29 14:04:36,609 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:04:36,611 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:04:36,796 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:06:46,374 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:06:46,374 - INFO - Market closed orders allowed: True
+2025-09-29 14:06:46,409 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:06:46,412 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:06:46,594 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:08:56,026 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:08:56,026 - INFO - Market closed orders allowed: True
+2025-09-29 14:08:56,059 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:08:56,061 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:08:56,251 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:11:05,851 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:11:05,851 - INFO - Market closed orders allowed: True
+2025-09-29 14:11:05,882 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:11:05,885 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:11:06,083 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:13:15,320 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:13:15,321 - INFO - Market closed orders allowed: True
+2025-09-29 14:13:15,349 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:13:15,351 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:13:15,529 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:15:24,701 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:15:24,701 - INFO - Market closed orders allowed: True
+2025-09-29 14:15:24,734 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:15:24,737 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:15:24,920 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:17:34,542 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:17:34,543 - INFO - Market closed orders allowed: True
+2025-09-29 14:17:34,572 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:17:34,574 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:17:34,750 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:19:44,137 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:19:44,137 - INFO - Market closed orders allowed: True
+2025-09-29 14:19:44,166 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:19:44,169 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:19:44,367 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:21:53,835 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:21:53,835 - INFO - Market closed orders allowed: True
+2025-09-29 14:21:53,864 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:21:53,866 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:21:54,038 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:24:03,390 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:24:03,390 - INFO - Market closed orders allowed: True
+2025-09-29 14:24:03,420 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:24:03,423 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:24:03,614 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:26:12,873 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:26:12,873 - INFO - Market closed orders allowed: True
+2025-09-29 14:26:12,913 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:26:12,916 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:26:13,141 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:28:22,449 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:28:22,449 - INFO - Market closed orders allowed: True
+2025-09-29 14:28:22,478 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:28:22,481 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:28:22,664 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:30:31,864 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:30:31,864 - INFO - Market closed orders allowed: True
+2025-09-29 14:30:31,894 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:30:31,896 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:30:32,072 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:32:41,674 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:32:41,674 - INFO - Market closed orders allowed: True
+2025-09-29 14:32:41,704 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:32:41,707 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:32:41,913 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:34:51,588 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:34:51,588 - INFO - Market closed orders allowed: True
+2025-09-29 14:34:51,615 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:34:51,617 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:34:51,792 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:37:01,475 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:37:01,475 - INFO - Market closed orders allowed: True
+2025-09-29 14:37:01,504 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:37:01,507 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:37:01,767 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:39:11,419 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:39:11,419 - INFO - Market closed orders allowed: True
+2025-09-29 14:39:11,448 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:39:11,451 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:39:11,643 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:41:20,996 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:41:20,996 - INFO - Market closed orders allowed: True
+2025-09-29 14:41:21,024 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:41:21,027 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:41:21,200 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:43:30,356 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:43:30,356 - INFO - Market closed orders allowed: True
+2025-09-29 14:43:30,387 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:43:30,390 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:43:30,563 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:45:39,700 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:45:39,700 - INFO - Market closed orders allowed: True
+2025-09-29 14:45:39,733 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:45:39,736 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:45:39,981 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:47:49,574 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:47:49,574 - INFO - Market closed orders allowed: True
+2025-09-29 14:47:49,602 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:47:49,604 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:47:49,785 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:50:12,570 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:50:12,570 - INFO - Market closed orders allowed: True
+2025-09-29 14:50:12,601 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:50:12,605 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:50:12,819 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:52:22,403 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:52:22,404 - INFO - Market closed orders allowed: True
+2025-09-29 14:52:22,436 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:52:22,438 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:52:22,614 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:54:32,097 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:54:32,097 - INFO - Market closed orders allowed: True
+2025-09-29 14:54:32,128 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:54:32,131 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:54:32,315 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:56:41,194 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:56:41,195 - INFO - Market closed orders allowed: True
+2025-09-29 14:56:41,228 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:56:41,230 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:56:41,409 - INFO - No strategies found for 2025-09-29
+2025-09-29 14:58:50,629 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 14:58:50,630 - INFO - Market closed orders allowed: True
+2025-09-29 14:58:50,656 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 14:58:50,659 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 14:58:50,864 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:01:00,163 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:01:00,163 - INFO - Market closed orders allowed: True
+2025-09-29 15:01:00,193 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:01:00,195 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:01:00,386 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:03:09,692 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:03:09,692 - INFO - Market closed orders allowed: True
+2025-09-29 15:03:09,720 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:03:09,722 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:03:09,898 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:05:19,090 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:05:19,090 - INFO - Market closed orders allowed: True
+2025-09-29 15:05:19,120 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:05:19,123 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:05:19,303 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:07:28,622 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:07:28,622 - INFO - Market closed orders allowed: True
+2025-09-29 15:07:28,651 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:07:28,654 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:07:28,840 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:09:37,962 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:09:37,962 - INFO - Market closed orders allowed: True
+2025-09-29 15:09:37,990 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:09:37,993 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:09:38,177 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:11:47,524 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:11:47,525 - INFO - Market closed orders allowed: True
+2025-09-29 15:11:47,565 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:11:47,568 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:11:47,751 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:13:56,956 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:13:56,956 - INFO - Market closed orders allowed: True
+2025-09-29 15:13:56,984 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:13:56,987 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:13:57,171 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:16:06,373 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:16:06,373 - INFO - Market closed orders allowed: True
+2025-09-29 15:16:06,405 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:16:06,408 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:16:06,587 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:18:15,827 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:18:15,827 - INFO - Market closed orders allowed: True
+2025-09-29 15:18:15,856 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:18:15,859 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:18:16,043 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:20:25,239 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:20:25,239 - INFO - Market closed orders allowed: True
+2025-09-29 15:20:25,266 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:20:25,269 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:20:25,454 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:22:34,822 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:22:34,822 - INFO - Market closed orders allowed: True
+2025-09-29 15:22:34,852 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:22:34,855 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:22:35,031 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:24:44,710 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:24:44,710 - INFO - Market closed orders allowed: True
+2025-09-29 15:24:44,742 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:24:44,744 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:24:44,918 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:26:54,432 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:26:54,432 - INFO - Market closed orders allowed: True
+2025-09-29 15:26:54,467 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:26:54,470 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:26:54,673 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:29:04,351 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:29:04,351 - INFO - Market closed orders allowed: True
+2025-09-29 15:29:04,379 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:29:04,381 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:29:04,557 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:31:14,192 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:31:14,192 - INFO - Market closed orders allowed: True
+2025-09-29 15:31:14,222 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:31:14,225 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:31:14,406 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:33:23,967 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:33:23,968 - INFO - Market closed orders allowed: True
+2025-09-29 15:33:23,998 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:33:24,001 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:33:24,182 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:35:33,640 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:35:33,641 - INFO - Market closed orders allowed: True
+2025-09-29 15:35:33,669 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:35:33,671 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:35:33,856 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:37:43,482 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:37:43,483 - INFO - Market closed orders allowed: True
+2025-09-29 15:37:43,518 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:37:43,521 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:37:43,705 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:39:53,305 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:39:53,306 - INFO - Market closed orders allowed: True
+2025-09-29 15:39:53,338 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:39:53,341 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:39:53,524 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:42:02,784 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:42:02,784 - INFO - Market closed orders allowed: True
+2025-09-29 15:42:02,812 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:42:02,814 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:42:03,005 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:44:12,252 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:44:12,252 - INFO - Market closed orders allowed: True
+2025-09-29 15:44:12,281 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:44:12,284 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:44:12,481 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:46:21,762 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:46:21,762 - INFO - Market closed orders allowed: True
+2025-09-29 15:46:21,790 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:46:21,793 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:46:21,970 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:48:31,341 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:48:31,341 - INFO - Market closed orders allowed: True
+2025-09-29 15:48:31,370 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:48:31,373 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:48:31,552 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:50:40,977 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:50:40,977 - INFO - Market closed orders allowed: True
+2025-09-29 15:50:41,009 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:50:41,012 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:50:41,197 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:52:50,469 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:52:50,469 - INFO - Market closed orders allowed: True
+2025-09-29 15:52:50,497 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:52:50,499 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:52:50,682 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:54:59,771 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:54:59,771 - INFO - Market closed orders allowed: True
+2025-09-29 15:54:59,802 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:54:59,805 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:54:59,986 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:57:09,204 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:57:09,204 - INFO - Market closed orders allowed: True
+2025-09-29 15:57:09,232 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:57:09,235 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:57:09,452 - INFO - No strategies found for 2025-09-29
+2025-09-29 15:59:18,665 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 15:59:18,665 - INFO - Market closed orders allowed: True
+2025-09-29 15:59:18,692 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 15:59:18,695 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 15:59:18,869 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:01:28,259 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:01:28,260 - INFO - Market closed orders allowed: True
+2025-09-29 16:01:28,288 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:01:28,291 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:01:28,500 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:03:37,775 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:03:37,775 - INFO - Market closed orders allowed: True
+2025-09-29 16:03:37,808 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:03:37,811 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:03:38,038 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:05:47,336 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:05:47,336 - INFO - Market closed orders allowed: True
+2025-09-29 16:05:47,367 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:05:47,370 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:05:47,559 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:07:56,782 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:07:56,782 - INFO - Market closed orders allowed: True
+2025-09-29 16:07:56,829 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:07:56,832 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:07:57,012 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:10:06,217 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:10:06,217 - INFO - Market closed orders allowed: True
+2025-09-29 16:10:06,248 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:10:06,251 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:10:06,431 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:12:15,642 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:12:15,642 - INFO - Market closed orders allowed: True
+2025-09-29 16:12:15,676 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:12:15,680 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:12:15,896 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:14:25,112 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:14:25,112 - INFO - Market closed orders allowed: True
+2025-09-29 16:14:25,140 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:14:25,143 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:14:25,313 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:16:34,529 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:16:34,529 - INFO - Market closed orders allowed: True
+2025-09-29 16:16:34,557 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:16:34,560 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:16:34,736 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:18:43,935 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:18:43,935 - INFO - Market closed orders allowed: True
+2025-09-29 16:18:43,965 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:18:43,967 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:18:44,184 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:20:53,550 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:20:53,550 - INFO - Market closed orders allowed: True
+2025-09-29 16:20:53,580 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:20:53,583 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:20:53,754 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:23:02,937 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:23:02,938 - INFO - Market closed orders allowed: True
+2025-09-29 16:23:02,970 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:23:02,973 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:23:03,157 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:25:12,513 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:25:12,513 - INFO - Market closed orders allowed: True
+2025-09-29 16:25:12,543 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:25:12,545 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:25:12,745 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:27:22,173 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:27:22,173 - INFO - Market closed orders allowed: True
+2025-09-29 16:27:22,203 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:27:22,206 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:27:22,415 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:29:31,772 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:29:31,772 - INFO - Market closed orders allowed: True
+2025-09-29 16:29:31,802 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:29:31,805 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:29:31,988 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:31:41,185 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:31:41,185 - INFO - Market closed orders allowed: True
+2025-09-29 16:31:41,215 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:31:41,218 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:31:41,393 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:33:50,775 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:33:50,775 - INFO - Market closed orders allowed: True
+2025-09-29 16:33:50,805 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:33:50,808 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:33:50,990 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:36:00,324 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:36:00,324 - INFO - Market closed orders allowed: True
+2025-09-29 16:36:00,355 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:36:00,358 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:36:00,561 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:38:10,265 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:38:10,265 - INFO - Market closed orders allowed: True
+2025-09-29 16:38:10,293 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:38:10,296 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:38:10,475 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:40:19,869 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:40:19,869 - INFO - Market closed orders allowed: True
+2025-09-29 16:40:19,897 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:40:19,900 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:40:20,088 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:42:29,447 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:42:29,447 - INFO - Market closed orders allowed: True
+2025-09-29 16:42:29,475 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:42:29,478 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:42:29,650 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:44:39,014 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:44:39,014 - INFO - Market closed orders allowed: True
+2025-09-29 16:44:39,044 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:44:39,047 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:44:39,227 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:46:48,476 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:46:48,477 - INFO - Market closed orders allowed: True
+2025-09-29 16:46:48,507 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:46:48,509 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:46:48,736 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:48:57,972 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:48:57,972 - INFO - Market closed orders allowed: True
+2025-09-29 16:48:58,003 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:48:58,005 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:48:58,208 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:51:07,470 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:51:07,470 - INFO - Market closed orders allowed: True
+2025-09-29 16:51:07,503 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:51:07,506 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:51:07,692 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:53:16,966 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:53:16,966 - INFO - Market closed orders allowed: True
+2025-09-29 16:53:16,996 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:53:16,999 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:53:17,179 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:55:26,397 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:55:26,397 - INFO - Market closed orders allowed: True
+2025-09-29 16:55:26,425 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:55:26,428 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:55:26,622 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:57:36,030 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:57:36,031 - INFO - Market closed orders allowed: True
+2025-09-29 16:57:36,063 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:57:36,066 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:57:36,292 - INFO - No strategies found for 2025-09-29
+2025-09-29 16:59:45,665 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 16:59:45,665 - INFO - Market closed orders allowed: True
+2025-09-29 16:59:45,694 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 16:59:45,697 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 16:59:45,866 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:01:55,259 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:01:55,259 - INFO - Market closed orders allowed: True
+2025-09-29 17:01:55,287 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:01:55,291 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:01:55,468 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:04:04,708 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:04:04,708 - INFO - Market closed orders allowed: True
+2025-09-29 17:04:04,737 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:04:04,740 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:04:04,920 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:06:14,477 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:06:14,477 - INFO - Market closed orders allowed: True
+2025-09-29 17:06:14,517 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:06:14,519 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:06:14,713 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:08:23,966 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:08:23,966 - INFO - Market closed orders allowed: True
+2025-09-29 17:08:23,996 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:08:23,999 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:08:24,172 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:10:33,661 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:10:33,661 - INFO - Market closed orders allowed: True
+2025-09-29 17:10:33,687 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:10:33,689 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:10:33,879 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:12:43,130 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:12:43,130 - INFO - Market closed orders allowed: True
+2025-09-29 17:12:43,162 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:12:43,165 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:12:43,362 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:14:52,603 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:14:52,603 - INFO - Market closed orders allowed: True
+2025-09-29 17:14:52,631 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:14:52,634 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:14:52,810 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:17:02,147 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:17:02,148 - INFO - Market closed orders allowed: True
+2025-09-29 17:17:02,178 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:17:02,180 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:17:02,377 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:19:11,628 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:19:11,628 - INFO - Market closed orders allowed: True
+2025-09-29 17:19:11,660 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:19:11,663 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:19:11,843 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:21:21,409 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:21:21,409 - INFO - Market closed orders allowed: True
+2025-09-29 17:21:21,439 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:21:21,442 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:21:21,630 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:23:30,944 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:23:30,944 - INFO - Market closed orders allowed: True
+2025-09-29 17:23:30,975 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:23:30,978 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:23:31,169 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:25:40,507 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:25:40,507 - INFO - Market closed orders allowed: True
+2025-09-29 17:25:40,535 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:25:40,538 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:25:40,745 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:27:50,024 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:27:50,024 - INFO - Market closed orders allowed: True
+2025-09-29 17:27:50,053 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:27:50,057 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:27:50,288 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:29:59,628 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:29:59,628 - INFO - Market closed orders allowed: True
+2025-09-29 17:29:59,656 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:29:59,658 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:29:59,838 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:32:09,277 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:32:09,277 - INFO - Market closed orders allowed: True
+2025-09-29 17:32:09,308 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:32:09,311 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:32:09,485 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:34:18,957 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:34:18,958 - INFO - Market closed orders allowed: True
+2025-09-29 17:34:18,988 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:34:18,990 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:34:19,222 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:36:28,405 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:36:28,405 - INFO - Market closed orders allowed: True
+2025-09-29 17:36:28,434 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:36:28,437 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:36:28,611 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:38:37,875 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:38:37,876 - INFO - Market closed orders allowed: True
+2025-09-29 17:38:37,903 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:38:37,906 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:38:38,080 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:40:47,331 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:40:47,331 - INFO - Market closed orders allowed: True
+2025-09-29 17:40:47,378 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:40:47,385 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:40:47,613 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:42:57,019 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:42:57,020 - INFO - Market closed orders allowed: True
+2025-09-29 17:42:57,050 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:42:57,053 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:42:57,291 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:45:06,872 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:45:06,872 - INFO - Market closed orders allowed: True
+2025-09-29 17:45:06,902 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:45:06,905 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:45:07,108 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:47:16,572 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:47:16,572 - INFO - Market closed orders allowed: True
+2025-09-29 17:47:16,603 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:47:16,605 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:47:16,777 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:49:25,876 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:49:25,876 - INFO - Market closed orders allowed: True
+2025-09-29 17:49:25,902 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:49:25,905 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:49:26,075 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:51:35,256 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:51:35,256 - INFO - Market closed orders allowed: True
+2025-09-29 17:51:35,284 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:51:35,287 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:51:35,469 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:53:44,689 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:53:44,689 - INFO - Market closed orders allowed: True
+2025-09-29 17:53:44,720 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:53:44,722 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:53:44,918 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:55:54,250 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:55:54,251 - INFO - Market closed orders allowed: True
+2025-09-29 17:55:54,278 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:55:54,280 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:55:54,456 - INFO - No strategies found for 2025-09-29
+2025-09-29 17:58:03,864 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 17:58:03,864 - INFO - Market closed orders allowed: True
+2025-09-29 17:58:03,897 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 17:58:03,901 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 17:58:04,125 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:00:13,815 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:00:13,815 - INFO - Market closed orders allowed: True
+2025-09-29 18:00:13,864 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:00:13,867 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:00:14,049 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:02:23,454 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:02:23,454 - INFO - Market closed orders allowed: True
+2025-09-29 18:02:23,485 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:02:23,488 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:02:23,671 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:04:32,804 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:04:32,804 - INFO - Market closed orders allowed: True
+2025-09-29 18:04:32,836 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:04:32,839 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:04:33,014 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:06:42,248 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:06:42,248 - INFO - Market closed orders allowed: True
+2025-09-29 18:06:42,276 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:06:42,279 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:06:42,503 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:08:51,880 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:08:51,880 - INFO - Market closed orders allowed: True
+2025-09-29 18:08:51,910 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:08:51,912 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:08:52,088 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:11:01,330 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:11:01,330 - INFO - Market closed orders allowed: True
+2025-09-29 18:11:01,370 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:11:01,373 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:11:01,580 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:13:10,845 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:13:10,845 - INFO - Market closed orders allowed: True
+2025-09-29 18:13:10,874 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:13:10,877 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:13:11,059 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:15:20,311 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:15:20,312 - INFO - Market closed orders allowed: True
+2025-09-29 18:15:20,342 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:15:20,345 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:15:20,586 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:17:30,097 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:17:30,097 - INFO - Market closed orders allowed: True
+2025-09-29 18:17:30,127 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:17:30,129 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:17:30,305 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:19:39,589 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:19:39,589 - INFO - Market closed orders allowed: True
+2025-09-29 18:19:39,616 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:19:39,619 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:19:39,791 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:21:49,059 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:21:49,059 - INFO - Market closed orders allowed: True
+2025-09-29 18:21:49,096 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:21:49,099 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:21:49,281 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:23:58,480 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:23:58,481 - INFO - Market closed orders allowed: True
+2025-09-29 18:23:58,511 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:23:58,514 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:23:58,722 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:26:08,144 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:26:08,144 - INFO - Market closed orders allowed: True
+2025-09-29 18:26:08,175 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:26:08,177 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:26:08,368 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:28:17,806 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:28:17,807 - INFO - Market closed orders allowed: True
+2025-09-29 18:28:17,837 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:28:17,839 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:28:18,041 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:30:27,334 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:30:27,334 - INFO - Market closed orders allowed: True
+2025-09-29 18:30:27,377 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:30:27,383 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:30:27,581 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:32:36,989 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:32:36,989 - INFO - Market closed orders allowed: True
+2025-09-29 18:32:37,018 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:32:37,020 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:32:37,194 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:34:46,625 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:34:46,625 - INFO - Market closed orders allowed: True
+2025-09-29 18:34:46,655 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:34:46,658 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:34:46,838 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:36:56,068 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:36:56,068 - INFO - Market closed orders allowed: True
+2025-09-29 18:36:56,099 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:36:56,103 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:36:56,285 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:39:05,524 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:39:05,525 - INFO - Market closed orders allowed: True
+2025-09-29 18:39:05,555 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:39:05,558 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:39:05,735 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:41:15,015 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:41:15,016 - INFO - Market closed orders allowed: True
+2025-09-29 18:41:15,067 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:41:15,071 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:41:15,272 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:43:24,662 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:43:24,662 - INFO - Market closed orders allowed: True
+2025-09-29 18:43:24,689 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:43:24,692 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:43:24,860 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:45:34,102 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:45:34,102 - INFO - Market closed orders allowed: True
+2025-09-29 18:45:34,130 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:45:34,133 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:45:34,314 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:47:43,707 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:47:43,707 - INFO - Market closed orders allowed: True
+2025-09-29 18:47:43,736 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:47:43,738 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:47:43,929 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:49:53,211 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:49:53,211 - INFO - Market closed orders allowed: True
+2025-09-29 18:49:53,239 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:49:53,242 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:49:53,421 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:52:02,727 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:52:02,728 - INFO - Market closed orders allowed: True
+2025-09-29 18:52:02,759 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:52:02,761 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:52:02,932 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:54:12,316 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:54:12,316 - INFO - Market closed orders allowed: True
+2025-09-29 18:54:12,349 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:54:12,353 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:54:12,541 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:56:21,819 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:56:21,819 - INFO - Market closed orders allowed: True
+2025-09-29 18:56:21,849 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:56:21,852 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:56:22,023 - INFO - No strategies found for 2025-09-29
+2025-09-29 18:58:31,223 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 18:58:31,223 - INFO - Market closed orders allowed: True
+2025-09-29 18:58:31,251 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 18:58:31,255 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 18:58:31,449 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:00:40,918 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:00:40,918 - INFO - Market closed orders allowed: True
+2025-09-29 19:00:40,973 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:00:40,976 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:00:41,268 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:02:50,824 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:02:50,825 - INFO - Market closed orders allowed: True
+2025-09-29 19:02:50,853 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:02:50,856 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:02:51,031 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:05:00,268 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:05:00,268 - INFO - Market closed orders allowed: True
+2025-09-29 19:05:00,299 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:05:00,302 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:05:00,485 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:07:09,759 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:07:09,760 - INFO - Market closed orders allowed: True
+2025-09-29 19:07:09,788 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:07:09,791 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:07:09,965 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:09:19,307 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:09:19,307 - INFO - Market closed orders allowed: True
+2025-09-29 19:09:19,336 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:09:19,338 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:09:19,520 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:11:28,856 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:11:28,856 - INFO - Market closed orders allowed: True
+2025-09-29 19:11:28,882 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:11:28,884 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:11:29,060 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:13:38,314 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:13:38,314 - INFO - Market closed orders allowed: True
+2025-09-29 19:13:38,342 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:13:38,344 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:13:38,517 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:15:47,900 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:15:47,900 - INFO - Market closed orders allowed: True
+2025-09-29 19:15:47,928 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:15:47,931 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:15:48,124 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:17:57,585 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:17:57,586 - INFO - Market closed orders allowed: True
+2025-09-29 19:17:57,615 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:17:57,618 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:17:57,832 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:20:07,167 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:20:07,167 - INFO - Market closed orders allowed: True
+2025-09-29 19:20:07,195 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:20:07,198 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:20:07,386 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:22:16,803 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:22:16,803 - INFO - Market closed orders allowed: True
+2025-09-29 19:22:16,834 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:22:16,836 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:22:17,062 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:24:26,334 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:24:26,334 - INFO - Market closed orders allowed: True
+2025-09-29 19:24:26,365 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:24:26,368 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:24:26,567 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:26:35,993 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:26:35,993 - INFO - Market closed orders allowed: True
+2025-09-29 19:26:36,024 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:26:36,028 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:26:36,242 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:28:45,454 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:28:45,454 - INFO - Market closed orders allowed: True
+2025-09-29 19:28:45,481 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:28:45,483 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:28:45,660 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:30:54,883 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:30:54,884 - INFO - Market closed orders allowed: True
+2025-09-29 19:30:54,912 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:30:54,915 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:30:55,133 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:33:04,471 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:33:04,471 - INFO - Market closed orders allowed: True
+2025-09-29 19:33:04,502 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:33:04,505 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:33:04,726 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:35:14,126 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:35:14,126 - INFO - Market closed orders allowed: True
+2025-09-29 19:35:14,162 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:35:14,164 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:35:14,349 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:37:23,561 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:37:23,562 - INFO - Market closed orders allowed: True
+2025-09-29 19:37:23,589 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:37:23,591 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:37:23,762 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:39:32,904 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:39:32,904 - INFO - Market closed orders allowed: True
+2025-09-29 19:39:32,940 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:39:32,944 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:39:33,142 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:41:42,545 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:41:42,545 - INFO - Market closed orders allowed: True
+2025-09-29 19:41:42,578 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:41:42,581 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:41:42,760 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:43:51,929 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:43:51,930 - INFO - Market closed orders allowed: True
+2025-09-29 19:43:51,965 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:43:51,968 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:43:52,171 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:46:01,506 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:46:01,506 - INFO - Market closed orders allowed: True
+2025-09-29 19:46:01,549 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:46:01,551 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:46:01,766 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:48:11,073 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:48:11,073 - INFO - Market closed orders allowed: True
+2025-09-29 19:48:11,100 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:48:11,103 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:48:11,276 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:50:20,573 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:50:20,574 - INFO - Market closed orders allowed: True
+2025-09-29 19:50:20,604 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:50:20,607 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:50:20,802 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:52:30,693 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:52:30,693 - INFO - Market closed orders allowed: True
+2025-09-29 19:52:30,723 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:52:30,726 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:52:30,932 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:54:40,270 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:54:40,270 - INFO - Market closed orders allowed: True
+2025-09-29 19:54:40,298 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:54:40,301 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:54:40,489 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:56:49,597 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:56:49,597 - INFO - Market closed orders allowed: True
+2025-09-29 19:56:49,629 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:56:49,632 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:56:49,806 - INFO - No strategies found for 2025-09-29
+2025-09-29 19:58:59,083 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 19:58:59,083 - INFO - Market closed orders allowed: True
+2025-09-29 19:58:59,115 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 19:58:59,118 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 19:58:59,298 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:01:08,505 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:01:08,505 - INFO - Market closed orders allowed: True
+2025-09-29 20:01:08,535 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:01:08,537 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:01:08,717 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:03:17,929 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:03:17,929 - INFO - Market closed orders allowed: True
+2025-09-29 20:03:17,959 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:03:17,962 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:03:18,146 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:05:27,422 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:05:27,422 - INFO - Market closed orders allowed: True
+2025-09-29 20:05:27,455 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:05:27,458 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:05:27,634 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:07:36,932 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:07:36,932 - INFO - Market closed orders allowed: True
+2025-09-29 20:07:36,961 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:07:36,964 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:07:37,146 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:09:46,538 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:09:46,538 - INFO - Market closed orders allowed: True
+2025-09-29 20:09:46,567 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:09:46,570 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:09:46,741 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:11:56,047 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:11:56,047 - INFO - Market closed orders allowed: True
+2025-09-29 20:11:56,079 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:11:56,082 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:11:56,256 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:14:05,581 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:14:05,581 - INFO - Market closed orders allowed: True
+2025-09-29 20:14:05,613 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:14:05,616 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:14:05,827 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:16:14,995 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:16:14,995 - INFO - Market closed orders allowed: True
+2025-09-29 20:16:15,023 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:16:15,026 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:16:15,225 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:18:24,852 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:18:24,852 - INFO - Market closed orders allowed: True
+2025-09-29 20:18:24,883 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:18:24,886 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:18:25,110 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:20:34,349 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:20:34,349 - INFO - Market closed orders allowed: True
+2025-09-29 20:20:34,376 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:20:34,378 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:20:34,552 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:22:44,185 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:22:44,186 - INFO - Market closed orders allowed: True
+2025-09-29 20:22:44,216 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:22:44,219 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:22:44,394 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:24:53,670 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:24:53,670 - INFO - Market closed orders allowed: True
+2025-09-29 20:24:53,700 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:24:53,702 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:24:53,883 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:27:03,108 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:27:03,108 - INFO - Market closed orders allowed: True
+2025-09-29 20:27:03,143 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:27:03,146 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:27:03,358 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:29:12,579 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:29:12,580 - INFO - Market closed orders allowed: True
+2025-09-29 20:29:12,609 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:29:12,612 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:29:12,788 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:31:22,255 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:31:22,255 - INFO - Market closed orders allowed: True
+2025-09-29 20:31:22,285 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:31:22,288 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:31:22,459 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:33:31,761 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:33:31,761 - INFO - Market closed orders allowed: True
+2025-09-29 20:33:31,790 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:33:31,793 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:33:31,972 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:35:41,142 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:35:41,142 - INFO - Market closed orders allowed: True
+2025-09-29 20:35:41,170 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:35:41,172 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:35:41,337 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:37:50,599 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:37:50,599 - INFO - Market closed orders allowed: True
+2025-09-29 20:37:50,630 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:37:50,632 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:37:50,832 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:40:00,316 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:40:00,317 - INFO - Market closed orders allowed: True
+2025-09-29 20:40:00,346 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:40:00,349 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:40:00,539 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:42:09,895 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:42:09,895 - INFO - Market closed orders allowed: True
+2025-09-29 20:42:09,924 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:42:09,927 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:42:10,149 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:44:19,579 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:44:19,579 - INFO - Market closed orders allowed: True
+2025-09-29 20:44:19,607 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:44:19,610 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:44:19,788 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:46:29,111 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:46:29,111 - INFO - Market closed orders allowed: True
+2025-09-29 20:46:29,143 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:46:29,146 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:46:29,347 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:48:38,955 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:48:38,955 - INFO - Market closed orders allowed: True
+2025-09-29 20:48:38,985 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:48:38,988 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:48:39,160 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:50:48,734 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:50:48,735 - INFO - Market closed orders allowed: True
+2025-09-29 20:50:48,767 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:50:48,770 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:50:48,970 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:52:58,442 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:52:58,443 - INFO - Market closed orders allowed: True
+2025-09-29 20:52:58,469 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:52:58,471 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:52:58,644 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:55:08,025 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:55:08,025 - INFO - Market closed orders allowed: True
+2025-09-29 20:55:08,061 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:55:08,064 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:55:08,321 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:57:17,726 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:57:17,727 - INFO - Market closed orders allowed: True
+2025-09-29 20:57:17,755 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:57:17,758 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:57:17,964 - INFO - No strategies found for 2025-09-29
+2025-09-29 20:59:27,316 - INFO - Processing strategies for date: 2025-09-29
+2025-09-29 20:59:27,316 - INFO - Market closed orders allowed: True
+2025-09-29 20:59:27,349 - INFO - Database connection successful: PostgreSQL 17.5 on x86_64-pc-linux-gnu, compiled by Debian clang version 12.0.1, 64-bit
+2025-09-29 20:59:27,353 - INFO - Getting strategies for date: 2025-09-29
+2025-09-29 20:59:27,552 - INFO - No strategies found for 2025-09-29

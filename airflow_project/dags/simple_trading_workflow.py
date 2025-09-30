@@ -196,9 +196,9 @@ def step4_start_gateways(**context):
     
     manager = IBGatewayManager()
     
-    # Start gateways
-    print("Starting gateways...")
-    success = manager.start_gateways()
+    # Start gateways with enhanced 2FA retry support
+    print("Starting gateways with 2FA retry...")
+    success = manager.start_gateways_with_2fa_retry()
     
     if not success:
         raise Exception("Failed to start gateways")

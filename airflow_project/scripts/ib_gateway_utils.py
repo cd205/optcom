@@ -388,7 +388,7 @@ class IBGatewayManager:
             logger.info("🔐 Paper gateway running, live gateway pending 2FA - starting enhanced monitoring...")
 
             # Use enhanced 2FA monitoring with retry
-            if self.monitor_2fa_with_retry(max_2fa_wait_minutes=10, retry_interval_minutes=3):
+            if self.monitor_2fa_with_retry(max_2fa_wait_minutes=120, retry_interval_minutes=3):
                 logger.info("✅ 2FA completed successfully with retry support")
                 return True
             else:
