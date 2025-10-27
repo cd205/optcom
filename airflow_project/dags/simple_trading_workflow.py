@@ -209,7 +209,7 @@ def step4_start_gateways(**context):
 step4 = PythonOperator(
     task_id='step4_start_gateways',
     python_callable=step4_start_gateways,
-    execution_timeout=timedelta(minutes=15),  # 15 minutes for 2FA
+    execution_timeout=timedelta(minutes=100),  # 100 minutes for 2FA with retries (90 min + buffer)
     dag=dag
 )
 

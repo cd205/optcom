@@ -381,14 +381,14 @@ class IBGatewayManager:
         # Check if we need 2FA monitoring
         paper_running, live_running, status, live_2fa_pending = self.check_individual_status()
 
-        if paper_running and live_running:
+        if paper_running and live_running and not live_2fa_pending:
             logger.info("✅ Both gateways started successfully without 2FA issues")
             return True
         elif paper_running and live_2fa_pending:
             logger.info("🔐 Paper gateway running, live gateway pending 2FA - starting enhanced monitoring...")
 
             # Use enhanced 2FA monitoring with retry
-            if self.monitor_2fa_with_retry(max_2fa_wait_minutes=120, retry_interval_minutes=3):
+            if self.monitor_2fa_with_retry(max_2fa_wait_minutes=90, retry_interval_minutes=3):
                 logger.info("✅ 2FA completed successfully with retry support")
                 return True
             else:
