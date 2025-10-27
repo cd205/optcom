@@ -306,10 +306,22 @@ def plot_position_history(
         print(f"Position not found: {position_identifier}")
         return None
 
-    expiry_date = pd.to_datetime(position_info['db_options_expiry_date'].iloc[0])
     position_opened = pd.to_datetime(position_info['created_at'].iloc[0])
     description = position_info['ibkr_description'].iloc[0]
     symbol = position_info['ibkr_symbol'].iloc[0]
+
+    # Try to get expiry date from database, or parse from description
+    expiry_date = position_info['db_options_expiry_date'].iloc[0]
+    if pd.isna(expiry_date):
+        # Parse expiry from description (e.g., "Bull Put 230.0/240.0 20251031")
+        try:
+            parts = description.split()
+            expiry_str = parts[3]  # Format: YYYYMMDD
+            expiry_date = pd.to_datetime(expiry_str, format='%Y%m%d')
+        except:
+            expiry_date = None
+    else:
+        expiry_date = pd.to_datetime(expiry_date)
 
     # Create the plot
     fig, ax = plt.subplots(figsize=figsize)
@@ -349,9 +361,10 @@ def plot_position_history(
             label=f"Leg 2: {snapshots_df['leg2_description'].iloc[0]}",
             linewidth=1.5, marker='^', linestyle='--', color='#F18F01', alpha=0.7)
 
-    # Add vertical line for expiry date
-    ax.axvline(x=expiry_date, color='red', linestyle=':', linewidth=2,
-               label=f'Expiry: {expiry_date.strftime("%Y-%m-%d")}', alpha=0.7)
+    # Add vertical line for expiry date (if available)
+    if expiry_date is not None:
+        ax.axvline(x=expiry_date, color='red', linestyle=':', linewidth=2,
+                   label=f'Expiry: {expiry_date.strftime("%Y-%m-%d")}', alpha=0.7)
 
     # Add horizontal line at zero for P&L charts
     if metric == 'unrealized_pnl':
@@ -370,7 +383,10 @@ def plot_position_history(
     plt.xticks(rotation=45, ha='right')
 
     # Set x-axis limits from position open to expiry (or latest data if after expiry)
-    max_date = max(expiry_date, snapshots_df['snapshot_time'].max())
+    if expiry_date is not None:
+        max_date = max(expiry_date, snapshots_df['snapshot_time'].max())
+    else:
+        max_date = snapshots_df['snapshot_time'].max()
     ax.set_xlim(position_opened, max_date)
 
     plt.tight_layout()
