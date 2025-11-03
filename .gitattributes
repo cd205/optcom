@@ -1,0 +1,3 @@
+ibc-setup/tws/1037/jars/jts4launch-1037.jar filter=lfs diff=lfs merge=lfs -text
+ibc-setup/tws/1037/jars/jxbrowser-linux64-7.41.3.jar filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text

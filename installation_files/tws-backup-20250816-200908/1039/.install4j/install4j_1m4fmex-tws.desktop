@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Trader Workstation 10.39
+Exec="/home/chris_s_dodd/optcom-2/ibc-setup/tws/tws" %U
+Icon=/home/chris_s_dodd/optcom-2/ibc-setup/tws/.install4j/tws.png
+Categories=Application;
+StartupWMClass=install4j-jclient-LoginFrame

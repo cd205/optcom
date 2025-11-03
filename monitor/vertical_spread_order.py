@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # IBKR Market Order Script for Option Spreads - No Take Profit
 
-import sqlite3
 import pandas as pd
 import datetime
 from ibapi.client import EClient
@@ -15,6 +14,11 @@ import logging
 import os
 import random
 import argparse
+import sys
+
+# Import the new database configuration
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'database'))
+from database_config import get_db_connection
 
 # Set up logging directory
 log_dir = os.path.join(os.path.dirname(__file__), 'output', 'logs')
@@ -174,6 +178,8 @@ class IBApp(IBWrapper, IBClient):
         order.lmtPrice = rounded_price
         order.tif = "DAY"  # Set time in force to 1 DAY
         order.transmit = True
+        order.eTradeOnly = False  # Fix for "EtradeOnly order attribute not supported" error
+        order.firmQuoteOnly = False  # Fix for "FirmQuoteOnly order attribute not supported" error
         
         logger.info(f"Created {action} limit order: Quantity={quantity}, Price=${rounded_price:.2f}, TIF=DAY")
         return order
@@ -182,7 +188,7 @@ class IBApp(IBWrapper, IBClient):
         self.combo_ids[req_id] = None
         self.reqContractDetails(req_id, contract)
         
-        wait_time = 3
+        wait_time = 8
         start_time = time.time()
         while self.combo_ids[req_id] is None and time.time() - start_time < wait_time:
             time.sleep(0.1)
@@ -212,7 +218,7 @@ class IBApp(IBWrapper, IBClient):
         self.reqMktData(req_id, contract, "", False, False, [])
         
         # Wait for data to arrive
-        wait_time = 5  # Wait up to 5 seconds for market data
+        wait_time = 8  # Wait up to 5 seconds for market data
         start_time = time.time()
         while time.time() - start_time < wait_time:
             # Check if we have received both bid and ask
@@ -235,76 +241,158 @@ class IBApp(IBWrapper, IBClient):
             
         return data
 
-def get_strategies_for_date(db_path, date_str=None):
-    conn = sqlite3.connect(db_path)
-    
-    if date_str is None:
-        date_str = datetime.datetime.now().strftime('%Y-%m-%d')
-        
-    target_date = pd.to_datetime(date_str)
-    start_date = target_date.strftime('%Y-%m-%d')
-    
-    logger.info(f"Getting strategies for date: {start_date}")
-
-    query = f"""
-    SELECT * FROM option_strategies 
-    WHERE date(scrape_date) = '{start_date}'
-    AND timestamp_of_trigger IS NOT NULL
-    AND (strategy_status IS NULL OR strategy_status != 'order placed')
+def get_strategies_for_date(date_str=None):
     """
-    
-    df = pd.read_sql_query(query, conn)
-    conn.close()
-    return df
-
-def get_last_prices_from_db(db_path, ticker, strike_sell, strike_buy, right):
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    
-    # Query sell leg price
-    sell_price = None
-    cursor.execute("""
-        SELECT last_price_when_checked FROM option_strategies 
-        WHERE ticker = ? AND strike_sell = ? AND last_price_when_checked IS NOT NULL
-        ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
-    """, (ticker, strike_sell))
-    result = cursor.fetchone()
-    if result: sell_price = result[0]
-    
-    # Query buy leg price
-    buy_price = None
-    cursor.execute("""
-        SELECT last_price_when_checked FROM option_strategies 
-        WHERE ticker = ? AND strike_buy = ? AND last_price_when_checked IS NOT NULL
-        ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
-    """, (ticker, strike_buy))
-    result = cursor.fetchone()
-    if result: buy_price = result[0]
-    
-    conn.close()
-    
-    if sell_price: logger.info(f"Found historical sell price for {ticker} {strike_sell} {right}: {sell_price}")
-    if buy_price: logger.info(f"Found historical buy price for {ticker} {strike_buy} {right}: {buy_price}")
-    
-    return sell_price, buy_price
-
-def update_strategy_status(db_path, row_id, status, premium):
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    current_timestamp = int(time.time())
-    
+    Query strategies for a specific date using the new database configuration system
+    """
     try:
-        cursor.execute("""
-            UPDATE option_strategies 
-            SET strategy_status = ?, premium_when_last_checked = ?, timestamp_of_order = ?
-            WHERE id = ?
-        """, (status, premium, current_timestamp, row_id))
-        logger.info(f"Updated row {row_id} with status: {status}, premium: {premium}")
-    except sqlite3.Error as e:
-        logger.error(f"Database error updating strategy: {e}")
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        # Test connection
+        if not db_conn.test_connection():
+            logger.error("Cannot connect to database. Check your configuration.")
+            return pd.DataFrame()
+        
+        if date_str is None:
+            date_str = datetime.datetime.now().strftime('%Y-%m-%d')
+            
+        target_date = pd.to_datetime(date_str)
+        start_date = target_date.strftime('%Y-%m-%d')
+        
+        logger.info(f"Getting strategies for date: {start_date}")
+
+        # Use appropriate syntax for database type
+        if db_conn.config.is_postgresql():
+            query = """
+                SELECT * FROM option_strategies 
+                WHERE date(scrape_date) = %s
+                AND timestamp_of_trigger IS NOT NULL
+                AND (strategy_status IS NULL OR strategy_status != 'order placed')
+            """
+            df = db_conn.execute_query_df(query, (start_date,))
+        else:
+            query = """
+                SELECT * FROM option_strategies 
+                WHERE date(scrape_date) = ?
+                AND timestamp_of_trigger IS NOT NULL
+                AND (strategy_status IS NULL OR strategy_status != 'order placed')
+            """
+            df = db_conn.execute_query_df(query, (start_date,))
+        
+        return df
+        
+    except Exception as e:
+        logger.error(f"Error querying strategies for date: {str(e)}")
+        return pd.DataFrame()
+
+def get_last_prices_from_db(ticker, strike_sell, strike_buy, right):
+    """
+    Get last prices from database using the new database configuration system
+    """
+    try:
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        # Test connection
+        if not db_conn.test_connection():
+            logger.error("Cannot connect to database. Check your configuration.")
+            return None, None
+        
+        # Query sell leg price
+        sell_price = None
+        if db_conn.config.is_postgresql():
+            query_sell = """
+                SELECT last_price_when_checked FROM option_strategies 
+                WHERE ticker = %s AND strike_sell = %s AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
+            """
+        else:
+            query_sell = """
+                SELECT last_price_when_checked FROM option_strategies 
+                WHERE ticker = ? AND strike_sell = ? AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
+            """
+        
+        result = db_conn.execute_query(query_sell, (ticker, strike_sell))
+        if result:
+            sell_price = result[0][0]
+        
+        # Query buy leg price
+        buy_price = None
+        if db_conn.config.is_postgresql():
+            query_buy = """
+                SELECT last_price_when_checked FROM option_strategies 
+                WHERE ticker = %s AND strike_buy = %s AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
+            """
+        else:
+            query_buy = """
+                SELECT last_price_when_checked FROM option_strategies 
+                WHERE ticker = ? AND strike_buy = ? AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC LIMIT 1
+            """
+        
+        result = db_conn.execute_query(query_buy, (ticker, strike_buy))
+        if result:
+            buy_price = result[0][0]
+        
+        if sell_price: logger.info(f"Found historical sell price for {ticker} {strike_sell} {right}: {sell_price}")
+        if buy_price: logger.info(f"Found historical buy price for {ticker} {strike_buy} {right}: {buy_price}")
+        
+        return sell_price, buy_price
+        
+    except Exception as e:
+        logger.error(f"Error getting last prices from database: {str(e)}")
+        return None, None
+
+def update_strategy_status(strategy_id, status, premium):
+    """
+    Update strategy status in database using the new database configuration system
     
-    conn.commit()
-    conn.close()
+    Parameters:
+    strategy_id (int): ID of the strategy to update
+    status (str): Status to set
+    premium (float): Premium value to record
+    
+    Returns:
+    bool: True if update was successful, False otherwise
+    """
+    try:
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        current_timestamp = datetime.datetime.now().isoformat()
+        
+        # Update the record using appropriate syntax
+        if db_conn.config.is_postgresql():
+            update_query = """
+                UPDATE option_strategies 
+                SET strategy_status = %s, premium_when_last_checked = %s, timestamp_of_order = %s
+                WHERE id = %s
+            """
+        else:
+            update_query = """
+                UPDATE option_strategies 
+                SET strategy_status = ?, premium_when_last_checked = ?, timestamp_of_order = ?
+                WHERE id = ?
+            """
+        
+        rows_affected = db_conn.execute_command(
+            update_query, 
+            (status, premium, current_timestamp, strategy_id)
+        )
+        
+        if rows_affected > 0:
+            logger.info(f"Updated strategy ID {strategy_id} with status: {status}, premium: {premium}")
+            return True
+        else:
+            logger.warning(f"No rows updated for strategy ID {strategy_id}")
+            return False
+            
+    except Exception as e:
+        logger.error(f"Database error updating strategy: {e}")
+        return False
 
 def calculate_spread_premium(sell_data, buy_data):
     """
@@ -320,33 +408,42 @@ def calculate_spread_premium(sell_data, buy_data):
     premium = None
     calc_method = "unknown"
     
-    # Check if we have bid/ask for both legs
+    # Check for -1.0 prices which indicate no market data available
+    if (sell_data["bid"] == -1.0 or sell_data["ask"] == -1.0 or 
+        buy_data["bid"] == -1.0 or buy_data["ask"] == -1.0):
+        return None, "no_market_data"
+    
+    # Check if we have valid bid/ask for both legs
     if (sell_data["bid"] is not None and sell_data["ask"] is not None and
-        buy_data["bid"] is not None and buy_data["ask"] is not None):
+        buy_data["bid"] is not None and buy_data["ask"] is not None and
+        sell_data["bid"] > 0 and sell_data["ask"] > 0 and
+        buy_data["bid"] > 0 and buy_data["ask"] > 0):
         # Use midpoint prices for more accurate premium calculation
         sell_midpoint = (sell_data["bid"] + sell_data["ask"]) / 2
         buy_midpoint = (buy_data["bid"] + buy_data["ask"]) / 2
         premium = (sell_midpoint - buy_midpoint) * 100  # Convert to premium per contract
         calc_method = "midpoint"
     # Fallback to bid/ask if midpoints can't be calculated
-    elif sell_data["bid"] is not None and buy_data["ask"] is not None:
+    elif (sell_data["bid"] is not None and buy_data["ask"] is not None and
+          sell_data["bid"] > 0 and buy_data["ask"] > 0):
         # Conservative estimate: what we can sell at bid and buy at ask
         premium = (sell_data["bid"] - buy_data["ask"]) * 100
         calc_method = "conservative"
     # Use last prices if available
-    elif sell_data["last"] is not None and buy_data["last"] is not None:
+    elif (sell_data["last"] is not None and buy_data["last"] is not None and
+          sell_data["last"] > 0 and buy_data["last"] > 0):
         premium = (sell_data["last"] - buy_data["last"]) * 100
         calc_method = "last"
     # Use model prices if available
-    elif sell_data["model"] is not None and buy_data["model"] is not None:
+    elif (sell_data["model"] is not None and buy_data["model"] is not None and
+          sell_data["model"] > 0 and buy_data["model"] > 0):
         premium = (sell_data["model"] - buy_data["model"]) * 100
         calc_method = "model"
         
     return premium, calc_method
 
-def run_trading_app(db_path='../database/option_strategies.db', target_date=None, 
-                   ibkr_host='127.0.0.1', ibkr_port=7497, client_id=None, 
-                   allow_market_closed=False):
+def run_trading_app(target_date=None, ibkr_host='127.0.0.1', ibkr_port=4002, 
+                   client_id=None, allow_market_closed=False):
     if target_date is None:
         target_date = datetime.datetime.now().strftime('%Y-%m-%d')
     
@@ -357,14 +454,14 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
     logger.info(f"Market closed orders allowed: {allow_market_closed}")
     
     # Get strategies
-    df = get_strategies_for_date(db_path, target_date)
+    df = get_strategies_for_date(target_date)
     if df.empty:
         logger.info(f"No strategies found for {target_date}")
         return
     
     logger.info(f"Found {len(df)} strategies to process")
     
-    # Connect to IBKR
+    # Connect to IB Gateway
     app = IBApp()
     app.connect(ibkr_host, ibkr_port, client_id)
     
@@ -377,7 +474,7 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         time.sleep(0.1)
     
     if not app.next_order_id:
-        logger.error("Failed to connect to IBKR or get valid order ID")
+        logger.error("Failed to connect to IB Gateway or get valid order ID")
         app.disconnect()
         return
     
@@ -418,14 +515,14 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
         
         if not sell_details or not buy_details:
             logger.error(f"Could not get contract details for one or both legs")
-            update_strategy_status(db_path, row['id'], 'missing contract details', 0)
+            update_strategy_status(row['id'], 'missing contract details', 0)
             continue
         
         try:
             # Check for valid estimated premium
             if estimated_premium is None or pd.isna(estimated_premium) or float(estimated_premium) <= 0:
                 logger.error(f"Invalid estimated premium: {estimated_premium}")
-                update_strategy_status(db_path, row['id'], 'invalid premium', 0)
+                update_strategy_status(row['id'], 'invalid premium', 0)
                 continue
             
             # Get current market prices
@@ -467,12 +564,15 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
                         logger.info("Market appears closed but allow_market_closed flag is set, placing order with estimated premium")
             else:
                 logger.warning("Could not calculate market premium")
-                # If market is closed but we allow orders, use estimated premium
-                if app.market_status == "closed" and allow_market_closed:
+                # Check if it's due to no market data and if we're allowed to trade when market is closed
+                if calc_method == "no_market_data" and allow_market_closed:
+                    place_order = True
+                    logger.info("No market data available (prices = -1.0) but allow_market_closed flag is set, using estimated premium")
+                elif app.market_status == "closed" and allow_market_closed:
                     place_order = True
                     logger.info("Market appears closed but allow_market_closed flag is set, using estimated premium")
                 else:
-                    update_strategy_status(db_path, row['id'], 'insufficient market data', 0)
+                    update_strategy_status(row['id'], 'insufficient market data', 0)
                     continue
             
             # Place the order if conditions are met
@@ -494,33 +594,31 @@ def run_trading_app(db_path='../database/option_strategies.db', target_date=None
                 app.placeOrder(order_id, combo_contract, order)
                 
                 logger.info(f"Placed entry order: ID {order_id}")
-                update_strategy_status(db_path, row['id'], 'order placed', 
+                update_strategy_status(row['id'], 'order placed', 
                                       market_premium if market_premium is not None else estimated_premium)
             else:
                 logger.info("No order placed due to insufficient premium")
-                update_strategy_status(db_path, row['id'], 'premium too low', 
+                update_strategy_status(row['id'], 'premium too low', 
                                       market_premium if market_premium is not None else 0)
             
         except Exception as e:
             logger.error(f"Error processing order: {str(e)}")
             import traceback
             logger.error(f"Exception details: {traceback.format_exc()}")
-            update_strategy_status(db_path, row['id'], 'error', 0)
+            update_strategy_status(row['id'], 'error', 0)
     
     # Cleanup
     time.sleep(3)
     app.disconnect()
-    logger.info("Disconnected from IBKR")
+    logger.info("Disconnected from IB Gateway")
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='IBKR Market Order Script for Option Spreads - No Take Profit')
     
-    parser.add_argument('--db', type=str, default='../database/option_strategies.db',
-                       help='Path to SQLite database')
     parser.add_argument('--host', type=str, default='127.0.0.1',
-                       help='IBKR TWS/Gateway host')
-    parser.add_argument('--port', type=int, default=7497,
-                       help='IBKR TWS/Gateway port (7497 for paper, 7496 for live)')
+                       help='IB Gateway host')
+    parser.add_argument('--port', type=int, default=4002,
+                       help='IB Gateway port (4002 for paper trading, 4001 for live)')
     parser.add_argument('--date', type=str, default=None,
                        help='Target date for strategies (YYYY-MM-DD format, default: today)')
     parser.add_argument('--client', type=int, default=None,
@@ -534,7 +632,6 @@ if __name__ == "__main__":
     args = parse_arguments()
     
     run_trading_app(
-        db_path=args.db,
         target_date=args.date,
         ibkr_host=args.host,
         ibkr_port=args.port,

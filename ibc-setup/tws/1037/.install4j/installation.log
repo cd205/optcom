@@ -1,0 +1,420 @@
+[INFO] Logger started at 2025-08-16 20:12:24
+[INFO] Executable name: /home/chris_s_dodd/optcom-1/ibc-setup/tws-stable-standalone-linux-x64.sh
+[INFO] install4j version: 10.0.8 (build 10152)
+[INFO] Properties: 
+-- listing properties --
+java.specification.version=17
+install4j.launcherId=6774
+sun.jnu.encoding=UTF-8
+java.class.path=i4jruntime.jar:launcher0.jar
+java.vm.vendor=Azul Systems, Inc.
+sun.arch.data.model=64
+install4j.exeDir=/home/chris_s_dodd/optcom-1/ibc-setup/
+java.vendor.url=http://www.azul.com/
+user.timezone=Etc/UTC
+java.vm.specification.version=17
+os.name=Linux
+sun.java.launcher=SUN_STANDARD
+sun.boot.library.path=/home/chris_s_dodd/.local/share/i4j_j...
+sun.java.command=install4j.Installer403955989 -q -dir ...
+jdk.debug=release
+sun.cpu.endian=little
+user.home=/home/chris_s_dodd
+user.language=en
+jdk.http.auth.tunneling.disabledSchemes=
+java.specification.vendor=Oracle Corporation
+java.version.date=2024-04-16
+java.home=/home/chris_s_dodd/.local/share/i4j_j...
+file.separator=/
+java.vm.compressedOopsMode=32-bit
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+java.specification.name=Java Platform API Specification
+jdk.lang.Process.allowAmbiguousCommands=false
+exe4j.moduleName=/home/chris_s_dodd/optcom-1/ibc-setup...
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=17.0.10.0.101+3-LTS
+user.name=chris_s_dodd
+path.separator=:
+java.net.useSystemProxies=true
+os.version=6.14.0-1012-gcp
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vendor.version=Zulu17.49+16-SA
+install4j.jvmDir=/home/chris_s_dodd/.local/share/i4j_j...
+install4j.cwd=/home/chris_s_dodd/optcom-1/ibc-setup
+install4j.appDir=/home/chris_s_dodd/optcom-1/ibc-setup/
+java.vendor.url.bug=http://www.azul.com/support/
+java.io.tmpdir=/tmp
+java.version=17.0.10.0.101
+user.dir=/home/chris_s_dodd/optcom-1/ibc-setup...
+os.arch=amd64
+java.vm.specification.name=Java Virtual Machine Specification
+exe4j.totalDataLength=315356294
+native.encoding=UTF-8
+java.library.path=/home/chris_s_dodd/optcom-1/ibc-setup...
+java.vm.info=mixed mode
+java.vendor=Azul Systems, Inc.
+java.vm.version=17.0.10.0.101+3-LTS
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=61.0
+install4j.swt=false
+[INFO] System language 'en'
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 3121]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_1
+       Property variableName: installerType
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Variable changed: installerType=standalone[class java.lang.String]
+       Execute action successful after 5 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 1892]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_4
+       Property variableName: exeName
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Variable changed: exeName=tws[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.screens.StartupScreen [ID 1]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2738]: Show screen
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2738]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 4122]: Show screen
+       checking writable with maximum
+       The installation directory has been set to /home/chris_s_dodd/optcom-1/ibc-setup/tws.
+       checking writable with maximum
+[INFO] com.install4j.runtime.beans.screens.InstallationDirectoryScreen [ID 4122]: command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Show screen
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4116]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_6
+       Property variableName: jtsConfigDir
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Variable changed: jtsConfigDir=/home/chris_s_dodd/Jts[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4117]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_7
+       Property variableName: cmdLineArgs
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: true
+       Property rollbackSupported: false
+       Variable changed: cmdLineArgs=[/home/chris_s_dodd/Jts, ndc1.ibllc.com:4000, language=https://download2.interactivebrokers.com/installers/shared/i18n/ib][class [Ljava.lang.String;]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4118]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_8
+       Property variableName: iconArgs
+       Property failIfNull: false
+       Property onlyIfUndefined: false
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Variable changed: iconArgs=-J-DjtsConfigDir="/home/chris_s_dodd/Jts"[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4119]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_11
+       Property variableName: vmOptionsPath
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Variable changed: vmOptionsPath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/tws.vmoptions[class java.lang.String]
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4120]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_12
+       Property variableName: savedVmOptions
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       VM options file not found: /home/chris_s_dodd/optcom-1/ibc-setup/tws/tws.vmoptions
+       Variable changed: savedVmOptions={content=}[class java.util.HashMap]
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.control.SetVariableAction [ID 4121]: Execute action
+       Property script: com.install4j.script.I4jScript_Internal_13
+       Property variableName: mergedVmOptions
+       Property failIfNull: true
+       Property onlyIfUndefined: false
+       Property responseFileVariable: false
+       Property rollbackSupported: false
+       Detected 3 GB physical memory [mediaFileArch32Bit=false].
+       Variable changed: mergedVmOptions=#
+# This file contains VM parameters for Trader Workstation 10.37.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+# GC settings
+-XX:+UseG1GC
+-XX:MaxGCPauseMillis=200
+-XX:ParallelGCThreads=20
+-XX:ConcGCThreads=5
+-XX:InitiatingHeapOccupancyPercent=70
+
+-Dinstaller.uuid=e116a006-a663-4a2e-8cf4-0b8697c1e45e
+-DvmOptionsPath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/tws.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+[class java.lang.String]
+       Execute action successful after 27 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 3414]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_36
+       Property rollbackSupported: false
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: '/home/chris_s_dodd/optcom-1/ibc-setup/tws/.jxbrowser/7.41.3' exists: false
+[INFO] com.install4j.runtime.beans.actions.InstallFilesAction [ID 9]: Execute action
+       Property directoryResolverScript: null
+       Property fileFilterScript: null
+       Property sizeCalculatorScript: null
+       Property acceptAllCertificates: false
+       Property checkFreeSpace: true
+       Property delay: false
+       Property installRuntime: true
+       Property rollbackSupported: true
+       Property saveDownloadedFiles: false
+       Property showFileNames: true
+       Property triggerReboot: true
+       Property validateApplicationId: false
+       checking writable with maximum
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/restarter; size: 15233 bytes; exists: false
+       File options set to: [fileTime: Fri Aug 08 03:11:36 UTC 2025, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/s_clyey9.png; size: 209065 bytes; exists: false
+       File options set to: [fileTime: Mon Mar 28 15:46:52 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/tws.png; size: 2566 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/uninstall.png; size: 6648 bytes; exists: false
+       File options set to: [fileTime: Mon May 27 10:19:32 UTC 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/data/audit.xsl; size: 52128 bytes; exists: false
+       File options set to: [fileTime: Fri May 28 14:44:08 UTC 2021, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/data/auditsummary.xsl; size: 47751 bytes; exists: false
+       File options set to: [fileTime: Fri May 28 14:44:28 UTC 2021, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/batik-all-1.16.jar; size: 4289313 bytes; exists: false
+       File options set to: [fileTime: Mon May 22 14:00:48 UTC 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/commons-io-2.11.0.jar; size: 327135 bytes; exists: false
+       File options set to: [fileTime: Wed Feb 09 15:10:18 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/core-3.5.3.jar; size: 607650 bytes; exists: false
+       File options set to: [fileTime: Tue Jul 15 15:54:02 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/fop-2.8.jar; size: 4453484 bytes; exists: false
+       File options set to: [fileTime: Mon May 22 13:52:34 UTC 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jackson-annotations-2.12.3.jar; size: 75703 bytes; exists: false
+       File options set to: [fileTime: Thu Nov 16 15:54:56 UTC 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jackson-core-2.12.3.jar; size: 365220 bytes; exists: false
+       File options set to: [fileTime: Mon Dec 05 23:58:58 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jackson-databind-2.12.3.jar; size: 1515756 bytes; exists: false
+       File options set to: [fileTime: Thu Nov 16 15:55:50 UTC 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jts4launch-1037.jar; size: 77596363 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 07 16:08:42 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jxbrowser-7.41.3.jar; size: 14228927 bytes; exists: false
+       File options set to: [fileTime: Wed Oct 02 18:19:32 UTC 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jxbrowser-linux64-7.41.3.jar; size: 111282999 bytes; exists: false
+       File options set to: [fileTime: Wed Oct 02 18:19:34 UTC 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/jxbrowser-swing-7.41.3.jar; size: 201356 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/locales.jar; size: 151902 bytes; exists: false
+       File options set to: [fileTime: Thu Jul 31 20:11:52 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/log4j-api-2.17.1.jar; size: 301873 bytes; exists: false
+       File options set to: [fileTime: Wed Nov 30 20:21:40 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/log4j-core-2.17.1.jar; size: 1790452 bytes; exists: false
+       File options set to: [fileTime: Wed Nov 30 20:22:52 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/protobuf-java-3.25.6.jar; size: 1876053 bytes; exists: false
+       File options set to: [fileTime: Thu Feb 27 19:30:36 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/total-2024.jar; size: 5708986 bytes; exists: false
+       File options set to: [fileTime: Thu Sep 26 14:45:34 UTC 2024, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/twslaunch-1037.jar; size: 4456007 bytes; exists: false
+       File options set to: [fileTime: Thu Aug 07 16:08:42 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/twslaunch-install4j-1.12.jar; size: 14786 bytes; exists: false
+       File options set to: [fileTime: Wed Aug 31 19:50:52 UTC 2022, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/jars/xmlgraphics-commons-2.8.jar; size: 676840 bytes; exists: false
+       File options set to: [fileTime: Mon May 22 14:06:46 UTC 2023, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/tws; size: 20170 bytes; exists: false
+       File options set to: [fileTime: Fri Aug 08 03:11:36 UTC 2025, mode: 755, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/uninstall; size: 15188 bytes; exists: false
+       File options set to: [fileTime: Fri Aug 08 03:11:36 UTC 2025, mode: 700, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/inst_jre.cfg; size: 84 bytes; exists: false
+       File options set to: [fileTime: Sat Aug 16 20:12:52 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: If created, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4jruntime.jar; size: 2087800 bytes; exists: false
+       File options set to: [fileTime: Sat Aug 16 20:12:52 UTC 2025, mode: 644, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/MessagesDefault; size: 34826 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4jparams.conf; size: 136609 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/stats.properties; size: 422 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4jempty.ttf; size: 1004 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/user.jar; size: 48387 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/launcher0.jar; size: 722 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/launcher3257f6f9.jar; size: 771 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/launcher5cbd629.jar; size: 961 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/launcher2bfa42ba.jar; size: 764 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/user/flatlaf.jar; size: 758100 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/user/installer-custom.zip; size: 15177 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_18_6oi6fp.properties; size: 1021 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_4_6oi6fp.utf8; size: 27669 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_38_6oi6fp.utf8; size: 36311 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_39_6oi6fp.properties; size: 930 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_19_6oi6fp.utf8; size: 48914 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_44_6oi6fp_18gg8kx.png; size: 9202 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_16_6oi6fp.properties; size: 987 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_1_6oi6fp.properties; size: 1337 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_8_6oi6fp.properties; size: 1202 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_23_6oi6fp.properties; size: 935 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_25_6oi6fp.properties; size: 2138 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_33_6oi6fp.utf8; size: 35446 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_7_6oi6fp.utf8; size: 33738 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_24_6oi6fp.utf8; size: 44212 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_42_6oi6fp_kw6g0r.ico; size: 146982 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_26_6oi6fp.utf8; size: 38580 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_12_6oi6fp.utf8; size: 31894 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_35_6oi6fp.utf8; size: 37427 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_17_6oi6fp.utf8; size: 37408 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_37_6oi6fp.properties; size: 3187 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_44_6oi6fp_18gg8kx_dark.png; size: 8891 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/libi4jinst2.dylib; size: 67472 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_40_6oi6fp.utf8; size: 31918 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_20_6oi6fp.utf8; size: 36823 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_44_6oi6fp_18gg8kx@2x_dark.png; size: 15837 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_0_6oi6fp.utf8; size: 34826 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/libi4jinst.dylib; size: 184384 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_44_6oi6fp_18gg8kx@2x.png; size: 15419 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_36_6oi6fp.utf8; size: 53111 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_21_6oi6fp.properties; size: 1462 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_30_6oi6fp.utf8; size: 34760 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_5_6oi6fp.properties; size: 1034 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_13_6oi6fp.properties; size: 872 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_6_6oi6fp.utf8; size: 34273 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_15_6oi6fp.utf8; size: 38929 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_2_6oi6fp.utf8; size: 28359 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_10_6oi6fp.utf8; size: 33865 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_28_6oi6fp.properties; size: 926 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_31_6oi6fp.utf8; size: 37661 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_41_6oi6fp.utf8; size: 37556 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_34_6oi6fp.properties; size: 1075 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_32_6oi6fp.properties; size: 1075 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_9_6oi6fp.utf8; size: 32127 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_14_6oi6fp.utf8; size: 32800 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_27_6oi6fp.utf8; size: 34140 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_11_6oi6fp.properties; size: 791 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_43_6oi6fp_a7hqzf.png; size: 1030 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_3_6oi6fp.properties; size: 1034 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_22_6oi6fp.utf8; size: 37297 bytes; exists: false
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/i4j_extf_29_6oi6fp.utf8; size: 32419 bytes; exists: false
+       Execute action successful after 27338 ms
+[INFO] com.install4j.runtime.beans.actions.control.RunScriptAction [ID 2076]: Execute action
+       Property rollbackScript: null
+       Property script: com.install4j.script.I4jScript_Internal_40
+       Property rollbackSupported: false
+       Creating '/home/chris_s_dodd/Jts' directory...
+       Execute action successful after 2 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2307]: Execute action
+       Property encoding: 
+       Property file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/tws.vmoptions
+       Property text: #
+# This file contains VM parameters for Trader Workstation 10.37.
+# Each parameter should be defined in a separate line and the
+# last line must be followed by a line feed. No leading or
+# trailing whitespaces are allowed in the same line, where a
+# parameter is defined.
+#
+# Lines starting with a '#' character are treated as comments
+# and ignored. Additionally, if a line contains a
+# '### keep on update' string, all parameters defined below will
+# be preserved on update.
+#
+
+# maximum Java heap size
+-Xmx768m
+
+# GC settings
+-XX:+UseG1GC
+-XX:MaxGCPauseMillis=200
+-XX:ParallelGCThreads=20
+-XX:ConcGCThreads=5
+-XX:InitiatingHeapOccupancyPercent=70
+
+-Dinstaller.uuid=e116a006-a663-4a2e-8cf4-0b8697c1e45e
+-DvmOptionsPath=/home/chris_s_dodd/optcom-1/ibc-setup/tws/tws.vmoptions
+-Dsun.awt.nopixfmt=true
+-Dsun.java2d.noddraw=true
+-Dswing.boldMetal=false
+-Dsun.locale.formatasdefault=true
+
+### keep on update
+
+       Property append: false
+       Property escaped: false
+       Property logText: true
+       Property rollbackSupported: true
+       Execute action successful after 6 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action
+       Property categories: Application
+       Property linkDirectory: /usr/local/bin
+       Property programGroupEntryConfigs: []
+       Property programGroupName: Trader Workstation 10.37
+       Property uninstallerMenuName: Trader Workstation 10.37 Uninstaller
+       Property addDefaultLauncherLinks: true
+       Property addUninstaller: true
+       Property allUsers: true
+       Property failForSymlinksNotCreated: false
+       Property rollbackSupported: true
+       Property unixMenuEntries: true
+       Property unixSymlinks: true
+       Variable changed: sys.programGroupName=Trader Workstation 10.37[class java.lang.String]
+       Variable changed: sys.symlinkDir=/usr/local/bin[class java.lang.String]
+       Install file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/install4j_1ha4rb4-tws.desktop; size: 277 bytes; exists: false
+       File options set to: [fileTime: Sat Aug 16 20:12:52 UTC 2025, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+[ERROR] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: could not create symbolic link: /usr/local/bin/tws
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateProgramGroupAction [ID 10]: Execute action successful after 520 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.RegisterAddRemoveAction [ID 11]: Execute action
+       Property icon: i4j_extf_42_6oi6fp_kw6g0r.ico
+       Property iconSource: Custom icon
+       Property itemName: Trader Workstation 10.37
+       Property persistentProperties: {}
+       Property rollbackSupported: true
+       Execute action successful after 0 ms
+[INFO] com.install4j.runtime.beans.actions.desktop.CreateDesktopLinkAction [ID 54]: Execute action
+       Property additionalDesktopFileEntries: 
+       Property arguments: -J-DjtsConfigDir="/home/chris_s_dodd/Jts"
+       Property description: Trader Workstation 10.37
+       Property file: tws
+       Property name: Trader Workstation 10.37
+       Property startIn: null
+       Property unixIconFile: null
+       Property winIconFile: null
+       Property allUsers: true
+       Property macSingleBundleTarget: false
+       Property rollbackSupported: true
+       Property runAsAdministrator: false
+       Install file: /home/chris_s_dodd/Desktop/Trader Workstation 10.37.desktop; size: 328 bytes; exists: false
+       File options set to: [fileTime: Sat Aug 16 20:12:53 UTC 2025, mode: 755, overwriteMode: Always, shared: false, uninstallMode: Always, delayIfNecessary: false]
+       Execute action successful after 5 ms
+[INFO] com.install4j.runtime.beans.actions.text.WriteTextFileAction [ID 2244]: Execute action
+       Property encoding: 
+       Property file: /home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/.installSuccess
+       Property text: .
+       Property append: false
+       Property escaped: true
+       Property logText: true
+       Property rollbackSupported: true
+       Execute action successful after 1 ms
+[INFO] com.install4j.runtime.beans.screens.InstallationScreen [ID 8]: Rollback barrier reached
+       command: move 1 screens, executing actions, checking condition
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2790]: Show screen
+       Variable changed: executeLauncherAction=false[class java.lang.Boolean]
+[INFO] com.install4j.runtime.beans.screens.FormScreen [ID 2790]: command: finish
+       cleaning up
+       Finished at 2025-08-16 20:12:53

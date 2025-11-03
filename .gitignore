@@ -1,2 +1,33 @@
 output/
+monitor/output/
+*.log
 
+# Credentials and Environment files
+.env
+.env.*
+credentials.txt
+legacy/credentials.txt
+scraper/credentials.txt
+config/credentials.json
+database/credentials.json
+config/config-live.ini
+config/config-paper.ini
+config/config.ini
+
+*.key
+*.pem
+*.p12
+**/credentials/
+**/.credentials/
+
+# installation_files directory (contains large files and credentials)
+installation_files/
+
+# Database backups (may contain sensitive data)
+sqlite_backup_*.csv
+database_backup_*.sql
+
+# IBC config files and logs (contain sensitive credentials)
+ibc-setup/config/config-live.ini
+ibc-setup/config/config-paper.ini
+ibc-setup/tws/live-settings/launcher.logairflow_project/airflow.db

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fileLog>
+<createdFiles>
+<entry name="jars/batik-all-1.16.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_12_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_42_6oi6fp_kw6g0r.ico" shared="false" uninstallMode="2"/>
+<entry name="data/auditsummary.xsl" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4jruntime.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_14_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_19_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_15_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/install.prop" shared="false" uninstallMode="0"/>
+<entry name="jars/jxbrowser-7.41.3.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_44_6oi6fp_18gg8kx@2x.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_17_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_44_6oi6fp_18gg8kx.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_8_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user/flatlaf.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_18_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name="data/audit.xsl" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_32_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/tws.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/autoUninstall.1" shared="false" uninstallMode="0"/>
+<entry name="jars/twslaunch-1037.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_21_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name="jars/jts4launch-1037.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_41_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/log4j-api-2.17.1.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_40_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/xmlgraphics-commons-2.8.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_22_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_24_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_27_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_23_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_26_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_29_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/commons-io-2.11.0.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/launcher5cbd629.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_25_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_44_6oi6fp_18gg8kx@2x_dark.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/installation.log" shared="false" uninstallMode="0"/>
+<entry name=".install4j/install4j_1ha4rb4-tws.desktop" shared="false" uninstallMode="2">
+<preUninstall admin="false" executable="xdg-desktop-menu">
+<argument>uninstall</argument>
+<argument>--mode</argument>
+<argument>user</argument>
+<argument>/home/chris_s_dodd/optcom-1/ibc-setup/tws/.install4j/install4j_1ha4rb4-tws.desktop</argument>
+</preUninstall>
+</entry>
+<entry name="/home/chris_s_dodd/Desktop/Trader Workstation 10.37.desktop" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_43_6oi6fp_a7hqzf.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_44_6oi6fp_18gg8kx_dark.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/user/installer-custom.zip" shared="false" uninstallMode="2"/>
+<entry name="jars/locales.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_20_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/jackson-databind-2.12.3.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_1_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_7_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_30_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_9_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/protobuf-java-3.25.6.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_33_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_6_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_13_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name="jars/jackson-core-2.12.3.jar" shared="false" uninstallMode="0"/>
+<entry name="jars/twslaunch-install4j-1.12.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4jempty.ttf" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_35_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_38_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_36_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/launcher3257f6f9.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_2_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/jxbrowser-swing-7.41.3.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_39_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_4_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name="jars/core-3.5.3.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/s_clyey9.png" shared="false" uninstallMode="2"/>
+<entry name=".install4j/MessagesDefault" shared="false" uninstallMode="2"/>
+<entry name="jars/fop-2.8.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/inst_jre.cfg" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_0_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_28_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_3_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_37_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/launcher0.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_11_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/restarter" shared="false" uninstallMode="0"/>
+<entry name=".install4j/libi4jinst.dylib" shared="false" uninstallMode="2"/>
+<entry name=".install4j/stats.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/libi4jinst2.dylib" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_16_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/launcher2bfa42ba.jar" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4jparams.conf" shared="false" uninstallMode="2"/>
+<entry name=".install4j/uninstall.png" shared="false" uninstallMode="2"/>
+<entry name="jars/total-2024.jar" shared="false" uninstallMode="0"/>
+<entry name="jars/jxbrowser-linux64-7.41.3.jar" shared="false" uninstallMode="0"/>
+<entry name="Trader Workstation 10.37.desktop" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_5_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name="uninstall" shared="false" uninstallMode="0"/>
+<entry name="jars/log4j-core-2.17.1.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/response.varfile" shared="false" uninstallMode="0"/>
+<entry name="tws" shared="false" uninstallMode="0"/>
+<entry name="jars/jackson-annotations-2.12.3.jar" shared="false" uninstallMode="0"/>
+<entry name=".install4j/i4j_extf_31_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_34_6oi6fp.properties" shared="false" uninstallMode="2"/>
+<entry name=".install4j/i4j_extf_10_6oi6fp.utf8" shared="false" uninstallMode="2"/>
+</createdFiles>
+<createdDirs>
+<entry name="jars" shared="false" uninstallMode="0"/>
+<entry name="data" shared="false" uninstallMode="0"/>
+<entry name=".install4j/user" shared="false" uninstallMode="0"/>
+<entry name=".install4j" shared="false" uninstallMode="0"/>
+<entry name="." shared="false" uninstallMode="0"/>
+</createdDirs>
+</fileLog>

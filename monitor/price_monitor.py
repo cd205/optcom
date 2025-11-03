@@ -1,4 +1,3 @@
-import sqlite3
 import pandas as pd
 import numpy as np
 from datetime import datetime, date
@@ -11,6 +10,10 @@ import argparse
 # Import the IBKR data provider
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from monitor.ibkr_integration import IBKRDataProvider
+
+# Import the new database configuration
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'database'))
+from database_config import get_db_connection
 
 # Set up logging directory
 log_dir = os.path.join(os.path.dirname(__file__), '..', 'output', 'logs')
@@ -27,52 +30,55 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 
-def get_todays_strategies(db_path):
+def get_todays_strategies():
     """
     Query today's option strategies from the database
-    
-    Parameters:
-    db_path (str): Path to the SQLite database file
+    Uses the new database configuration system
     
     Returns:
     pandas.DataFrame: DataFrame with today's strategies
     """
     try:
-        # Connect to the database
-        conn = sqlite3.connect(db_path)
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        # Test connection
+        if not db_conn.test_connection():
+            logger.error("Cannot connect to database. Check your configuration.")
+            return pd.DataFrame()
         
         # Get today's date
         today = date.today().isoformat()
         
-        # Query for today's entries
-        query = f"""
-            SELECT * FROM option_strategies 
-            WHERE scrape_date LIKE '{today}%'
-            ORDER BY strategy_type, tab_name
-        """
-        print('hello')
-
-        # Execute query and load into DataFrame
-        df = pd.read_sql_query(query, conn)
-        
-        # Close connection
-        conn.close()
+        # Query for today's entries - use appropriate syntax for database type
+        if db_conn.config.is_postgresql():
+            query = """
+                SELECT * FROM option_strategies 
+                WHERE scrape_date::text LIKE %s
+                ORDER BY strategy_type, tab_name
+            """
+            df = db_conn.execute_query_df(query, (f"{today}%",))
+        else:
+            query = """
+                SELECT * FROM option_strategies 
+                WHERE scrape_date LIKE ?
+                ORDER BY strategy_type, tab_name
+            """
+            df = db_conn.execute_query_df(query, (f"{today}%",))
         
         # Check if we have data for today
         if len(df) == 0:
-            logger.warning(f"No0000 strategy data found for today ({today})")
-            return pd.DataFrame()   # comment if bock below 
+            logger.warning(f"No strategy data found for today ({today})")
+            return pd.DataFrame()   # comment if block below 
         
-        # # Uncomment below to run for data that wasn;t scraped today
+        # # Uncomment below to run for data that wasn't scraped today
             # # Fallback to most recent data if no data for today
-            # conn = sqlite3.connect(db_path)
             # query = """
             #     SELECT * FROM option_strategies 
             #     WHERE scrape_date = (SELECT MAX(scrape_date) FROM option_strategies)
             #     ORDER BY strategy_type, tab_name
             # """
-            # df = pd.read_sql_query(query, conn)
-            # conn.close()
+            # df = db_conn.execute_query_df(query)
             
             # if len(df) > 0:
             #     latest_date = df['scrape_date'].iloc[0].split('T')[0]
@@ -111,13 +117,13 @@ def clean_price_string(price_str):
         logger.warning(f"Could not convert '{price_str}' to float")
         return None
 
-def update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
+def update_triggered_strategy_in_db(strategy_id, price_when_triggered):
     """
     Update a strategy in the database to mark it as triggered,
     but only if the strategy_status, price_when_triggered, and timestamp_of_trigger fields are empty
+    Uses the new database configuration system
     
     Parameters:
-    db_path (str): Path to the SQLite database
     strategy_id (int): ID of the strategy to update
     price_when_triggered (float): Current price of the underlying
     
@@ -125,69 +131,71 @@ def update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
     bool: True if update was successful, False otherwise
     """
     try:
-        # Connect to the database
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
+        # Get database connection
+        db_conn = get_db_connection()
         
-        # First check if we need to add the columns to the table
-        cursor.execute("PRAGMA table_info(option_strategies)")
-        columns = [column[1] for column in cursor.fetchall()]
-        
-        # Add timestamp_of_trigger column if it doesn't exist
-        if 'timestamp_of_trigger' not in columns:
-            logger.info("Adding timestamp_of_trigger column to option_strategies table")
-            cursor.execute("ALTER TABLE option_strategies ADD COLUMN timestamp_of_trigger TEXT")
+        # For SQLite, check if we need to add columns to the table
+        if db_conn.config.is_sqlite():
+            table_info = db_conn.get_table_info()
+            columns = [column[1] for column in table_info]  # SQLite format
             
-        # Add strategy_status column if it doesn't exist
-        if 'strategy_status' not in columns:
-            logger.info("Adding strategy_status column to option_strategies table")
-            cursor.execute("ALTER TABLE option_strategies ADD COLUMN strategy_status TEXT")
-            
-        # Add price_when_triggered column if it doesn't exist    
-        if 'price_when_triggered' not in columns:
-            logger.info("Adding price_when_triggered column to option_strategies table")
-            cursor.execute("ALTER TABLE option_strategies ADD COLUMN price_when_triggered REAL")
+            # Add columns if they don't exist (SQLite only)
+            if 'timestamp_of_trigger' not in columns:
+                logger.info("Adding timestamp_of_trigger column to option_strategies table")
+                db_conn.execute_command("ALTER TABLE option_strategies ADD COLUMN timestamp_of_trigger TEXT")
+                
+            if 'strategy_status' not in columns:
+                logger.info("Adding strategy_status column to option_strategies table")
+                db_conn.execute_command("ALTER TABLE option_strategies ADD COLUMN strategy_status TEXT")
+                
+            if 'price_when_triggered' not in columns:
+                logger.info("Adding price_when_triggered column to option_strategies table")
+                db_conn.execute_command("ALTER TABLE option_strategies ADD COLUMN price_when_triggered REAL")
         
         # First query to check if any of the fields already have values
-        cursor.execute(
+        if db_conn.config.is_postgresql():
+            check_query = """
+                SELECT strategy_status, price_when_triggered, timestamp_of_trigger
+                FROM option_strategies 
+                WHERE id = %s
             """
-            SELECT strategy_status, price_when_triggered, timestamp_of_trigger
-            FROM option_strategies 
-            WHERE id = ?
-            """, 
-            (strategy_id,)
-        )
+        else:
+            check_query = """
+                SELECT strategy_status, price_when_triggered, timestamp_of_trigger
+                FROM option_strategies 
+                WHERE id = ?
+            """
         
-        existing_data = cursor.fetchone()
+        existing_data = db_conn.execute_query(check_query, (strategy_id,))
         
         # Check if any of the fields already have values
         if existing_data:
-            status, price, timestamp = existing_data
+            status, price, timestamp = existing_data[0]
             
             if status is not None or price is not None or timestamp is not None:
                 logger.info(f"Strategy ID {strategy_id} already has trigger data, not updating")
-                conn.close()
                 return False
         
         # If we get here, we can update the record
         current_timestamp = datetime.now().isoformat()
-        cursor.execute(
+        
+        if db_conn.config.is_postgresql():
+            update_query = """
+                UPDATE option_strategies 
+                SET strategy_status = %s, timestamp_of_trigger = %s, price_when_triggered = %s
+                WHERE id = %s
             """
-            UPDATE option_strategies 
-            SET strategy_status = ?, timestamp_of_trigger = ?, price_when_triggered = ?
-            WHERE id = ?
-            """, 
+        else:
+            update_query = """
+                UPDATE option_strategies 
+                SET strategy_status = ?, timestamp_of_trigger = ?, price_when_triggered = ?
+                WHERE id = ?
+            """
+        
+        rows_affected = db_conn.execute_command(
+            update_query, 
             ('triggered', current_timestamp, price_when_triggered, strategy_id)
         )
-        
-        # Commit changes
-        conn.commit()
-        
-        # Get number of rows affected
-        rows_affected = cursor.rowcount
-        
-        # Close connection
-        conn.close()
         
         if rows_affected > 0:
             logger.info(f"Updated strategy ID {strategy_id} in database as triggered")
@@ -200,12 +208,66 @@ def update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
         logger.error(f"Error updating strategy in database: {str(e)}")
         return False
 
-def update_price_check_info(db_path, strategy_id, current_price):
+def get_last_price_from_database(ticker):
     """
-    Update the last_price_when_checked and timestamp_of_price_when_last_checked columns
+    Get the most recent price for a ticker from the database
+    Uses the new database configuration system
     
     Parameters:
-    db_path (str): Path to the SQLite database
+    ticker (str): Ticker symbol
+    
+    Returns:
+    float: Last known price, or None if not found
+    """
+    try:
+        # Get database connection
+        db_conn = get_db_connection()
+        
+        # Query for the most recent price check for this ticker
+        if db_conn.config.is_postgresql():
+            query = """
+                SELECT last_price_when_checked 
+                FROM option_strategies 
+                WHERE ticker = %s 
+                AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC 
+                LIMIT 1
+            """
+        else:
+            query = """
+                SELECT last_price_when_checked 
+                FROM option_strategies 
+                WHERE ticker = ? 
+                AND last_price_when_checked IS NOT NULL
+                ORDER BY timestamp_of_price_when_last_checked DESC 
+                LIMIT 1
+            """
+        
+        result = db_conn.execute_query(query, (ticker,))
+        
+        if result and len(result) > 0:
+            price = result[0][0]
+            # Check if the price is valid (not None and not NaN)
+            if price is not None and not pd.isna(price):
+                logger.info(f"Found last known price for {ticker} from database: ${price:.2f}")
+                return float(price)
+            else:
+                logger.warning(f"Invalid price found in database for {ticker}: {price}")
+                return None
+        else:
+            logger.warning(f"No last known price found in database for {ticker}")
+            return None
+            
+    except Exception as e:
+        logger.error(f"Error getting last price from database for {ticker}: {str(e)}")
+        return None
+
+def update_price_check_info(strategy_id, current_price):
+    """
+    Update the last_price_when_checked and timestamp_of_price_when_last_checked columns
+    Uses the new database configuration system
+    
+    Parameters:
     strategy_id (int): ID of the strategy to update
     current_price (float): Current price of the underlying
     
@@ -213,34 +275,38 @@ def update_price_check_info(db_path, strategy_id, current_price):
     bool: True if update was successful, False otherwise
     """
     try:
-        # Connect to the database
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
+        # Skip update if price is None or NaN
+        if current_price is None or pd.isna(current_price):
+            logger.warning(f"Skipping price update for strategy ID {strategy_id} - invalid price: {current_price}")
+            return False
+        
+        # Get database connection
+        db_conn = get_db_connection()
         
         # Set the current timestamp
         current_timestamp = datetime.now().isoformat()
         
-        # Update the record
-        cursor.execute(
+        # Update the record using appropriate syntax
+        if db_conn.config.is_postgresql():
+            update_query = """
+                UPDATE option_strategies 
+                SET last_price_when_checked = %s, timestamp_of_price_when_last_checked = %s
+                WHERE id = %s
             """
-            UPDATE option_strategies 
-            SET last_price_when_checked = ?, timestamp_of_price_when_last_checked = ?
-            WHERE id = ?
-            """, 
+        else:
+            update_query = """
+                UPDATE option_strategies 
+                SET last_price_when_checked = ?, timestamp_of_price_when_last_checked = ?
+                WHERE id = ?
+            """
+        
+        rows_affected = db_conn.execute_command(
+            update_query, 
             (current_price, current_timestamp, strategy_id)
         )
         
-        # Commit changes
-        conn.commit()
-        
-        # Get number of rows affected
-        rows_affected = cursor.rowcount
-        
-        # Close connection
-        conn.close()
-        
         if rows_affected > 0:
-            logger.debug(f"Updated price check info for strategy ID {strategy_id} in database")
+            logger.info(f"Updated price check info for strategy ID {strategy_id} in database - Price: {current_price}")
             return True
         else:
             logger.warning(f"No rows updated for price check info for strategy ID {strategy_id}")
@@ -250,14 +316,14 @@ def update_price_check_info(db_path, strategy_id, current_price):
         logger.error(f"Error updating price check info in database: {str(e)}")
         return False
 
-def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interval=60, max_runtime=None, output_dir=None):
+def monitor_prices(ibkr_host='127.0.0.1', ibkr_port=4002, check_interval=60, max_runtime=None, output_dir=None):
     """
     Monitor prices for option strategies
+    Uses the new database configuration system
     
     Parameters:
-    db_path (str): Path to the SQLite database
-    ibkr_host (str): IBKR TWS/Gateway host
-    ibkr_port (int): IBKR TWS/Gateway port
+    ibkr_host (str): IB Gateway host
+    ibkr_port (int): IB Gateway port (4002 for paper trading, 4001 for live)
     check_interval (int): How often to check prices (in seconds)
     max_runtime (int): Maximum runtime in seconds, or None for indefinite
     output_dir (str): Directory to save output files
@@ -268,16 +334,22 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
             output_dir = os.path.join(os.path.dirname(__file__), '..', 'output')
         os.makedirs(output_dir, exist_ok=True)
         
-        # Initialize IBKR connection
-        ibkr = IBKRDataProvider(host=ibkr_host, port=ibkr_port)
-        connection_success = ibkr.connect()
+        # Generate random client ID to avoid conflicts
+        import random
+        client_id = random.randint(100, 9999)
+        logger.info(f"Using client ID: {client_id}")
+        
+        # Initialize IBKR connection with retry logic
+        ibkr = IBKRDataProvider(host=ibkr_host, port=ibkr_port, client_id=client_id)
+        connection_success = ibkr.connect(max_retries=2)  # Try twice, not three times for faster failure
         
         if not connection_success:
-            logger.error("Failed to connect to IBKR. Exiting.")
-            return
+            logger.warning("Failed to connect to IB Gateway after retries.")
+            logger.info("Will attempt to use last known prices from database as fallback.")
+            # Continue anyway - we can try database fallback
         
         # Get option strategies
-        strategies_df = get_todays_strategies(db_path)
+        strategies_df = get_todays_strategies()
         
         if strategies_df.empty:
             logger.error("No strategies to monitor. Exiting.")
@@ -302,12 +374,17 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
         last_prices = {}
         
         # Load existing trigger status from database
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
+        db_conn = get_db_connection()
         
         # Check if the needed columns exist
-        cursor.execute("PRAGMA table_info(option_strategies)")
-        columns = [column[1] for column in cursor.fetchall()]
+        table_info = db_conn.get_table_info()
+        if db_conn.config.is_postgresql():
+            # PostgreSQL format: (column_name, data_type, is_nullable, column_default)
+            columns = [column[0] for column in table_info]
+        else:
+            # SQLite format: (cid, name, type, notnull, dflt_value, pk)
+            columns = [column[1] for column in table_info]
+        
         has_all_columns = ('strategy_status' in columns and 
                           'price_when_triggered' in columns and 
                           'timestamp_of_trigger' in columns)
@@ -315,18 +392,14 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
         # If all columns exist, fetch strategy IDs that are already triggered
         already_triggered = set()
         if has_all_columns:
-            cursor.execute(
-                """
+            query = """
                 SELECT id FROM option_strategies 
-                WHERE strategy_status IS NOT NULL 
-                OR price_when_triggered IS NOT NULL 
-                OR timestamp_of_trigger IS NOT NULL
-                """
-            )
-            already_triggered = {row[0] for row in cursor.fetchall()}
+                WHERE strategy_status = 'triggered'
+                AND timestamp_of_trigger IS NOT NULL
+            """
+            results = db_conn.execute_query(query)
+            already_triggered = {row[0] for row in results}
             logger.info(f"Found {len(already_triggered)} strategies that are already triggered")
-        
-        conn.close()
         
         # Track start time if max_runtime is specified
         start_time = time.time()
@@ -345,13 +418,32 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
                 # Get latest prices for all tickers
                 for ticker in valid_tickers:
                     try:
-                        price = ibkr.get_latest_price(ticker)
+                        price = None
+                        price_source = "unknown"
+                        
+                        if connection_success:
+                            # Try to get live/current price first
+                            price = ibkr.get_latest_price(ticker)
+                            if price is not None:
+                                price_source = "live"
+                        
+                        # If no price yet and we have connection, try close price
+                        if price is None and connection_success:
+                            price = ibkr.get_last_close_price(ticker)
+                            if price is not None:
+                                price_source = "close"
+                        
+                        # Final fallback: get last known price from database
+                        if price is None:
+                            price = get_last_price_from_database(ticker)
+                            if price is not None:
+                                price_source = "database"
                         
                         if price is not None:
                             last_prices[ticker] = price
-                            logger.info(f"{ticker}: ${price:.2f}")
+                            logger.info(f"{ticker}: ${price:.2f} ({price_source} price)")
                         else:
-                            logger.warning(f"Could not get price for {ticker}")
+                            logger.warning(f"Could not get any price for {ticker} from any source")
                     except Exception as e:
                         logger.error(f"Error getting price for {ticker}: {str(e)}")
                 
@@ -365,12 +457,18 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
                     strategy_id = row['id']
                     
                     if ticker not in last_prices:
+                        logger.debug(f"No price available for {ticker}, skipping strategy ID {strategy_id}")
                         continue
                         
                     current_price = last_prices[ticker]
                     
+                    # Skip if price is None or NaN
+                    if current_price is None or pd.isna(current_price):
+                        logger.warning(f"Skipping strategy ID {strategy_id} for {ticker} - invalid price: {current_price}")
+                        continue
+                    
                     # Update the last_price_when_checked and timestamp columns for every check
-                    update_price_check_info(db_path, strategy_id, current_price)
+                    update_price_check_info(strategy_id, current_price)
                     
                     # Skip checking trigger conditions if this strategy is already triggered
                     if strategy_id in already_triggered:
@@ -400,7 +498,7 @@ def monitor_prices(db_path, ibkr_host='127.0.0.1', ibkr_port=7497, check_interva
                         
                     # If triggered, update the database and add to our already triggered set
                     if trigger_condition_met:
-                        if update_triggered_strategy_in_db(db_path, strategy_id, price_when_triggered):
+                        if update_triggered_strategy_in_db(strategy_id, price_when_triggered):
                             already_triggered.add(strategy_id)
                 
                 # # Save current state to CSV for monitoring purposes
@@ -436,12 +534,12 @@ def parse_arguments():
     """Parse command line arguments"""
     parser = argparse.ArgumentParser(description='Monitor option strategy prices using IBKR data')
     
-    parser.add_argument('--db', type=str, default='../database/option_strategies.db',
-                        help='Path to SQLite database')
+    # Database configuration is now handled by environment variables
+    # No need for --db argument
     parser.add_argument('--host', type=str, default='127.0.0.1',
-                        help='IBKR TWS/Gateway host')
-    parser.add_argument('--port', type=int, default=7497,
-                        help='IBKR TWS/Gateway port (7497 for paper, 7496 for live)')
+                        help='IB Gateway host')
+    parser.add_argument('--port', type=int, default=4002,
+                        help='IB Gateway port (4002 for paper trading, 4001 for live)')
     parser.add_argument('--interval', type=int, default=60,
                         help='Check interval in seconds')
     parser.add_argument('--runtime', type=int, default=None,
@@ -457,7 +555,6 @@ if __name__ == "__main__":
     
     # Run the monitor
     monitor_prices(
-        db_path=args.db,
         ibkr_host=args.host,
         ibkr_port=args.port,
         check_interval=args.interval,
@@ -465,4 +562,4 @@ if __name__ == "__main__":
         output_dir=args.output
     )
 
-# python monitor/price_monitor.py --db database/option_strategies.db --interval 60
+# python monitor/price_monitor.py --port 4002 --interval 60

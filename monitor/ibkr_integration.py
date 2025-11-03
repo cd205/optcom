@@ -133,13 +133,13 @@ class IBKRDataProvider:
     """
     Data provider using the IB API
     """
-    def __init__(self, host='127.0.0.1', port=7497, client_id=1):
+    def __init__(self, host='127.0.0.1', port=4002, client_id=1):
         """
         Initialize the IBKR data provider
         
         Parameters:
-        host (str): TWS/IB Gateway host (default: 127.0.0.1)
-        port (int): TWS/IB Gateway port (default: 7497 for TWS paper trading)
+        host (str): IB Gateway host (default: 127.0.0.1)
+        port (int): IB Gateway port (default: 4002 for paper trading, 4001 for live)
         client_id (int): Client ID for this connection
         """
         self.host = host
@@ -164,16 +164,41 @@ class IBKRDataProvider:
         except Exception as e:
             logger.error(f"Error in client thread: {str(e)}")
     
-    def connect(self):
+    def connect(self, max_retries=3):
         """
-        Connect to the IB API
+        Connect to the IB API with retry logic
+        
+        Parameters:
+        max_retries (int): Maximum number of connection attempts
+        
+        Returns:
+        bool: True if connected successfully, False otherwise
         """
         if self.connected:
             logger.warning("Already connected to IBKR")
             return True
-            
-        logger.info(f"Connecting to IBKR at {self.host}:{self.port}")
         
+        for attempt in range(max_retries):
+            logger.info(f"Connecting to IB Gateway at {self.host}:{self.port} (attempt {attempt + 1}/{max_retries})")
+            
+            if self._attempt_connection():
+                return True
+            
+            if attempt < max_retries - 1:
+                wait_time = 5 * (attempt + 1)  # Exponential backoff
+                logger.warning(f"Connection attempt {attempt + 1} failed, retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+        
+        logger.error(f"Failed to connect after {max_retries} attempts")
+        return False
+    
+    def _attempt_connection(self):
+        """
+        Single connection attempt
+        
+        Returns:
+        bool: True if connected successfully, False otherwise
+        """
         # Connect to the API
         try:
             self.client.connect(self.host, self.port, self.client_id)
@@ -185,14 +210,14 @@ class IBKRDataProvider:
         self.api_thread = threading.Thread(target=self._run_client, daemon=True)
         self.api_thread.start()
         
-        # Wait for connection confirmation
-        timeout = 10  # seconds
+        # Wait for connection confirmation - increased timeout for 2FA
+        timeout = 30  # seconds - increased from 10 to handle 2FA delays
         start_time = time.time()
         connected = False
         
         while time.time() - start_time < timeout:
             try:
-                msg_type, msg_data = self.wrapper.data_queue.get(timeout=1)
+                msg_type, msg_data = self.wrapper.data_queue.get(timeout=2)
                 
                 if msg_type == "connection_confirmed":
                     connected = True
@@ -200,7 +225,7 @@ class IBKRDataProvider:
                 elif msg_type == "error":
                     req_id, error_code, error_msg = msg_data
                     if error_code == 502:  # Connection refused
-                        logger.error("Connection refused. Is TWS/IB Gateway running?")
+                        logger.error("Connection refused. Is IB Gateway running?")
                         return False
                     elif error_code == 501:  # Already connected
                         connected = True
@@ -414,8 +439,8 @@ class IBKRDataProvider:
             # Request market data
             self.client.reqMktData(req_id, contract, "", False, False, [])
             
-            # Wait for price data
-            timeout = 3  # seconds
+            # Wait for price data - increased timeout for better reliability
+            timeout = 12  # seconds - increased from 3 to handle delays
             start_time = time.time()
             
             received_data = False
@@ -468,7 +493,9 @@ class IBKRDataProvider:
                         return price
             
             # If we get here, we didn't get any price data
-            return None
+            # Try fallback to close price
+            logger.warning(f"Live price timeout for {ticker}, trying fallback to close price")
+            return self.get_last_close_price(ticker)
             
         except Exception as e:
             logger.error(f"Error requesting market data for {ticker}: {str(e)}")
@@ -575,7 +602,7 @@ if __name__ == "__main__":
     )
     
     # Create data provider
-    ibkr = IBKRDataProvider(port=7497)  # Use the appropriate port for your setup
+    ibkr = IBKRDataProvider(port=4002)  # Use 4002 for IB Gateway paper trading, 4001 for live
     
     try:
         # Connect to IBKR
