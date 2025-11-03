@@ -30,4 +30,4 @@ database_backup_*.sql
 # IBC config files and logs (contain sensitive credentials)
 ibc-setup/config/config-live.ini
 ibc-setup/config/config-paper.ini
-ibc-setup/tws/live-settings/launcher.log
+ibc-setup/tws/live-settings/launcher.logairflow_project/airflow.db
