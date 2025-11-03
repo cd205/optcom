@@ -51,7 +51,7 @@ step5-full:
 	cd scripts && python run_individual_steps.py 5 --runtime 7200
 
 # Utility commands
-.PHONY: gateway-status gateway-start gateway-stop airflow-start
+.PHONY: gateway-status gateway-start gateway-stop airflow-start snapshots-test snapshots-status
 
 gateway-status:
 	@echo "🚪 Gateway Status..."
@@ -68,6 +68,14 @@ gateway-stop:
 airflow-start:
 	@echo "🌪️ Starting Airflow..."
 	@export AIRFLOW_HOME=$(PWD) && airflow standalone &
+
+snapshots-test:
+	@echo "📸 Testing Market Snapshots (standalone)..."
+	cd scripts && python market_snapshots.py
+
+snapshots-status:
+	@echo "📸 Checking Market Snapshots DAG Status..."
+	@export AIRFLOW_HOME=$(PWD) && airflow dags show market_snapshots
 
 # Help
 .PHONY: help
@@ -95,3 +103,7 @@ help:
 	@echo "  make gateway-start  - Start gateways only"
 	@echo "  make gateway-stop   - Stop gateways only"
 	@echo "  make airflow-start  - Start Airflow only"
+	@echo ""
+	@echo "Market Snapshots:"
+	@echo "  make snapshots-test   - Test market snapshots (standalone)"
+	@echo "  make snapshots-status - Check snapshots DAG status"

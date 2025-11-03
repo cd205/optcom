@@ -251,9 +251,11 @@ def start_workflow():
 
     # Trigger the workflow
     print("Triggering workflow...")
+    env = os.environ.copy()
+    env['AIRFLOW_HOME'] = '/home/chris_s_dodd/optcom-1/airflow_project'
     result = subprocess.run([
         'airflow', 'dags', 'trigger', 'simple_trading_workflow'
-    ], capture_output=True, text=True)
+    ], capture_output=True, text=True, env=env)
     
     if result.returncode == 0:
         print("✅ Workflow started successfully")

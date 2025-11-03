@@ -21,14 +21,15 @@ from trading_monitor import run_trading_monitor
 from ib_gateway_utils import IBGatewayManager
 from database_utils import connect_to_database, close_database_connection, check_data_freshness
 from options_contract_validator import run_contract_validation
+from market_snapshots import run_market_snapshots
 
 # Simple DAG configuration
 default_args = {
     'owner': 'trading',
     'depends_on_past': False,
     'start_date': datetime(2024, 8, 24),
-    'retries': 0,  # No retries - fail fast
-    'max_active_runs': 1,
+    'retries': 1,  # Allow 1 retry for transient errors
+    'retry_delay': timedelta(seconds=30),
 }
 
 dag = DAG(
@@ -214,21 +215,67 @@ step4 = PythonOperator(
 )
 
 # ============================================================================
-# STEP 5: Run trading monitor
+# STEP 5: Run trading monitor with market snapshots
 # ============================================================================
 def step5_trading_monitor(**context):
-    """Step 5: Run trading monitor (leave running)"""
-    print("📊 STEP 5: Running trading monitor...")
-    
-    # Run for specified number of cycles
-    cycles_completed = run_trading_monitor(
-        cycles=1000,
-        port=4002,     # Paper trading port
-        allow_market_closed=True,
-        interval=120    # 2 minute intervals
-    )
-    
-    print(f"✅ Trading monitor completed: {cycles_completed} cycles")
+    """Step 5: Run trading monitor with integrated market snapshots every 30 minutes"""
+    print("📊 STEP 5: Running trading monitor with market snapshots...")
+
+    import time
+
+    # Configuration
+    monitor_interval = 120  # 2 minutes between monitor cycles
+    snapshot_interval = 1800  # 30 minutes between snapshots (30 * 60)
+    max_cycles = 1000
+
+    last_snapshot_time = 0
+    cycles_completed = 0
+
+    print(f"Starting integrated monitoring:")
+    print(f"  - Trading monitor: every {monitor_interval} seconds")
+    print(f"  - Market snapshots: every {snapshot_interval} seconds (30 minutes)")
+
+    for cycle in range(max_cycles):
+        cycle_start = time.time()
+        cycles_completed += 1
+
+        # Check if it's time for a snapshot
+        time_since_last_snapshot = cycle_start - last_snapshot_time
+        if time_since_last_snapshot >= snapshot_interval or last_snapshot_time == 0:
+            print(f"\n📸 Taking market snapshot (cycle {cycles_completed})...")
+            try:
+                result = run_market_snapshots(
+                    port=4002,
+                    account_id="DU9233079"
+                )
+
+                if result['success']:
+                    print(f"✅ Snapshot captured: {result['snapshots_created']} snapshots, "
+                          f"{result['positions_retrieved']} positions")
+                else:
+                    print(f"⚠️ Snapshot failed: {result.get('error', 'Unknown error')}")
+            except Exception as e:
+                print(f"⚠️ Snapshot error: {e}")
+
+            last_snapshot_time = cycle_start
+
+        # Run one cycle of trading monitor
+        print(f"\n🔄 Running trading cycle {cycles_completed}/{max_cycles}...")
+        try:
+            run_trading_monitor(
+                cycles=1,
+                port=4002,
+                allow_market_closed=True,
+                interval=monitor_interval
+            )
+        except Exception as e:
+            print(f"⚠️ Trading monitor error: {e}")
+            # Continue anyway - don't break the loop
+
+        # Wait for next cycle (monitor already includes interval wait)
+        # No additional sleep needed here
+
+    print(f"\n✅ Trading monitor completed: {cycles_completed} cycles")
     return f"COMPLETED: {cycles_completed} cycles"
 
 step5 = PythonOperator(

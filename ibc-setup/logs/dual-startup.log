@@ -59789,3 +59789,3470 @@
 [2025-10-30 06:28:15] live Gateway process is running
 [2025-10-30 06:28:15] Waiting for live API port 4001...
 [2025-10-30 06:31:15] ⚠️ live API port 4001 not detected
+[2025-10-30 06:36:20] === Gateway Status ===
+[2025-10-30 06:36:20] 📊 Paper Gateway: Not running
+[2025-10-30 06:36:20] 💰 Live Gateway: Not running
+[2025-10-30 06:36:20] Restarting live account only...
+[2025-10-30 06:36:25] Starting live account Gateway...
+[2025-10-30 06:36:25] Using virtual display :99 for live account
+[2025-10-30 06:36:25] Using TWS version: 1037 for live
+[2025-10-30 06:36:25] Starting live Gateway on port 4001
+[2025-10-30 06:36:25] live Gateway started with PID: 14416
+[2025-10-30 06:36:25] Waiting for live Gateway to initialize...
+[2025-10-30 06:36:45] Stopping all Gateway instances...
+[2025-10-30 06:36:45] All Gateway instances stopped
+[2025-10-30 06:36:45] live Gateway process is running
+[2025-10-30 06:36:45] Waiting for live API port 4001...
+[2025-10-30 06:39:45] ⚠️ live API port 4001 not detected
+[2025-10-30 06:43:15] === Gateway Status ===
+[2025-10-30 06:43:16] 📊 Paper Gateway: Not running
+[2025-10-30 06:43:16] 💰 Live Gateway: Not running
+[2025-10-30 06:43:16] Restarting live account only...
+[2025-10-30 06:43:21] Starting live account Gateway...
+[2025-10-30 06:43:21] Using virtual display :99 for live account
+[2025-10-30 06:43:21] Using TWS version: 1037 for live
+[2025-10-30 06:43:21] Starting live Gateway on port 4001
+[2025-10-30 06:43:21] live Gateway started with PID: 17247
+[2025-10-30 06:43:21] Waiting for live Gateway to initialize...
+[2025-10-30 06:43:41] live Gateway process is running
+[2025-10-30 06:43:41] Waiting for live API port 4001...
+[2025-10-30 06:46:41] ⚠️ live API port 4001 not detected
+[2025-10-30 06:51:46] === Gateway Status ===
+[2025-10-30 06:51:46] 📊 Paper Gateway: Not running
+[2025-10-30 06:51:46] 💰 Live Gateway: Not running
+[2025-10-30 06:51:46] Restarting live account only...
+[2025-10-30 06:51:51] Starting live account Gateway...
+[2025-10-30 06:51:51] Using virtual display :99 for live account
+[2025-10-30 06:51:51] Using TWS version: 1037 for live
+[2025-10-30 06:51:51] Starting live Gateway on port 4001
+[2025-10-30 06:51:51] live Gateway started with PID: 21121
+[2025-10-30 06:51:51] Waiting for live Gateway to initialize...
+[2025-10-30 06:52:11] live Gateway process is running
+[2025-10-30 06:52:11] Waiting for live API port 4001...
+[2025-10-30 06:55:12] ⚠️ live API port 4001 not detected
+[2025-10-30 08:33:49] Stopping all Gateway instances...
+[2025-10-30 08:33:49] All Gateway instances stopped
+[2025-10-30 08:35:42] === Starting Both Paper and Live Accounts ===
+[2025-10-30 08:35:42] === Gateway Status ===
+[2025-10-30 08:35:42] Step 1: Starting Paper Trading Account
+[2025-10-30 08:35:42] Starting paper account Gateway...
+[2025-10-30 08:35:42] Using virtual display :99 for paper account
+[2025-10-30 08:35:42] Using TWS version: 1037 for paper
+[2025-10-30 08:35:42] Starting paper Gateway on port 4002
+[2025-10-30 08:35:42] paper Gateway started with PID: 66672
+[2025-10-30 08:35:42] 📊 Paper Gateway: Not running
+[2025-10-30 08:35:43] Waiting for paper Gateway to initialize...
+[2025-10-30 08:35:43] 💰 Live Gateway: Not running
+[2025-10-30 08:36:03] paper Gateway process is running
+[2025-10-30 08:36:03] Waiting for paper API port 4002...
+[2025-10-30 08:36:03] ✅ paper API port 4002 is available
+[2025-10-30 08:36:03] ✅ Paper account ready on port 4002
+[2025-10-30 08:36:03] Waiting 30 seconds before starting live account...
+[2025-10-30 08:36:13] === Gateway Status ===
+[2025-10-30 08:36:13] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:36:13]    ✅ API Port 4002: Listening
+[2025-10-30 08:36:13] 💰 Live Gateway: Not running
+[2025-10-30 08:36:13] === Gateway Status ===
+[2025-10-30 08:36:13] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:36:13]    ✅ API Port 4002: Listening
+[2025-10-30 08:36:13] 💰 Live Gateway: Not running
+[2025-10-30 08:36:33] Step 2: Starting Live Trading Account
+[2025-10-30 08:36:33] Starting live account Gateway...
+[2025-10-30 08:36:33] Using TWS version: 1037 for live
+[2025-10-30 08:36:33] Starting live Gateway on port 4001
+[2025-10-30 08:36:33] live Gateway started with PID: 67404
+[2025-10-30 08:36:33] Waiting for live Gateway to initialize...
+[2025-10-30 08:36:43] === Gateway Status ===
+[2025-10-30 08:36:43] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:36:43]    ✅ API Port 4002: Listening
+[2025-10-30 08:36:43] 💰 Live Gateway: Running (PID: 67463)
+[2025-10-30 08:36:43]    ❌ API Port 4001: Not listening
+[2025-10-30 08:36:43] === Gateway Status ===
+[2025-10-30 08:36:43] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:36:43]    ✅ API Port 4002: Listening
+[2025-10-30 08:36:43] 💰 Live Gateway: Running (PID: 67463)
+[2025-10-30 08:36:43]    ❌ API Port 4001: Not listening
+[2025-10-30 08:36:43] === Gateway Status ===
+[2025-10-30 08:36:43] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:36:43]    ✅ API Port 4002: Listening
+[2025-10-30 08:36:43] 💰 Live Gateway: Running (PID: 67463)
+[2025-10-30 08:36:43]    ❌ API Port 4001: Not listening
+[2025-10-30 08:39:43] === Gateway Status ===
+[2025-10-30 08:39:43] 📊 Paper Gateway: Running (PID: 66769)
+[2025-10-30 08:39:43]    ✅ API Port 4002: Listening
+[2025-10-30 08:39:43] 💰 Live Gateway: Running (PID: 67463)
+[2025-10-30 08:39:43]    ❌ API Port 4001: Not listening
+[2025-10-30 12:00:42] Stopping all Gateway instances...
+[2025-10-30 12:00:42] All Gateway instances stopped
+[2025-10-30 12:02:20] === Starting Both Paper and Live Accounts ===
+[2025-10-30 12:02:20] === Gateway Status ===
+[2025-10-30 12:02:20] Step 1: Starting Paper Trading Account
+[2025-10-30 12:02:20] Starting paper account Gateway...
+[2025-10-30 12:02:20] Using virtual display :99 for paper account
+[2025-10-30 12:02:20] Using TWS version: 1037 for paper
+[2025-10-30 12:02:20] Starting paper Gateway on port 4002
+[2025-10-30 12:02:20] 📊 Paper Gateway: Not running
+[2025-10-30 12:02:20] paper Gateway started with PID: 1830
+[2025-10-30 12:02:20] Waiting for paper Gateway to initialize...
+[2025-10-30 12:02:20] 💰 Live Gateway: Not running
+[2025-10-30 12:02:40] paper Gateway process is running
+[2025-10-30 12:02:40] Waiting for paper API port 4002...
+[2025-10-30 12:02:40] ✅ paper API port 4002 is available
+[2025-10-30 12:02:40] ✅ Paper account ready on port 4002
+[2025-10-30 12:02:40] Waiting 30 seconds before starting live account...
+[2025-10-30 12:02:50] === Gateway Status ===
+[2025-10-30 12:02:50] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:02:50]    ✅ API Port 4002: Listening
+[2025-10-30 12:02:50] 💰 Live Gateway: Not running
+[2025-10-30 12:02:56] === Gateway Status ===
+[2025-10-30 12:02:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:02:56]    ✅ API Port 4002: Listening
+[2025-10-30 12:02:56] 💰 Live Gateway: Not running
+[2025-10-30 12:03:10] Step 2: Starting Live Trading Account
+[2025-10-30 12:03:10] Starting live account Gateway...
+[2025-10-30 12:03:10] Using TWS version: 1037 for live
+[2025-10-30 12:03:10] Starting live Gateway on port 4001
+[2025-10-30 12:03:10] live Gateway started with PID: 3049
+[2025-10-30 12:03:10] Waiting for live Gateway to initialize...
+[2025-10-30 12:03:20] === Gateway Status ===
+[2025-10-30 12:03:20] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:03:20]    ✅ API Port 4002: Listening
+[2025-10-30 12:03:20] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:03:20]    ❌ API Port 4001: Not listening
+[2025-10-30 12:03:20] === Gateway Status ===
+[2025-10-30 12:03:20] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:03:20]    ✅ API Port 4002: Listening
+[2025-10-30 12:03:20] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:03:21]    ❌ API Port 4001: Not listening
+[2025-10-30 12:03:21] === Gateway Status ===
+[2025-10-30 12:03:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:03:21]    ✅ API Port 4002: Listening
+[2025-10-30 12:03:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:03:21]    ❌ API Port 4001: Not listening
+[2025-10-30 12:06:21] === Gateway Status ===
+[2025-10-30 12:06:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:06:21]    ✅ API Port 4002: Listening
+[2025-10-30 12:06:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:06:21]    ✅ API Port 4001: Listening
+[2025-10-30 12:07:22] === Gateway Status ===
+[2025-10-30 12:07:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:07:22]    ✅ API Port 4002: Listening
+[2025-10-30 12:07:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:07:22]    ✅ API Port 4001: Listening
+[2025-10-30 12:09:32] === Gateway Status ===
+[2025-10-30 12:09:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:09:32]    ✅ API Port 4002: Listening
+[2025-10-30 12:09:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:09:32]    ✅ API Port 4001: Listening
+[2025-10-30 12:11:42] === Gateway Status ===
+[2025-10-30 12:11:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:11:42]    ✅ API Port 4002: Listening
+[2025-10-30 12:11:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:11:42]    ✅ API Port 4001: Listening
+[2025-10-30 12:13:51] === Gateway Status ===
+[2025-10-30 12:13:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:13:51]    ✅ API Port 4002: Listening
+[2025-10-30 12:13:51] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:13:51]    ✅ API Port 4001: Listening
+[2025-10-30 12:16:01] === Gateway Status ===
+[2025-10-30 12:16:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:16:02]    ✅ API Port 4002: Listening
+[2025-10-30 12:16:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:16:02]    ✅ API Port 4001: Listening
+[2025-10-30 12:18:12] === Gateway Status ===
+[2025-10-30 12:18:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:18:12]    ✅ API Port 4002: Listening
+[2025-10-30 12:18:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:18:12]    ✅ API Port 4001: Listening
+[2025-10-30 12:20:21] === Gateway Status ===
+[2025-10-30 12:20:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:20:21]    ✅ API Port 4002: Listening
+[2025-10-30 12:20:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:20:22]    ✅ API Port 4001: Listening
+[2025-10-30 12:22:31] === Gateway Status ===
+[2025-10-30 12:22:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:22:31]    ✅ API Port 4002: Listening
+[2025-10-30 12:22:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:22:31]    ✅ API Port 4001: Listening
+[2025-10-30 12:24:41] === Gateway Status ===
+[2025-10-30 12:24:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:24:41]    ✅ API Port 4002: Listening
+[2025-10-30 12:24:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:24:41]    ✅ API Port 4001: Listening
+[2025-10-30 12:26:52] === Gateway Status ===
+[2025-10-30 12:26:52] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:26:52]    ✅ API Port 4002: Listening
+[2025-10-30 12:26:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:26:52]    ✅ API Port 4001: Listening
+[2025-10-30 12:29:02] === Gateway Status ===
+[2025-10-30 12:29:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:29:02]    ✅ API Port 4002: Listening
+[2025-10-30 12:29:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:29:02]    ✅ API Port 4001: Listening
+[2025-10-30 12:31:12] === Gateway Status ===
+[2025-10-30 12:31:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:31:12]    ✅ API Port 4002: Listening
+[2025-10-30 12:31:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:31:12]    ✅ API Port 4001: Listening
+[2025-10-30 12:33:22] === Gateway Status ===
+[2025-10-30 12:33:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:33:22]    ✅ API Port 4002: Listening
+[2025-10-30 12:33:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:33:22]    ✅ API Port 4001: Listening
+[2025-10-30 12:35:32] === Gateway Status ===
+[2025-10-30 12:35:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:35:32]    ✅ API Port 4002: Listening
+[2025-10-30 12:35:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:35:32]    ✅ API Port 4001: Listening
+[2025-10-30 12:37:42] === Gateway Status ===
+[2025-10-30 12:37:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:37:42]    ✅ API Port 4002: Listening
+[2025-10-30 12:37:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:37:42]    ✅ API Port 4001: Listening
+[2025-10-30 12:39:52] === Gateway Status ===
+[2025-10-30 12:39:52] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:39:52]    ✅ API Port 4002: Listening
+[2025-10-30 12:39:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:39:52]    ✅ API Port 4001: Listening
+[2025-10-30 12:42:02] === Gateway Status ===
+[2025-10-30 12:42:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:42:02]    ✅ API Port 4002: Listening
+[2025-10-30 12:42:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:42:02]    ✅ API Port 4001: Listening
+[2025-10-30 12:44:12] === Gateway Status ===
+[2025-10-30 12:44:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:44:12]    ✅ API Port 4002: Listening
+[2025-10-30 12:44:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:44:12]    ✅ API Port 4001: Listening
+[2025-10-30 12:46:22] === Gateway Status ===
+[2025-10-30 12:46:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:46:22]    ✅ API Port 4002: Listening
+[2025-10-30 12:46:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:46:22]    ✅ API Port 4001: Listening
+[2025-10-30 12:48:32] === Gateway Status ===
+[2025-10-30 12:48:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:48:32]    ✅ API Port 4002: Listening
+[2025-10-30 12:48:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:48:32]    ✅ API Port 4001: Listening
+[2025-10-30 12:50:42] === Gateway Status ===
+[2025-10-30 12:50:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:50:42]    ✅ API Port 4002: Listening
+[2025-10-30 12:50:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:50:42]    ✅ API Port 4001: Listening
+[2025-10-30 12:52:52] === Gateway Status ===
+[2025-10-30 12:52:52] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:52:52]    ✅ API Port 4002: Listening
+[2025-10-30 12:52:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:52:52]    ✅ API Port 4001: Listening
+[2025-10-30 12:55:02] === Gateway Status ===
+[2025-10-30 12:55:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:55:02]    ✅ API Port 4002: Listening
+[2025-10-30 12:55:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:55:02]    ✅ API Port 4001: Listening
+[2025-10-30 12:57:13] === Gateway Status ===
+[2025-10-30 12:57:13] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:57:13]    ✅ API Port 4002: Listening
+[2025-10-30 12:57:13] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:57:13]    ✅ API Port 4001: Listening
+[2025-10-30 12:59:23] === Gateway Status ===
+[2025-10-30 12:59:23] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 12:59:23]    ✅ API Port 4002: Listening
+[2025-10-30 12:59:23] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 12:59:23]    ✅ API Port 4001: Listening
+[2025-10-30 13:01:32] === Gateway Status ===
+[2025-10-30 13:01:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:01:32]    ✅ API Port 4002: Listening
+[2025-10-30 13:01:33] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:01:33]    ✅ API Port 4001: Listening
+[2025-10-30 13:03:42] === Gateway Status ===
+[2025-10-30 13:03:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:03:42]    ✅ API Port 4002: Listening
+[2025-10-30 13:03:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:03:42]    ✅ API Port 4001: Listening
+[2025-10-30 13:05:51] === Gateway Status ===
+[2025-10-30 13:05:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:05:51]    ✅ API Port 4002: Listening
+[2025-10-30 13:05:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:05:52]    ✅ API Port 4001: Listening
+[2025-10-30 13:08:01] === Gateway Status ===
+[2025-10-30 13:08:01] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:08:01]    ✅ API Port 4002: Listening
+[2025-10-30 13:08:01] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:08:01]    ✅ API Port 4001: Listening
+[2025-10-30 13:10:11] === Gateway Status ===
+[2025-10-30 13:10:11] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:10:11]    ✅ API Port 4002: Listening
+[2025-10-30 13:10:11] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:10:11]    ✅ API Port 4001: Listening
+[2025-10-30 13:12:21] === Gateway Status ===
+[2025-10-30 13:12:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:12:21]    ✅ API Port 4002: Listening
+[2025-10-30 13:12:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:12:21]    ✅ API Port 4001: Listening
+[2025-10-30 13:14:31] === Gateway Status ===
+[2025-10-30 13:14:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:14:31]    ✅ API Port 4002: Listening
+[2025-10-30 13:14:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:14:31]    ✅ API Port 4001: Listening
+[2025-10-30 13:16:40] === Gateway Status ===
+[2025-10-30 13:16:40] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:16:40]    ✅ API Port 4002: Listening
+[2025-10-30 13:16:40] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:16:40]    ✅ API Port 4001: Listening
+[2025-10-30 13:18:50] === Gateway Status ===
+[2025-10-30 13:18:50] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:18:50]    ✅ API Port 4002: Listening
+[2025-10-30 13:18:50] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:18:50]    ✅ API Port 4001: Listening
+[2025-10-30 13:21:01] === Gateway Status ===
+[2025-10-30 13:21:01] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:21:01]    ✅ API Port 4002: Listening
+[2025-10-30 13:21:01] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:21:01]    ✅ API Port 4001: Listening
+[2025-10-30 13:23:10] === Gateway Status ===
+[2025-10-30 13:23:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:23:10]    ✅ API Port 4002: Listening
+[2025-10-30 13:23:10] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:23:10]    ✅ API Port 4001: Listening
+[2025-10-30 13:25:20] === Gateway Status ===
+[2025-10-30 13:25:20] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:25:20]    ✅ API Port 4002: Listening
+[2025-10-30 13:25:20] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:25:20]    ✅ API Port 4001: Listening
+[2025-10-30 13:27:30] === Gateway Status ===
+[2025-10-30 13:27:30] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:27:30]    ✅ API Port 4002: Listening
+[2025-10-30 13:27:30] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:27:30]    ✅ API Port 4001: Listening
+[2025-10-30 13:29:40] === Gateway Status ===
+[2025-10-30 13:29:40] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:29:40]    ✅ API Port 4002: Listening
+[2025-10-30 13:29:40] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:29:40]    ✅ API Port 4001: Listening
+[2025-10-30 13:31:49] === Gateway Status ===
+[2025-10-30 13:31:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:31:49]    ✅ API Port 4002: Listening
+[2025-10-30 13:31:50] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:31:50]    ✅ API Port 4001: Listening
+[2025-10-30 13:33:59] === Gateway Status ===
+[2025-10-30 13:33:59] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:33:59]    ✅ API Port 4002: Listening
+[2025-10-30 13:33:59] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:33:59]    ✅ API Port 4001: Listening
+[2025-10-30 13:36:09] === Gateway Status ===
+[2025-10-30 13:36:09] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:36:09]    ✅ API Port 4002: Listening
+[2025-10-30 13:36:09] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:36:09]    ✅ API Port 4001: Listening
+[2025-10-30 13:38:19] === Gateway Status ===
+[2025-10-30 13:38:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:38:19]    ✅ API Port 4002: Listening
+[2025-10-30 13:38:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:38:19]    ✅ API Port 4001: Listening
+[2025-10-30 13:40:28] === Gateway Status ===
+[2025-10-30 13:40:28] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:40:28]    ✅ API Port 4002: Listening
+[2025-10-30 13:40:28] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:40:28]    ✅ API Port 4001: Listening
+[2025-10-30 13:42:38] === Gateway Status ===
+[2025-10-30 13:42:38] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:42:38]    ✅ API Port 4002: Listening
+[2025-10-30 13:42:38] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:42:38]    ✅ API Port 4001: Listening
+[2025-10-30 13:44:47] === Gateway Status ===
+[2025-10-30 13:44:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:44:47]    ✅ API Port 4002: Listening
+[2025-10-30 13:44:48] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:44:48]    ✅ API Port 4001: Listening
+[2025-10-30 13:46:57] === Gateway Status ===
+[2025-10-30 13:46:57] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:46:57]    ✅ API Port 4002: Listening
+[2025-10-30 13:46:58] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:46:58]    ✅ API Port 4001: Listening
+[2025-10-30 13:49:07] === Gateway Status ===
+[2025-10-30 13:49:07] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:49:07]    ✅ API Port 4002: Listening
+[2025-10-30 13:49:07] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:49:07]    ✅ API Port 4001: Listening
+[2025-10-30 13:51:17] === Gateway Status ===
+[2025-10-30 13:51:18] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:51:18]    ✅ API Port 4002: Listening
+[2025-10-30 13:51:18] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:51:18]    ✅ API Port 4001: Listening
+[2025-10-30 13:53:27] === Gateway Status ===
+[2025-10-30 13:53:27] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:53:27]    ✅ API Port 4002: Listening
+[2025-10-30 13:53:27] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:53:27]    ✅ API Port 4001: Listening
+[2025-10-30 13:55:37] === Gateway Status ===
+[2025-10-30 13:55:37] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:55:37]    ✅ API Port 4002: Listening
+[2025-10-30 13:55:37] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:55:37]    ✅ API Port 4001: Listening
+[2025-10-30 13:57:47] === Gateway Status ===
+[2025-10-30 13:57:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:57:47]    ✅ API Port 4002: Listening
+[2025-10-30 13:57:47] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:57:47]    ✅ API Port 4001: Listening
+[2025-10-30 13:59:56] === Gateway Status ===
+[2025-10-30 13:59:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 13:59:56]    ✅ API Port 4002: Listening
+[2025-10-30 13:59:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 13:59:56]    ✅ API Port 4001: Listening
+[2025-10-30 14:02:06] === Gateway Status ===
+[2025-10-30 14:02:06] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:02:06]    ✅ API Port 4002: Listening
+[2025-10-30 14:02:06] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:02:06]    ✅ API Port 4001: Listening
+[2025-10-30 14:04:15] === Gateway Status ===
+[2025-10-30 14:04:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:04:15]    ✅ API Port 4002: Listening
+[2025-10-30 14:04:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:04:15]    ✅ API Port 4001: Listening
+[2025-10-30 14:06:25] === Gateway Status ===
+[2025-10-30 14:06:25] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:06:25]    ✅ API Port 4002: Listening
+[2025-10-30 14:06:25] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:06:25]    ✅ API Port 4001: Listening
+[2025-10-30 14:08:35] === Gateway Status ===
+[2025-10-30 14:08:35] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:08:35]    ✅ API Port 4002: Listening
+[2025-10-30 14:08:35] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:08:35]    ✅ API Port 4001: Listening
+[2025-10-30 14:10:45] === Gateway Status ===
+[2025-10-30 14:10:45] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:10:45]    ✅ API Port 4002: Listening
+[2025-10-30 14:10:45] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:10:45]    ✅ API Port 4001: Listening
+[2025-10-30 14:12:55] === Gateway Status ===
+[2025-10-30 14:12:55] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:12:55]    ✅ API Port 4002: Listening
+[2025-10-30 14:12:55] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:12:55]    ✅ API Port 4001: Listening
+[2025-10-30 14:15:05] === Gateway Status ===
+[2025-10-30 14:15:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:15:05]    ✅ API Port 4002: Listening
+[2025-10-30 14:15:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:15:05]    ✅ API Port 4001: Listening
+[2025-10-30 14:17:14] === Gateway Status ===
+[2025-10-30 14:17:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:17:15]    ✅ API Port 4002: Listening
+[2025-10-30 14:17:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:17:15]    ✅ API Port 4001: Listening
+[2025-10-30 14:19:24] === Gateway Status ===
+[2025-10-30 14:19:24] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:19:24]    ✅ API Port 4002: Listening
+[2025-10-30 14:19:24] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:19:24]    ✅ API Port 4001: Listening
+[2025-10-30 14:21:34] === Gateway Status ===
+[2025-10-30 14:21:34] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:21:34]    ✅ API Port 4002: Listening
+[2025-10-30 14:21:34] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:21:34]    ✅ API Port 4001: Listening
+[2025-10-30 14:23:44] === Gateway Status ===
+[2025-10-30 14:23:44] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:23:44]    ✅ API Port 4002: Listening
+[2025-10-30 14:23:44] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:23:44]    ✅ API Port 4001: Listening
+[2025-10-30 14:25:53] === Gateway Status ===
+[2025-10-30 14:25:53] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:25:53]    ✅ API Port 4002: Listening
+[2025-10-30 14:25:53] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:25:53]    ✅ API Port 4001: Listening
+[2025-10-30 14:28:03] === Gateway Status ===
+[2025-10-30 14:28:03] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:28:03]    ✅ API Port 4002: Listening
+[2025-10-30 14:28:03] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:28:03]    ✅ API Port 4001: Listening
+[2025-10-30 14:30:12] === Gateway Status ===
+[2025-10-30 14:30:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:30:12]    ✅ API Port 4002: Listening
+[2025-10-30 14:30:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:30:13]    ✅ API Port 4001: Listening
+[2025-10-30 14:32:22] === Gateway Status ===
+[2025-10-30 14:32:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:32:22]    ✅ API Port 4002: Listening
+[2025-10-30 14:32:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:32:22]    ✅ API Port 4001: Listening
+[2025-10-30 14:34:32] === Gateway Status ===
+[2025-10-30 14:34:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:34:32]    ✅ API Port 4002: Listening
+[2025-10-30 14:34:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:34:32]    ✅ API Port 4001: Listening
+[2025-10-30 14:36:41] === Gateway Status ===
+[2025-10-30 14:36:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:36:41]    ✅ API Port 4002: Listening
+[2025-10-30 14:36:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:36:41]    ✅ API Port 4001: Listening
+[2025-10-30 14:38:51] === Gateway Status ===
+[2025-10-30 14:38:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:38:51]    ✅ API Port 4002: Listening
+[2025-10-30 14:38:51] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:38:51]    ✅ API Port 4001: Listening
+[2025-10-30 14:41:02] === Gateway Status ===
+[2025-10-30 14:41:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:41:02]    ✅ API Port 4002: Listening
+[2025-10-30 14:41:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:41:02]    ✅ API Port 4001: Listening
+[2025-10-30 14:43:12] === Gateway Status ===
+[2025-10-30 14:43:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:43:12]    ✅ API Port 4002: Listening
+[2025-10-30 14:43:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:43:12]    ✅ API Port 4001: Listening
+[2025-10-30 14:45:22] === Gateway Status ===
+[2025-10-30 14:45:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:45:22]    ✅ API Port 4002: Listening
+[2025-10-30 14:45:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:45:22]    ✅ API Port 4001: Listening
+[2025-10-30 14:47:31] === Gateway Status ===
+[2025-10-30 14:47:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:47:31]    ✅ API Port 4002: Listening
+[2025-10-30 14:47:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:47:31]    ✅ API Port 4001: Listening
+[2025-10-30 14:49:41] === Gateway Status ===
+[2025-10-30 14:49:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:49:41]    ✅ API Port 4002: Listening
+[2025-10-30 14:49:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:49:41]    ✅ API Port 4001: Listening
+[2025-10-30 14:51:50] === Gateway Status ===
+[2025-10-30 14:51:50] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:51:50]    ✅ API Port 4002: Listening
+[2025-10-30 14:51:50] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:51:50]    ✅ API Port 4001: Listening
+[2025-10-30 14:54:00] === Gateway Status ===
+[2025-10-30 14:54:00] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:54:00]    ✅ API Port 4002: Listening
+[2025-10-30 14:54:00] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:54:00]    ✅ API Port 4001: Listening
+[2025-10-30 14:56:10] === Gateway Status ===
+[2025-10-30 14:56:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:56:10]    ✅ API Port 4002: Listening
+[2025-10-30 14:56:10] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:56:10]    ✅ API Port 4001: Listening
+[2025-10-30 14:58:19] === Gateway Status ===
+[2025-10-30 14:58:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 14:58:19]    ✅ API Port 4002: Listening
+[2025-10-30 14:58:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 14:58:20]    ✅ API Port 4001: Listening
+[2025-10-30 15:00:29] === Gateway Status ===
+[2025-10-30 15:00:29] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:00:29]    ✅ API Port 4002: Listening
+[2025-10-30 15:00:29] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:00:29]    ✅ API Port 4001: Listening
+[2025-10-30 15:02:39] === Gateway Status ===
+[2025-10-30 15:02:39] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:02:39]    ✅ API Port 4002: Listening
+[2025-10-30 15:02:39] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:02:39]    ✅ API Port 4001: Listening
+[2025-10-30 15:04:49] === Gateway Status ===
+[2025-10-30 15:04:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:04:49]    ✅ API Port 4002: Listening
+[2025-10-30 15:04:49] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:04:49]    ✅ API Port 4001: Listening
+[2025-10-30 15:06:59] === Gateway Status ===
+[2025-10-30 15:06:59] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:06:59]    ✅ API Port 4002: Listening
+[2025-10-30 15:06:59] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:06:59]    ✅ API Port 4001: Listening
+[2025-10-30 15:09:08] === Gateway Status ===
+[2025-10-30 15:09:08] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:09:08]    ✅ API Port 4002: Listening
+[2025-10-30 15:09:08] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:09:09]    ✅ API Port 4001: Listening
+[2025-10-30 15:11:18] === Gateway Status ===
+[2025-10-30 15:11:18] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:11:18]    ✅ API Port 4002: Listening
+[2025-10-30 15:11:18] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:11:18]    ✅ API Port 4001: Listening
+[2025-10-30 15:13:28] === Gateway Status ===
+[2025-10-30 15:13:28] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:13:28]    ✅ API Port 4002: Listening
+[2025-10-30 15:13:28] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:13:28]    ✅ API Port 4001: Listening
+[2025-10-30 15:15:37] === Gateway Status ===
+[2025-10-30 15:15:37] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:15:37]    ✅ API Port 4002: Listening
+[2025-10-30 15:15:37] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:15:37]    ✅ API Port 4001: Listening
+[2025-10-30 15:17:47] === Gateway Status ===
+[2025-10-30 15:17:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:17:47]    ✅ API Port 4002: Listening
+[2025-10-30 15:17:47] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:17:47]    ✅ API Port 4001: Listening
+[2025-10-30 15:19:57] === Gateway Status ===
+[2025-10-30 15:19:57] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:19:57]    ✅ API Port 4002: Listening
+[2025-10-30 15:19:57] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:19:57]    ✅ API Port 4001: Listening
+[2025-10-30 15:22:06] === Gateway Status ===
+[2025-10-30 15:22:06] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:22:06]    ✅ API Port 4002: Listening
+[2025-10-30 15:22:06] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:22:06]    ✅ API Port 4001: Listening
+[2025-10-30 15:24:16] === Gateway Status ===
+[2025-10-30 15:24:16] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:24:16]    ✅ API Port 4002: Listening
+[2025-10-30 15:24:16] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:24:16]    ✅ API Port 4001: Listening
+[2025-10-30 15:26:26] === Gateway Status ===
+[2025-10-30 15:26:26] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:26:26]    ✅ API Port 4002: Listening
+[2025-10-30 15:26:26] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:26:26]    ✅ API Port 4001: Listening
+[2025-10-30 15:28:36] === Gateway Status ===
+[2025-10-30 15:28:36] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:28:36]    ✅ API Port 4002: Listening
+[2025-10-30 15:28:36] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:28:36]    ✅ API Port 4001: Listening
+[2025-10-30 15:30:46] === Gateway Status ===
+[2025-10-30 15:30:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:30:46]    ✅ API Port 4002: Listening
+[2025-10-30 15:30:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:30:46]    ✅ API Port 4001: Listening
+[2025-10-30 15:32:56] === Gateway Status ===
+[2025-10-30 15:32:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:32:56]    ✅ API Port 4002: Listening
+[2025-10-30 15:32:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:32:56]    ✅ API Port 4001: Listening
+[2025-10-30 15:35:15] === Gateway Status ===
+[2025-10-30 15:35:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:35:15]    ✅ API Port 4002: Listening
+[2025-10-30 15:35:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:35:15]    ✅ API Port 4001: Listening
+[2025-10-30 15:37:24] === Gateway Status ===
+[2025-10-30 15:37:24] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:37:24]    ✅ API Port 4002: Listening
+[2025-10-30 15:37:24] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:37:24]    ✅ API Port 4001: Listening
+[2025-10-30 15:39:33] === Gateway Status ===
+[2025-10-30 15:39:33] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:39:33]    ✅ API Port 4002: Listening
+[2025-10-30 15:39:33] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:39:33]    ✅ API Port 4001: Listening
+[2025-10-30 15:41:42] === Gateway Status ===
+[2025-10-30 15:41:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:41:42]    ✅ API Port 4002: Listening
+[2025-10-30 15:41:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:41:42]    ✅ API Port 4001: Listening
+[2025-10-30 15:43:51] === Gateway Status ===
+[2025-10-30 15:43:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:43:51]    ✅ API Port 4002: Listening
+[2025-10-30 15:43:51] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:43:51]    ✅ API Port 4001: Listening
+[2025-10-30 15:46:00] === Gateway Status ===
+[2025-10-30 15:46:00] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:46:00]    ✅ API Port 4002: Listening
+[2025-10-30 15:46:00] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:46:00]    ✅ API Port 4001: Listening
+[2025-10-30 15:48:10] === Gateway Status ===
+[2025-10-30 15:48:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:48:10]    ✅ API Port 4002: Listening
+[2025-10-30 15:48:10] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:48:10]    ✅ API Port 4001: Listening
+[2025-10-30 15:50:20] === Gateway Status ===
+[2025-10-30 15:50:20] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:50:20]    ✅ API Port 4002: Listening
+[2025-10-30 15:50:20] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:50:20]    ✅ API Port 4001: Listening
+[2025-10-30 15:52:29] === Gateway Status ===
+[2025-10-30 15:52:29] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:52:29]    ✅ API Port 4002: Listening
+[2025-10-30 15:52:29] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:52:29]    ✅ API Port 4001: Listening
+[2025-10-30 15:54:38] === Gateway Status ===
+[2025-10-30 15:54:38] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:54:38]    ✅ API Port 4002: Listening
+[2025-10-30 15:54:38] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:54:38]    ✅ API Port 4001: Listening
+[2025-10-30 15:56:47] === Gateway Status ===
+[2025-10-30 15:56:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:56:47]    ✅ API Port 4002: Listening
+[2025-10-30 15:56:47] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:56:47]    ✅ API Port 4001: Listening
+[2025-10-30 15:58:56] === Gateway Status ===
+[2025-10-30 15:58:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 15:58:56]    ✅ API Port 4002: Listening
+[2025-10-30 15:58:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 15:58:56]    ✅ API Port 4001: Listening
+[2025-10-30 16:01:05] === Gateway Status ===
+[2025-10-30 16:01:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:01:05]    ✅ API Port 4002: Listening
+[2025-10-30 16:01:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:01:05]    ✅ API Port 4001: Listening
+[2025-10-30 16:03:15] === Gateway Status ===
+[2025-10-30 16:03:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:03:15]    ✅ API Port 4002: Listening
+[2025-10-30 16:03:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:03:15]    ✅ API Port 4001: Listening
+[2025-10-30 16:05:25] === Gateway Status ===
+[2025-10-30 16:05:25] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:05:25]    ✅ API Port 4002: Listening
+[2025-10-30 16:05:25] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:05:25]    ✅ API Port 4001: Listening
+[2025-10-30 16:07:35] === Gateway Status ===
+[2025-10-30 16:07:35] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:07:35]    ✅ API Port 4002: Listening
+[2025-10-30 16:07:35] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:07:35]    ✅ API Port 4001: Listening
+[2025-10-30 16:09:44] === Gateway Status ===
+[2025-10-30 16:09:44] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:09:44]    ✅ API Port 4002: Listening
+[2025-10-30 16:09:44] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:09:44]    ✅ API Port 4001: Listening
+[2025-10-30 16:11:54] === Gateway Status ===
+[2025-10-30 16:11:54] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:11:54]    ✅ API Port 4002: Listening
+[2025-10-30 16:11:54] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:11:54]    ✅ API Port 4001: Listening
+[2025-10-30 16:14:03] === Gateway Status ===
+[2025-10-30 16:14:03] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:14:03]    ✅ API Port 4002: Listening
+[2025-10-30 16:14:03] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:14:03]    ✅ API Port 4001: Listening
+[2025-10-30 16:16:12] === Gateway Status ===
+[2025-10-30 16:16:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:16:12]    ✅ API Port 4002: Listening
+[2025-10-30 16:16:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:16:12]    ✅ API Port 4001: Listening
+[2025-10-30 16:18:21] === Gateway Status ===
+[2025-10-30 16:18:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:18:21]    ✅ API Port 4002: Listening
+[2025-10-30 16:18:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:18:21]    ✅ API Port 4001: Listening
+[2025-10-30 16:20:31] === Gateway Status ===
+[2025-10-30 16:20:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:20:31]    ✅ API Port 4002: Listening
+[2025-10-30 16:20:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:20:31]    ✅ API Port 4001: Listening
+[2025-10-30 16:22:40] === Gateway Status ===
+[2025-10-30 16:22:40] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:22:40]    ✅ API Port 4002: Listening
+[2025-10-30 16:22:40] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:22:40]    ✅ API Port 4001: Listening
+[2025-10-30 16:24:49] === Gateway Status ===
+[2025-10-30 16:24:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:24:49]    ✅ API Port 4002: Listening
+[2025-10-30 16:24:49] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:24:49]    ✅ API Port 4001: Listening
+[2025-10-30 16:26:59] === Gateway Status ===
+[2025-10-30 16:26:59] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:26:59]    ✅ API Port 4002: Listening
+[2025-10-30 16:26:59] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:26:59]    ✅ API Port 4001: Listening
+[2025-10-30 16:29:09] === Gateway Status ===
+[2025-10-30 16:29:09] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:29:09]    ✅ API Port 4002: Listening
+[2025-10-30 16:29:09] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:29:09]    ✅ API Port 4001: Listening
+[2025-10-30 16:31:18] === Gateway Status ===
+[2025-10-30 16:31:18] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:31:18]    ✅ API Port 4002: Listening
+[2025-10-30 16:31:18] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:31:18]    ✅ API Port 4001: Listening
+[2025-10-30 16:33:27] === Gateway Status ===
+[2025-10-30 16:33:27] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:33:27]    ✅ API Port 4002: Listening
+[2025-10-30 16:33:27] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:33:27]    ✅ API Port 4001: Listening
+[2025-10-30 16:35:36] === Gateway Status ===
+[2025-10-30 16:35:36] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:35:36]    ✅ API Port 4002: Listening
+[2025-10-30 16:35:36] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:35:36]    ✅ API Port 4001: Listening
+[2025-10-30 16:37:45] === Gateway Status ===
+[2025-10-30 16:37:45] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:37:45]    ✅ API Port 4002: Listening
+[2025-10-30 16:37:45] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:37:45]    ✅ API Port 4001: Listening
+[2025-10-30 16:39:54] === Gateway Status ===
+[2025-10-30 16:39:54] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:39:54]    ✅ API Port 4002: Listening
+[2025-10-30 16:39:54] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:39:54]    ✅ API Port 4001: Listening
+[2025-10-30 16:42:02] === Gateway Status ===
+[2025-10-30 16:42:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:42:02]    ✅ API Port 4002: Listening
+[2025-10-30 16:42:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:42:02]    ✅ API Port 4001: Listening
+[2025-10-30 16:44:11] === Gateway Status ===
+[2025-10-30 16:44:11] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:44:11]    ✅ API Port 4002: Listening
+[2025-10-30 16:44:11] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:44:11]    ✅ API Port 4001: Listening
+[2025-10-30 16:46:19] === Gateway Status ===
+[2025-10-30 16:46:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:46:19]    ✅ API Port 4002: Listening
+[2025-10-30 16:46:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:46:19]    ✅ API Port 4001: Listening
+[2025-10-30 16:48:28] === Gateway Status ===
+[2025-10-30 16:48:28] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:48:28]    ✅ API Port 4002: Listening
+[2025-10-30 16:48:28] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:48:28]    ✅ API Port 4001: Listening
+[2025-10-30 16:50:37] === Gateway Status ===
+[2025-10-30 16:50:37] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:50:37]    ✅ API Port 4002: Listening
+[2025-10-30 16:50:37] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:50:37]    ✅ API Port 4001: Listening
+[2025-10-30 16:52:46] === Gateway Status ===
+[2025-10-30 16:52:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:52:46]    ✅ API Port 4002: Listening
+[2025-10-30 16:52:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:52:46]    ✅ API Port 4001: Listening
+[2025-10-30 16:54:55] === Gateway Status ===
+[2025-10-30 16:54:55] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:54:55]    ✅ API Port 4002: Listening
+[2025-10-30 16:54:55] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:54:55]    ✅ API Port 4001: Listening
+[2025-10-30 16:57:03] === Gateway Status ===
+[2025-10-30 16:57:03] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:57:03]    ✅ API Port 4002: Listening
+[2025-10-30 16:57:03] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:57:03]    ✅ API Port 4001: Listening
+[2025-10-30 16:59:12] === Gateway Status ===
+[2025-10-30 16:59:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 16:59:12]    ✅ API Port 4002: Listening
+[2025-10-30 16:59:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 16:59:12]    ✅ API Port 4001: Listening
+[2025-10-30 17:01:21] === Gateway Status ===
+[2025-10-30 17:01:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:01:21]    ✅ API Port 4002: Listening
+[2025-10-30 17:01:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:01:21]    ✅ API Port 4001: Listening
+[2025-10-30 17:03:29] === Gateway Status ===
+[2025-10-30 17:03:29] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:03:29]    ✅ API Port 4002: Listening
+[2025-10-30 17:03:29] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:03:29]    ✅ API Port 4001: Listening
+[2025-10-30 17:05:38] === Gateway Status ===
+[2025-10-30 17:05:38] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:05:38]    ✅ API Port 4002: Listening
+[2025-10-30 17:05:38] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:05:38]    ✅ API Port 4001: Listening
+[2025-10-30 17:07:47] === Gateway Status ===
+[2025-10-30 17:07:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:07:47]    ✅ API Port 4002: Listening
+[2025-10-30 17:07:47] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:07:47]    ✅ API Port 4001: Listening
+[2025-10-30 17:09:56] === Gateway Status ===
+[2025-10-30 17:09:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:09:56]    ✅ API Port 4002: Listening
+[2025-10-30 17:09:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:09:56]    ✅ API Port 4001: Listening
+[2025-10-30 17:12:04] === Gateway Status ===
+[2025-10-30 17:12:04] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:12:04]    ✅ API Port 4002: Listening
+[2025-10-30 17:12:04] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:12:04]    ✅ API Port 4001: Listening
+[2025-10-30 17:14:13] === Gateway Status ===
+[2025-10-30 17:14:13] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:14:13]    ✅ API Port 4002: Listening
+[2025-10-30 17:14:13] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:14:13]    ✅ API Port 4001: Listening
+[2025-10-30 17:16:22] === Gateway Status ===
+[2025-10-30 17:16:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:16:22]    ✅ API Port 4002: Listening
+[2025-10-30 17:16:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:16:22]    ✅ API Port 4001: Listening
+[2025-10-30 17:18:30] === Gateway Status ===
+[2025-10-30 17:18:30] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:18:30]    ✅ API Port 4002: Listening
+[2025-10-30 17:18:30] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:18:30]    ✅ API Port 4001: Listening
+[2025-10-30 17:20:39] === Gateway Status ===
+[2025-10-30 17:20:39] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:20:39]    ✅ API Port 4002: Listening
+[2025-10-30 17:20:39] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:20:39]    ✅ API Port 4001: Listening
+[2025-10-30 17:22:48] === Gateway Status ===
+[2025-10-30 17:22:48] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:22:48]    ✅ API Port 4002: Listening
+[2025-10-30 17:22:48] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:22:48]    ✅ API Port 4001: Listening
+[2025-10-30 17:24:57] === Gateway Status ===
+[2025-10-30 17:24:57] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:24:57]    ✅ API Port 4002: Listening
+[2025-10-30 17:24:57] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:24:57]    ✅ API Port 4001: Listening
+[2025-10-30 17:27:05] === Gateway Status ===
+[2025-10-30 17:27:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:27:05]    ✅ API Port 4002: Listening
+[2025-10-30 17:27:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:27:05]    ✅ API Port 4001: Listening
+[2025-10-30 17:29:14] === Gateway Status ===
+[2025-10-30 17:29:14] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:29:14]    ✅ API Port 4002: Listening
+[2025-10-30 17:29:14] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:29:14]    ✅ API Port 4001: Listening
+[2025-10-30 17:31:23] === Gateway Status ===
+[2025-10-30 17:31:23] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:31:23]    ✅ API Port 4002: Listening
+[2025-10-30 17:31:23] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:31:23]    ✅ API Port 4001: Listening
+[2025-10-30 17:33:32] === Gateway Status ===
+[2025-10-30 17:33:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:33:32]    ✅ API Port 4002: Listening
+[2025-10-30 17:33:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:33:32]    ✅ API Port 4001: Listening
+[2025-10-30 17:35:40] === Gateway Status ===
+[2025-10-30 17:35:40] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:35:40]    ✅ API Port 4002: Listening
+[2025-10-30 17:35:40] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:35:40]    ✅ API Port 4001: Listening
+[2025-10-30 17:37:49] === Gateway Status ===
+[2025-10-30 17:37:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:37:49]    ✅ API Port 4002: Listening
+[2025-10-30 17:37:49] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:37:49]    ✅ API Port 4001: Listening
+[2025-10-30 17:39:57] === Gateway Status ===
+[2025-10-30 17:39:57] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:39:57]    ✅ API Port 4002: Listening
+[2025-10-30 17:39:57] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:39:57]    ✅ API Port 4001: Listening
+[2025-10-30 17:42:06] === Gateway Status ===
+[2025-10-30 17:42:06] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:42:06]    ✅ API Port 4002: Listening
+[2025-10-30 17:42:06] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:42:06]    ✅ API Port 4001: Listening
+[2025-10-30 17:44:15] === Gateway Status ===
+[2025-10-30 17:44:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:44:15]    ✅ API Port 4002: Listening
+[2025-10-30 17:44:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:44:15]    ✅ API Port 4001: Listening
+[2025-10-30 17:46:24] === Gateway Status ===
+[2025-10-30 17:46:24] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:46:24]    ✅ API Port 4002: Listening
+[2025-10-30 17:46:24] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:46:24]    ✅ API Port 4001: Listening
+[2025-10-30 17:48:32] === Gateway Status ===
+[2025-10-30 17:48:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:48:32]    ✅ API Port 4002: Listening
+[2025-10-30 17:48:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:48:32]    ✅ API Port 4001: Listening
+[2025-10-30 17:50:41] === Gateway Status ===
+[2025-10-30 17:50:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:50:41]    ✅ API Port 4002: Listening
+[2025-10-30 17:50:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:50:41]    ✅ API Port 4001: Listening
+[2025-10-30 17:52:49] === Gateway Status ===
+[2025-10-30 17:52:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:52:49]    ✅ API Port 4002: Listening
+[2025-10-30 17:52:49] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:52:49]    ✅ API Port 4001: Listening
+[2025-10-30 17:54:58] === Gateway Status ===
+[2025-10-30 17:54:58] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:54:58]    ✅ API Port 4002: Listening
+[2025-10-30 17:54:58] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:54:58]    ✅ API Port 4001: Listening
+[2025-10-30 17:57:07] === Gateway Status ===
+[2025-10-30 17:57:07] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:57:07]    ✅ API Port 4002: Listening
+[2025-10-30 17:57:07] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:57:07]    ✅ API Port 4001: Listening
+[2025-10-30 17:59:16] === Gateway Status ===
+[2025-10-30 17:59:16] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 17:59:16]    ✅ API Port 4002: Listening
+[2025-10-30 17:59:16] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 17:59:16]    ✅ API Port 4001: Listening
+[2025-10-30 18:01:24] === Gateway Status ===
+[2025-10-30 18:01:24] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:01:24]    ✅ API Port 4002: Listening
+[2025-10-30 18:01:24] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:01:24]    ✅ API Port 4001: Listening
+[2025-10-30 18:03:33] === Gateway Status ===
+[2025-10-30 18:03:33] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:03:33]    ✅ API Port 4002: Listening
+[2025-10-30 18:03:33] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:03:33]    ✅ API Port 4001: Listening
+[2025-10-30 18:05:42] === Gateway Status ===
+[2025-10-30 18:05:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:05:42]    ✅ API Port 4002: Listening
+[2025-10-30 18:05:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:05:42]    ✅ API Port 4001: Listening
+[2025-10-30 18:07:51] === Gateway Status ===
+[2025-10-30 18:07:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:07:51]    ✅ API Port 4002: Listening
+[2025-10-30 18:07:51] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:07:51]    ✅ API Port 4001: Listening
+[2025-10-30 18:09:59] === Gateway Status ===
+[2025-10-30 18:09:59] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:09:59]    ✅ API Port 4002: Listening
+[2025-10-30 18:09:59] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:09:59]    ✅ API Port 4001: Listening
+[2025-10-30 18:12:08] === Gateway Status ===
+[2025-10-30 18:12:08] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:12:08]    ✅ API Port 4002: Listening
+[2025-10-30 18:12:08] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:12:08]    ✅ API Port 4001: Listening
+[2025-10-30 18:14:17] === Gateway Status ===
+[2025-10-30 18:14:17] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:14:17]    ✅ API Port 4002: Listening
+[2025-10-30 18:14:17] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:14:17]    ✅ API Port 4001: Listening
+[2025-10-30 18:16:25] === Gateway Status ===
+[2025-10-30 18:16:25] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:16:25]    ✅ API Port 4002: Listening
+[2025-10-30 18:16:25] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:16:25]    ✅ API Port 4001: Listening
+[2025-10-30 18:18:34] === Gateway Status ===
+[2025-10-30 18:18:34] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:18:34]    ✅ API Port 4002: Listening
+[2025-10-30 18:18:34] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:18:34]    ✅ API Port 4001: Listening
+[2025-10-30 18:20:43] === Gateway Status ===
+[2025-10-30 18:20:43] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:20:43]    ✅ API Port 4002: Listening
+[2025-10-30 18:20:43] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:20:43]    ✅ API Port 4001: Listening
+[2025-10-30 18:22:52] === Gateway Status ===
+[2025-10-30 18:22:52] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:22:52]    ✅ API Port 4002: Listening
+[2025-10-30 18:22:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:22:52]    ✅ API Port 4001: Listening
+[2025-10-30 18:25:00] === Gateway Status ===
+[2025-10-30 18:25:00] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:25:00]    ✅ API Port 4002: Listening
+[2025-10-30 18:25:01] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:25:01]    ✅ API Port 4001: Listening
+[2025-10-30 18:27:09] === Gateway Status ===
+[2025-10-30 18:27:09] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:27:09]    ✅ API Port 4002: Listening
+[2025-10-30 18:27:09] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:27:09]    ✅ API Port 4001: Listening
+[2025-10-30 18:29:18] === Gateway Status ===
+[2025-10-30 18:29:18] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:29:18]    ✅ API Port 4002: Listening
+[2025-10-30 18:29:18] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:29:18]    ✅ API Port 4001: Listening
+[2025-10-30 18:31:27] === Gateway Status ===
+[2025-10-30 18:31:27] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:31:27]    ✅ API Port 4002: Listening
+[2025-10-30 18:31:27] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:31:27]    ✅ API Port 4001: Listening
+[2025-10-30 18:33:35] === Gateway Status ===
+[2025-10-30 18:33:35] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:33:35]    ✅ API Port 4002: Listening
+[2025-10-30 18:33:35] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:33:35]    ✅ API Port 4001: Listening
+[2025-10-30 18:35:44] === Gateway Status ===
+[2025-10-30 18:35:44] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:35:44]    ✅ API Port 4002: Listening
+[2025-10-30 18:35:44] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:35:44]    ✅ API Port 4001: Listening
+[2025-10-30 18:37:53] === Gateway Status ===
+[2025-10-30 18:37:53] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:37:53]    ✅ API Port 4002: Listening
+[2025-10-30 18:37:53] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:37:53]    ✅ API Port 4001: Listening
+[2025-10-30 18:40:02] === Gateway Status ===
+[2025-10-30 18:40:02] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:40:02]    ✅ API Port 4002: Listening
+[2025-10-30 18:40:02] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:40:02]    ✅ API Port 4001: Listening
+[2025-10-30 18:42:10] === Gateway Status ===
+[2025-10-30 18:42:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:42:10]    ✅ API Port 4002: Listening
+[2025-10-30 18:42:11] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:42:11]    ✅ API Port 4001: Listening
+[2025-10-30 18:44:19] === Gateway Status ===
+[2025-10-30 18:44:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:44:19]    ✅ API Port 4002: Listening
+[2025-10-30 18:44:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:44:19]    ✅ API Port 4001: Listening
+[2025-10-30 18:46:28] === Gateway Status ===
+[2025-10-30 18:46:28] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:46:28]    ✅ API Port 4002: Listening
+[2025-10-30 18:46:28] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:46:28]    ✅ API Port 4001: Listening
+[2025-10-30 18:48:37] === Gateway Status ===
+[2025-10-30 18:48:37] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:48:37]    ✅ API Port 4002: Listening
+[2025-10-30 18:48:37] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:48:37]    ✅ API Port 4001: Listening
+[2025-10-30 18:50:45] === Gateway Status ===
+[2025-10-30 18:50:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:50:46]    ✅ API Port 4002: Listening
+[2025-10-30 18:50:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:50:46]    ✅ API Port 4001: Listening
+[2025-10-30 18:52:54] === Gateway Status ===
+[2025-10-30 18:52:54] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:52:54]    ✅ API Port 4002: Listening
+[2025-10-30 18:52:54] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:52:54]    ✅ API Port 4001: Listening
+[2025-10-30 18:55:03] === Gateway Status ===
+[2025-10-30 18:55:03] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:55:03]    ✅ API Port 4002: Listening
+[2025-10-30 18:55:03] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:55:03]    ✅ API Port 4001: Listening
+[2025-10-30 18:57:12] === Gateway Status ===
+[2025-10-30 18:57:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:57:12]    ✅ API Port 4002: Listening
+[2025-10-30 18:57:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:57:12]    ✅ API Port 4001: Listening
+[2025-10-30 18:59:21] === Gateway Status ===
+[2025-10-30 18:59:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 18:59:21]    ✅ API Port 4002: Listening
+[2025-10-30 18:59:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 18:59:21]    ✅ API Port 4001: Listening
+[2025-10-30 19:01:29] === Gateway Status ===
+[2025-10-30 19:01:29] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:01:29]    ✅ API Port 4002: Listening
+[2025-10-30 19:01:29] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:01:29]    ✅ API Port 4001: Listening
+[2025-10-30 19:03:38] === Gateway Status ===
+[2025-10-30 19:03:38] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:03:38]    ✅ API Port 4002: Listening
+[2025-10-30 19:03:38] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:03:38]    ✅ API Port 4001: Listening
+[2025-10-30 19:05:47] === Gateway Status ===
+[2025-10-30 19:05:47] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:05:47]    ✅ API Port 4002: Listening
+[2025-10-30 19:05:47] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:05:47]    ✅ API Port 4001: Listening
+[2025-10-30 19:07:56] === Gateway Status ===
+[2025-10-30 19:07:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:07:56]    ✅ API Port 4002: Listening
+[2025-10-30 19:07:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:07:56]    ✅ API Port 4001: Listening
+[2025-10-30 19:10:04] === Gateway Status ===
+[2025-10-30 19:10:04] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:10:04]    ✅ API Port 4002: Listening
+[2025-10-30 19:10:04] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:10:04]    ✅ API Port 4001: Listening
+[2025-10-30 19:12:13] === Gateway Status ===
+[2025-10-30 19:12:13] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:12:13]    ✅ API Port 4002: Listening
+[2025-10-30 19:12:13] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:12:13]    ✅ API Port 4001: Listening
+[2025-10-30 19:14:21] === Gateway Status ===
+[2025-10-30 19:14:21] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:14:21]    ✅ API Port 4002: Listening
+[2025-10-30 19:14:21] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:14:21]    ✅ API Port 4001: Listening
+[2025-10-30 19:16:30] === Gateway Status ===
+[2025-10-30 19:16:30] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:16:30]    ✅ API Port 4002: Listening
+[2025-10-30 19:16:30] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:16:30]    ✅ API Port 4001: Listening
+[2025-10-30 19:18:39] === Gateway Status ===
+[2025-10-30 19:18:39] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:18:39]    ✅ API Port 4002: Listening
+[2025-10-30 19:18:39] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:18:39]    ✅ API Port 4001: Listening
+[2025-10-30 19:20:48] === Gateway Status ===
+[2025-10-30 19:20:48] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:20:48]    ✅ API Port 4002: Listening
+[2025-10-30 19:20:48] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:20:48]    ✅ API Port 4001: Listening
+[2025-10-30 19:22:57] === Gateway Status ===
+[2025-10-30 19:22:57] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:22:57]    ✅ API Port 4002: Listening
+[2025-10-30 19:22:57] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:22:57]    ✅ API Port 4001: Listening
+[2025-10-30 19:25:05] === Gateway Status ===
+[2025-10-30 19:25:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:25:05]    ✅ API Port 4002: Listening
+[2025-10-30 19:25:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:25:05]    ✅ API Port 4001: Listening
+[2025-10-30 19:27:14] === Gateway Status ===
+[2025-10-30 19:27:14] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:27:14]    ✅ API Port 4002: Listening
+[2025-10-30 19:27:14] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:27:14]    ✅ API Port 4001: Listening
+[2025-10-30 19:29:23] === Gateway Status ===
+[2025-10-30 19:29:23] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:29:23]    ✅ API Port 4002: Listening
+[2025-10-30 19:29:23] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:29:23]    ✅ API Port 4001: Listening
+[2025-10-30 19:31:31] === Gateway Status ===
+[2025-10-30 19:31:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:31:31]    ✅ API Port 4002: Listening
+[2025-10-30 19:31:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:31:31]    ✅ API Port 4001: Listening
+[2025-10-30 19:33:40] === Gateway Status ===
+[2025-10-30 19:33:40] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:33:40]    ✅ API Port 4002: Listening
+[2025-10-30 19:33:40] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:33:40]    ✅ API Port 4001: Listening
+[2025-10-30 19:35:49] === Gateway Status ===
+[2025-10-30 19:35:49] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:35:49]    ✅ API Port 4002: Listening
+[2025-10-30 19:35:49] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:35:49]    ✅ API Port 4001: Listening
+[2025-10-30 19:37:58] === Gateway Status ===
+[2025-10-30 19:37:58] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:37:58]    ✅ API Port 4002: Listening
+[2025-10-30 19:37:58] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:37:58]    ✅ API Port 4001: Listening
+[2025-10-30 19:40:07] === Gateway Status ===
+[2025-10-30 19:40:07] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:40:07]    ✅ API Port 4002: Listening
+[2025-10-30 19:40:07] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:40:07]    ✅ API Port 4001: Listening
+[2025-10-30 19:42:16] === Gateway Status ===
+[2025-10-30 19:42:16] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:42:16]    ✅ API Port 4002: Listening
+[2025-10-30 19:42:16] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:42:16]    ✅ API Port 4001: Listening
+[2025-10-30 19:44:25] === Gateway Status ===
+[2025-10-30 19:44:25] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:44:25]    ✅ API Port 4002: Listening
+[2025-10-30 19:44:25] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:44:25]    ✅ API Port 4001: Listening
+[2025-10-30 19:46:34] === Gateway Status ===
+[2025-10-30 19:46:34] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:46:34]    ✅ API Port 4002: Listening
+[2025-10-30 19:46:34] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:46:34]    ✅ API Port 4001: Listening
+[2025-10-30 19:48:43] === Gateway Status ===
+[2025-10-30 19:48:43] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:48:43]    ✅ API Port 4002: Listening
+[2025-10-30 19:48:43] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:48:43]    ✅ API Port 4001: Listening
+[2025-10-30 19:50:52] === Gateway Status ===
+[2025-10-30 19:50:52] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:50:52]    ✅ API Port 4002: Listening
+[2025-10-30 19:50:52] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:50:52]    ✅ API Port 4001: Listening
+[2025-10-30 19:53:01] === Gateway Status ===
+[2025-10-30 19:53:01] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:53:01]    ✅ API Port 4002: Listening
+[2025-10-30 19:53:01] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:53:01]    ✅ API Port 4001: Listening
+[2025-10-30 19:55:10] === Gateway Status ===
+[2025-10-30 19:55:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:55:10]    ✅ API Port 4002: Listening
+[2025-10-30 19:55:10] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:55:10]    ✅ API Port 4001: Listening
+[2025-10-30 19:57:19] === Gateway Status ===
+[2025-10-30 19:57:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:57:19]    ✅ API Port 4002: Listening
+[2025-10-30 19:57:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:57:19]    ✅ API Port 4001: Listening
+[2025-10-30 19:59:28] === Gateway Status ===
+[2025-10-30 19:59:28] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 19:59:28]    ✅ API Port 4002: Listening
+[2025-10-30 19:59:28] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 19:59:28]    ✅ API Port 4001: Listening
+[2025-10-30 20:01:37] === Gateway Status ===
+[2025-10-30 20:01:37] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:01:37]    ✅ API Port 4002: Listening
+[2025-10-30 20:01:37] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:01:37]    ✅ API Port 4001: Listening
+[2025-10-30 20:03:46] === Gateway Status ===
+[2025-10-30 20:03:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:03:46]    ✅ API Port 4002: Listening
+[2025-10-30 20:03:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:03:46]    ✅ API Port 4001: Listening
+[2025-10-30 20:05:55] === Gateway Status ===
+[2025-10-30 20:05:55] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:05:55]    ✅ API Port 4002: Listening
+[2025-10-30 20:05:55] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:05:55]    ✅ API Port 4001: Listening
+[2025-10-30 20:08:04] === Gateway Status ===
+[2025-10-30 20:08:04] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:08:04]    ✅ API Port 4002: Listening
+[2025-10-30 20:08:04] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:08:04]    ✅ API Port 4001: Listening
+[2025-10-30 20:10:13] === Gateway Status ===
+[2025-10-30 20:10:13] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:10:13]    ✅ API Port 4002: Listening
+[2025-10-30 20:10:13] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:10:13]    ✅ API Port 4001: Listening
+[2025-10-30 20:12:22] === Gateway Status ===
+[2025-10-30 20:12:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:12:22]    ✅ API Port 4002: Listening
+[2025-10-30 20:12:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:12:22]    ✅ API Port 4001: Listening
+[2025-10-30 20:14:31] === Gateway Status ===
+[2025-10-30 20:14:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:14:31]    ✅ API Port 4002: Listening
+[2025-10-30 20:14:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:14:31]    ✅ API Port 4001: Listening
+[2025-10-30 20:16:41] === Gateway Status ===
+[2025-10-30 20:16:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:16:41]    ✅ API Port 4002: Listening
+[2025-10-30 20:16:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:16:41]    ✅ API Port 4001: Listening
+[2025-10-30 20:18:50] === Gateway Status ===
+[2025-10-30 20:18:50] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:18:50]    ✅ API Port 4002: Listening
+[2025-10-30 20:18:50] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:18:50]    ✅ API Port 4001: Listening
+[2025-10-30 20:20:59] === Gateway Status ===
+[2025-10-30 20:20:59] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:20:59]    ✅ API Port 4002: Listening
+[2025-10-30 20:20:59] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:20:59]    ✅ API Port 4001: Listening
+[2025-10-30 20:23:09] === Gateway Status ===
+[2025-10-30 20:23:09] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:23:09]    ✅ API Port 4002: Listening
+[2025-10-30 20:23:09] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:23:09]    ✅ API Port 4001: Listening
+[2025-10-30 20:25:18] === Gateway Status ===
+[2025-10-30 20:25:18] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:25:18]    ✅ API Port 4002: Listening
+[2025-10-30 20:25:18] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:25:18]    ✅ API Port 4001: Listening
+[2025-10-30 20:27:27] === Gateway Status ===
+[2025-10-30 20:27:27] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:27:27]    ✅ API Port 4002: Listening
+[2025-10-30 20:27:27] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:27:27]    ✅ API Port 4001: Listening
+[2025-10-30 20:29:36] === Gateway Status ===
+[2025-10-30 20:29:36] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:29:36]    ✅ API Port 4002: Listening
+[2025-10-30 20:29:36] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:29:36]    ✅ API Port 4001: Listening
+[2025-10-30 20:31:46] === Gateway Status ===
+[2025-10-30 20:31:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:31:46]    ✅ API Port 4002: Listening
+[2025-10-30 20:31:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:31:46]    ✅ API Port 4001: Listening
+[2025-10-30 20:33:55] === Gateway Status ===
+[2025-10-30 20:33:55] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:33:55]    ✅ API Port 4002: Listening
+[2025-10-30 20:33:55] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:33:55]    ✅ API Port 4001: Listening
+[2025-10-30 20:36:05] === Gateway Status ===
+[2025-10-30 20:36:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:36:05]    ✅ API Port 4002: Listening
+[2025-10-30 20:36:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:36:05]    ✅ API Port 4001: Listening
+[2025-10-30 20:38:14] === Gateway Status ===
+[2025-10-30 20:38:14] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:38:14]    ✅ API Port 4002: Listening
+[2025-10-30 20:38:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:38:15]    ✅ API Port 4001: Listening
+[2025-10-30 20:40:24] === Gateway Status ===
+[2025-10-30 20:40:24] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:40:24]    ✅ API Port 4002: Listening
+[2025-10-30 20:40:24] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:40:24]    ✅ API Port 4001: Listening
+[2025-10-30 20:42:34] === Gateway Status ===
+[2025-10-30 20:42:34] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:42:34]    ✅ API Port 4002: Listening
+[2025-10-30 20:42:34] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:42:34]    ✅ API Port 4001: Listening
+[2025-10-30 20:44:43] === Gateway Status ===
+[2025-10-30 20:44:43] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:44:43]    ✅ API Port 4002: Listening
+[2025-10-30 20:44:43] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:44:43]    ✅ API Port 4001: Listening
+[2025-10-30 20:46:53] === Gateway Status ===
+[2025-10-30 20:46:53] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:46:53]    ✅ API Port 4002: Listening
+[2025-10-30 20:46:53] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:46:53]    ✅ API Port 4001: Listening
+[2025-10-30 20:49:02] === Gateway Status ===
+[2025-10-30 20:49:03] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:49:03]    ✅ API Port 4002: Listening
+[2025-10-30 20:49:03] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:49:03]    ✅ API Port 4001: Listening
+[2025-10-30 20:51:12] === Gateway Status ===
+[2025-10-30 20:51:12] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:51:12]    ✅ API Port 4002: Listening
+[2025-10-30 20:51:12] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:51:12]    ✅ API Port 4001: Listening
+[2025-10-30 20:53:22] === Gateway Status ===
+[2025-10-30 20:53:22] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:53:22]    ✅ API Port 4002: Listening
+[2025-10-30 20:53:22] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:53:22]    ✅ API Port 4001: Listening
+[2025-10-30 20:55:31] === Gateway Status ===
+[2025-10-30 20:55:31] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:55:31]    ✅ API Port 4002: Listening
+[2025-10-30 20:55:31] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:55:31]    ✅ API Port 4001: Listening
+[2025-10-30 20:57:41] === Gateway Status ===
+[2025-10-30 20:57:41] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:57:41]    ✅ API Port 4002: Listening
+[2025-10-30 20:57:41] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:57:41]    ✅ API Port 4001: Listening
+[2025-10-30 20:59:50] === Gateway Status ===
+[2025-10-30 20:59:50] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 20:59:50]    ✅ API Port 4002: Listening
+[2025-10-30 20:59:50] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 20:59:50]    ✅ API Port 4001: Listening
+[2025-10-30 21:02:00] === Gateway Status ===
+[2025-10-30 21:02:00] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:02:00]    ✅ API Port 4002: Listening
+[2025-10-30 21:02:00] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:02:00]    ✅ API Port 4001: Listening
+[2025-10-30 21:04:10] === Gateway Status ===
+[2025-10-30 21:04:10] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:04:10]    ✅ API Port 4002: Listening
+[2025-10-30 21:04:10] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:04:10]    ✅ API Port 4001: Listening
+[2025-10-30 21:06:19] === Gateway Status ===
+[2025-10-30 21:06:19] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:06:19]    ✅ API Port 4002: Listening
+[2025-10-30 21:06:19] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:06:19]    ✅ API Port 4001: Listening
+[2025-10-30 21:08:29] === Gateway Status ===
+[2025-10-30 21:08:29] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:08:29]    ✅ API Port 4002: Listening
+[2025-10-30 21:08:29] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:08:29]    ✅ API Port 4001: Listening
+[2025-10-30 21:10:38] === Gateway Status ===
+[2025-10-30 21:10:38] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:10:38]    ✅ API Port 4002: Listening
+[2025-10-30 21:10:38] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:10:38]    ✅ API Port 4001: Listening
+[2025-10-30 21:12:48] === Gateway Status ===
+[2025-10-30 21:12:48] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:12:48]    ✅ API Port 4002: Listening
+[2025-10-30 21:12:48] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:12:48]    ✅ API Port 4001: Listening
+[2025-10-30 21:14:58] === Gateway Status ===
+[2025-10-30 21:14:58] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:14:58]    ✅ API Port 4002: Listening
+[2025-10-30 21:14:58] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:14:58]    ✅ API Port 4001: Listening
+[2025-10-30 21:17:07] === Gateway Status ===
+[2025-10-30 21:17:07] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:17:07]    ✅ API Port 4002: Listening
+[2025-10-30 21:17:07] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:17:07]    ✅ API Port 4001: Listening
+[2025-10-30 21:19:17] === Gateway Status ===
+[2025-10-30 21:19:17] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:19:17]    ✅ API Port 4002: Listening
+[2025-10-30 21:19:17] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:19:17]    ✅ API Port 4001: Listening
+[2025-10-30 21:21:27] === Gateway Status ===
+[2025-10-30 21:21:27] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:21:27]    ✅ API Port 4002: Listening
+[2025-10-30 21:21:27] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:21:27]    ✅ API Port 4001: Listening
+[2025-10-30 21:23:36] === Gateway Status ===
+[2025-10-30 21:23:36] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:23:36]    ✅ API Port 4002: Listening
+[2025-10-30 21:23:36] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:23:36]    ✅ API Port 4001: Listening
+[2025-10-30 21:25:46] === Gateway Status ===
+[2025-10-30 21:25:46] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:25:46]    ✅ API Port 4002: Listening
+[2025-10-30 21:25:46] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:25:46]    ✅ API Port 4001: Listening
+[2025-10-30 21:27:56] === Gateway Status ===
+[2025-10-30 21:27:56] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:27:56]    ✅ API Port 4002: Listening
+[2025-10-30 21:27:56] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:27:56]    ✅ API Port 4001: Listening
+[2025-10-30 21:30:05] === Gateway Status ===
+[2025-10-30 21:30:05] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:30:05]    ✅ API Port 4002: Listening
+[2025-10-30 21:30:05] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:30:05]    ✅ API Port 4001: Listening
+[2025-10-30 21:32:15] === Gateway Status ===
+[2025-10-30 21:32:15] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:32:15]    ✅ API Port 4002: Listening
+[2025-10-30 21:32:15] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:32:15]    ✅ API Port 4001: Listening
+[2025-10-30 21:34:25] === Gateway Status ===
+[2025-10-30 21:34:25] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:34:25]    ✅ API Port 4002: Listening
+[2025-10-30 21:34:25] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:34:25]    ✅ API Port 4001: Listening
+[2025-10-30 21:36:34] === Gateway Status ===
+[2025-10-30 21:36:34] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:36:34]    ✅ API Port 4002: Listening
+[2025-10-30 21:36:34] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:36:34]    ✅ API Port 4001: Listening
+[2025-10-30 21:38:44] === Gateway Status ===
+[2025-10-30 21:38:44] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:38:44]    ✅ API Port 4002: Listening
+[2025-10-30 21:38:44] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:38:44]    ✅ API Port 4001: Listening
+[2025-10-30 21:40:54] === Gateway Status ===
+[2025-10-30 21:40:54] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:40:54]    ✅ API Port 4002: Listening
+[2025-10-30 21:40:54] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:40:54]    ✅ API Port 4001: Listening
+[2025-10-30 21:43:04] === Gateway Status ===
+[2025-10-30 21:43:04] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:43:04]    ✅ API Port 4002: Listening
+[2025-10-30 21:43:04] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:43:04]    ✅ API Port 4001: Listening
+[2025-10-30 21:45:13] === Gateway Status ===
+[2025-10-30 21:45:13] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:45:13]    ✅ API Port 4002: Listening
+[2025-10-30 21:45:13] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:45:13]    ✅ API Port 4001: Listening
+[2025-10-30 21:47:23] === Gateway Status ===
+[2025-10-30 21:47:23] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:47:23]    ✅ API Port 4002: Listening
+[2025-10-30 21:47:23] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:47:23]    ✅ API Port 4001: Listening
+[2025-10-30 21:49:32] === Gateway Status ===
+[2025-10-30 21:49:32] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:49:32]    ✅ API Port 4002: Listening
+[2025-10-30 21:49:32] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:49:32]    ✅ API Port 4001: Listening
+[2025-10-30 21:51:42] === Gateway Status ===
+[2025-10-30 21:51:42] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:51:42]    ✅ API Port 4002: Listening
+[2025-10-30 21:51:42] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:51:42]    ✅ API Port 4001: Listening
+[2025-10-30 21:53:51] === Gateway Status ===
+[2025-10-30 21:53:51] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:53:51]    ✅ API Port 4002: Listening
+[2025-10-30 21:53:51] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:53:51]    ✅ API Port 4001: Listening
+[2025-10-30 21:56:01] === Gateway Status ===
+[2025-10-30 21:56:01] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:56:01]    ✅ API Port 4002: Listening
+[2025-10-30 21:56:01] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:56:01]    ✅ API Port 4001: Listening
+[2025-10-30 21:58:11] === Gateway Status ===
+[2025-10-30 21:58:11] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 21:58:11]    ✅ API Port 4002: Listening
+[2025-10-30 21:58:11] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 21:58:11]    ✅ API Port 4001: Listening
+[2025-10-30 22:00:20] === Gateway Status ===
+[2025-10-30 22:00:20] 📊 Paper Gateway: Running (PID: 1904)
+[2025-10-30 22:00:20]    ✅ API Port 4002: Listening
+[2025-10-30 22:00:20] 💰 Live Gateway: Running (PID: 3104)
+[2025-10-30 22:00:20]    ✅ API Port 4001: Listening
+[2025-10-31 12:00:39] Stopping all Gateway instances...
+[2025-10-31 12:00:40] All Gateway instances stopped
+[2025-10-31 12:02:54] === Gateway Status ===
+[2025-10-31 12:02:54] 📊 Paper Gateway: Not running
+[2025-10-31 12:02:54] 💰 Live Gateway: Not running
+[2025-10-31 12:04:07] === Starting Both Paper and Live Accounts ===
+[2025-10-31 12:04:07] === Gateway Status ===
+[2025-10-31 12:04:07] Step 1: Starting Paper Trading Account
+[2025-10-31 12:04:07] Starting paper account Gateway...
+[2025-10-31 12:04:07] Using virtual display :99 for paper account
+[2025-10-31 12:04:07] Using TWS version: 1037 for paper
+[2025-10-31 12:04:07] Starting paper Gateway on port 4002
+[2025-10-31 12:04:07] 📊 Paper Gateway: Not running
+[2025-10-31 12:04:07] paper Gateway started with PID: 3840
+[2025-10-31 12:04:07] Waiting for paper Gateway to initialize...
+[2025-10-31 12:04:07] 💰 Live Gateway: Not running
+[2025-10-31 12:04:27] paper Gateway process is running
+[2025-10-31 12:04:27] Waiting for paper API port 4002...
+[2025-10-31 12:04:27] ✅ paper API port 4002 is available
+[2025-10-31 12:04:27] ✅ Paper account ready on port 4002
+[2025-10-31 12:04:27] Waiting 30 seconds before starting live account...
+[2025-10-31 12:04:37] === Gateway Status ===
+[2025-10-31 12:04:37] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:04:37]    ✅ API Port 4002: Listening
+[2025-10-31 12:04:37] 💰 Live Gateway: Not running
+[2025-10-31 12:04:57] Step 2: Starting Live Trading Account
+[2025-10-31 12:04:57] Starting live account Gateway...
+[2025-10-31 12:04:57] Using TWS version: 1037 for live
+[2025-10-31 12:04:57] Starting live Gateway on port 4001
+[2025-10-31 12:04:57] live Gateway started with PID: 4383
+[2025-10-31 12:04:57] Waiting for live Gateway to initialize...
+[2025-10-31 12:05:07] === Gateway Status ===
+[2025-10-31 12:05:07] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:05:07]    ✅ API Port 4002: Listening
+[2025-10-31 12:05:07] 💰 Live Gateway: Running (PID: 4439)
+[2025-10-31 12:05:07]    ❌ API Port 4001: Not listening
+[2025-10-31 12:05:07] === Gateway Status ===
+[2025-10-31 12:05:07] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:05:07]    ✅ API Port 4002: Listening
+[2025-10-31 12:05:07] 💰 Live Gateway: Running (PID: 4439)
+[2025-10-31 12:05:07]    ❌ API Port 4001: Not listening
+[2025-10-31 12:05:07] === Gateway Status ===
+[2025-10-31 12:05:07] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:05:07]    ✅ API Port 4002: Listening
+[2025-10-31 12:05:07] 💰 Live Gateway: Running (PID: 4439)
+[2025-10-31 12:05:07]    ❌ API Port 4001: Not listening
+[2025-10-31 12:08:07] === Gateway Status ===
+[2025-10-31 12:08:07] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:08:07]    ✅ API Port 4002: Listening
+[2025-10-31 12:08:07] 💰 Live Gateway: Running (PID: 4439)
+[2025-10-31 12:08:07]    ✅ API Port 4001: Listening
+[2025-10-31 12:09:08] === Gateway Status ===
+[2025-10-31 12:09:08] 📊 Paper Gateway: Running (PID: 3907)
+[2025-10-31 12:09:08]    ✅ API Port 4002: Listening
+[2025-10-31 12:09:08] 💰 Live Gateway: Running (PID: 4439)
+[2025-10-31 12:09:08]    ✅ API Port 4001: Listening
+[2025-10-31 12:11:08] === Gateway Status ===
+[2025-10-31 12:11:08] 📊 Paper Gateway: Not running
+[2025-10-31 12:11:08] 💰 Live Gateway: Not running
+[2025-10-31 12:11:08] === Gateway Status ===
+[2025-10-31 12:11:08] 📊 Paper Gateway: Not running
+[2025-10-31 12:11:08] 💰 Live Gateway: Not running
+[2025-10-31 12:11:08] Restarting paper account only...
+[2025-10-31 12:11:13] Starting paper account Gateway...
+[2025-10-31 12:11:13] Using virtual display :99 for paper account
+[2025-10-31 12:11:13] Using TWS version: 1037 for paper
+[2025-10-31 12:11:13] Starting paper Gateway on port 4002
+[2025-10-31 12:11:13] paper Gateway started with PID: 6816
+[2025-10-31 12:11:13] Waiting for paper Gateway to initialize...
+[2025-10-31 12:11:33] paper Gateway process is running
+[2025-10-31 12:11:33] Waiting for paper API port 4002...
+[2025-10-31 12:11:33] ✅ paper API port 4002 is available
+[2025-10-31 12:12:21] Stopping all Gateway instances...
+[2025-10-31 12:12:21] All Gateway instances stopped
+[2025-10-31 12:14:02] === Starting Both Paper and Live Accounts ===
+[2025-10-31 12:14:02] === Gateway Status ===
+[2025-10-31 12:14:02] Step 1: Starting Paper Trading Account
+[2025-10-31 12:14:02] Starting paper account Gateway...
+[2025-10-31 12:14:02] Using virtual display :99 for paper account
+[2025-10-31 12:14:02] Using TWS version: 1037 for paper
+[2025-10-31 12:14:02] Starting paper Gateway on port 4002
+[2025-10-31 12:14:02] 📊 Paper Gateway: Not running
+[2025-10-31 12:14:02] paper Gateway started with PID: 7764
+[2025-10-31 12:14:02] Waiting for paper Gateway to initialize...
+[2025-10-31 12:14:02] 💰 Live Gateway: Not running
+[2025-10-31 12:14:22] paper Gateway process is running
+[2025-10-31 12:14:22] Waiting for paper API port 4002...
+[2025-10-31 12:14:22] ✅ paper API port 4002 is available
+[2025-10-31 12:14:22] ✅ Paper account ready on port 4002
+[2025-10-31 12:14:22] Waiting 30 seconds before starting live account...
+[2025-10-31 12:14:32] === Gateway Status ===
+[2025-10-31 12:14:32] 📊 Paper Gateway: Running (PID: 7830)
+[2025-10-31 12:14:32]    ✅ API Port 4002: Listening
+[2025-10-31 12:14:32] 💰 Live Gateway: Not running
+[2025-10-31 12:14:35] === Gateway Status ===
+[2025-10-31 12:14:35] 📊 Paper Gateway: Running (PID: 7830)
+[2025-10-31 12:14:35]    ✅ API Port 4002: Listening
+[2025-10-31 12:14:35] 💰 Live Gateway: Not running
+[2025-10-31 12:15:02] === Gateway Status ===
+[2025-10-31 12:15:02] 📊 Paper Gateway: Not running
+[2025-10-31 12:15:02] 💰 Live Gateway: Not running
+[2025-10-31 12:15:32] === Gateway Status ===
+[2025-10-31 12:15:32] 📊 Paper Gateway: Not running
+[2025-10-31 12:15:32] 💰 Live Gateway: Not running
+[2025-10-31 12:16:02] === Gateway Status ===
+[2025-10-31 12:16:02] 📊 Paper Gateway: Not running
+[2025-10-31 12:16:02] 💰 Live Gateway: Not running
+[2025-10-31 12:16:11] Stopping all Gateway instances...
+[2025-10-31 12:16:11] All Gateway instances stopped
+[2025-10-31 12:17:50] === Starting Both Paper and Live Accounts ===
+[2025-10-31 12:17:50] === Gateway Status ===
+[2025-10-31 12:17:50] Step 1: Starting Paper Trading Account
+[2025-10-31 12:17:50] Starting paper account Gateway...
+[2025-10-31 12:17:50] Using virtual display :99 for paper account
+[2025-10-31 12:17:50] Using TWS version: 1037 for paper
+[2025-10-31 12:17:50] Starting paper Gateway on port 4002
+[2025-10-31 12:17:50] paper Gateway started with PID: 9243
+[2025-10-31 12:17:50] 📊 Paper Gateway: Not running
+[2025-10-31 12:17:50] Waiting for paper Gateway to initialize...
+[2025-10-31 12:17:50] 💰 Live Gateway: Not running
+[2025-10-31 12:18:10] paper Gateway process is running
+[2025-10-31 12:18:10] Waiting for paper API port 4002...
+[2025-10-31 12:18:10] ✅ paper API port 4002 is available
+[2025-10-31 12:18:10] ✅ Paper account ready on port 4002
+[2025-10-31 12:18:10] Waiting 30 seconds before starting live account...
+[2025-10-31 12:18:20] === Gateway Status ===
+[2025-10-31 12:18:20] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:18:21]    ✅ API Port 4002: Listening
+[2025-10-31 12:18:21] 💰 Live Gateway: Not running
+[2025-10-31 12:18:24] === Gateway Status ===
+[2025-10-31 12:18:24] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:18:24]    ✅ API Port 4002: Listening
+[2025-10-31 12:18:24] 💰 Live Gateway: Not running
+[2025-10-31 12:18:40] Step 2: Starting Live Trading Account
+[2025-10-31 12:18:40] Starting live account Gateway...
+[2025-10-31 12:18:40] Using TWS version: 1037 for live
+[2025-10-31 12:18:40] Starting live Gateway on port 4001
+[2025-10-31 12:18:40] live Gateway started with PID: 9837
+[2025-10-31 12:18:40] Waiting for live Gateway to initialize...
+[2025-10-31 12:18:51] === Gateway Status ===
+[2025-10-31 12:18:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:18:51]    ✅ API Port 4002: Listening
+[2025-10-31 12:18:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:18:51]    ❌ API Port 4001: Not listening
+[2025-10-31 12:18:51] === Gateway Status ===
+[2025-10-31 12:18:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:18:51]    ✅ API Port 4002: Listening
+[2025-10-31 12:18:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:18:51]    ❌ API Port 4001: Not listening
+[2025-10-31 12:18:51] === Gateway Status ===
+[2025-10-31 12:18:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:18:51]    ✅ API Port 4002: Listening
+[2025-10-31 12:18:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:18:51]    ❌ API Port 4001: Not listening
+[2025-10-31 12:21:51] === Gateway Status ===
+[2025-10-31 12:21:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:21:51]    ✅ API Port 4002: Listening
+[2025-10-31 12:21:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:21:51]    ✅ API Port 4001: Listening
+[2025-10-31 12:22:51] === Gateway Status ===
+[2025-10-31 12:22:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:22:51]    ✅ API Port 4002: Listening
+[2025-10-31 12:22:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:22:51]    ✅ API Port 4001: Listening
+[2025-10-31 12:25:03] === Gateway Status ===
+[2025-10-31 12:25:03] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:25:03]    ✅ API Port 4002: Listening
+[2025-10-31 12:25:03] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:25:03]    ✅ API Port 4001: Listening
+[2025-10-31 12:27:14] === Gateway Status ===
+[2025-10-31 12:27:14] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:27:14]    ✅ API Port 4002: Listening
+[2025-10-31 12:27:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:27:15]    ✅ API Port 4001: Listening
+[2025-10-31 12:29:26] === Gateway Status ===
+[2025-10-31 12:29:26] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:29:26]    ✅ API Port 4002: Listening
+[2025-10-31 12:29:26] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:29:26]    ✅ API Port 4001: Listening
+[2025-10-31 12:31:37] === Gateway Status ===
+[2025-10-31 12:31:37] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:31:37]    ✅ API Port 4002: Listening
+[2025-10-31 12:31:37] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:31:37]    ✅ API Port 4001: Listening
+[2025-10-31 12:33:48] === Gateway Status ===
+[2025-10-31 12:33:48] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:33:49]    ✅ API Port 4002: Listening
+[2025-10-31 12:33:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:33:49]    ✅ API Port 4001: Listening
+[2025-10-31 12:36:00] === Gateway Status ===
+[2025-10-31 12:36:00] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:36:00]    ✅ API Port 4002: Listening
+[2025-10-31 12:36:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:36:00]    ✅ API Port 4001: Listening
+[2025-10-31 12:38:11] === Gateway Status ===
+[2025-10-31 12:38:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:38:11]    ✅ API Port 4002: Listening
+[2025-10-31 12:38:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:38:11]    ✅ API Port 4001: Listening
+[2025-10-31 12:40:22] === Gateway Status ===
+[2025-10-31 12:40:22] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:40:22]    ✅ API Port 4002: Listening
+[2025-10-31 12:40:22] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:40:22]    ✅ API Port 4001: Listening
+[2025-10-31 12:42:34] === Gateway Status ===
+[2025-10-31 12:42:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:42:34]    ✅ API Port 4002: Listening
+[2025-10-31 12:42:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:42:34]    ✅ API Port 4001: Listening
+[2025-10-31 12:44:45] === Gateway Status ===
+[2025-10-31 12:44:45] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:44:45]    ✅ API Port 4002: Listening
+[2025-10-31 12:44:45] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:44:45]    ✅ API Port 4001: Listening
+[2025-10-31 12:46:56] === Gateway Status ===
+[2025-10-31 12:46:56] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:46:56]    ✅ API Port 4002: Listening
+[2025-10-31 12:46:56] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:46:56]    ✅ API Port 4001: Listening
+[2025-10-31 12:49:07] === Gateway Status ===
+[2025-10-31 12:49:07] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:49:08]    ✅ API Port 4002: Listening
+[2025-10-31 12:49:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:49:08]    ✅ API Port 4001: Listening
+[2025-10-31 12:51:19] === Gateway Status ===
+[2025-10-31 12:51:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:51:19]    ✅ API Port 4002: Listening
+[2025-10-31 12:51:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:51:19]    ✅ API Port 4001: Listening
+[2025-10-31 12:53:30] === Gateway Status ===
+[2025-10-31 12:53:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:53:30]    ✅ API Port 4002: Listening
+[2025-10-31 12:53:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:53:30]    ✅ API Port 4001: Listening
+[2025-10-31 12:55:42] === Gateway Status ===
+[2025-10-31 12:55:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:55:42]    ✅ API Port 4002: Listening
+[2025-10-31 12:55:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:55:42]    ✅ API Port 4001: Listening
+[2025-10-31 12:57:53] === Gateway Status ===
+[2025-10-31 12:57:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 12:57:53]    ✅ API Port 4002: Listening
+[2025-10-31 12:57:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 12:57:53]    ✅ API Port 4001: Listening
+[2025-10-31 13:00:04] === Gateway Status ===
+[2025-10-31 13:00:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:00:04]    ✅ API Port 4002: Listening
+[2025-10-31 13:00:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:00:04]    ✅ API Port 4001: Listening
+[2025-10-31 13:02:16] === Gateway Status ===
+[2025-10-31 13:02:16] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:02:16]    ✅ API Port 4002: Listening
+[2025-10-31 13:02:16] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:02:16]    ✅ API Port 4001: Listening
+[2025-10-31 13:04:27] === Gateway Status ===
+[2025-10-31 13:04:27] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:04:27]    ✅ API Port 4002: Listening
+[2025-10-31 13:04:27] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:04:27]    ✅ API Port 4001: Listening
+[2025-10-31 13:06:38] === Gateway Status ===
+[2025-10-31 13:06:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:06:38]    ✅ API Port 4002: Listening
+[2025-10-31 13:06:38] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:06:38]    ✅ API Port 4001: Listening
+[2025-10-31 13:08:49] === Gateway Status ===
+[2025-10-31 13:08:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:08:49]    ✅ API Port 4002: Listening
+[2025-10-31 13:08:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:08:49]    ✅ API Port 4001: Listening
+[2025-10-31 13:11:01] === Gateway Status ===
+[2025-10-31 13:11:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:11:01]    ✅ API Port 4002: Listening
+[2025-10-31 13:11:01] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:11:01]    ✅ API Port 4001: Listening
+[2025-10-31 13:13:12] === Gateway Status ===
+[2025-10-31 13:13:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:13:12]    ✅ API Port 4002: Listening
+[2025-10-31 13:13:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:13:12]    ✅ API Port 4001: Listening
+[2025-10-31 13:15:23] === Gateway Status ===
+[2025-10-31 13:15:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:15:23]    ✅ API Port 4002: Listening
+[2025-10-31 13:15:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:15:23]    ✅ API Port 4001: Listening
+[2025-10-31 13:17:34] === Gateway Status ===
+[2025-10-31 13:17:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:17:34]    ✅ API Port 4002: Listening
+[2025-10-31 13:17:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:17:35]    ✅ API Port 4001: Listening
+[2025-10-31 13:19:46] === Gateway Status ===
+[2025-10-31 13:19:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:19:46]    ✅ API Port 4002: Listening
+[2025-10-31 13:19:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:19:46]    ✅ API Port 4001: Listening
+[2025-10-31 13:21:57] === Gateway Status ===
+[2025-10-31 13:21:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:21:57]    ✅ API Port 4002: Listening
+[2025-10-31 13:21:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:21:57]    ✅ API Port 4001: Listening
+[2025-10-31 13:24:08] === Gateway Status ===
+[2025-10-31 13:24:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:24:08]    ✅ API Port 4002: Listening
+[2025-10-31 13:24:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:24:08]    ✅ API Port 4001: Listening
+[2025-10-31 13:26:19] === Gateway Status ===
+[2025-10-31 13:26:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:26:19]    ✅ API Port 4002: Listening
+[2025-10-31 13:26:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:26:19]    ✅ API Port 4001: Listening
+[2025-10-31 13:28:30] === Gateway Status ===
+[2025-10-31 13:28:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:28:30]    ✅ API Port 4002: Listening
+[2025-10-31 13:28:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:28:30]    ✅ API Port 4001: Listening
+[2025-10-31 13:30:42] === Gateway Status ===
+[2025-10-31 13:30:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:30:42]    ✅ API Port 4002: Listening
+[2025-10-31 13:30:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:30:42]    ✅ API Port 4001: Listening
+[2025-10-31 13:32:53] === Gateway Status ===
+[2025-10-31 13:32:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:32:53]    ✅ API Port 4002: Listening
+[2025-10-31 13:32:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:32:53]    ✅ API Port 4001: Listening
+[2025-10-31 13:35:04] === Gateway Status ===
+[2025-10-31 13:35:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:35:04]    ✅ API Port 4002: Listening
+[2025-10-31 13:35:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:35:04]    ✅ API Port 4001: Listening
+[2025-10-31 13:37:15] === Gateway Status ===
+[2025-10-31 13:37:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:37:15]    ✅ API Port 4002: Listening
+[2025-10-31 13:37:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:37:15]    ✅ API Port 4001: Listening
+[2025-10-31 13:39:26] === Gateway Status ===
+[2025-10-31 13:39:26] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:39:26]    ✅ API Port 4002: Listening
+[2025-10-31 13:39:26] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:39:26]    ✅ API Port 4001: Listening
+[2025-10-31 13:41:37] === Gateway Status ===
+[2025-10-31 13:41:37] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:41:37]    ✅ API Port 4002: Listening
+[2025-10-31 13:41:37] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:41:37]    ✅ API Port 4001: Listening
+[2025-10-31 13:43:48] === Gateway Status ===
+[2025-10-31 13:43:48] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:43:48]    ✅ API Port 4002: Listening
+[2025-10-31 13:43:48] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:43:48]    ✅ API Port 4001: Listening
+[2025-10-31 13:45:59] === Gateway Status ===
+[2025-10-31 13:45:59] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:45:59]    ✅ API Port 4002: Listening
+[2025-10-31 13:45:59] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:45:59]    ✅ API Port 4001: Listening
+[2025-10-31 13:48:10] === Gateway Status ===
+[2025-10-31 13:48:10] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:48:10]    ✅ API Port 4002: Listening
+[2025-10-31 13:48:10] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:48:10]    ✅ API Port 4001: Listening
+[2025-10-31 13:50:21] === Gateway Status ===
+[2025-10-31 13:50:21] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:50:21]    ✅ API Port 4002: Listening
+[2025-10-31 13:50:21] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:50:21]    ✅ API Port 4001: Listening
+[2025-10-31 13:52:32] === Gateway Status ===
+[2025-10-31 13:52:32] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:52:32]    ✅ API Port 4002: Listening
+[2025-10-31 13:52:32] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:52:32]    ✅ API Port 4001: Listening
+[2025-10-31 13:54:43] === Gateway Status ===
+[2025-10-31 13:54:43] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:54:43]    ✅ API Port 4002: Listening
+[2025-10-31 13:54:43] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:54:43]    ✅ API Port 4001: Listening
+[2025-10-31 13:56:54] === Gateway Status ===
+[2025-10-31 13:56:55] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:56:55]    ✅ API Port 4002: Listening
+[2025-10-31 13:56:55] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:56:55]    ✅ API Port 4001: Listening
+[2025-10-31 13:59:06] === Gateway Status ===
+[2025-10-31 13:59:06] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 13:59:06]    ✅ API Port 4002: Listening
+[2025-10-31 13:59:06] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 13:59:06]    ✅ API Port 4001: Listening
+[2025-10-31 14:01:17] === Gateway Status ===
+[2025-10-31 14:01:17] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:01:17]    ✅ API Port 4002: Listening
+[2025-10-31 14:01:17] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:01:17]    ✅ API Port 4001: Listening
+[2025-10-31 14:03:28] === Gateway Status ===
+[2025-10-31 14:03:28] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:03:28]    ✅ API Port 4002: Listening
+[2025-10-31 14:03:28] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:03:28]    ✅ API Port 4001: Listening
+[2025-10-31 14:05:39] === Gateway Status ===
+[2025-10-31 14:05:39] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:05:39]    ✅ API Port 4002: Listening
+[2025-10-31 14:05:39] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:05:39]    ✅ API Port 4001: Listening
+[2025-10-31 14:07:50] === Gateway Status ===
+[2025-10-31 14:07:50] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:07:50]    ✅ API Port 4002: Listening
+[2025-10-31 14:07:50] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:07:50]    ✅ API Port 4001: Listening
+[2025-10-31 14:10:01] === Gateway Status ===
+[2025-10-31 14:10:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:10:01]    ✅ API Port 4002: Listening
+[2025-10-31 14:10:02] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:10:02]    ✅ API Port 4001: Listening
+[2025-10-31 14:12:13] === Gateway Status ===
+[2025-10-31 14:12:13] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:12:13]    ✅ API Port 4002: Listening
+[2025-10-31 14:12:13] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:12:13]    ✅ API Port 4001: Listening
+[2025-10-31 14:14:24] === Gateway Status ===
+[2025-10-31 14:14:24] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:14:24]    ✅ API Port 4002: Listening
+[2025-10-31 14:14:24] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:14:24]    ✅ API Port 4001: Listening
+[2025-10-31 14:16:35] === Gateway Status ===
+[2025-10-31 14:16:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:16:35]    ✅ API Port 4002: Listening
+[2025-10-31 14:16:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:16:35]    ✅ API Port 4001: Listening
+[2025-10-31 14:18:46] === Gateway Status ===
+[2025-10-31 14:18:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:18:46]    ✅ API Port 4002: Listening
+[2025-10-31 14:18:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:18:46]    ✅ API Port 4001: Listening
+[2025-10-31 14:20:57] === Gateway Status ===
+[2025-10-31 14:20:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:20:57]    ✅ API Port 4002: Listening
+[2025-10-31 14:20:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:20:57]    ✅ API Port 4001: Listening
+[2025-10-31 14:23:08] === Gateway Status ===
+[2025-10-31 14:23:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:23:08]    ✅ API Port 4002: Listening
+[2025-10-31 14:23:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:23:08]    ✅ API Port 4001: Listening
+[2025-10-31 14:25:20] === Gateway Status ===
+[2025-10-31 14:25:20] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:25:20]    ✅ API Port 4002: Listening
+[2025-10-31 14:25:20] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:25:20]    ✅ API Port 4001: Listening
+[2025-10-31 14:27:31] === Gateway Status ===
+[2025-10-31 14:27:31] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:27:31]    ✅ API Port 4002: Listening
+[2025-10-31 14:27:31] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:27:31]    ✅ API Port 4001: Listening
+[2025-10-31 14:29:42] === Gateway Status ===
+[2025-10-31 14:29:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:29:42]    ✅ API Port 4002: Listening
+[2025-10-31 14:29:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:29:42]    ✅ API Port 4001: Listening
+[2025-10-31 14:31:53] === Gateway Status ===
+[2025-10-31 14:31:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:31:53]    ✅ API Port 4002: Listening
+[2025-10-31 14:31:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:31:53]    ✅ API Port 4001: Listening
+[2025-10-31 14:34:04] === Gateway Status ===
+[2025-10-31 14:34:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:34:04]    ✅ API Port 4002: Listening
+[2025-10-31 14:34:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:34:04]    ✅ API Port 4001: Listening
+[2025-10-31 14:36:15] === Gateway Status ===
+[2025-10-31 14:36:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:36:15]    ✅ API Port 4002: Listening
+[2025-10-31 14:36:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:36:15]    ✅ API Port 4001: Listening
+[2025-10-31 14:38:26] === Gateway Status ===
+[2025-10-31 14:38:26] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:38:26]    ✅ API Port 4002: Listening
+[2025-10-31 14:38:26] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:38:26]    ✅ API Port 4001: Listening
+[2025-10-31 14:40:37] === Gateway Status ===
+[2025-10-31 14:40:37] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:40:37]    ✅ API Port 4002: Listening
+[2025-10-31 14:40:37] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:40:38]    ✅ API Port 4001: Listening
+[2025-10-31 14:42:49] === Gateway Status ===
+[2025-10-31 14:42:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:42:49]    ✅ API Port 4002: Listening
+[2025-10-31 14:42:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:42:49]    ✅ API Port 4001: Listening
+[2025-10-31 14:45:00] === Gateway Status ===
+[2025-10-31 14:45:00] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:45:00]    ✅ API Port 4002: Listening
+[2025-10-31 14:45:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:45:00]    ✅ API Port 4001: Listening
+[2025-10-31 14:47:11] === Gateway Status ===
+[2025-10-31 14:47:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:47:12]    ✅ API Port 4002: Listening
+[2025-10-31 14:47:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:47:12]    ✅ API Port 4001: Listening
+[2025-10-31 14:49:23] === Gateway Status ===
+[2025-10-31 14:49:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:49:23]    ✅ API Port 4002: Listening
+[2025-10-31 14:49:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:49:23]    ✅ API Port 4001: Listening
+[2025-10-31 14:51:34] === Gateway Status ===
+[2025-10-31 14:51:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:51:34]    ✅ API Port 4002: Listening
+[2025-10-31 14:51:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:51:34]    ✅ API Port 4001: Listening
+[2025-10-31 14:53:45] === Gateway Status ===
+[2025-10-31 14:53:45] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:53:45]    ✅ API Port 4002: Listening
+[2025-10-31 14:53:45] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:53:45]    ✅ API Port 4001: Listening
+[2025-10-31 14:55:56] === Gateway Status ===
+[2025-10-31 14:55:56] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:55:56]    ✅ API Port 4002: Listening
+[2025-10-31 14:55:56] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:55:56]    ✅ API Port 4001: Listening
+[2025-10-31 14:58:08] === Gateway Status ===
+[2025-10-31 14:58:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 14:58:08]    ✅ API Port 4002: Listening
+[2025-10-31 14:58:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 14:58:08]    ✅ API Port 4001: Listening
+[2025-10-31 15:00:19] === Gateway Status ===
+[2025-10-31 15:00:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:00:19]    ✅ API Port 4002: Listening
+[2025-10-31 15:00:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:00:19]    ✅ API Port 4001: Listening
+[2025-10-31 15:02:30] === Gateway Status ===
+[2025-10-31 15:02:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:02:30]    ✅ API Port 4002: Listening
+[2025-10-31 15:02:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:02:30]    ✅ API Port 4001: Listening
+[2025-10-31 15:04:42] === Gateway Status ===
+[2025-10-31 15:04:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:04:42]    ✅ API Port 4002: Listening
+[2025-10-31 15:04:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:04:42]    ✅ API Port 4001: Listening
+[2025-10-31 15:06:53] === Gateway Status ===
+[2025-10-31 15:06:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:06:53]    ✅ API Port 4002: Listening
+[2025-10-31 15:06:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:06:53]    ✅ API Port 4001: Listening
+[2025-10-31 15:09:04] === Gateway Status ===
+[2025-10-31 15:09:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:09:04]    ✅ API Port 4002: Listening
+[2025-10-31 15:09:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:09:04]    ✅ API Port 4001: Listening
+[2025-10-31 15:11:15] === Gateway Status ===
+[2025-10-31 15:11:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:11:15]    ✅ API Port 4002: Listening
+[2025-10-31 15:11:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:11:15]    ✅ API Port 4001: Listening
+[2025-10-31 15:13:27] === Gateway Status ===
+[2025-10-31 15:13:27] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:13:27]    ✅ API Port 4002: Listening
+[2025-10-31 15:13:27] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:13:27]    ✅ API Port 4001: Listening
+[2025-10-31 15:15:38] === Gateway Status ===
+[2025-10-31 15:15:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:15:38]    ✅ API Port 4002: Listening
+[2025-10-31 15:15:38] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:15:38]    ✅ API Port 4001: Listening
+[2025-10-31 15:17:49] === Gateway Status ===
+[2025-10-31 15:17:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:17:49]    ✅ API Port 4002: Listening
+[2025-10-31 15:17:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:17:49]    ✅ API Port 4001: Listening
+[2025-10-31 15:20:01] === Gateway Status ===
+[2025-10-31 15:20:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:20:01]    ✅ API Port 4002: Listening
+[2025-10-31 15:20:01] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:20:01]    ✅ API Port 4001: Listening
+[2025-10-31 15:22:12] === Gateway Status ===
+[2025-10-31 15:22:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:22:12]    ✅ API Port 4002: Listening
+[2025-10-31 15:22:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:22:12]    ✅ API Port 4001: Listening
+[2025-10-31 15:24:24] === Gateway Status ===
+[2025-10-31 15:24:24] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:24:24]    ✅ API Port 4002: Listening
+[2025-10-31 15:24:24] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:24:24]    ✅ API Port 4001: Listening
+[2025-10-31 15:26:35] === Gateway Status ===
+[2025-10-31 15:26:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:26:35]    ✅ API Port 4002: Listening
+[2025-10-31 15:26:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:26:35]    ✅ API Port 4001: Listening
+[2025-10-31 15:28:46] === Gateway Status ===
+[2025-10-31 15:28:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:28:46]    ✅ API Port 4002: Listening
+[2025-10-31 15:28:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:28:46]    ✅ API Port 4001: Listening
+[2025-10-31 15:30:57] === Gateway Status ===
+[2025-10-31 15:30:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:30:57]    ✅ API Port 4002: Listening
+[2025-10-31 15:30:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:30:57]    ✅ API Port 4001: Listening
+[2025-10-31 15:33:08] === Gateway Status ===
+[2025-10-31 15:33:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:33:08]    ✅ API Port 4002: Listening
+[2025-10-31 15:33:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:33:08]    ✅ API Port 4001: Listening
+[2025-10-31 15:35:20] === Gateway Status ===
+[2025-10-31 15:35:20] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:35:20]    ✅ API Port 4002: Listening
+[2025-10-31 15:35:20] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:35:20]    ✅ API Port 4001: Listening
+[2025-10-31 15:37:31] === Gateway Status ===
+[2025-10-31 15:37:31] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:37:31]    ✅ API Port 4002: Listening
+[2025-10-31 15:37:31] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:37:31]    ✅ API Port 4001: Listening
+[2025-10-31 15:39:42] === Gateway Status ===
+[2025-10-31 15:39:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:39:42]    ✅ API Port 4002: Listening
+[2025-10-31 15:39:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:39:42]    ✅ API Port 4001: Listening
+[2025-10-31 15:41:54] === Gateway Status ===
+[2025-10-31 15:41:54] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:41:54]    ✅ API Port 4002: Listening
+[2025-10-31 15:41:54] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:41:54]    ✅ API Port 4001: Listening
+[2025-10-31 15:44:05] === Gateway Status ===
+[2025-10-31 15:44:05] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:44:05]    ✅ API Port 4002: Listening
+[2025-10-31 15:44:05] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:44:05]    ✅ API Port 4001: Listening
+[2025-10-31 15:46:16] === Gateway Status ===
+[2025-10-31 15:46:16] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:46:16]    ✅ API Port 4002: Listening
+[2025-10-31 15:46:16] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:46:16]    ✅ API Port 4001: Listening
+[2025-10-31 15:48:27] === Gateway Status ===
+[2025-10-31 15:48:27] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:48:27]    ✅ API Port 4002: Listening
+[2025-10-31 15:48:27] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:48:27]    ✅ API Port 4001: Listening
+[2025-10-31 15:50:38] === Gateway Status ===
+[2025-10-31 15:50:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:50:38]    ✅ API Port 4002: Listening
+[2025-10-31 15:50:39] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:50:39]    ✅ API Port 4001: Listening
+[2025-10-31 15:52:50] === Gateway Status ===
+[2025-10-31 15:52:50] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:52:50]    ✅ API Port 4002: Listening
+[2025-10-31 15:52:50] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:52:50]    ✅ API Port 4001: Listening
+[2025-10-31 15:55:01] === Gateway Status ===
+[2025-10-31 15:55:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:55:01]    ✅ API Port 4002: Listening
+[2025-10-31 15:55:01] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:55:01]    ✅ API Port 4001: Listening
+[2025-10-31 15:57:12] === Gateway Status ===
+[2025-10-31 15:57:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:57:12]    ✅ API Port 4002: Listening
+[2025-10-31 15:57:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:57:12]    ✅ API Port 4001: Listening
+[2025-10-31 15:59:23] === Gateway Status ===
+[2025-10-31 15:59:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 15:59:23]    ✅ API Port 4002: Listening
+[2025-10-31 15:59:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 15:59:23]    ✅ API Port 4001: Listening
+[2025-10-31 16:01:34] === Gateway Status ===
+[2025-10-31 16:01:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:01:34]    ✅ API Port 4002: Listening
+[2025-10-31 16:01:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:01:34]    ✅ API Port 4001: Listening
+[2025-10-31 16:03:45] === Gateway Status ===
+[2025-10-31 16:03:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:03:46]    ✅ API Port 4002: Listening
+[2025-10-31 16:03:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:03:46]    ✅ API Port 4001: Listening
+[2025-10-31 16:05:57] === Gateway Status ===
+[2025-10-31 16:05:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:05:57]    ✅ API Port 4002: Listening
+[2025-10-31 16:05:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:05:57]    ✅ API Port 4001: Listening
+[2025-10-31 16:08:08] === Gateway Status ===
+[2025-10-31 16:08:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:08:08]    ✅ API Port 4002: Listening
+[2025-10-31 16:08:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:08:08]    ✅ API Port 4001: Listening
+[2025-10-31 16:10:19] === Gateway Status ===
+[2025-10-31 16:10:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:10:19]    ✅ API Port 4002: Listening
+[2025-10-31 16:10:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:10:19]    ✅ API Port 4001: Listening
+[2025-10-31 16:12:30] === Gateway Status ===
+[2025-10-31 16:12:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:12:30]    ✅ API Port 4002: Listening
+[2025-10-31 16:12:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:12:30]    ✅ API Port 4001: Listening
+[2025-10-31 16:14:41] === Gateway Status ===
+[2025-10-31 16:14:41] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:14:41]    ✅ API Port 4002: Listening
+[2025-10-31 16:14:41] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:14:41]    ✅ API Port 4001: Listening
+[2025-10-31 16:16:53] === Gateway Status ===
+[2025-10-31 16:16:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:16:53]    ✅ API Port 4002: Listening
+[2025-10-31 16:16:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:16:53]    ✅ API Port 4001: Listening
+[2025-10-31 16:19:04] === Gateway Status ===
+[2025-10-31 16:19:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:19:04]    ✅ API Port 4002: Listening
+[2025-10-31 16:19:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:19:04]    ✅ API Port 4001: Listening
+[2025-10-31 16:21:15] === Gateway Status ===
+[2025-10-31 16:21:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:21:15]    ✅ API Port 4002: Listening
+[2025-10-31 16:21:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:21:15]    ✅ API Port 4001: Listening
+[2025-10-31 16:23:27] === Gateway Status ===
+[2025-10-31 16:23:27] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:23:27]    ✅ API Port 4002: Listening
+[2025-10-31 16:23:27] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:23:27]    ✅ API Port 4001: Listening
+[2025-10-31 16:25:38] === Gateway Status ===
+[2025-10-31 16:25:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:25:38]    ✅ API Port 4002: Listening
+[2025-10-31 16:25:38] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:25:38]    ✅ API Port 4001: Listening
+[2025-10-31 16:27:49] === Gateway Status ===
+[2025-10-31 16:27:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:27:49]    ✅ API Port 4002: Listening
+[2025-10-31 16:27:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:27:49]    ✅ API Port 4001: Listening
+[2025-10-31 16:30:00] === Gateway Status ===
+[2025-10-31 16:30:00] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:30:00]    ✅ API Port 4002: Listening
+[2025-10-31 16:30:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:30:00]    ✅ API Port 4001: Listening
+[2025-10-31 16:32:11] === Gateway Status ===
+[2025-10-31 16:32:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:32:11]    ✅ API Port 4002: Listening
+[2025-10-31 16:32:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:32:11]    ✅ API Port 4001: Listening
+[2025-10-31 16:34:23] === Gateway Status ===
+[2025-10-31 16:34:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:34:23]    ✅ API Port 4002: Listening
+[2025-10-31 16:34:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:34:23]    ✅ API Port 4001: Listening
+[2025-10-31 16:36:34] === Gateway Status ===
+[2025-10-31 16:36:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:36:34]    ✅ API Port 4002: Listening
+[2025-10-31 16:36:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:36:34]    ✅ API Port 4001: Listening
+[2025-10-31 16:38:45] === Gateway Status ===
+[2025-10-31 16:38:45] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:38:45]    ✅ API Port 4002: Listening
+[2025-10-31 16:38:45] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:38:45]    ✅ API Port 4001: Listening
+[2025-10-31 16:40:56] === Gateway Status ===
+[2025-10-31 16:40:56] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:40:56]    ✅ API Port 4002: Listening
+[2025-10-31 16:40:56] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:40:56]    ✅ API Port 4001: Listening
+[2025-10-31 16:43:08] === Gateway Status ===
+[2025-10-31 16:43:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:43:08]    ✅ API Port 4002: Listening
+[2025-10-31 16:43:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:43:08]    ✅ API Port 4001: Listening
+[2025-10-31 16:45:19] === Gateway Status ===
+[2025-10-31 16:45:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:45:19]    ✅ API Port 4002: Listening
+[2025-10-31 16:45:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:45:19]    ✅ API Port 4001: Listening
+[2025-10-31 16:47:30] === Gateway Status ===
+[2025-10-31 16:47:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:47:30]    ✅ API Port 4002: Listening
+[2025-10-31 16:47:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:47:30]    ✅ API Port 4001: Listening
+[2025-10-31 16:49:41] === Gateway Status ===
+[2025-10-31 16:49:41] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:49:41]    ✅ API Port 4002: Listening
+[2025-10-31 16:49:41] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:49:41]    ✅ API Port 4001: Listening
+[2025-10-31 16:51:52] === Gateway Status ===
+[2025-10-31 16:51:52] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:51:52]    ✅ API Port 4002: Listening
+[2025-10-31 16:51:52] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:51:52]    ✅ API Port 4001: Listening
+[2025-10-31 16:54:04] === Gateway Status ===
+[2025-10-31 16:54:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:54:04]    ✅ API Port 4002: Listening
+[2025-10-31 16:54:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:54:04]    ✅ API Port 4001: Listening
+[2025-10-31 16:56:15] === Gateway Status ===
+[2025-10-31 16:56:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:56:15]    ✅ API Port 4002: Listening
+[2025-10-31 16:56:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:56:15]    ✅ API Port 4001: Listening
+[2025-10-31 16:58:26] === Gateway Status ===
+[2025-10-31 16:58:26] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 16:58:26]    ✅ API Port 4002: Listening
+[2025-10-31 16:58:26] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 16:58:26]    ✅ API Port 4001: Listening
+[2025-10-31 17:00:37] === Gateway Status ===
+[2025-10-31 17:00:37] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:00:37]    ✅ API Port 4002: Listening
+[2025-10-31 17:00:37] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:00:37]    ✅ API Port 4001: Listening
+[2025-10-31 17:02:48] === Gateway Status ===
+[2025-10-31 17:02:48] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:02:48]    ✅ API Port 4002: Listening
+[2025-10-31 17:02:48] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:02:48]    ✅ API Port 4001: Listening
+[2025-10-31 17:04:59] === Gateway Status ===
+[2025-10-31 17:04:59] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:04:59]    ✅ API Port 4002: Listening
+[2025-10-31 17:04:59] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:04:59]    ✅ API Port 4001: Listening
+[2025-10-31 17:07:10] === Gateway Status ===
+[2025-10-31 17:07:10] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:07:10]    ✅ API Port 4002: Listening
+[2025-10-31 17:07:10] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:07:10]    ✅ API Port 4001: Listening
+[2025-10-31 17:09:21] === Gateway Status ===
+[2025-10-31 17:09:21] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:09:21]    ✅ API Port 4002: Listening
+[2025-10-31 17:09:21] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:09:21]    ✅ API Port 4001: Listening
+[2025-10-31 17:11:33] === Gateway Status ===
+[2025-10-31 17:11:33] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:11:33]    ✅ API Port 4002: Listening
+[2025-10-31 17:11:33] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:11:33]    ✅ API Port 4001: Listening
+[2025-10-31 17:13:44] === Gateway Status ===
+[2025-10-31 17:13:44] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:13:44]    ✅ API Port 4002: Listening
+[2025-10-31 17:13:44] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:13:44]    ✅ API Port 4001: Listening
+[2025-10-31 17:15:55] === Gateway Status ===
+[2025-10-31 17:15:55] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:15:55]    ✅ API Port 4002: Listening
+[2025-10-31 17:15:55] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:15:55]    ✅ API Port 4001: Listening
+[2025-10-31 17:18:06] === Gateway Status ===
+[2025-10-31 17:18:06] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:18:06]    ✅ API Port 4002: Listening
+[2025-10-31 17:18:07] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:18:07]    ✅ API Port 4001: Listening
+[2025-10-31 17:20:18] === Gateway Status ===
+[2025-10-31 17:20:18] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:20:18]    ✅ API Port 4002: Listening
+[2025-10-31 17:20:18] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:20:18]    ✅ API Port 4001: Listening
+[2025-10-31 17:22:29] === Gateway Status ===
+[2025-10-31 17:22:29] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:22:29]    ✅ API Port 4002: Listening
+[2025-10-31 17:22:29] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:22:29]    ✅ API Port 4001: Listening
+[2025-10-31 17:24:40] === Gateway Status ===
+[2025-10-31 17:24:40] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:24:40]    ✅ API Port 4002: Listening
+[2025-10-31 17:24:40] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:24:40]    ✅ API Port 4001: Listening
+[2025-10-31 17:26:51] === Gateway Status ===
+[2025-10-31 17:26:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:26:51]    ✅ API Port 4002: Listening
+[2025-10-31 17:26:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:26:51]    ✅ API Port 4001: Listening
+[2025-10-31 17:29:02] === Gateway Status ===
+[2025-10-31 17:29:02] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:29:02]    ✅ API Port 4002: Listening
+[2025-10-31 17:29:02] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:29:02]    ✅ API Port 4001: Listening
+[2025-10-31 17:31:20] === Gateway Status ===
+[2025-10-31 17:31:20] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:31:20]    ✅ API Port 4002: Listening
+[2025-10-31 17:31:20] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:31:20]    ✅ API Port 4001: Listening
+[2025-10-31 17:33:31] === Gateway Status ===
+[2025-10-31 17:33:31] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:33:31]    ✅ API Port 4002: Listening
+[2025-10-31 17:33:31] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:33:31]    ✅ API Port 4001: Listening
+[2025-10-31 17:35:42] === Gateway Status ===
+[2025-10-31 17:35:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:35:42]    ✅ API Port 4002: Listening
+[2025-10-31 17:35:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:35:42]    ✅ API Port 4001: Listening
+[2025-10-31 17:37:52] === Gateway Status ===
+[2025-10-31 17:37:52] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:37:52]    ✅ API Port 4002: Listening
+[2025-10-31 17:37:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:37:53]    ✅ API Port 4001: Listening
+[2025-10-31 17:40:03] === Gateway Status ===
+[2025-10-31 17:40:03] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:40:03]    ✅ API Port 4002: Listening
+[2025-10-31 17:40:03] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:40:03]    ✅ API Port 4001: Listening
+[2025-10-31 17:42:14] === Gateway Status ===
+[2025-10-31 17:42:14] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:42:14]    ✅ API Port 4002: Listening
+[2025-10-31 17:42:14] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:42:14]    ✅ API Port 4001: Listening
+[2025-10-31 17:44:24] === Gateway Status ===
+[2025-10-31 17:44:24] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:44:24]    ✅ API Port 4002: Listening
+[2025-10-31 17:44:24] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:44:24]    ✅ API Port 4001: Listening
+[2025-10-31 17:46:35] === Gateway Status ===
+[2025-10-31 17:46:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:46:35]    ✅ API Port 4002: Listening
+[2025-10-31 17:46:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:46:35]    ✅ API Port 4001: Listening
+[2025-10-31 17:48:45] === Gateway Status ===
+[2025-10-31 17:48:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:48:46]    ✅ API Port 4002: Listening
+[2025-10-31 17:48:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:48:46]    ✅ API Port 4001: Listening
+[2025-10-31 17:50:56] === Gateway Status ===
+[2025-10-31 17:50:56] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:50:56]    ✅ API Port 4002: Listening
+[2025-10-31 17:50:56] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:50:56]    ✅ API Port 4001: Listening
+[2025-10-31 17:53:07] === Gateway Status ===
+[2025-10-31 17:53:07] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:53:07]    ✅ API Port 4002: Listening
+[2025-10-31 17:53:07] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:53:07]    ✅ API Port 4001: Listening
+[2025-10-31 17:55:17] === Gateway Status ===
+[2025-10-31 17:55:17] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:55:17]    ✅ API Port 4002: Listening
+[2025-10-31 17:55:17] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:55:17]    ✅ API Port 4001: Listening
+[2025-10-31 17:57:28] === Gateway Status ===
+[2025-10-31 17:57:28] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:57:28]    ✅ API Port 4002: Listening
+[2025-10-31 17:57:28] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:57:28]    ✅ API Port 4001: Listening
+[2025-10-31 17:59:38] === Gateway Status ===
+[2025-10-31 17:59:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 17:59:38]    ✅ API Port 4002: Listening
+[2025-10-31 17:59:38] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 17:59:38]    ✅ API Port 4001: Listening
+[2025-10-31 18:01:49] === Gateway Status ===
+[2025-10-31 18:01:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:01:49]    ✅ API Port 4002: Listening
+[2025-10-31 18:01:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:01:49]    ✅ API Port 4001: Listening
+[2025-10-31 18:03:59] === Gateway Status ===
+[2025-10-31 18:03:59] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:03:59]    ✅ API Port 4002: Listening
+[2025-10-31 18:04:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:04:00]    ✅ API Port 4001: Listening
+[2025-10-31 18:06:10] === Gateway Status ===
+[2025-10-31 18:06:10] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:06:10]    ✅ API Port 4002: Listening
+[2025-10-31 18:06:10] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:06:10]    ✅ API Port 4001: Listening
+[2025-10-31 18:08:21] === Gateway Status ===
+[2025-10-31 18:08:21] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:08:21]    ✅ API Port 4002: Listening
+[2025-10-31 18:08:21] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:08:21]    ✅ API Port 4001: Listening
+[2025-10-31 18:10:31] === Gateway Status ===
+[2025-10-31 18:10:31] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:10:31]    ✅ API Port 4002: Listening
+[2025-10-31 18:10:31] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:10:31]    ✅ API Port 4001: Listening
+[2025-10-31 18:12:42] === Gateway Status ===
+[2025-10-31 18:12:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:12:42]    ✅ API Port 4002: Listening
+[2025-10-31 18:12:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:12:42]    ✅ API Port 4001: Listening
+[2025-10-31 18:14:52] === Gateway Status ===
+[2025-10-31 18:14:52] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:14:52]    ✅ API Port 4002: Listening
+[2025-10-31 18:14:52] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:14:52]    ✅ API Port 4001: Listening
+[2025-10-31 18:17:03] === Gateway Status ===
+[2025-10-31 18:17:03] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:17:03]    ✅ API Port 4002: Listening
+[2025-10-31 18:17:03] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:17:03]    ✅ API Port 4001: Listening
+[2025-10-31 18:19:13] === Gateway Status ===
+[2025-10-31 18:19:13] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:19:13]    ✅ API Port 4002: Listening
+[2025-10-31 18:19:13] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:19:13]    ✅ API Port 4001: Listening
+[2025-10-31 18:21:24] === Gateway Status ===
+[2025-10-31 18:21:24] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:21:24]    ✅ API Port 4002: Listening
+[2025-10-31 18:21:24] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:21:24]    ✅ API Port 4001: Listening
+[2025-10-31 18:23:35] === Gateway Status ===
+[2025-10-31 18:23:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:23:35]    ✅ API Port 4002: Listening
+[2025-10-31 18:23:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:23:35]    ✅ API Port 4001: Listening
+[2025-10-31 18:25:46] === Gateway Status ===
+[2025-10-31 18:25:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:25:46]    ✅ API Port 4002: Listening
+[2025-10-31 18:25:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:25:46]    ✅ API Port 4001: Listening
+[2025-10-31 18:27:57] === Gateway Status ===
+[2025-10-31 18:27:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:27:57]    ✅ API Port 4002: Listening
+[2025-10-31 18:27:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:27:57]    ✅ API Port 4001: Listening
+[2025-10-31 18:30:07] === Gateway Status ===
+[2025-10-31 18:30:07] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:30:07]    ✅ API Port 4002: Listening
+[2025-10-31 18:30:07] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:30:07]    ✅ API Port 4001: Listening
+[2025-10-31 18:32:18] === Gateway Status ===
+[2025-10-31 18:32:18] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:32:18]    ✅ API Port 4002: Listening
+[2025-10-31 18:32:18] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:32:18]    ✅ API Port 4001: Listening
+[2025-10-31 18:34:28] === Gateway Status ===
+[2025-10-31 18:34:28] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:34:28]    ✅ API Port 4002: Listening
+[2025-10-31 18:34:28] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:34:28]    ✅ API Port 4001: Listening
+[2025-10-31 18:36:39] === Gateway Status ===
+[2025-10-31 18:36:39] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:36:39]    ✅ API Port 4002: Listening
+[2025-10-31 18:36:39] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:36:39]    ✅ API Port 4001: Listening
+[2025-10-31 18:38:50] === Gateway Status ===
+[2025-10-31 18:38:50] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:38:50]    ✅ API Port 4002: Listening
+[2025-10-31 18:38:50] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:38:50]    ✅ API Port 4001: Listening
+[2025-10-31 18:41:00] === Gateway Status ===
+[2025-10-31 18:41:00] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:41:00]    ✅ API Port 4002: Listening
+[2025-10-31 18:41:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:41:00]    ✅ API Port 4001: Listening
+[2025-10-31 18:43:11] === Gateway Status ===
+[2025-10-31 18:43:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:43:11]    ✅ API Port 4002: Listening
+[2025-10-31 18:43:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:43:11]    ✅ API Port 4001: Listening
+[2025-10-31 18:45:21] === Gateway Status ===
+[2025-10-31 18:45:21] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:45:21]    ✅ API Port 4002: Listening
+[2025-10-31 18:45:21] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:45:21]    ✅ API Port 4001: Listening
+[2025-10-31 18:47:32] === Gateway Status ===
+[2025-10-31 18:47:32] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:47:32]    ✅ API Port 4002: Listening
+[2025-10-31 18:47:32] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:47:32]    ✅ API Port 4001: Listening
+[2025-10-31 18:49:43] === Gateway Status ===
+[2025-10-31 18:49:43] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:49:43]    ✅ API Port 4002: Listening
+[2025-10-31 18:49:43] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:49:43]    ✅ API Port 4001: Listening
+[2025-10-31 18:51:54] === Gateway Status ===
+[2025-10-31 18:51:54] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:51:54]    ✅ API Port 4002: Listening
+[2025-10-31 18:51:54] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:51:54]    ✅ API Port 4001: Listening
+[2025-10-31 18:54:04] === Gateway Status ===
+[2025-10-31 18:54:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:54:04]    ✅ API Port 4002: Listening
+[2025-10-31 18:54:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:54:04]    ✅ API Port 4001: Listening
+[2025-10-31 18:56:14] === Gateway Status ===
+[2025-10-31 18:56:15] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:56:15]    ✅ API Port 4002: Listening
+[2025-10-31 18:56:15] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:56:15]    ✅ API Port 4001: Listening
+[2025-10-31 18:58:25] === Gateway Status ===
+[2025-10-31 18:58:25] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 18:58:25]    ✅ API Port 4002: Listening
+[2025-10-31 18:58:25] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 18:58:25]    ✅ API Port 4001: Listening
+[2025-10-31 19:00:35] === Gateway Status ===
+[2025-10-31 19:00:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:00:35]    ✅ API Port 4002: Listening
+[2025-10-31 19:00:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:00:35]    ✅ API Port 4001: Listening
+[2025-10-31 19:02:46] === Gateway Status ===
+[2025-10-31 19:02:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:02:46]    ✅ API Port 4002: Listening
+[2025-10-31 19:02:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:02:46]    ✅ API Port 4001: Listening
+[2025-10-31 19:04:57] === Gateway Status ===
+[2025-10-31 19:04:57] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:04:57]    ✅ API Port 4002: Listening
+[2025-10-31 19:04:57] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:04:57]    ✅ API Port 4001: Listening
+[2025-10-31 19:07:08] === Gateway Status ===
+[2025-10-31 19:07:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:07:08]    ✅ API Port 4002: Listening
+[2025-10-31 19:07:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:07:08]    ✅ API Port 4001: Listening
+[2025-10-31 19:09:19] === Gateway Status ===
+[2025-10-31 19:09:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:09:19]    ✅ API Port 4002: Listening
+[2025-10-31 19:09:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:09:19]    ✅ API Port 4001: Listening
+[2025-10-31 19:11:29] === Gateway Status ===
+[2025-10-31 19:11:29] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:11:29]    ✅ API Port 4002: Listening
+[2025-10-31 19:11:29] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:11:29]    ✅ API Port 4001: Listening
+[2025-10-31 19:13:40] === Gateway Status ===
+[2025-10-31 19:13:40] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:13:40]    ✅ API Port 4002: Listening
+[2025-10-31 19:13:40] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:13:40]    ✅ API Port 4001: Listening
+[2025-10-31 19:15:50] === Gateway Status ===
+[2025-10-31 19:15:50] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:15:50]    ✅ API Port 4002: Listening
+[2025-10-31 19:15:50] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:15:50]    ✅ API Port 4001: Listening
+[2025-10-31 19:18:01] === Gateway Status ===
+[2025-10-31 19:18:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:18:01]    ✅ API Port 4002: Listening
+[2025-10-31 19:18:01] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:18:01]    ✅ API Port 4001: Listening
+[2025-10-31 19:20:11] === Gateway Status ===
+[2025-10-31 19:20:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:20:11]    ✅ API Port 4002: Listening
+[2025-10-31 19:20:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:20:12]    ✅ API Port 4001: Listening
+[2025-10-31 19:22:22] === Gateway Status ===
+[2025-10-31 19:22:22] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:22:22]    ✅ API Port 4002: Listening
+[2025-10-31 19:22:22] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:22:22]    ✅ API Port 4001: Listening
+[2025-10-31 19:24:32] === Gateway Status ===
+[2025-10-31 19:24:32] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:24:32]    ✅ API Port 4002: Listening
+[2025-10-31 19:24:32] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:24:32]    ✅ API Port 4001: Listening
+[2025-10-31 19:26:43] === Gateway Status ===
+[2025-10-31 19:26:43] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:26:43]    ✅ API Port 4002: Listening
+[2025-10-31 19:26:43] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:26:43]    ✅ API Port 4001: Listening
+[2025-10-31 19:28:53] === Gateway Status ===
+[2025-10-31 19:28:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:28:53]    ✅ API Port 4002: Listening
+[2025-10-31 19:28:54] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:28:54]    ✅ API Port 4001: Listening
+[2025-10-31 19:31:04] === Gateway Status ===
+[2025-10-31 19:31:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:31:04]    ✅ API Port 4002: Listening
+[2025-10-31 19:31:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:31:04]    ✅ API Port 4001: Listening
+[2025-10-31 19:33:14] === Gateway Status ===
+[2025-10-31 19:33:14] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:33:14]    ✅ API Port 4002: Listening
+[2025-10-31 19:33:14] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:33:15]    ✅ API Port 4001: Listening
+[2025-10-31 19:35:25] === Gateway Status ===
+[2025-10-31 19:35:25] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:35:25]    ✅ API Port 4002: Listening
+[2025-10-31 19:35:25] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:35:25]    ✅ API Port 4001: Listening
+[2025-10-31 19:37:36] === Gateway Status ===
+[2025-10-31 19:37:36] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:37:36]    ✅ API Port 4002: Listening
+[2025-10-31 19:37:36] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:37:36]    ✅ API Port 4001: Listening
+[2025-10-31 19:39:47] === Gateway Status ===
+[2025-10-31 19:39:47] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:39:47]    ✅ API Port 4002: Listening
+[2025-10-31 19:39:47] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:39:47]    ✅ API Port 4001: Listening
+[2025-10-31 19:41:58] === Gateway Status ===
+[2025-10-31 19:41:58] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:41:58]    ✅ API Port 4002: Listening
+[2025-10-31 19:41:58] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:41:58]    ✅ API Port 4001: Listening
+[2025-10-31 19:44:08] === Gateway Status ===
+[2025-10-31 19:44:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:44:08]    ✅ API Port 4002: Listening
+[2025-10-31 19:44:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:44:08]    ✅ API Port 4001: Listening
+[2025-10-31 19:46:19] === Gateway Status ===
+[2025-10-31 19:46:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:46:19]    ✅ API Port 4002: Listening
+[2025-10-31 19:46:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:46:19]    ✅ API Port 4001: Listening
+[2025-10-31 19:48:29] === Gateway Status ===
+[2025-10-31 19:48:29] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:48:29]    ✅ API Port 4002: Listening
+[2025-10-31 19:48:29] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:48:29]    ✅ API Port 4001: Listening
+[2025-10-31 19:50:40] === Gateway Status ===
+[2025-10-31 19:50:40] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:50:40]    ✅ API Port 4002: Listening
+[2025-10-31 19:50:40] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:50:40]    ✅ API Port 4001: Listening
+[2025-10-31 19:52:51] === Gateway Status ===
+[2025-10-31 19:52:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:52:51]    ✅ API Port 4002: Listening
+[2025-10-31 19:52:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:52:51]    ✅ API Port 4001: Listening
+[2025-10-31 19:55:02] === Gateway Status ===
+[2025-10-31 19:55:02] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:55:02]    ✅ API Port 4002: Listening
+[2025-10-31 19:55:02] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:55:02]    ✅ API Port 4001: Listening
+[2025-10-31 19:57:12] === Gateway Status ===
+[2025-10-31 19:57:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:57:12]    ✅ API Port 4002: Listening
+[2025-10-31 19:57:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:57:12]    ✅ API Port 4001: Listening
+[2025-10-31 19:59:23] === Gateway Status ===
+[2025-10-31 19:59:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 19:59:23]    ✅ API Port 4002: Listening
+[2025-10-31 19:59:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 19:59:23]    ✅ API Port 4001: Listening
+[2025-10-31 20:01:34] === Gateway Status ===
+[2025-10-31 20:01:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:01:34]    ✅ API Port 4002: Listening
+[2025-10-31 20:01:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:01:34]    ✅ API Port 4001: Listening
+[2025-10-31 20:03:44] === Gateway Status ===
+[2025-10-31 20:03:45] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:03:45]    ✅ API Port 4002: Listening
+[2025-10-31 20:03:45] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:03:45]    ✅ API Port 4001: Listening
+[2025-10-31 20:05:55] === Gateway Status ===
+[2025-10-31 20:05:55] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:05:55]    ✅ API Port 4002: Listening
+[2025-10-31 20:05:55] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:05:55]    ✅ API Port 4001: Listening
+[2025-10-31 20:08:06] === Gateway Status ===
+[2025-10-31 20:08:06] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:08:06]    ✅ API Port 4002: Listening
+[2025-10-31 20:08:06] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:08:06]    ✅ API Port 4001: Listening
+[2025-10-31 20:10:17] === Gateway Status ===
+[2025-10-31 20:10:17] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:10:17]    ✅ API Port 4002: Listening
+[2025-10-31 20:10:17] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:10:17]    ✅ API Port 4001: Listening
+[2025-10-31 20:12:28] === Gateway Status ===
+[2025-10-31 20:12:28] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:12:28]    ✅ API Port 4002: Listening
+[2025-10-31 20:12:28] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:12:28]    ✅ API Port 4001: Listening
+[2025-10-31 20:14:39] === Gateway Status ===
+[2025-10-31 20:14:39] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:14:39]    ✅ API Port 4002: Listening
+[2025-10-31 20:14:39] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:14:39]    ✅ API Port 4001: Listening
+[2025-10-31 20:16:50] === Gateway Status ===
+[2025-10-31 20:16:50] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:16:50]    ✅ API Port 4002: Listening
+[2025-10-31 20:16:50] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:16:50]    ✅ API Port 4001: Listening
+[2025-10-31 20:19:00] === Gateway Status ===
+[2025-10-31 20:19:00] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:19:00]    ✅ API Port 4002: Listening
+[2025-10-31 20:19:00] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:19:00]    ✅ API Port 4001: Listening
+[2025-10-31 20:21:11] === Gateway Status ===
+[2025-10-31 20:21:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:21:11]    ✅ API Port 4002: Listening
+[2025-10-31 20:21:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:21:11]    ✅ API Port 4001: Listening
+[2025-10-31 20:23:22] === Gateway Status ===
+[2025-10-31 20:23:22] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:23:22]    ✅ API Port 4002: Listening
+[2025-10-31 20:23:22] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:23:22]    ✅ API Port 4001: Listening
+[2025-10-31 20:25:33] === Gateway Status ===
+[2025-10-31 20:25:33] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:25:33]    ✅ API Port 4002: Listening
+[2025-10-31 20:25:33] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:25:33]    ✅ API Port 4001: Listening
+[2025-10-31 20:27:44] === Gateway Status ===
+[2025-10-31 20:27:44] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:27:44]    ✅ API Port 4002: Listening
+[2025-10-31 20:27:44] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:27:44]    ✅ API Port 4001: Listening
+[2025-10-31 20:29:55] === Gateway Status ===
+[2025-10-31 20:29:55] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:29:55]    ✅ API Port 4002: Listening
+[2025-10-31 20:29:55] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:29:55]    ✅ API Port 4001: Listening
+[2025-10-31 20:32:06] === Gateway Status ===
+[2025-10-31 20:32:06] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:32:06]    ✅ API Port 4002: Listening
+[2025-10-31 20:32:06] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:32:06]    ✅ API Port 4001: Listening
+[2025-10-31 20:34:17] === Gateway Status ===
+[2025-10-31 20:34:17] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:34:17]    ✅ API Port 4002: Listening
+[2025-10-31 20:34:17] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:34:17]    ✅ API Port 4001: Listening
+[2025-10-31 20:36:28] === Gateway Status ===
+[2025-10-31 20:36:28] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:36:28]    ✅ API Port 4002: Listening
+[2025-10-31 20:36:28] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:36:28]    ✅ API Port 4001: Listening
+[2025-10-31 20:38:40] === Gateway Status ===
+[2025-10-31 20:38:40] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:38:40]    ✅ API Port 4002: Listening
+[2025-10-31 20:38:40] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:38:40]    ✅ API Port 4001: Listening
+[2025-10-31 20:40:51] === Gateway Status ===
+[2025-10-31 20:40:51] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:40:51]    ✅ API Port 4002: Listening
+[2025-10-31 20:40:51] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:40:51]    ✅ API Port 4001: Listening
+[2025-10-31 20:43:02] === Gateway Status ===
+[2025-10-31 20:43:02] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:43:02]    ✅ API Port 4002: Listening
+[2025-10-31 20:43:03] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:43:03]    ✅ API Port 4001: Listening
+[2025-10-31 20:45:14] === Gateway Status ===
+[2025-10-31 20:45:14] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:45:14]    ✅ API Port 4002: Listening
+[2025-10-31 20:45:14] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:45:14]    ✅ API Port 4001: Listening
+[2025-10-31 20:47:25] === Gateway Status ===
+[2025-10-31 20:47:25] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:47:25]    ✅ API Port 4002: Listening
+[2025-10-31 20:47:25] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:47:25]    ✅ API Port 4001: Listening
+[2025-10-31 20:49:37] === Gateway Status ===
+[2025-10-31 20:49:37] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:49:37]    ✅ API Port 4002: Listening
+[2025-10-31 20:49:37] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:49:37]    ✅ API Port 4001: Listening
+[2025-10-31 20:51:48] === Gateway Status ===
+[2025-10-31 20:51:48] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:51:48]    ✅ API Port 4002: Listening
+[2025-10-31 20:51:48] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:51:48]    ✅ API Port 4001: Listening
+[2025-10-31 20:53:59] === Gateway Status ===
+[2025-10-31 20:53:59] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:53:59]    ✅ API Port 4002: Listening
+[2025-10-31 20:53:59] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:53:59]    ✅ API Port 4001: Listening
+[2025-10-31 20:56:11] === Gateway Status ===
+[2025-10-31 20:56:11] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:56:11]    ✅ API Port 4002: Listening
+[2025-10-31 20:56:11] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:56:11]    ✅ API Port 4001: Listening
+[2025-10-31 20:58:22] === Gateway Status ===
+[2025-10-31 20:58:22] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 20:58:22]    ✅ API Port 4002: Listening
+[2025-10-31 20:58:22] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 20:58:22]    ✅ API Port 4001: Listening
+[2025-10-31 21:00:34] === Gateway Status ===
+[2025-10-31 21:00:34] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:00:34]    ✅ API Port 4002: Listening
+[2025-10-31 21:00:34] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:00:34]    ✅ API Port 4001: Listening
+[2025-10-31 21:02:45] === Gateway Status ===
+[2025-10-31 21:02:45] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:02:45]    ✅ API Port 4002: Listening
+[2025-10-31 21:02:45] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:02:45]    ✅ API Port 4001: Listening
+[2025-10-31 21:04:56] === Gateway Status ===
+[2025-10-31 21:04:56] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:04:56]    ✅ API Port 4002: Listening
+[2025-10-31 21:04:56] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:04:56]    ✅ API Port 4001: Listening
+[2025-10-31 21:07:08] === Gateway Status ===
+[2025-10-31 21:07:08] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:07:08]    ✅ API Port 4002: Listening
+[2025-10-31 21:07:08] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:07:08]    ✅ API Port 4001: Listening
+[2025-10-31 21:09:19] === Gateway Status ===
+[2025-10-31 21:09:19] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:09:19]    ✅ API Port 4002: Listening
+[2025-10-31 21:09:19] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:09:19]    ✅ API Port 4001: Listening
+[2025-10-31 21:11:30] === Gateway Status ===
+[2025-10-31 21:11:30] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:11:30]    ✅ API Port 4002: Listening
+[2025-10-31 21:11:30] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:11:30]    ✅ API Port 4001: Listening
+[2025-10-31 21:13:42] === Gateway Status ===
+[2025-10-31 21:13:42] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:13:42]    ✅ API Port 4002: Listening
+[2025-10-31 21:13:42] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:13:42]    ✅ API Port 4001: Listening
+[2025-10-31 21:15:53] === Gateway Status ===
+[2025-10-31 21:15:53] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:15:53]    ✅ API Port 4002: Listening
+[2025-10-31 21:15:53] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:15:53]    ✅ API Port 4001: Listening
+[2025-10-31 21:18:04] === Gateway Status ===
+[2025-10-31 21:18:04] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:18:04]    ✅ API Port 4002: Listening
+[2025-10-31 21:18:04] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:18:04]    ✅ API Port 4001: Listening
+[2025-10-31 21:20:16] === Gateway Status ===
+[2025-10-31 21:20:16] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:20:16]    ✅ API Port 4002: Listening
+[2025-10-31 21:20:16] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:20:16]    ✅ API Port 4001: Listening
+[2025-10-31 21:22:27] === Gateway Status ===
+[2025-10-31 21:22:27] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:22:27]    ✅ API Port 4002: Listening
+[2025-10-31 21:22:27] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:22:27]    ✅ API Port 4001: Listening
+[2025-10-31 21:24:38] === Gateway Status ===
+[2025-10-31 21:24:38] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:24:38]    ✅ API Port 4002: Listening
+[2025-10-31 21:24:38] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:24:38]    ✅ API Port 4001: Listening
+[2025-10-31 21:26:49] === Gateway Status ===
+[2025-10-31 21:26:49] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:26:49]    ✅ API Port 4002: Listening
+[2025-10-31 21:26:49] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:26:49]    ✅ API Port 4001: Listening
+[2025-10-31 21:29:01] === Gateway Status ===
+[2025-10-31 21:29:01] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:29:01]    ✅ API Port 4002: Listening
+[2025-10-31 21:29:01] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:29:01]    ✅ API Port 4001: Listening
+[2025-10-31 21:31:12] === Gateway Status ===
+[2025-10-31 21:31:12] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:31:12]    ✅ API Port 4002: Listening
+[2025-10-31 21:31:12] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:31:12]    ✅ API Port 4001: Listening
+[2025-10-31 21:33:23] === Gateway Status ===
+[2025-10-31 21:33:23] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:33:23]    ✅ API Port 4002: Listening
+[2025-10-31 21:33:23] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:33:23]    ✅ API Port 4001: Listening
+[2025-10-31 21:35:35] === Gateway Status ===
+[2025-10-31 21:35:35] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:35:35]    ✅ API Port 4002: Listening
+[2025-10-31 21:35:35] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:35:35]    ✅ API Port 4001: Listening
+[2025-10-31 21:37:46] === Gateway Status ===
+[2025-10-31 21:37:46] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:37:46]    ✅ API Port 4002: Listening
+[2025-10-31 21:37:46] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:37:46]    ✅ API Port 4001: Listening
+[2025-10-31 21:39:58] === Gateway Status ===
+[2025-10-31 21:39:58] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:39:58]    ✅ API Port 4002: Listening
+[2025-10-31 21:39:58] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:39:58]    ✅ API Port 4001: Listening
+[2025-10-31 21:42:09] === Gateway Status ===
+[2025-10-31 21:42:09] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:42:09]    ✅ API Port 4002: Listening
+[2025-10-31 21:42:09] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:42:09]    ✅ API Port 4001: Listening
+[2025-10-31 21:44:21] === Gateway Status ===
+[2025-10-31 21:44:21] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:44:21]    ✅ API Port 4002: Listening
+[2025-10-31 21:44:21] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:44:21]    ✅ API Port 4001: Listening
+[2025-10-31 21:46:32] === Gateway Status ===
+[2025-10-31 21:46:32] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:46:32]    ✅ API Port 4002: Listening
+[2025-10-31 21:46:32] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:46:32]    ✅ API Port 4001: Listening
+[2025-10-31 21:48:43] === Gateway Status ===
+[2025-10-31 21:48:43] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:48:43]    ✅ API Port 4002: Listening
+[2025-10-31 21:48:43] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:48:43]    ✅ API Port 4001: Listening
+[2025-10-31 21:50:54] === Gateway Status ===
+[2025-10-31 21:50:54] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:50:55]    ✅ API Port 4002: Listening
+[2025-10-31 21:50:55] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:50:55]    ✅ API Port 4001: Listening
+[2025-10-31 21:53:06] === Gateway Status ===
+[2025-10-31 21:53:06] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:53:06]    ✅ API Port 4002: Listening
+[2025-10-31 21:53:06] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:53:06]    ✅ API Port 4001: Listening
+[2025-10-31 21:55:17] === Gateway Status ===
+[2025-10-31 21:55:17] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:55:17]    ✅ API Port 4002: Listening
+[2025-10-31 21:55:17] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:55:17]    ✅ API Port 4001: Listening
+[2025-10-31 21:57:29] === Gateway Status ===
+[2025-10-31 21:57:29] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:57:29]    ✅ API Port 4002: Listening
+[2025-10-31 21:57:29] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:57:29]    ✅ API Port 4001: Listening
+[2025-10-31 21:59:40] === Gateway Status ===
+[2025-10-31 21:59:40] 📊 Paper Gateway: Running (PID: 9309)
+[2025-10-31 21:59:40]    ✅ API Port 4002: Listening
+[2025-10-31 21:59:40] 💰 Live Gateway: Running (PID: 9895)
+[2025-10-31 21:59:40]    ✅ API Port 4001: Listening
+[2025-11-01 07:39:11] Stopping all Gateway instances...
+[2025-11-01 07:39:11] All Gateway instances stopped
+[2025-11-01 07:40:44] Stopping all Gateway instances...
+[2025-11-01 07:40:44] All Gateway instances stopped
+[2025-11-01 07:41:26] Stopping all Gateway instances...
+[2025-11-01 07:41:26] All Gateway instances stopped
+[2025-11-01 07:43:40] === Gateway Status ===
+[2025-11-01 07:43:40] 📊 Paper Gateway: Not running
+[2025-11-01 07:43:40] 💰 Live Gateway: Not running
+[2025-11-01 07:44:50] === Starting Both Paper and Live Accounts ===
+[2025-11-01 07:44:50] === Gateway Status ===
+[2025-11-01 07:44:50] Step 1: Starting Paper Trading Account
+[2025-11-01 07:44:50] Starting paper account Gateway...
+[2025-11-01 07:44:50] Using virtual display :99 for paper account
+[2025-11-01 07:44:50] Using TWS version: 1037 for paper
+[2025-11-01 07:44:50] Starting paper Gateway on port 4002
+[2025-11-01 07:44:50] 📊 Paper Gateway: Not running
+[2025-11-01 07:44:50] paper Gateway started with PID: 6090
+[2025-11-01 07:44:50] Waiting for paper Gateway to initialize...
+[2025-11-01 07:44:50] 💰 Live Gateway: Not running
+[2025-11-01 07:45:10] paper Gateway process is running
+[2025-11-01 07:45:10] Waiting for paper API port 4002...
+[2025-11-01 07:45:10] ✅ paper API port 4002 is available
+[2025-11-01 07:45:10] ✅ Paper account ready on port 4002
+[2025-11-01 07:45:10] Waiting 30 seconds before starting live account...
+[2025-11-01 07:45:20] === Gateway Status ===
+[2025-11-01 07:45:20] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:45:20]    ✅ API Port 4002: Listening
+[2025-11-01 07:45:20] 💰 Live Gateway: Not running
+[2025-11-01 07:45:40] Step 2: Starting Live Trading Account
+[2025-11-01 07:45:40] Starting live account Gateway...
+[2025-11-01 07:45:40] Using TWS version: 1037 for live
+[2025-11-01 07:45:40] Starting live Gateway on port 4001
+[2025-11-01 07:45:40] live Gateway started with PID: 6723
+[2025-11-01 07:45:40] Waiting for live Gateway to initialize...
+[2025-11-01 07:45:50] === Gateway Status ===
+[2025-11-01 07:45:50] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:45:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:45:51] 💰 Live Gateway: Running (PID: 6778)
+[2025-11-01 07:45:51]    ❌ API Port 4001: Not listening
+[2025-11-01 07:45:51] === Gateway Status ===
+[2025-11-01 07:45:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:45:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:45:51] 💰 Live Gateway: Running (PID: 6778)
+[2025-11-01 07:45:51]    ❌ API Port 4001: Not listening
+[2025-11-01 07:45:51] === Gateway Status ===
+[2025-11-01 07:45:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:45:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:45:51] 💰 Live Gateway: Running (PID: 6778)
+[2025-11-01 07:45:51]    ❌ API Port 4001: Not listening
+[2025-11-01 07:48:51] === Gateway Status ===
+[2025-11-01 07:48:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:48:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:48:51] 💰 Live Gateway: Running (PID: 6778)
+[2025-11-01 07:48:51]    ❌ API Port 4001: Not listening
+[2025-11-01 07:51:51] === Gateway Status ===
+[2025-11-01 07:51:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:51:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:51:51] 💰 Live Gateway: Running (PID: 6778)
+[2025-11-01 07:51:51]    ❌ API Port 4001: Not listening
+[2025-11-01 07:54:51] === Gateway Status ===
+[2025-11-01 07:54:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 07:54:51]    ✅ API Port 4002: Listening
+[2025-11-01 07:54:51] 💰 Live Gateway: Not running
+[2025-11-01 07:54:51] Restarting live account only...
+[2025-11-01 07:54:56] Starting live account Gateway...
+[2025-11-01 07:54:56] Using virtual display :99 for live account
+[2025-11-01 07:54:56] Using TWS version: 1037 for live
+[2025-11-01 07:54:56] Starting live Gateway on port 4001
+[2025-11-01 07:54:56] live Gateway started with PID: 10719
+[2025-11-01 07:54:56] Waiting for live Gateway to initialize...
+[2025-11-01 07:55:16] live Gateway process is running
+[2025-11-01 07:55:16] Waiting for live API port 4001...
+[2025-11-01 07:58:17] ⚠️ live API port 4001 not detected
+[2025-11-01 08:03:21] === Gateway Status ===
+[2025-11-01 08:03:21] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 08:03:21]    ✅ API Port 4002: Listening
+[2025-11-01 08:03:21] 💰 Live Gateway: Not running
+[2025-11-01 08:03:21] Restarting live account only...
+[2025-11-01 08:03:26] Starting live account Gateway...
+[2025-11-01 08:03:26] Using virtual display :99 for live account
+[2025-11-01 08:03:26] Using TWS version: 1037 for live
+[2025-11-01 08:03:26] Starting live Gateway on port 4001
+[2025-11-01 08:03:26] live Gateway started with PID: 14586
+[2025-11-01 08:03:26] Waiting for live Gateway to initialize...
+[2025-11-01 08:03:46] live Gateway process is running
+[2025-11-01 08:03:46] Waiting for live API port 4001...
+[2025-11-01 08:06:47] ⚠️ live API port 4001 not detected
+[2025-11-01 08:11:51] === Gateway Status ===
+[2025-11-01 08:11:51] 📊 Paper Gateway: Running (PID: 6156)
+[2025-11-01 08:11:51]    ✅ API Port 4002: Listening
+[2025-11-01 08:11:51] 💰 Live Gateway: Not running
+[2025-11-01 08:11:51] Restarting live account only...
+[2025-11-01 08:11:56] Starting live account Gateway...
+[2025-11-01 08:11:56] Using virtual display :99 for live account
+[2025-11-01 08:11:57] Using TWS version: 1037 for live
+[2025-11-01 08:11:57] Starting live Gateway on port 4001
+[2025-11-01 08:11:57] live Gateway started with PID: 18387
+[2025-11-01 08:11:57] Waiting for live Gateway to initialize...
+[2025-11-01 08:12:17] live Gateway process is running
+[2025-11-01 08:12:17] Waiting for live API port 4001...
+[2025-11-02 06:09:30] Stopping all Gateway instances...
+[2025-11-02 06:09:30] All Gateway instances stopped
+[2025-11-02 06:11:04] Stopping all Gateway instances...
+[2025-11-02 06:11:05] All Gateway instances stopped
+[2025-11-02 06:11:40] Stopping all Gateway instances...
+[2025-11-02 06:11:40] All Gateway instances stopped
+[2025-11-02 06:13:56] === Gateway Status ===
+[2025-11-02 06:13:56] 📊 Paper Gateway: Not running
+[2025-11-02 06:13:56] 💰 Live Gateway: Not running
+[2025-11-02 06:15:04] === Starting Both Paper and Live Accounts ===
+[2025-11-02 06:15:04] === Gateway Status ===
+[2025-11-02 06:15:04] Step 1: Starting Paper Trading Account
+[2025-11-02 06:15:04] Starting paper account Gateway...
+[2025-11-02 06:15:04] Using virtual display :99 for paper account
+[2025-11-02 06:15:04] Using TWS version: 1037 for paper
+[2025-11-02 06:15:04] Starting paper Gateway on port 4002
+[2025-11-02 06:15:04] paper Gateway started with PID: 6765
+[2025-11-02 06:15:04] 📊 Paper Gateway: Not running
+[2025-11-02 06:15:04] Waiting for paper Gateway to initialize...
+[2025-11-02 06:15:04] 💰 Live Gateway: Not running
+[2025-11-02 06:15:24] paper Gateway process is running
+[2025-11-02 06:15:24] Waiting for paper API port 4002...
+[2025-11-02 06:15:24] ✅ paper API port 4002 is available
+[2025-11-02 06:15:24] ✅ Paper account ready on port 4002
+[2025-11-02 06:15:24] Waiting 30 seconds before starting live account...
+[2025-11-02 06:15:34] === Gateway Status ===
+[2025-11-02 06:15:34] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:15:34]    ✅ API Port 4002: Listening
+[2025-11-02 06:15:34] 💰 Live Gateway: Not running
+[2025-11-02 06:15:54] Step 2: Starting Live Trading Account
+[2025-11-02 06:15:54] Starting live account Gateway...
+[2025-11-02 06:15:54] Using TWS version: 1037 for live
+[2025-11-02 06:15:54] Starting live Gateway on port 4001
+[2025-11-02 06:15:54] live Gateway started with PID: 7367
+[2025-11-02 06:15:54] Waiting for live Gateway to initialize...
+[2025-11-02 06:16:04] === Gateway Status ===
+[2025-11-02 06:16:04] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:16:04]    ✅ API Port 4002: Listening
+[2025-11-02 06:16:04] 💰 Live Gateway: Running (PID: 7423)
+[2025-11-02 06:16:04]    ❌ API Port 4001: Not listening
+[2025-11-02 06:16:04] === Gateway Status ===
+[2025-11-02 06:16:04] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:16:04]    ✅ API Port 4002: Listening
+[2025-11-02 06:16:04] 💰 Live Gateway: Running (PID: 7423)
+[2025-11-02 06:16:04]    ❌ API Port 4001: Not listening
+[2025-11-02 06:16:04] === Gateway Status ===
+[2025-11-02 06:16:05] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:16:05]    ✅ API Port 4002: Listening
+[2025-11-02 06:16:05] 💰 Live Gateway: Running (PID: 7423)
+[2025-11-02 06:16:05]    ❌ API Port 4001: Not listening
+[2025-11-02 06:19:05] === Gateway Status ===
+[2025-11-02 06:19:05] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:19:05]    ✅ API Port 4002: Listening
+[2025-11-02 06:19:05] 💰 Live Gateway: Running (PID: 7423)
+[2025-11-02 06:19:05]    ❌ API Port 4001: Not listening
+[2025-11-02 06:22:05] === Gateway Status ===
+[2025-11-02 06:22:05] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:22:05]    ✅ API Port 4002: Listening
+[2025-11-02 06:22:05] 💰 Live Gateway: Running (PID: 7423)
+[2025-11-02 06:22:05]    ❌ API Port 4001: Not listening
+[2025-11-02 06:25:05] === Gateway Status ===
+[2025-11-02 06:25:05] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:25:05]    ✅ API Port 4002: Listening
+[2025-11-02 06:25:05] 💰 Live Gateway: Not running
+[2025-11-02 06:25:05] Restarting live account only...
+[2025-11-02 06:25:10] Starting live account Gateway...
+[2025-11-02 06:25:10] Using virtual display :99 for live account
+[2025-11-02 06:25:10] Using TWS version: 1037 for live
+[2025-11-02 06:25:10] Starting live Gateway on port 4001
+[2025-11-02 06:25:10] live Gateway started with PID: 11842
+[2025-11-02 06:25:10] Waiting for live Gateway to initialize...
+[2025-11-02 06:25:30] live Gateway process is running
+[2025-11-02 06:25:30] Waiting for live API port 4001...
+[2025-11-02 06:28:31] ⚠️ live API port 4001 not detected
+[2025-11-02 06:33:35] === Gateway Status ===
+[2025-11-02 06:33:35] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:33:35]    ✅ API Port 4002: Listening
+[2025-11-02 06:33:35] 💰 Live Gateway: Not running
+[2025-11-02 06:33:35] Restarting live account only...
+[2025-11-02 06:33:40] Starting live account Gateway...
+[2025-11-02 06:33:40] Using virtual display :99 for live account
+[2025-11-02 06:33:40] Using TWS version: 1037 for live
+[2025-11-02 06:33:40] Starting live Gateway on port 4001
+[2025-11-02 06:33:40] live Gateway started with PID: 15640
+[2025-11-02 06:33:40] Waiting for live Gateway to initialize...
+[2025-11-02 06:34:00] live Gateway process is running
+[2025-11-02 06:34:00] Waiting for live API port 4001...
+[2025-11-02 06:37:01] ⚠️ live API port 4001 not detected
+[2025-11-02 06:42:05] === Gateway Status ===
+[2025-11-02 06:42:05] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:42:05]    ✅ API Port 4002: Listening
+[2025-11-02 06:42:05] 💰 Live Gateway: Not running
+[2025-11-02 06:42:05] Restarting live account only...
+[2025-11-02 06:42:10] Starting live account Gateway...
+[2025-11-02 06:42:10] Using virtual display :99 for live account
+[2025-11-02 06:42:10] Using TWS version: 1037 for live
+[2025-11-02 06:42:10] Starting live Gateway on port 4001
+[2025-11-02 06:42:10] live Gateway started with PID: 19520
+[2025-11-02 06:42:10] Waiting for live Gateway to initialize...
+[2025-11-02 06:42:30] live Gateway process is running
+[2025-11-02 06:42:30] Waiting for live API port 4001...
+[2025-11-02 06:45:31] ⚠️ live API port 4001 not detected
+[2025-11-02 06:50:35] === Gateway Status ===
+[2025-11-02 06:50:35] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:50:35]    ✅ API Port 4002: Listening
+[2025-11-02 06:50:35] 💰 Live Gateway: Not running
+[2025-11-02 06:50:35] Restarting live account only...
+[2025-11-02 06:50:41] Starting live account Gateway...
+[2025-11-02 06:50:41] Using virtual display :99 for live account
+[2025-11-02 06:50:41] Using TWS version: 1037 for live
+[2025-11-02 06:50:41] Starting live Gateway on port 4001
+[2025-11-02 06:50:41] live Gateway started with PID: 23316
+[2025-11-02 06:50:41] Waiting for live Gateway to initialize...
+[2025-11-02 06:51:01] live Gateway process is running
+[2025-11-02 06:51:01] Waiting for live API port 4001...
+[2025-11-02 06:54:01] ⚠️ live API port 4001 not detected
+[2025-11-02 06:59:06] === Gateway Status ===
+[2025-11-02 06:59:06] 📊 Paper Gateway: Running (PID: 6831)
+[2025-11-02 06:59:06]    ✅ API Port 4002: Listening
+[2025-11-02 06:59:06] 💰 Live Gateway: Not running
+[2025-11-02 06:59:06] Restarting live account only...
+[2025-11-02 06:59:11] Starting live account Gateway...
+[2025-11-02 06:59:11] Using virtual display :99 for live account
+[2025-11-02 06:59:11] Using TWS version: 1037 for live
+[2025-11-02 06:59:11] Starting live Gateway on port 4001
+[2025-11-02 06:59:11] live Gateway started with PID: 26568
+[2025-11-02 06:59:11] Waiting for live Gateway to initialize...
+[2025-11-02 06:59:31] live Gateway process is running
+[2025-11-02 06:59:31] Waiting for live API port 4001...
+[2025-11-02 07:02:31] ⚠️ live API port 4001 not detected
+[2025-11-02 07:06:10] === Gateway Status ===
+[2025-11-02 07:06:10] 📊 Paper Gateway: Not running
+[2025-11-02 07:06:10] 💰 Live Gateway: Not running
+[2025-11-02 07:06:22] Stopping all Gateway instances...
+[2025-11-02 07:06:22] All Gateway instances stopped
+[2025-11-02 07:07:36] === Gateway Status ===
+[2025-11-02 07:07:36] 📊 Paper Gateway: Not running
+[2025-11-02 07:07:36] 💰 Live Gateway: Not running
+[2025-11-02 07:07:36] Restarting live account only...
+[2025-11-02 07:07:41] Starting live account Gateway...
+[2025-11-02 07:07:41] Using virtual display :99 for live account
+[2025-11-02 07:07:41] Using TWS version: 1037 for live
+[2025-11-02 07:07:41] Starting live Gateway on port 4001
+[2025-11-02 07:07:41] live Gateway started with PID: 31056
+[2025-11-02 07:07:41] Waiting for live Gateway to initialize...
+[2025-11-02 07:08:01] live Gateway process is running
+[2025-11-02 07:08:01] Waiting for live API port 4001...
+[2025-11-02 07:11:02] ⚠️ live API port 4001 not detected
+[2025-11-02 07:16:06] === Gateway Status ===
+[2025-11-02 07:16:06] 📊 Paper Gateway: Not running
+[2025-11-02 07:16:06] 💰 Live Gateway: Not running
+[2025-11-02 07:16:06] Restarting live account only...
+[2025-11-02 07:16:11] Starting live account Gateway...
+[2025-11-02 07:16:11] Using virtual display :99 for live account
+[2025-11-02 07:16:11] Using TWS version: 1037 for live
+[2025-11-02 07:16:11] Starting live Gateway on port 4001
+[2025-11-02 07:16:11] live Gateway started with PID: 35115
+[2025-11-02 07:16:11] Waiting for live Gateway to initialize...
+[2025-11-02 07:16:31] live Gateway process is running
+[2025-11-02 07:16:31] Waiting for live API port 4001...
+[2025-11-02 07:19:32] ⚠️ live API port 4001 not detected
+[2025-11-02 07:20:56] Stopping all Gateway instances...
+[2025-11-02 07:20:56] All Gateway instances stopped
+[2025-11-02 07:24:26] === Gateway Status ===
+[2025-11-02 07:24:26] 📊 Paper Gateway: Not running
+[2025-11-02 07:24:26] 💰 Live Gateway: Not running
+[2025-11-02 07:24:26] Restarting live account only...
+[2025-11-02 07:24:31] Starting live account Gateway...
+[2025-11-02 07:24:31] Using virtual display :99 for live account
+[2025-11-02 07:24:31] Using TWS version: 1037 for live
+[2025-11-02 07:24:31] Starting live Gateway on port 4001
+[2025-11-02 07:24:31] live Gateway started with PID: 39288
+[2025-11-02 07:24:31] Waiting for live Gateway to initialize...
+[2025-11-02 07:24:51] live Gateway process is running
+[2025-11-02 07:24:51] Waiting for live API port 4001...
+[2025-11-02 07:27:52] ⚠️ live API port 4001 not detected
+[2025-11-02 07:32:56] === Gateway Status ===
+[2025-11-02 07:32:56] 📊 Paper Gateway: Not running
+[2025-11-02 07:32:56] 💰 Live Gateway: Not running
+[2025-11-02 07:32:56] Restarting live account only...
+[2025-11-02 07:33:01] Starting live account Gateway...
+[2025-11-02 07:33:01] Using virtual display :99 for live account
+[2025-11-02 07:33:01] Using TWS version: 1037 for live
+[2025-11-02 07:33:01] Starting live Gateway on port 4001
+[2025-11-02 07:33:01] live Gateway started with PID: 43859
+[2025-11-02 07:33:01] Waiting for live Gateway to initialize...
+[2025-11-02 07:33:21] live Gateway process is running
+[2025-11-02 07:33:21] Waiting for live API port 4001...
+[2025-11-02 07:33:24] ✅ live API port 4001 is available
+[2025-11-02 07:41:26] === Gateway Status ===
+[2025-11-02 07:41:26] 📊 Paper Gateway: Not running
+[2025-11-02 07:41:26] 💰 Live Gateway: Running (PID: 43914)
+[2025-11-02 07:41:26]    ✅ API Port 4001: Listening
+[2025-11-02 14:00:48] === Gateway Status ===
+[2025-11-02 14:00:48] 📊 Paper Gateway: Not running
+[2025-11-02 14:00:48] 💰 Live Gateway: Running (PID: 43914)
+[2025-11-02 14:00:48]    ✅ API Port 4001: Listening
+[2025-11-02 14:09:50] Stopping all Gateway instances...
+[2025-11-02 14:09:50] All Gateway instances stopped
+[2025-11-02 14:10:22] === Gateway Status ===
+[2025-11-02 14:10:22] 📊 Paper Gateway: Not running
+[2025-11-02 14:10:22] 💰 Live Gateway: Not running
+[2025-11-02 14:17:17] Stopping all Gateway instances...
+[2025-11-02 14:17:17] All Gateway instances stopped
+[2025-11-03 05:59:43] === Gateway Status ===
+[2025-11-03 05:59:43] 📊 Paper Gateway: Not running
+[2025-11-03 05:59:43] 💰 Live Gateway: Not running
+[2025-11-03 06:00:54] === Gateway Status ===
+[2025-11-03 06:00:54] 📊 Paper Gateway: Not running
+[2025-11-03 06:00:54] 💰 Live Gateway: Not running
+[2025-11-03 06:06:08] === Gateway Status ===
+[2025-11-03 06:06:08] 📊 Paper Gateway: Not running
+[2025-11-03 06:06:08] 💰 Live Gateway: Not running
+[2025-11-03 06:07:56] === Gateway Status ===
+[2025-11-03 06:07:56] 📊 Paper Gateway: Not running
+[2025-11-03 06:07:56] 💰 Live Gateway: Not running
+[2025-11-03 06:08:09] Stopping all Gateway instances...
+[2025-11-03 06:08:09] All Gateway instances stopped
+[2025-11-03 06:16:27] === Gateway Status ===
+[2025-11-03 06:16:27] 📊 Paper Gateway: Not running
+[2025-11-03 06:16:27] 💰 Live Gateway: Not running
+[2025-11-03 06:17:55] === Starting Both Paper and Live Accounts ===
+[2025-11-03 06:17:55] === Gateway Status ===
+[2025-11-03 06:17:55] Step 1: Starting Paper Trading Account
+[2025-11-03 06:17:55] Starting paper account Gateway...
+[2025-11-03 06:17:55] Using virtual display :99 for paper account
+[2025-11-03 06:17:55] Using TWS version: 1037 for paper
+[2025-11-03 06:17:55] Starting paper Gateway on port 4002
+[2025-11-03 06:17:55] paper Gateway started with PID: 333238
+[2025-11-03 06:17:55] 📊 Paper Gateway: Not running
+[2025-11-03 06:17:55] Waiting for paper Gateway to initialize...
+[2025-11-03 06:17:55] 💰 Live Gateway: Not running
+[2025-11-03 06:18:15] paper Gateway process is running
+[2025-11-03 06:18:15] Waiting for paper API port 4002...
+[2025-11-03 06:18:15] ✅ paper API port 4002 is available
+[2025-11-03 06:18:15] ✅ Paper account ready on port 4002
+[2025-11-03 06:18:15] Waiting 30 seconds before starting live account...
+[2025-11-03 06:18:25] === Gateway Status ===
+[2025-11-03 06:18:25] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:18:25]    ✅ API Port 4002: Listening
+[2025-11-03 06:18:25] 💰 Live Gateway: Not running
+[2025-11-03 06:18:45] Step 2: Starting Live Trading Account
+[2025-11-03 06:18:45] Starting live account Gateway...
+[2025-11-03 06:18:45] Using TWS version: 1037 for live
+[2025-11-03 06:18:45] Starting live Gateway on port 4001
+[2025-11-03 06:18:45] live Gateway started with PID: 333913
+[2025-11-03 06:18:45] Waiting for live Gateway to initialize...
+[2025-11-03 06:18:55] === Gateway Status ===
+[2025-11-03 06:18:55] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:18:55]    ✅ API Port 4002: Listening
+[2025-11-03 06:18:55] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:18:55]    ❌ API Port 4001: Not listening
+[2025-11-03 06:18:55] === Gateway Status ===
+[2025-11-03 06:18:55] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:18:55]    ✅ API Port 4002: Listening
+[2025-11-03 06:18:55] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:18:55]    ❌ API Port 4001: Not listening
+[2025-11-03 06:18:55] === Gateway Status ===
+[2025-11-03 06:18:55] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:18:55]    ✅ API Port 4002: Listening
+[2025-11-03 06:18:55] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:18:55]    ❌ API Port 4001: Not listening
+[2025-11-03 06:20:06] === Gateway Status ===
+[2025-11-03 06:20:06] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:20:06]    ✅ API Port 4002: Listening
+[2025-11-03 06:20:06] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:20:06]    ✅ API Port 4001: Listening
+[2025-11-03 06:21:55] === Gateway Status ===
+[2025-11-03 06:21:55] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:21:55]    ✅ API Port 4002: Listening
+[2025-11-03 06:21:55] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:21:55]    ✅ API Port 4001: Listening
+[2025-11-03 06:22:56] === Gateway Status ===
+[2025-11-03 06:22:56] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:22:56]    ✅ API Port 4002: Listening
+[2025-11-03 06:22:56] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:22:56]    ✅ API Port 4001: Listening
+[2025-11-03 06:24:12] === Gateway Status ===
+[2025-11-03 06:24:12] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:24:12]    ✅ API Port 4002: Listening
+[2025-11-03 06:24:12] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:24:12]    ✅ API Port 4001: Listening
+[2025-11-03 06:25:33] === Gateway Status ===
+[2025-11-03 06:25:33] 📊 Paper Gateway: Running (PID: 333308)
+[2025-11-03 06:25:33]    ✅ API Port 4002: Listening
+[2025-11-03 06:25:33] 💰 Live Gateway: Running (PID: 333968)
+[2025-11-03 06:25:33]    ✅ API Port 4001: Listening
+[2025-11-03 06:25:44] Stopping all Gateway instances...
+[2025-11-03 06:25:44] All Gateway instances stopped
+[2025-11-03 06:29:53] === Starting Both Paper and Live Accounts ===
+[2025-11-03 06:29:53] === Gateway Status ===
+[2025-11-03 06:29:53] Step 1: Starting Paper Trading Account
+[2025-11-03 06:29:53] Starting paper account Gateway...
+[2025-11-03 06:29:53] Using virtual display :99 for paper account
+[2025-11-03 06:29:53] Using TWS version: 1037 for paper
+[2025-11-03 06:29:53] Starting paper Gateway on port 4002
+[2025-11-03 06:29:53] paper Gateway started with PID: 340604
+[2025-11-03 06:29:53] 📊 Paper Gateway: Not running
+[2025-11-03 06:29:53] Waiting for paper Gateway to initialize...
+[2025-11-03 06:29:53] 💰 Live Gateway: Not running
+[2025-11-03 06:30:13] paper Gateway process is running
+[2025-11-03 06:30:13] Waiting for paper API port 4002...
+[2025-11-03 06:30:13] ✅ paper API port 4002 is available
+[2025-11-03 06:30:13] ✅ Paper account ready on port 4002
+[2025-11-03 06:30:13] Waiting 30 seconds before starting live account...
+[2025-11-03 06:30:23] === Gateway Status ===
+[2025-11-03 06:30:23] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:30:23]    ✅ API Port 4002: Listening
+[2025-11-03 06:30:23] 💰 Live Gateway: Not running
+[2025-11-03 06:30:43] Step 2: Starting Live Trading Account
+[2025-11-03 06:30:43] Starting live account Gateway...
+[2025-11-03 06:30:43] Using TWS version: 1037 for live
+[2025-11-03 06:30:43] Starting live Gateway on port 4001
+[2025-11-03 06:30:43] live Gateway started with PID: 341171
+[2025-11-03 06:30:43] Waiting for live Gateway to initialize...
+[2025-11-03 06:30:53] === Gateway Status ===
+[2025-11-03 06:30:53] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:30:53]    ✅ API Port 4002: Listening
+[2025-11-03 06:30:53] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:30:53]    ❌ API Port 4001: Not listening
+[2025-11-03 06:30:53] === Gateway Status ===
+[2025-11-03 06:30:54] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:30:54]    ✅ API Port 4002: Listening
+[2025-11-03 06:30:54] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:30:54]    ❌ API Port 4001: Not listening
+[2025-11-03 06:30:54] === Gateway Status ===
+[2025-11-03 06:30:54] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:30:54]    ✅ API Port 4002: Listening
+[2025-11-03 06:30:54] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:30:54]    ❌ API Port 4001: Not listening
+[2025-11-03 06:33:54] === Gateway Status ===
+[2025-11-03 06:33:54] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:33:54]    ✅ API Port 4002: Listening
+[2025-11-03 06:33:54] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:33:54]    ✅ API Port 4001: Listening
+[2025-11-03 06:34:54] === Gateway Status ===
+[2025-11-03 06:34:54] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:34:54]    ✅ API Port 4002: Listening
+[2025-11-03 06:34:54] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:34:54]    ✅ API Port 4001: Listening
+[2025-11-03 06:34:57] === Gateway Status ===
+[2025-11-03 06:34:57] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:34:57]    ✅ API Port 4002: Listening
+[2025-11-03 06:34:57] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:34:57]    ✅ API Port 4001: Listening
+[2025-11-03 06:36:13] === Gateway Status ===
+[2025-11-03 06:36:13] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:36:13]    ✅ API Port 4002: Listening
+[2025-11-03 06:36:13] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:36:13]    ✅ API Port 4001: Listening
+[2025-11-03 06:37:33] === Gateway Status ===
+[2025-11-03 06:37:33] 📊 Paper Gateway: Running (PID: 340670)
+[2025-11-03 06:37:33]    ✅ API Port 4002: Listening
+[2025-11-03 06:37:33] 💰 Live Gateway: Running (PID: 341226)
+[2025-11-03 06:37:33]    ✅ API Port 4001: Listening
+[2025-11-03 06:39:43] Stopping all Gateway instances...
+[2025-11-03 06:39:44] All Gateway instances stopped
