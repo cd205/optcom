@@ -188,8 +188,19 @@ class IBKRPositionApp(EWrapper, EClient):
                         if all(v is not None for v in [strike1, strike2, position1, position2]):
                             if (position1 > 0 and position2 < 0) or (position1 < 0 and position2 > 0):
                                 if abs(position1) == abs(position2):
-                                    spread_type = "Bull" if (strike1 < strike2 and position1 > 0) else "Bear"
-                                    spread_type += " Call" if right == "C" else " Put"
+                                    # Determine which position is long and which is short
+                                    if position1 > 0:
+                                        long_strike, short_strike = strike1, strike2
+                                    else:
+                                        long_strike, short_strike = strike2, strike1
+
+                                    # Determine spread type based on option type and strike relationship
+                                    if right == "C":
+                                        # For calls: Bull = long lower, short higher; Bear = long higher, short lower
+                                        spread_type = "Bull Call" if long_strike < short_strike else "Bear Call"
+                                    else:
+                                        # For puts: Bull = long lower, short higher; Bear = long higher, short lower
+                                        spread_type = "Bull Put" if long_strike < short_strike else "Bear Put"
 
                                     avg_cost1 = safe_float_convert(pos1['AvgCost'])
                                     avg_cost2 = safe_float_convert(pos2['AvgCost'])
@@ -197,19 +208,45 @@ class IBKRPositionApp(EWrapper, EClient):
 
                                     current1 = safe_float_convert(pos1['CurrentPrice'])
                                     current2 = safe_float_convert(pos2['CurrentPrice'])
+                                    market_val1 = safe_float_convert(pos1['MarketVal'])
+                                    market_val2 = safe_float_convert(pos2['MarketVal'])
+                                    unrealized_pnl1 = safe_float_convert(pos1['UnrealizedPnL'])
+                                    unrealized_pnl2 = safe_float_convert(pos2['UnrealizedPnL'])
+
                                     current_value = None
                                     market_val = None
                                     unrealized_pnl = None
 
                                     if current1 is not None and current2 is not None and current1 > 0 and current2 > 0:
                                         current_value = (current1 * position1 + current2 * position2) / abs(position1)
-                                        market_val = current_value * abs(position1) * 100
-                                        if net_cost is not None:
-                                            unrealized_pnl = (current_value - net_cost) * abs(position1) * 100
+
+                                    # Use actual market values from IBKR instead of calculating
+                                    if market_val1 is not None and market_val2 is not None:
+                                        market_val = market_val1 + market_val2
+
+                                    # Use actual unrealized P&L from IBKR instead of calculating
+                                    if unrealized_pnl1 is not None and unrealized_pnl2 is not None:
+                                        unrealized_pnl = unrealized_pnl1 + unrealized_pnl2
+
+                                    # Normalize description: always use sell/buy order for consistency
+                                    if "Bull" in spread_type:
+                                        # Bull: sell higher, buy lower
+                                        strike_sell = max(strike1, strike2)
+                                        strike_buy = min(strike1, strike2)
+                                    else:
+                                        # Bear: sell lower, buy higher
+                                        strike_sell = min(strike1, strike2)
+                                        strike_buy = max(strike1, strike2)
+
+                                    normalized_description = f"{spread_type} {strike_sell}/{strike_buy} {expiry}"
+
+                                    # Debug logging after normalized_description is defined
+                                    if market_val is not None:
+                                        logger.debug(f"{symbol} {normalized_description}: Leg1 MktVal={market_val1}, Leg2 MktVal={market_val2}, Total={market_val}")
 
                                     spreads.append({
                                         'Symbol': symbol,
-                                        'Description': f"{spread_type} {strike1}/{strike2} {expiry}",
+                                        'Description': normalized_description,
                                         'AvgCost': net_cost,
                                         'CurrentPrice': current_value,
                                         'Position': abs(position1),
@@ -341,6 +378,9 @@ def join_spreads_with_database(spreads_df, db_strategies_df):
                 'db_ticker': db_row['ticker'],
                 'db_strategy_type': db_row['strategy_type'],
                 'db_estimated_premium': db_row['estimated_premium'],
+                'db_options_expiry_date': db_row['options_expiry_date'],
+                'db_scrape_date': db_row['scrape_date'],
+                'db_strategy_status': db_row['strategy_status'],
                 'db_trade_id': db_row['trade_id'],
                 'premium_difference': ibkr_row['AvgCost'] - db_row['estimated_premium']
             })
@@ -374,8 +414,9 @@ def insert_positions_to_database(joined_df, pg_creds):
                 ibkr_symbol, ibkr_description, ibkr_avg_cost, ibkr_current_price,
                 ibkr_unrealized_pnl, ibkr_market_val, ibkr_position,
                 db_id, db_ticker, db_strategy_type, db_estimated_premium,
+                db_options_expiry_date, db_scrape_date, db_strategy_status,
                 db_trade_id, premium_difference
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (ibkr_symbol, ibkr_description, db_id)
             DO UPDATE SET
                 ibkr_current_price = EXCLUDED.ibkr_current_price,
@@ -396,6 +437,9 @@ def insert_positions_to_database(joined_df, pg_creds):
                 row['db_ticker'],
                 row['db_strategy_type'],
                 row['db_estimated_premium'],
+                row['db_options_expiry_date'],
+                row['db_scrape_date'],
+                row['db_strategy_status'],
                 row['db_trade_id'],
                 row['premium_difference']
             ))
@@ -616,7 +660,7 @@ def run_market_snapshots(port=4002, account_id="DU9233079", **context):
 if __name__ == "__main__":
     # Standalone execution for testing
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.DEBUG,
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 

@@ -128,7 +128,8 @@ def check_workflow_status():
                 'step2_5_validate_contracts': 'Step 2.5: Validate Contracts',
                 'step3_verify_records': 'Step 3: Verify Records',
                 'step4_start_gateways': 'Step 4: Start Gateways',
-                'step5_trading_monitor': 'Step 5: Trading Monitor'
+                'step5_trading_monitor': 'Step 5: Trading Monitor',
+                'step6_collect_eod_data': 'Step 6: EOD Collection'
             }
             
             current_step = "Workflow not started"

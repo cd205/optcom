@@ -22,6 +22,9 @@ from ib_gateway_utils import IBGatewayManager
 from database_utils import connect_to_database, close_database_connection, check_data_freshness
 from options_contract_validator import run_contract_validation
 from market_snapshots import run_market_snapshots
+from greeks_capture import run_greeks_capture
+from eod_data_collection import collect_eod_data
+from trade_perspectives_scraper import run_perspectives_scraper
 
 # Simple DAG configuration
 default_args = {
@@ -215,29 +218,40 @@ step4 = PythonOperator(
 )
 
 # ============================================================================
-# STEP 5: Run trading monitor with market snapshots
+# STEP 5: Run trading monitor with market snapshots and Greeks capture
 # ============================================================================
 def step5_trading_monitor(**context):
-    """Step 5: Run trading monitor with integrated market snapshots every 30 minutes"""
-    print("📊 STEP 5: Running trading monitor with market snapshots...")
+    """Step 5: Run trading monitor with integrated market snapshots and Greeks capture every 30 minutes"""
+    print("📊 STEP 5: Running trading monitor with market snapshots and Greeks capture...")
 
     import time
+    from datetime import datetime, timezone
 
     # Configuration
     monitor_interval = 120  # 2 minutes between monitor cycles
-    snapshot_interval = 1800  # 30 minutes between snapshots (30 * 60)
+    snapshot_interval = 1800  # 30 minutes between snapshots and Greeks (30 * 60)
     max_cycles = 1000
+    stop_hour = 21  # Stop at 21:15 GMT
+    stop_minute = 15
 
     last_snapshot_time = 0
     cycles_completed = 0
 
     print(f"Starting integrated monitoring:")
     print(f"  - Trading monitor: every {monitor_interval} seconds")
-    print(f"  - Market snapshots: every {snapshot_interval} seconds (30 minutes)")
+    print(f"  - Market snapshots + Greeks: every {snapshot_interval} seconds (30 minutes)")
+    print(f"  - Auto-stop at {stop_hour:02d}:{stop_minute:02d} GMT")
 
     for cycle in range(max_cycles):
         cycle_start = time.time()
         cycles_completed += 1
+
+        # Check if we should stop based on time
+        now_utc = datetime.now(timezone.utc)
+        if now_utc.hour > stop_hour or (now_utc.hour == stop_hour and now_utc.minute >= stop_minute):
+            print(f"\n⏰ Reached stop time ({stop_hour:02d}:{stop_minute:02d} GMT). Current time: {now_utc.strftime('%H:%M')} GMT")
+            print(f"Stopping trading monitor after {cycles_completed} cycles")
+            break
 
         # Check if it's time for a snapshot
         time_since_last_snapshot = cycle_start - last_snapshot_time
@@ -256,6 +270,22 @@ def step5_trading_monitor(**context):
                     print(f"⚠️ Snapshot failed: {result.get('error', 'Unknown error')}")
             except Exception as e:
                 print(f"⚠️ Snapshot error: {e}")
+
+            # Capture Greeks (immediately after snapshots)
+            print(f"\n🔢 Capturing options Greeks...")
+            try:
+                greeks_result = run_greeks_capture(
+                    port=4002,
+                    account_id="DU9233079"
+                )
+
+                if greeks_result['success']:
+                    print(f"✅ Greeks captured: {greeks_result['greeks_captured']} spreads, "
+                          f"{greeks_result['positions_retrieved']} positions")
+                else:
+                    print(f"⚠️ Greeks capture failed: {greeks_result.get('error', 'Unknown error')}")
+            except Exception as e:
+                print(f"⚠️ Greeks capture error: {e}")
 
             last_snapshot_time = cycle_start
 
@@ -285,9 +315,83 @@ step5 = PythonOperator(
 )
 
 # ============================================================================
+# STEP 6: Collect end-of-day orders and trades
+# ============================================================================
+def step6_collect_eod_data(**context):
+    """Step 6: Collect completed orders and trades from IBKR"""
+    print("📋 STEP 6: Collecting end-of-day orders and trades...")
+
+    from datetime import date
+
+    collection_date = date.today()
+
+    try:
+        orders_count, trades_count = collect_eod_data(
+            collection_date=collection_date,
+            port=4002,
+            host='127.0.0.1'
+        )
+
+        print(f"✅ EOD collection completed:")
+        print(f"   Orders collected: {orders_count}")
+        print(f"   Trades collected: {trades_count}")
+
+        # Store results in XCom
+        context['task_instance'].xcom_push(key='orders_count', value=orders_count)
+        context['task_instance'].xcom_push(key='trades_count', value=trades_count)
+
+        return f"COMPLETED: {orders_count} orders, {trades_count} trades"
+
+    except Exception as e:
+        print(f"⚠️ EOD collection error: {e}")
+        # Don't fail the workflow - this is informational
+        return f"ERROR: {str(e)}"
+
+step6 = PythonOperator(
+    task_id='step6_collect_eod_data',
+    python_callable=step6_collect_eod_data,
+    execution_timeout=timedelta(minutes=5),
+    dag=dag
+)
+
+# ============================================================================
+# STEP 7: Scrape trade perspectives
+# ============================================================================
+def step7_scrape_perspectives(**context):
+    """Step 7: Scrape trade perspectives from optionrecom.com"""
+    print("📊 STEP 7: Scraping trade perspectives...")
+
+    try:
+        start_time = datetime.now()
+        closed_count, open_count = run_perspectives_scraper(headless=True)
+        elapsed = (datetime.now() - start_time).total_seconds()
+
+        print(f"✅ Perspectives scraping completed in {elapsed:.1f} seconds:")
+        print(f"   Closed perspectives: {closed_count}")
+        print(f"   Open perspectives: {open_count}")
+
+        # Store results in XCom for debugging/logging
+        context['task_instance'].xcom_push(key='closed_count', value=closed_count)
+        context['task_instance'].xcom_push(key='open_count', value=open_count)
+
+        return f"COMPLETED: {closed_count} closed, {open_count} open"
+
+    except Exception as e:
+        print(f"⚠️ Perspectives scraping error: {e}")
+        # Don't fail the workflow - this is informational/enrichment
+        return f"ERROR (non-blocking): {str(e)}"
+
+step7 = PythonOperator(
+    task_id='step7_scrape_perspectives',
+    python_callable=step7_scrape_perspectives,
+    execution_timeout=timedelta(minutes=15),
+    dag=dag
+)
+
+# ============================================================================
 # Define simple linear dependencies
 # ============================================================================
-step1 >> step2 >> step2_5 >> step3 >> step4 >> step5
+step1 >> step2 >> step2_5 >> step3 >> step4 >> step5 >> step6 >> step7
 
 # ============================================================================
 # Add status checking DAG for debugging
@@ -325,7 +429,7 @@ def check_workflow_status(**context):
         
         # Check each step status
         steps = ['step1_check_data', 'step2_run_scraper', 'step2_5_validate_contracts', 'step3_verify_records',
-                'step4_start_gateways', 'step5_trading_monitor']
+                'step4_start_gateways', 'step5_trading_monitor', 'step6_collect_eod_data', 'step7_scrape_perspectives']
         
         current_step = "Not started"
         for i, step in enumerate(steps, 1):
