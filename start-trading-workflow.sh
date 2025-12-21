@@ -119,11 +119,15 @@ for i in {1..6}; do
         log_message "Attempt $i: Airflow webserver not yet ready, waiting..."
         sleep 10
     fi
-    
+
     if [ $i -eq 6 ]; then
         log_message "WARNING: Airflow webserver not responding after 60 seconds, proceeding anyway..."
     fi
 done
+
+# Unpause the DAG (new DAGs default to paused state)
+log_message "Unpausing simple_trading_workflow DAG..."
+airflow dags unpause simple_trading_workflow >> "$LOG_FILE" 2>&1 || log_message "Note: DAG may already be unpaused"
 
 # Start the trading workflow
 log_message "Starting trading workflow with make start..."

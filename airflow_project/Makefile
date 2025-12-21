@@ -77,6 +77,37 @@ snapshots-status:
 	@echo "📸 Checking Market Snapshots DAG Status..."
 	@export AIRFLOW_HOME=$(PWD) && airflow dags show market_snapshots
 
+# EOD Data Collection commands
+.PHONY: eod-collect eod-collect-manual eod-status eod-verify eod-logs eod-test
+
+eod-collect:
+	@echo "📊 Triggering EOD Data Collection DAG..."
+	@export AIRFLOW_HOME=$(PWD) && airflow dags trigger eod_data_collection_workflow
+
+eod-collect-manual:
+	@echo "📊 Running EOD Collection Manually (bypassing Airflow)..."
+	cd scripts && python eod_data_collection.py
+
+eod-status:
+	@echo "📊 EOD DAG Status..."
+	@export AIRFLOW_HOME=$(PWD) && airflow dags list-runs -d eod_data_collection_workflow --output table
+
+eod-verify:
+	@echo "✅ Verifying EOD Data Collection..."
+	cd scripts && python verify_eod_data.py
+
+eod-verify-week:
+	@echo "✅ Verifying Last 7 Days of EOD Data..."
+	cd scripts && python verify_eod_data.py --days 7
+
+eod-logs:
+	@echo "📋 EOD Collection Logs..."
+	@export AIRFLOW_HOME=$(PWD) && airflow tasks logs eod_data_collection_workflow collect_eod_data latest || echo "No logs yet - DAG hasn't run"
+
+eod-test:
+	@echo "🧪 Testing EOD Collection (dry run with yesterday's date)..."
+	cd scripts && python eod_data_collection.py --date $$(date -d "yesterday" +%Y-%m-%d) || python eod_data_collection.py --date $$(date -v-1d +%Y-%m-%d)
+
 # Help
 .PHONY: help
 
@@ -86,7 +117,7 @@ help:
 	@echo ""
 	@echo "Main Commands:"
 	@echo "  make start        - Start the complete 5-step workflow"
-	@echo "  make stop         - Stop everything (workflow + gateways)"  
+	@echo "  make stop         - Stop everything (workflow + gateways)"
 	@echo "  make status       - Check which step is currently running"
 	@echo "  make restart      - Full stop and restart"
 	@echo ""
@@ -107,3 +138,12 @@ help:
 	@echo "Market Snapshots:"
 	@echo "  make snapshots-test   - Test market snapshots (standalone)"
 	@echo "  make snapshots-status - Check snapshots DAG status"
+	@echo ""
+	@echo "EOD Data Collection:"
+	@echo "  make eod-collect        - Trigger EOD collection DAG"
+	@echo "  make eod-collect-manual - Run EOD collection manually (bypass Airflow)"
+	@echo "  make eod-status         - Check EOD DAG runs"
+	@echo "  make eod-verify         - Verify today's EOD data"
+	@echo "  make eod-verify-week    - Verify last 7 days of EOD data"
+	@echo "  make eod-logs           - View EOD collection logs"
+	@echo "  make eod-test           - Test EOD collection with yesterday's data"

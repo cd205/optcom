@@ -17,8 +17,9 @@ Automated options trading system built on Apache Airflow with Interactive Broker
    - Separate settings directories for paper and live accounts
 
 2. **Airflow Workflow Layer** (`airflow_project/`)
-   - **Main Trading Workflow** (manual trigger): 5-step linear DAG: check data → scrape → validate → start gateways → monitor with snapshots
-   - Step 5 integrates market snapshots every 30 minutes while trading monitor runs
+   - **Main Trading Workflow** (manual trigger): 6-step linear DAG: check data → scrape → validate → start gateways → monitor with snapshots → EOD collection
+   - Step 5 runs trading monitor until 21:15 GMT with market snapshots every 30 minutes
+   - Step 6 collects end-of-day orders and trades at 21:15 (after Step 5 completes)
    - Implements smart data freshness checks to skip scraping if data exists
    - Enhanced 2FA retry mechanism with 90-minute timeout and 3-minute intervals
    - Non-blocking contract validation step
@@ -62,6 +63,7 @@ make step2    # Run options scraper (10-15 min)
 make step3    # Verify records written
 make step4    # Start IB gateways (up to 15 min for 2FA)
 make step5    # Trading monitor with snapshots every 30 min
+make step6    # EOD orders and trades collection
 ```
 
 ### Gateway Management
@@ -183,6 +185,58 @@ Market snapshots are integrated into Step 5 of the main trading workflow:
 
 Implementation: `airflow_project/scripts/market_snapshots.py` (called from Step 5 in `simple_trading_workflow.py`)
 
+### End-of-Day Data Collection
+
+EOD data collection runs as Step 6 of the workflow after trading monitor completes:
+- **Timing**: Runs immediately after Step 5 completes at 21:15 GMT
+- **Purpose**: Collects completed orders and executions from IBKR API before VM shutdown
+- **Port**: Uses paper gateway (port 4002) - gateways remain running until shutdown
+- **Data Collected**:
+  - Completed orders with spread details
+  - Trade executions with prices and commissions
+  - Stored in `eod_orders` and `eod_trades` tables
+
+Implementation: `airflow_project/scripts/eod_data_collection.py` (called from Step 6 in `simple_trading_workflow.py`)
+
+## Troubleshooting
+
+### CLOSE-WAIT Connection Issues
+
+**Symptom**: EOD collection or other API calls hang/timeout when connecting to gateway
+
+**Cause**: Stale TCP connections in CLOSE-WAIT state accumulate on the gateway when:
+- Python clients disconnect improperly (killed process, timeout, exception)
+- Multiple workflow restarts during testing/debugging
+- Client sends FIN but gateway application never closes its socket end
+
+**Diagnosis**:
+```bash
+# Check for CLOSE-WAIT connections on paper gateway
+ss -anp | grep :4002 | grep CLOSE-WAIT
+
+# Check for CLOSE-WAIT connections on live gateway
+ss -anp | grep :4001 | grep CLOSE-WAIT
+
+# Find stuck client processes
+ss -anp | grep -E ":4002|:4001" | grep ESTAB
+```
+
+**Prevention**:
+- Normal workflow operation (clean Step 5 exit → Step 6 → shutdown) should not accumulate connections
+- Daily cold restart at 07:05 GMT (configured in IBC) clears accumulated connections
+- VM shutdown/restart also clears connections
+
+**Solution**:
+```bash
+# Kill stuck client processes first
+kill <pid_of_stuck_process>
+
+# If CLOSE-WAIT persists, restart the affected gateway
+cd ibc-setup && ./start-dual-gateway.sh restart
+```
+
+**Note**: CLOSE-WAIT connections can only be cleared by restarting the gateway process. The client side cannot fix them.
+
 ## Security Requirements
 
 **NEVER commit these files:**
@@ -196,6 +250,7 @@ All credentials managed through `config/credentials_loader.py` with automatic lo
 ## Important File Locations
 
 - Main workflow DAG: `airflow_project/dags/simple_trading_workflow.py`
+- EOD data collection script: `airflow_project/scripts/eod_data_collection.py`
 - Market snapshots script: `airflow_project/scripts/market_snapshots.py`
 - Gateway startup: `ibc-setup/start-dual-gateway.sh`
 - Gateway utils: `airflow_project/scripts/ib_gateway_utils.py`
